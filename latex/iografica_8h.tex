@@ -1,0 +1,181 @@
+\hypertarget{iografica_8h}{
+\section{iografica.h File Reference}
+\label{iografica_8h}\index{iografica.h@{iografica.h}}
+}
+
+
+Primitivas de la interfaz gráfica Este modulo contiene los prototipos de las funciones de interfaz gráfica.  
+
+
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$ctype.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include \char`\"{}tipos.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structPANTALLA}{PANTALLA}
+\begin{DoxyCompactList}\small\item\em Definicion de \hyperlink{structPANTALLA}{PANTALLA}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structPANTALLA}{PANTALLA} $\ast$ \hyperlink{iografica_8h_a6778bbdd75d9a9c5a728c532adf3a299}{creaPantalla} (int filasizq, int columnasizq, char columna, char fila, char esquina)
+\begin{DoxyCompactList}\small\item\em Inicialización de Pantalla Esta función permite crear un pantalla. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{iografica_8h_a3837e4888d6200fe23933114ab468a4d}{destruyePantalla} (\hyperlink{structPANTALLA}{PANTALLA} $\ast$$\ast$pant)
+\begin{DoxyCompactList}\small\item\em Destrucción pantalla Esta función permite destruir una pantalla. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{iografica_8h_a18ddcb9343b87a5fa07e42b0d1acbddc}{imprimePantalla} (\hyperlink{structPANTALLA}{PANTALLA} $\ast$pant)
+\begin{DoxyCompactList}\small\item\em Imprime pantalla Esta función permite imprimir una pantalla por la salida estándar. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{iografica_8h_a78c4b0a157544ea79dc120567edc36f0}{borraPantalla} (\hyperlink{structPANTALLA}{PANTALLA} $\ast$pant)
+\begin{DoxyCompactList}\small\item\em borra pantalla Esta función permite borrar el contenido de una pantalla \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{iografica_8h_ad73ca90335dc727c0abdc509f5e1cdf6}{introduceDibujoPantalla} (\hyperlink{structPANTALLA}{PANTALLA} $\ast$pant, char $\ast$$\ast$dibujo)
+\begin{DoxyCompactList}\small\item\em Introduce Dibujo pantalla Esta función permite introducir un dibujo (la descripción gráfica de un espacio) en una pantalla, sección izquierda El dibujo no puede tener mayor dimensión que la especificada para cada dibujo. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{iografica_8h_ae5eb2f70eabdcb1a4baa1049e06bdab5}{introduceDescrPantalla} (\hyperlink{structPANTALLA}{PANTALLA} $\ast$pant, char $\ast$descr)
+\begin{DoxyCompactList}\small\item\em Introduce Descr pantalla Esta función permite introducir un texto en una pantalla, sección derecha. Los caracteres especiales \par
+ o  se trataran pertinentemente. \par
+ simulará un salto de línea en pantalla,  simulará una tabulación de 4 espacios Puede darse un formato especial si se tiene en cuenta esto (dos saltos de línea, sangrías, etc). \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{iografica_8h_a9502a8736d3727d8f7b4a1cc1c382fbe}{leePantalla} (\hyperlink{structPANTALLA}{PANTALLA} $\ast$pant, char $\ast$lectura, int tamanio)
+\begin{DoxyCompactList}\small\item\em Lee pantalla Esta función permite leer una frase del usuario a través de una pantalla. No se eliminan caracteres extraños, no se comprueban entradas correctas. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Primitivas de la interfaz gráfica Este modulo contiene los prototipos de las funciones de interfaz gráfica. \begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+16-\/11-\/2010 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{iografica_8h_a78c4b0a157544ea79dc120567edc36f0}{
+\index{iografica.h@{iografica.h}!borraPantalla@{borraPantalla}}
+\index{borraPantalla@{borraPantalla}!iografica.h@{iografica.h}}
+\subsubsection[{borraPantalla}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} borraPantalla ({\bf PANTALLA} $\ast$ {\em pant})}}
+\label{iografica_8h_a78c4b0a157544ea79dc120567edc36f0}
+
+
+borra pantalla Esta función permite borrar el contenido de una pantalla 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pant}]es puntero a pantalla a borrar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK en caso correcto, ERR en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{iografica_8h_a6778bbdd75d9a9c5a728c532adf3a299}{
+\index{iografica.h@{iografica.h}!creaPantalla@{creaPantalla}}
+\index{creaPantalla@{creaPantalla}!iografica.h@{iografica.h}}
+\subsubsection[{creaPantalla}]{\setlength{\rightskip}{0pt plus 5cm}{\bf PANTALLA}$\ast$ creaPantalla (int {\em filasizq}, \/  int {\em columnasizq}, \/  char {\em columna}, \/  char {\em fila}, \/  char {\em esquina})}}
+\label{iografica_8h_a6778bbdd75d9a9c5a728c532adf3a299}
+
+
+Inicialización de Pantalla Esta función permite crear un pantalla. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em filasizq}]son las filas de la sección del dibujo \item[{\em columnasizq}]son las columnas de la sección del dibujo \item[{\em columna}]es el caracter delimitador de columnas \item[{\em fila}]es el caracter delimitador de filas \item[{\em esquina}]es el caracter delimitador de esquinas \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Puntero a la pantalla correctamente inicializada, NULL en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{iografica_8h_a3837e4888d6200fe23933114ab468a4d}{
+\index{iografica.h@{iografica.h}!destruyePantalla@{destruyePantalla}}
+\index{destruyePantalla@{destruyePantalla}!iografica.h@{iografica.h}}
+\subsubsection[{destruyePantalla}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} destruyePantalla ({\bf PANTALLA} $\ast$$\ast$ {\em pant})}}
+\label{iografica_8h_a3837e4888d6200fe23933114ab468a4d}
+
+
+Destrucción pantalla Esta función permite destruir una pantalla. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pant}]es doble puntero a pantalla a destruir \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK en caso correcto, ERR en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{iografica_8h_a18ddcb9343b87a5fa07e42b0d1acbddc}{
+\index{iografica.h@{iografica.h}!imprimePantalla@{imprimePantalla}}
+\index{imprimePantalla@{imprimePantalla}!iografica.h@{iografica.h}}
+\subsubsection[{imprimePantalla}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} imprimePantalla ({\bf PANTALLA} $\ast$ {\em pant})}}
+\label{iografica_8h_a18ddcb9343b87a5fa07e42b0d1acbddc}
+
+
+Imprime pantalla Esta función permite imprimir una pantalla por la salida estándar. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pant}]es puntero a pantalla a imprimir \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK en caso correcto, ERR en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{iografica_8h_ae5eb2f70eabdcb1a4baa1049e06bdab5}{
+\index{iografica.h@{iografica.h}!introduceDescrPantalla@{introduceDescrPantalla}}
+\index{introduceDescrPantalla@{introduceDescrPantalla}!iografica.h@{iografica.h}}
+\subsubsection[{introduceDescrPantalla}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} introduceDescrPantalla ({\bf PANTALLA} $\ast$ {\em pant}, \/  char $\ast$ {\em descr})}}
+\label{iografica_8h_ae5eb2f70eabdcb1a4baa1049e06bdab5}
+
+
+Introduce Descr pantalla Esta función permite introducir un texto en una pantalla, sección derecha. Los caracteres especiales \par
+ o  se trataran pertinentemente. \par
+ simulará un salto de línea en pantalla,  simulará una tabulación de 4 espacios Puede darse un formato especial si se tiene en cuenta esto (dos saltos de línea, sangrías, etc). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pant}]es puntero a pantalla a guardar \item[{\em descr}]es cadena de caracteres con el texto a imprimir \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK en caso correcto, ERR en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{iografica_8h_ad73ca90335dc727c0abdc509f5e1cdf6}{
+\index{iografica.h@{iografica.h}!introduceDibujoPantalla@{introduceDibujoPantalla}}
+\index{introduceDibujoPantalla@{introduceDibujoPantalla}!iografica.h@{iografica.h}}
+\subsubsection[{introduceDibujoPantalla}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} introduceDibujoPantalla ({\bf PANTALLA} $\ast$ {\em pant}, \/  char $\ast$$\ast$ {\em dibujo})}}
+\label{iografica_8h_ad73ca90335dc727c0abdc509f5e1cdf6}
+
+
+Introduce Dibujo pantalla Esta función permite introducir un dibujo (la descripción gráfica de un espacio) en una pantalla, sección izquierda El dibujo no puede tener mayor dimensión que la especificada para cada dibujo. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pant}]es puntero a pantalla a guardar \item[{\em dibujo}]es matriz de la descripción gráfica de un objeto \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK en caso correcto, ERR en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{iografica_8h_a9502a8736d3727d8f7b4a1cc1c382fbe}{
+\index{iografica.h@{iografica.h}!leePantalla@{leePantalla}}
+\index{leePantalla@{leePantalla}!iografica.h@{iografica.h}}
+\subsubsection[{leePantalla}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} leePantalla ({\bf PANTALLA} $\ast$ {\em pant}, \/  char $\ast$ {\em lectura}, \/  int {\em tamanio})}}
+\label{iografica_8h_a9502a8736d3727d8f7b4a1cc1c382fbe}
+
+
+Lee pantalla Esta función permite leer una frase del usuario a través de una pantalla. No se eliminan caracteres extraños, no se comprueban entradas correctas. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pant}]es puntero a pantalla a guardar la lectura. Reserve memoria con anterioridad \item[{\em lectura}]es cadena de char que contendrá la frase del usuario \item[{\em tamanio}]es entero con el tamaño de la cadena lectura \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK en caso correcto, ERR en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}

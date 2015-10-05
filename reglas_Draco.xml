@@ -1,0 +1,716 @@
+<reglas numero_reglas="60">
+<!--Reglas de la Pocion-->	
+	<regla>
+		<condiciones num_cond="2">
+			<condicion>OBJ_IN_OBJ,83,72,FALSE</condicion>
+			<condicion>OBJ_IN_OBJ,83,75,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>LOSE_GAME</consecuencia>
+		</consecuencias>
+		<frase>Un olor repugnante asciende. Snape, con una pequeña sonrisa, te suspende.</frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="2">
+			<condicion>OBJ_IN_OBJ,83,75,FALSE</condicion>
+			<condicion>OBJ_IN_OBJ,83,76,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>LOSE_GAME</consecuencia>
+		</consecuencias>
+		<frase>Tu pocion adquiere una tonalidad verdosa. El mismo color que aparece en tu cara cuando Snape se acerca y te expulsa de clase.</frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="2">
+			<condicion>OBJ_IN_OBJ,83,76,FALSE</condicion>
+			<condicion>OBJ_IN_OBJ,83,77,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>LOSE_GAME</consecuencia>
+		</consecuencias>
+		<frase>Snape, con cara de enfado, te grita: "¡No puedes desperdiciar cuerno de esa manera!" Te lo hara pagar de tu bolsillo. Suspenso.</frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="2">
+			<condicion>OBJ_IN_OBJ,83,77,FALSE</condicion>
+			<condicion>OBJ_IN_OBJ,83,78,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>LOSE_GAME</consecuencia>
+		</consecuencias>
+		<frase>Tu pocion se vuelve rosa y huele a colonia. El profesor Snape te dice: "No te vuelvas a perfumar como una mujerzuela". Acto y seguido te suspende el examen.</frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="2">
+			<condicion>OBJ_IN_OBJ,83,78,FALSE</condicion>
+			<condicion>OBJ_IN_OBJ,83,79,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>LOSE_GAME</consecuencia>
+		</consecuencias>
+		<frase>¡El caldero explota llenando la clase de gelatina! Un Snape lleno de mocos pegajosos te lanza un hechizo aturdidor. Estas suspenso, si, ¡pero que risa!</frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="2">
+			<condicion>OBJ_IN_OBJ,83,79,FALSE</condicion>
+			<condicion>OBJ_IN_OBJ,83,74,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>LOSE_GAME</consecuencia>
+		</consecuencias>
+		<frase>Al meterlos en el caldero te pinchas con uno de ellos. Empiezas a ver flores. Snape te dispara un rayo magenta por los ojos y te fulmina. Por drogarte, estas suspenso.</frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="2">
+			<condicion>OBJ_IN_OBJ,83,79,TRUE</condicion>
+			<condicion>OBJ_IN_OBJ,83,74,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>WIN_GAME</consecuencia>
+		</consecuencias>
+		<frase>La pocion cambia su tonalidad lentamente hasta alcanzar un color dorado. Snape se acerca lentamente. Al llegar al caldero ves la decepcion en sus ojos. "Me temo que esta vez esta... aprobado". Parece ser que tienes futuro curando la conjuntivitis ^_^.</frase>
+	</regla>
+
+<!--Reglas de fin del juego-->
+	<regla>
+		<condiciones num_cond="2">
+			<condicion>LOC_JUG,0,15,TRUE</condicion>
+			<condicion>OBJ_IN_JUG,0,81,FALSE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>LOSE_GAME</consecuencia>
+		</consecuencias>
+		<frase>El perro, rabioso al oirte hablar, te muerde y despedaza. Con el olor de su aliento tambien te podria haber matado. No le culpes, el ama la musica y tu tienes una voz horrible.</frase>
+	</regla>
+
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>OBJ_IN_OBJ,83,70,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>LOSE_GAME</consecuencia>
+		</consecuencias>
+		<frase>Excelente! Sin varita, eres un muggle, ahora puedo expulsarte! MUAHAHAHAHA...</frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>OBJ_IN_OBJ,83,73,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>LOSE_GAME</consecuencia>
+		</consecuencias>
+		<frase>La botella estalla y los cristales hieren a varios compañeros. 100 puntos menos para Gryffindor! Y estas suspenso!</frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>OBJ_IN_OBJ,83,80,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>LOSE_GAME</consecuencia>
+		</consecuencias>
+		<frase>Cuando cae te das cuenta que detras estaban los apuntes de algebra. Intentas recuperarlos pero al meter la mano te quemas. Del alarido, Snape se da cuenta y te suspende.</frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>OBJ_IN_OBJ,83,81,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>LOSE_GAME</consecuencia>
+		</consecuencias>
+		<frase>El laud es demasiado grande y la pocion desborda. Te manchas la tunica mientras Snape te grita que dejes de hacer burradas. Suspenso.</frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>OBJ_IN_OBJ,83,82,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>LOSE_GAME</consecuencia>
+		</consecuencias>
+		<frase>La llave rebota extrañamente sobre la superficie del liquido. Como tienes que ir a enfermeria para que te la quiten de la frente, suspendes.</frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>OBJ_IN_OBJ,83,84,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>LOSE_GAME</consecuencia>
+		</consecuencias>
+		<frase>El pudding empieza a crecer y se convierte en una tarta de bodas de fresa. A Snape no le gustan las bodas y por repipi te suspende.</frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>OBJ_IN_OBJ,83,88,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>LOSE_GAME</consecuencia>
+		</consecuencias>
+		<frase>Murray no sabe nadar y empieza a gritar como un descosido. Cuando intenta defenderse, te muerde en un dedo. Snape te detiene por intento de asesinato.</frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>OBJ_IN_OBJ,83,90,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>LOSE_GAME</consecuencia>
+		</consecuencias>
+		<frase>Snape se acerca a ti y exclama "Pero que guarro! Metiendo insectos en las pociones!" Te detienen por un delito contra la salud publica. (y suspendes)</frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>OBJ_IN_OBJ,83,91,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>LOSE_GAME</consecuencia>
+		</consecuencias>
+		<frase>Al meter el pelo la pocion se convierte en una pocion multijugos. Al probar como sabe, te conviertes en un sarnoso perro. Snape se rie en tu cara de caniche y te suspende.</frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>OBJ_IN_OBJ,83,92,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>LOSE_GAME</consecuencia>
+		</consecuencias>
+		<frase>La pocion consume la piedra al instante! Acabas de destruir la llave para encontrar la Atlantida. Snape te suspende por destruir una pieza de valor incalculable.</frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>OBJ_IN_OBJ,83,94,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>LOSE_GAME</consecuencia>
+		</consecuencias>
+		<frase>En cuanto toca la pocion se transforma en un pequeño basilisco que salta a tu cara y te muerde. No te llega a matar, pero se te hincha la cara. Serias un gran resucitador de serpientes, pero como alquimista no tienes futuro. Suspenso.</frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>OBJ_IN_OBJ,83,96,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>LOSE_GAME</consecuencia>
+		</consecuencias>
+		<frase>El sello era en realidad un pen con todos los trabajos del curso. Te da un ataque de nervios y te internan en un psiquiatrico. Asi nunca aprobaras el curso.</frase>
+	</regla>
+
+
+<!--Reglas de escaleras-->
+
+<!--Escalera siete-->
+	<!--Hacia abajo-->
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,4,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,6,1071,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1171,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ABA_ESP,4,127</consecuencia>
+			<consecuencia>P_LOC_OBJ,1071,10</consecuencia>
+			<consecuencia>P_LOC_OBJ,1171,4</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,4,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,10,1071,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1171,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ABA_ESP,4,128</consecuencia>
+			<consecuencia>P_LOC_OBJ,1071,13</consecuencia>
+			<consecuencia>P_LOC_OBJ,1171,4</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,4,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,13,1071,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1171,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ABA_ESP,4,126</consecuencia>
+			<consecuencia>P_LOC_OBJ,1071,6</consecuencia>
+			<consecuencia>P_LOC_OBJ,1171,4</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+
+<!--Escalera seis-->
+	<!--Hacia abajo-->
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,6,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,10,1061,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1161,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ABA_ESP,6,130</consecuencia>
+			<consecuencia>P_LOC_OBJ,1061,13</consecuencia>
+			<consecuencia>P_LOC_OBJ,1161,6</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,6,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,13,1061,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1161,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ABA_ESP,6,131</consecuencia>
+			<consecuencia>P_LOC_OBJ,1061,20</consecuencia>
+			<consecuencia>P_LOC_OBJ,1161,6</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,6,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,20,1061,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1161,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ABA_ESP,6,129</consecuencia>
+			<consecuencia>P_LOC_OBJ,1061,10</consecuencia>
+			<consecuencia>P_LOC_OBJ,1161,6</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+
+<!--Escalera cinco-->
+	<!--Hacia arriba-->
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,10,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,4,1050,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1150,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ARR_ESP,10,229</consecuencia>
+			<consecuencia>P_LOC_OBJ,1050,6</consecuencia>
+			<consecuencia>P_LOC_OBJ,1150,10</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,10,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,6,1050,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1150,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ARR_ESP,10,227</consecuencia>
+			<consecuencia>P_LOC_OBJ,1050,4</consecuencia>
+			<consecuencia>P_LOC_OBJ,1150,10</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+	<!--Hacia abajo-->
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,10,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,13,1051,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1151,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ABA_ESP,10,133</consecuencia>
+			<consecuencia>P_LOC_OBJ,1051,20</consecuencia>
+			<consecuencia>P_LOC_OBJ,1151,10</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,10,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,20,1051,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1151,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ABA_ESP,10,135</consecuencia>
+			<consecuencia>P_LOC_OBJ,1051,23</consecuencia>
+			<consecuencia>P_LOC_OBJ,1151,10</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,10,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,23,1051,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1151,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ABA_ESP,10,132</consecuencia>
+			<consecuencia>P_LOC_OBJ,1051,13</consecuencia>
+			<consecuencia>P_LOC_OBJ,1151,10</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+
+<!--Escalera cuatro-->
+	<!--Hacia arriba-->
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,13,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,10,1040,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1140,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ARR_ESP,13,230</consecuencia>
+			<consecuencia>P_LOC_OBJ,1040,6</consecuencia>
+			<consecuencia>P_LOC_OBJ,1140,13</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,13,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,6,1040,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1140,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ARR_ESP,13,228</consecuencia>
+			<consecuencia>P_LOC_OBJ,1040,4</consecuencia>
+			<consecuencia>P_LOC_OBJ,1140,13</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+
+
+	</regla>
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,13,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,4,1040,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1140,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ARR_ESP,13,232</consecuencia>
+			<consecuencia>P_LOC_OBJ,1040,10</consecuencia>
+			<consecuencia>P_LOC_OBJ,1140,13</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+	<!--Hacia abajo-->
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,13,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,20,1041,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1141,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ABA_ESP,13,137</consecuencia>
+			<consecuencia>P_LOC_OBJ,1041,23</consecuencia>
+			<consecuencia>P_LOC_OBJ,1141,13</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,13,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,23,1041,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1141,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ABA_ESP,13,138</consecuencia>
+			<consecuencia>P_LOC_OBJ,1041,28</consecuencia>
+			<consecuencia>P_LOC_OBJ,1141,13</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,13,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,28,1041,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1141,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ABA_ESP,13,136</consecuencia>
+			<consecuencia>P_LOC_OBJ,1041,20</consecuencia>
+			<consecuencia>P_LOC_OBJ,1141,13</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+
+<!--Escalera tres-->
+	<!--Hacia arriba-->
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,20,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,13,1030,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1130,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ARR_ESP,20,233</consecuencia>
+			<consecuencia>P_LOC_OBJ,1030,10</consecuencia>
+			<consecuencia>P_LOC_OBJ,1130,20</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,20,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,10,1030,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1130,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ARR_ESP,20,231</consecuencia>
+			<consecuencia>P_LOC_OBJ,1030,6</consecuencia>
+			<consecuencia>P_LOC_OBJ,1130,20</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,20,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,6,1030,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1130,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ARR_ESP,20,236</consecuencia>
+			<consecuencia>P_LOC_OBJ,1030,13</consecuencia>
+			<consecuencia>P_LOC_OBJ,1130,20</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+	<!--Hacia abajo-->
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,20,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,23,1031,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1131,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ABA_ESP,20,139</consecuencia>
+			<consecuencia>P_LOC_OBJ,1031,28</consecuencia>
+			<consecuencia>P_LOC_OBJ,1131,20</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,20,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,28,1031,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1131,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ABA_ESP,20,123</consecuencia>
+			<consecuencia>P_LOC_OBJ,1031,23</consecuencia>
+			<consecuencia>P_LOC_OBJ,1131,20</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+
+<!--Escalera dos-->
+	<!--Hacia arriba-->
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,23,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,20,1020,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1120,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ARR_ESP,23,237</consecuencia>
+			<consecuencia>P_LOC_OBJ,1020,13</consecuencia>
+			<consecuencia>P_LOC_OBJ,1120,23</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,23,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,13,1020,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1120,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ARR_ESP,23,235</consecuencia>
+			<consecuencia>P_LOC_OBJ,1020,10</consecuencia>
+			<consecuencia>P_LOC_OBJ,1120,23</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,23,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,10,1020,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1120,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ARR_ESP,23,223</consecuencia>
+			<consecuencia>P_LOC_OBJ,1020,20</consecuencia>
+			<consecuencia>P_LOC_OBJ,1120,23</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+
+<!--Escalera uno-->
+	<!--Hacia arriba-->
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,28,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,23,1010,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1110,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ARR_ESP,28,239</consecuencia>
+			<consecuencia>P_LOC_OBJ,1010,20</consecuencia>
+			<consecuencia>P_LOC_OBJ,1110,28</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,28,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,20,1010,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1110,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ARR_ESP,28,238</consecuencia>
+			<consecuencia>P_LOC_OBJ,1010,13</consecuencia>
+			<consecuencia>P_LOC_OBJ,1110,28</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="3">
+			<condicion>LOC_JUG,0,28,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,13,1010,TRUE</condicion>
+			<condicion>OBJ_IN_ESP,1000,1110,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="3">
+			<consecuencia>P_ARR_ESP,28,240</consecuencia>
+			<consecuencia>P_LOC_OBJ,1010,23</consecuencia>
+			<consecuencia>P_LOC_OBJ,1110,28</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+
+	<!--Reglas de retorno de objetos indicadores-->
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>LOC_JUG,0,28,FALSE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>P_LOC_OBJ,1110,1000</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>LOC_JUG,0,23,FALSE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>P_LOC_OBJ,1120,1000</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>LOC_JUG,0,20,FALSE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>P_LOC_OBJ,1130,1000</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>LOC_JUG,0,20,FALSE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>P_LOC_OBJ,1131,1000</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>LOC_JUG,0,13,FALSE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>P_LOC_OBJ,1140,1000</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>LOC_JUG,0,13,FALSE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>P_LOC_OBJ,1141,1000</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>LOC_JUG,0,10,FALSE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>P_LOC_OBJ,1150,1000</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>LOC_JUG,0,10,FALSE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>P_LOC_OBJ,1151,1000</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>LOC_JUG,0,6,FALSE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>P_LOC_OBJ,1160,1000</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>LOC_JUG,0,4,FALSE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>P_LOC_OBJ,1171,1000</consecuencia>
+		</consecuencias>
+		<frase> </frase>
+	</regla>
+
+
+<!--Reglas especiales-->
+
+	<!--Apertura de los menesteres-->
+  <regla>
+    <condiciones num_cond="3">
+      <condicion>LOC_JUG,0,8,TRUE</condicion>
+      <condicion>OBJ_IN_JUG,0,96,TRUE</condicion>
+      <condicion>ABI_UNI,205,FALSE</condicion>
+    </condiciones>
+    <consecuencias num_cons="1">
+      <consecuencia>P_ABI_UNI,205,TRUE</consecuencia>
+    </consecuencias>
+    <frase>"Sientes como un poder magico emana de tu bolsillo. Sacal el Sello. Ves como se dibuja una puerta al oeste, y queda perfectamente definida."</frase>
+  </regla>
+  <!--Salida del Espejo de Oesed-->
+  <regla>
+    <condiciones num_cond="1">
+      <condicion>LOC_JUG,0,31,TRUE</condicion>
+      <condicion>OBJ_IN_ESP,1000,80,TRUE</condicion>
+    </condiciones>
+    <consecuencias num_cons="2">
+      <consecuencia>P_ARR_ESP,28,214</consecuencia>
+      <consecuencia>P_LOC_OBJ,80,31</consecuencia>
+    </consecuencias>
+    <frase>"Al salir de la habitacion, se te cae algo del bolsillo, parece un trozo de papiro"</frase>
+  </regla>
+</reglas>

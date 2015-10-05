@@ -1,0 +1,1916 @@
+\hypertarget{mundo_8h}{
+\section{mundo.h File Reference}
+\label{mundo_8h}\index{mundo.h@{mundo.h}}
+}
+
+
+Utilidades para crear y modificar el mundo.  
+
+
+{\ttfamily \#include \char`\"{}jugador.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}espacio.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}objeto.h\char`\"{}}\par
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include \char`\"{}inventario.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structMUNDO}{MUNDO}
+\begin{DoxyCompactList}\small\item\em Estructura básica de un mundo. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structMUNDO}{MUNDO} $\ast$ \hyperlink{mundo_8h_ac11b9e4e0bfd3d8819f531b4210d4848}{nuevoMundo} (int numesp, int numobj, int numjug, int numuni)
+\begin{DoxyCompactList}\small\item\em crea un mundo \item\end{DoxyCompactList}\item 
+void \hyperlink{mundo_8h_a20a33862d3d77cd5ca857d5b3a95b604}{destruyeMundo} (\hyperlink{structMUNDO}{MUNDO} $\ast$$\ast$m)
+\begin{DoxyCompactList}\small\item\em Libera un mundo completo. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a4643b0cc232239e2c987544a2b18f3f3}{saberNumJug} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, int $\ast$num)
+\begin{DoxyCompactList}\small\item\em informa del numero de jugadores /$\ast$$\ast$ \hyperlink{mundo_8h_a4643b0cc232239e2c987544a2b18f3f3}{saberNumJug()} accede a la estructura y guarda en num lo pedido /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a3d59fcf33db8c711440d7a10f5a95b94}{saberNumObj} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, int $\ast$num)
+\begin{DoxyCompactList}\small\item\em informa del numero de objetos /$\ast$$\ast$ \hyperlink{mundo_8h_a3d59fcf33db8c711440d7a10f5a95b94}{saberNumObj()} accede a la estructura y guarda en num lo pedido /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_aef20e4a2e1ba8ebcf4e88efd1af59867}{saberNumEsp} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, int $\ast$num)
+\begin{DoxyCompactList}\small\item\em informa del numero de espacios /$\ast$$\ast$ \hyperlink{mundo_8h_aef20e4a2e1ba8ebcf4e88efd1af59867}{saberNumEsp()} accede a la estructura y guarda en num lo pedido /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_af80ce73f1581c3a5a4e7ac52a3319980}{saberNumUni} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, int $\ast$num)
+\begin{DoxyCompactList}\small\item\em informa del numero de uniones /$\ast$$\ast$ \hyperlink{mundo_8h_af80ce73f1581c3a5a4e7ac52a3319980}{saberNumUni()} accede a la estructura y guarda en num lo pedido /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_ab102b43c679a7fcf53dd5bb8fa30faae}{guardaObj} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, \hyperlink{structOBJETO}{OBJETO} $\ast$objeto)
+\begin{DoxyCompactList}\small\item\em Guarda un objeto en el mundo /$\ast$$\ast$ \hyperlink{mundo_8h_ab102b43c679a7fcf53dd5bb8fa30faae}{guardaObj()} guarda en la primera posicion libre el elemento recibido /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a0587f773b6be5cffd930279d0b721c9c}{creaObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$$\ast$objeto)
+\begin{DoxyCompactList}\small\item\em crea un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_a0587f773b6be5cffd930279d0b721c9c}{creaObj()} reserva la memoria /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a281cf3ee9eb99bace97cffbfa4a3905a}{destruyeObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$$\ast$objeto)
+\begin{DoxyCompactList}\small\item\em Destruye un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_a281cf3ee9eb99bace97cffbfa4a3905a}{destruyeObj()} elimina la reserva de memoria /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a8035f38c35c8f55c290f9ed7a55efbf1}{creaIdObjMundo} (\hyperlink{structOBJETO}{OBJETO} $\ast$objeto, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Modifica la id de un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_a8035f38c35c8f55c290f9ed7a55efbf1}{creaIdObjMundo()} modifica la id de cierto objeto /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_aaed86fa78da7ea0b4b97cc278f3418b4}{creaNombreObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$objeto, char $\ast$nombre)
+\begin{DoxyCompactList}\small\item\em Modifica el nombre de un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_aaed86fa78da7ea0b4b97cc278f3418b4}{creaNombreObj()} guarda como nombre la cadena nombre /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_ad9c45ffd1f2f388b508c3b0f74e256d2}{creaDescObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$objeto, char $\ast$descripcion)
+\begin{DoxyCompactList}\small\item\em Modifica la descripcion de un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_ad9c45ffd1f2f388b508c3b0f74e256d2}{creaDescObj()} guarda como descripcion la cadena descripcion /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_adc1ca16d0eb187bc11f973a81aa9c3ab}{creaDescMovidoObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$objeto, char $\ast$descMovido)
+\begin{DoxyCompactList}\small\item\em Modifica la descripcion de un objeto movido /$\ast$$\ast$ \hyperlink{mundo_8h_adc1ca16d0eb187bc11f973a81aa9c3ab}{creaDescMovidoObj()} guarda como descripcion secundaria a la cadena descMovido /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a009b29d323d4ab4c0199b9847ba31c4d}{creaExamObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$objeto, char $\ast$examinar)
+\begin{DoxyCompactList}\small\item\em Modifica el examinado de un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_a009b29d323d4ab4c0199b9847ba31c4d}{creaExamObj()} guarda como examinado a la cadena examinar /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_ad4b08aa3bb8ef5ec8f039bab98da64f1}{creaMovilObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$objeto, \hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} movil)
+\begin{DoxyCompactList}\small\item\em Establece si un objeto se puede mover o no /$\ast$$\ast$ \hyperlink{mundo_8h_ad4b08aa3bb8ef5ec8f039bab98da64f1}{creaMovilObj()} pone en TRUE o FALSE la indicacion movil /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a5231ab3e14859bade94f91a8c6aafd78}{creaMovidoObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$objeto, \hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} movido)
+\begin{DoxyCompactList}\small\item\em Establece si un objeto ha sido movido o no /$\ast$$\ast$ \hyperlink{mundo_8h_a5231ab3e14859bade94f91a8c6aafd78}{creaMovidoObj()} pone a TRUE o FALSE la indicacion movido /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a36a97d9f43678080bb8b38e95027b478}{creaOcultoObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$objeto, \hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} oculto)
+\begin{DoxyCompactList}\small\item\em Establece si un objeto esta oculto o no /$\ast$$\ast$ \hyperlink{mundo_8h_a36a97d9f43678080bb8b38e95027b478}{creaOcultoObj()} pone a TRUE o FALSE la indicacion oculto /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a248b31aed7694f3ee4128b9c0b78cc0c}{creaEncendidoObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$objeto, \hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} encendido)
+\begin{DoxyCompactList}\small\item\em Establece si un objeto esta encendido o no /$\ast$$\ast$ \hyperlink{mundo_8h_a248b31aed7694f3ee4128b9c0b78cc0c}{creaEncendidoObj()} pone a TRUE o FALSE la indicacion encendido /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a57469d09fccc7ea9bdf031b752c238b2}{creaContenedorObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$objeto, \hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} contenedor)
+\begin{DoxyCompactList}\small\item\em Establece si un objeto es contenedor o no /$\ast$$\ast$ \hyperlink{mundo_8h_a57469d09fccc7ea9bdf031b752c238b2}{creaContenedorObj()} pone a TRUE o FALSE la indicacion contenedor /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a1a549644bd459919ce226647839984a1}{creaLuzObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$objeto, \hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} luz)
+\begin{DoxyCompactList}\small\item\em Establece si un objeto se puede encender o no /$\ast$$\ast$ \hyperlink{mundo_8h_a1a549644bd459919ce226647839984a1}{creaLuzObj()} pone a TRUE o FALSE la indicacion luz /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{structOBJETO}{OBJETO} $\ast$ \hyperlink{mundo_8h_a9586681bf8010dccb78c6ec64370c6ef}{dameObjeto} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em devuelve el objeto sabiendo la id /$\ast$$\ast$ \hyperlink{mundo_8h_a9586681bf8010dccb78c6ec64370c6ef}{dameObjeto()} devuelve un puntero a un objeto sabiendo la id /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{structOBJETO}{OBJETO} $\ast$ \hyperlink{mundo_8h_a34ac156597e80c71cbe0e7debf7229a9}{consigueObjeto} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, char $\ast$nombre)
+\begin{DoxyCompactList}\small\item\em consigues el objeto sabiendo el nombre /$\ast$$\ast$ \hyperlink{mundo_8h_a34ac156597e80c71cbe0e7debf7229a9}{consigueObjeto()} devuelve un puntero a un objeto cuyo nombre coincide con uno dado /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a072a9eb137fd0b279e9207c1ab78ffa0}{darNombreObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$objeto, char $\ast$nombre)
+\begin{DoxyCompactList}\small\item\em devuelve el nombre de un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_a072a9eb137fd0b279e9207c1ab78ffa0}{darNombreObj()} devuelve en una cadena dada el nombre de un objeto teniendo su puntero /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} \hyperlink{mundo_8h_ac9e002000304d24dd9c5d5d464b3141b}{darLocObj} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, \hyperlink{structOBJETO}{OBJETO} $\ast$objeto)
+\begin{DoxyCompactList}\small\item\em devuelve el espacio donde se encuentra un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_ac9e002000304d24dd9c5d5d464b3141b}{darLocObj()} devuelve la id del espacio donde se encuentra un objeto teniendo el puntero de este /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_ab5fdced9744e5e7164dfb9ae22b8af41}{dameDescrObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$objeto, char $\ast$descripcion, int max\_\-len)
+\begin{DoxyCompactList}\small\item\em devuelve la descripcion inicial de un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_ab5fdced9744e5e7164dfb9ae22b8af41}{dameDescrObj()} guarda en una cadena la descripcion de un objeto siempre que no supere el tamaño /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a23ee14b400076980af11867eeec2c853}{meterObjObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$objeto, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em mete un objeto en otro /$\ast$$\ast$ meteObjObj() almacena en el inventario de un objeto a otro objeto /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a5d197a4837c3f175361d5afb4d22b9a3}{darDescrexamObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, char $\ast$descripcion, int max\_\-len)
+\begin{DoxyCompactList}\small\item\em devuelve la descripcion al examinar un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_a5d197a4837c3f175361d5afb4d22b9a3}{darDescrexamObj()} guarda en una cadena la descripcion de un objeto siempre que no supere el tamaño /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_ae6e829847a510a322330e96c98316edd}{darDescrObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$objeto, char $\ast$descripcion, int max\_\-len)
+\begin{DoxyCompactList}\small\item\em devuelve la descripcion inicial de un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_ae6e829847a510a322330e96c98316edd}{darDescrObj()} guarda en una cadena la descripcion de un objeto siempre que no supere el tamaño /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a89aca5f43f380c0ad48a389a929ddd61}{darDescrMovidoObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$objeto, char $\ast$descripcion, int max\_\-len)
+\begin{DoxyCompactList}\small\item\em devuelve la descripcion de un objeto movido /$\ast$$\ast$ \hyperlink{mundo_8h_a89aca5f43f380c0ad48a389a929ddd61}{darDescrMovidoObj()} guarda en una cadena la descripcion de un objeto movido siempre que no supere el tamaño /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} \hyperlink{mundo_8h_aad687335df8ca8a368a00a61fb23440d}{darIdObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$o)
+\begin{DoxyCompactList}\small\item\em devuelve la id de un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_aad687335df8ca8a368a00a61fb23440d}{darIdObj()} devuelve la id del un objeto teniendo el puntero a este /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{mundo_8h_ab94bb255555db1a5b5f80b1100cfe3c7}{darMovilObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$o)
+\begin{DoxyCompactList}\small\item\em informa si un objeto es movil /$\ast$$\ast$ \hyperlink{mundo_8h_ab94bb255555db1a5b5f80b1100cfe3c7}{darMovilObj()} accede al campo movil de un objeto /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{mundo_8h_ab66ea4f565667abf84e99129ba7fb9fc}{darMovidoObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$o)
+\begin{DoxyCompactList}\small\item\em informa si un objeto ha sido movido /$\ast$$\ast$ \hyperlink{mundo_8h_ab66ea4f565667abf84e99129ba7fb9fc}{darMovidoObj()} accede al campo movido de un objeto /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{mundo_8h_a0bc0e28115b2d92bc7bec5f8f68ee204}{darOcultoObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$o)
+\begin{DoxyCompactList}\small\item\em informa si un objeto es oculto /$\ast$$\ast$ \hyperlink{mundo_8h_a0bc0e28115b2d92bc7bec5f8f68ee204}{darOcultoObj()} accede al campo oculto de un objeto /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{mundo_8h_a160fd8a8b6de5bf8af576d3740baad84}{darEncendidoObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$o)
+\begin{DoxyCompactList}\small\item\em informa si un objeto esta encendido /$\ast$$\ast$ \hyperlink{mundo_8h_a160fd8a8b6de5bf8af576d3740baad84}{darEncendidoObj()} accede al campo encendido de un objeto /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{mundo_8h_adcac0639fbe13641fa4cdf5cbc3fed21}{darLuzObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$o)
+\begin{DoxyCompactList}\small\item\em informa si un objeto se puede encender /$\ast$$\ast$ \hyperlink{mundo_8h_adcac0639fbe13641fa4cdf5cbc3fed21}{darLuzObj()} accede al campo luz de un objeto /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{mundo_8h_abeaf731134cbaf970022272c11caa39f}{darContenedorObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$o)
+\begin{DoxyCompactList}\small\item\em informa si un objeto es contenedor /$\ast$$\ast$ \hyperlink{mundo_8h_abeaf731134cbaf970022272c11caa39f}{darContenedorObj()} accede al campo contenedor de un objeto /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{mundo_8h_a48ef5f3b9cfd9137e8051493de7d4648}{isObjInObjMun} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em informa si un objeto esta en otro objetor /$\ast$$\ast$ \hyperlink{mundo_8h_a48ef5f3b9cfd9137e8051493de7d4648}{isObjInObjMun()} informa si un objeto, dada su id, esta dentro de un objeto del cual tenemos su puntero /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a4ef7b9d7911ae0d8a34d7f5547c518f7}{sacaObjOfObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$cont, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} obj)
+\begin{DoxyCompactList}\small\item\em sacamos un objeto de otro /$\ast$$\ast$ \hyperlink{mundo_8h_a4ef7b9d7911ae0d8a34d7f5547c518f7}{sacaObjOfObj()} extrae una id del inventario de otro objeto dado /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_af4e0daa35eed1c2a30dcffbb18e821e5}{guardaJug} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, \hyperlink{structJUGADOR}{JUGADOR} $\ast$jugador)
+\begin{DoxyCompactList}\small\item\em Guarda un jugador en el mundo /$\ast$$\ast$ \hyperlink{mundo_8h_af4e0daa35eed1c2a30dcffbb18e821e5}{guardaJug()} guarda en la primera posicion libre el elemento recibido /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a77fb518413f791d686b0b052fc32cdbe}{creaJug} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$$\ast$jugador)
+\begin{DoxyCompactList}\small\item\em crea un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_a77fb518413f791d686b0b052fc32cdbe}{creaJug()} reserva la memoria /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a64b7480378d73b1104d7fb495fc8220f}{destruyeJug} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$$\ast$jugador)
+\begin{DoxyCompactList}\small\item\em Destruye un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_a64b7480378d73b1104d7fb495fc8220f}{destruyeJug()} elimina la reserva de memoria /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_ad153465c1bbc5abc703fd98bbf0fb8fa}{creaIdJug} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$jugador, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Modifica la id de un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_ad153465c1bbc5abc703fd98bbf0fb8fa}{creaIdJug()} modifica la id de un jugador dado /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a64865827c6164c2b71e50a46c37e931b}{creaNombreJug} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$jugador, char $\ast$nombre)
+\begin{DoxyCompactList}\small\item\em Modifica el nombre de un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_a64865827c6164c2b71e50a46c37e931b}{creaNombreJug()} guarda como nombre la cadena nombre /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a92259dfa42ee84f5fd98ddf30b3bb92e}{creaLocJug} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$jugador, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Modifica la posicion de un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_a92259dfa42ee84f5fd98ddf30b3bb92e}{creaLocJug()} modifica la id de la posicion de un jugador dado /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_abfa42668b9630a61fe81fbbc3cf0f692}{creaMaxObjJug} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$jugador, int max)
+\begin{DoxyCompactList}\small\item\em Modifica el tamaño del inventario de un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_abfa42668b9630a61fe81fbbc3cf0f692}{creaMaxObjJug()} cambia el tamaño de un inventario /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a4aa864fe93917ad7bc3cdf101dc0f62e}{meteObjJug} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$jugador, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em introduce un objeto en un inventario de un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_a4aa864fe93917ad7bc3cdf101dc0f62e}{meteObjJug()} guarda en el inventario de del jugador un objeto /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{structJUGADOR}{JUGADOR} $\ast$ \hyperlink{mundo_8h_a3bb88af34d7de7b48a99e5498f092a34}{dameJugador} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em devuelve el jugador sabiendo la id /$\ast$$\ast$ \hyperlink{mundo_8h_a3bb88af34d7de7b48a99e5498f092a34}{dameJugador()} devuelve un puntero a un jugador sabiendo la id /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_adfc09104cc82f9ed4cb2a78a35e8bee8}{darNombreJug} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$jugador, char $\ast$nombre, int max\_\-len)
+\begin{DoxyCompactList}\small\item\em devuelve el nombre de un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_adfc09104cc82f9ed4cb2a78a35e8bee8}{darNombreJug()} devuelve en una cadena dada el nombre de un jugador teniendo su puntero /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} \hyperlink{mundo_8h_a479ff14f30357a4a1d6dff54e054ba01}{darLocJug} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$jugador)
+\begin{DoxyCompactList}\small\item\em devuelve la localizacion de un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_a479ff14f30357a4a1d6dff54e054ba01}{darLocJug()} devuelve la id del espacio donde se situa /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{structJUGADOR}{JUGADOR} $\ast$ \hyperlink{mundo_8h_ada413c950a5b4c510885786fd8ed299f}{consigueJugador} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, char $\ast$nombre)
+\begin{DoxyCompactList}\small\item\em consigues el jugador sabiendo el nombre /$\ast$$\ast$ \hyperlink{mundo_8h_ada413c950a5b4c510885786fd8ed299f}{consigueJugador()} devuelve un puntero a un jugador cuyo nombre coincide con uno dado /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a8e227770042e0233324dad10fed9529f}{dameInvExaminar} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, \hyperlink{structJUGADOR}{JUGADOR} $\ast$jug, char $\ast$info)
+\begin{DoxyCompactList}\small\item\em informa sobre el inventario de un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_a8e227770042e0233324dad10fed9529f}{dameInvExaminar()} devuelve dentro de info una cadena con los nombres de los objetos del inventario /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} \hyperlink{mundo_8h_aeda244b86d9368edf6465d7113f34db0}{darIdJug} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$j)
+\begin{DoxyCompactList}\small\item\em informa sobre la id de un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_aeda244b86d9368edf6465d7113f34db0}{darIdJug()} devuelve el identificador de un jugador /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+int \hyperlink{mundo_8h_a878ab25dc2eed86cfa1935fc9e256b02}{darMaxJug} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$j)
+\begin{DoxyCompactList}\small\item\em informa sobre el inventario de un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_a878ab25dc2eed86cfa1935fc9e256b02}{darMaxJug()} devuelve el tamaño del inventario de un jugador /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{mundo_8h_af9c1b3df5c399b3fb88f81e4d814502a}{isObjInInvMun} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$j, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em informa si cierto objeto lo tiene un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_af9c1b3df5c399b3fb88f81e4d814502a}{isObjInInvMun()} devuelve un booleano diciendo si un objeto se situa dentro del inventario de un jugador /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a1acb9bb8d0b838be2400e4fccfc4e965}{sacaObjOfInv} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$cont, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} obj)
+\begin{DoxyCompactList}\small\item\em extrae un objeto del inventario de un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_a1acb9bb8d0b838be2400e4fccfc4e965}{sacaObjOfInv()} extrae la id de un objeto del conjunto que forma el inventario de un jugador /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_aee15acfa84ab79b68de05a55cb45ac69}{guardaEsp} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, \hyperlink{structESPACIO}{ESPACIO} $\ast$espacio)
+\begin{DoxyCompactList}\small\item\em Guarda un espacio en el mundo /$\ast$$\ast$ \hyperlink{mundo_8h_aee15acfa84ab79b68de05a55cb45ac69}{guardaEsp()} guarda en la primera posicion libre el elemento recibido /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a47fc7036d770720ee2b5558282ac761a}{creaEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$$\ast$espacio)
+\begin{DoxyCompactList}\small\item\em crea un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_a47fc7036d770720ee2b5558282ac761a}{creaEsp()} reserva la memoria necesaria /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_acef482904118bf4c50abea43ba3c8de6}{creaDescrGraficaEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$espacio, char $\ast$dibujo, int filas, int columnas)
+\begin{DoxyCompactList}\small\item\em creaDescGraficaEsp Esta función permite cambiar la descripción gráfica de un espacio \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_ab051fa53562b657235842bef9d375dd4}{destruyeEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$$\ast$espacio)
+\begin{DoxyCompactList}\small\item\em Destruye un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_ab051fa53562b657235842bef9d375dd4}{destruyeEsp()} elimina la reserva de memoria /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a883692fbd6bb7756be0e60102ece406f}{creaIdEspMundo} (\hyperlink{structESPACIO}{ESPACIO} $\ast$espacio, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Modifica la id de un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_a883692fbd6bb7756be0e60102ece406f}{creaIdEspMundo()} modifica la id de cierto espacio /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_aceb319ea3b3303700d6d4af17b5bfdea}{creaDescEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$espacio, char $\ast$descripcion)
+\begin{DoxyCompactList}\small\item\em Modifica la descripcion de un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_aceb319ea3b3303700d6d4af17b5bfdea}{creaDescEsp()} guarda como descripcion la cadena descripcion /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a6147f81b4310acfd3823e0a93bd3dea7}{creaExamEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$espacio, char $\ast$examinar)
+\begin{DoxyCompactList}\small\item\em Modifica el examinado de un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_a6147f81b4310acfd3823e0a93bd3dea7}{creaExamEsp()} guarda como examinado a la cadena examinar /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_ac6aa8f2f6b4aa93bed4a49a62ee642f6}{meteObjEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$espacio, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em introduce un objeto en un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_ac6aa8f2f6b4aa93bed4a49a62ee642f6}{meteObjEsp()} guarda en el inventario del espacio un objeto /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a27ccb9387c419c4b3a1f5fe1d8d0c088}{creaLumEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$espacio, \hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} luminoso)
+\begin{DoxyCompactList}\small\item\em Establece si un espacio es luminoso o no /$\ast$$\ast$ \hyperlink{mundo_8h_a27ccb9387c419c4b3a1f5fe1d8d0c088}{creaLumEsp()} pone en TRUE o FALSE la indicacion luminoso /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a5ad0917b38c6f3456b2645e9d42bb5ee}{creaNorteEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$espacio, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Establece la posible union al norte de un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_a5ad0917b38c6f3456b2645e9d42bb5ee}{creaNorteEsp()} indica la ID de la union norte si existiera /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a24cd4e4b1ee26b1b71030b57a342d72c}{creaSurEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$espacio, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Establece la posible union al sur de un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_a24cd4e4b1ee26b1b71030b57a342d72c}{creaSurEsp()} indica la ID de la union sur si existiera /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a7e9c8225889b13d24981d9dc44425ba6}{creaEsteEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$espacio, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Establece la posible union al este de un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_a7e9c8225889b13d24981d9dc44425ba6}{creaEsteEsp()} indica la ID de la union este si existiera /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_ad947e6ddc841b5d8884a5550fb330ffc}{creaOesteEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$espacio, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Establece la posible union al oeste de un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_ad947e6ddc841b5d8884a5550fb330ffc}{creaOesteEsp()} indica la ID de la union oeste si existiera /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_ab5940437641db0f88d04c9cd99284ce2}{creaArribaEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$espacio, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Establece la posible union encima de un espacio /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_aad6283e38e108500fa3e26240b8ff75e}{creaAbajoEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$espacio, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Establece la posible union debajo de un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_aad6283e38e108500fa3e26240b8ff75e}{creaAbajoEsp()} indica la ID de la union abajo si existiera /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a3d51e5b5874cd20a4f19bcfa639f0486}{darDescrEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$espacio, char $\ast$descripcion, int max\_\-len)
+\begin{DoxyCompactList}\small\item\em devuelve la descripcionde un espacio /$\ast$$\ast$ dameDescrEsp() guarda en una cadena la descripcion de un espacio siempre que no supere el tamaño /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_afd50d681e09dca3fe36e357efcf9adf0}{darDescrGraficaEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, char $\ast$$\ast$$\ast$descripcion, int $\ast$filas, int $\ast$columnas)
+\begin{DoxyCompactList}\small\item\em devuelve la descripcion grafica de un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_afd50d681e09dca3fe36e357efcf9adf0}{darDescrGraficaEsp()} guarda en una cadena la descripcion grafica de un espacio y los tamaños /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{structESPACIO}{ESPACIO} $\ast$ \hyperlink{mundo_8h_a7878dd643ddcbc2ee6609009ac9b3f01}{dameEspacio} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em devuelve el espacio sabiendo la id /$\ast$$\ast$ \hyperlink{mundo_8h_a7878dd643ddcbc2ee6609009ac9b3f01}{dameEspacio()} devuelve un puntero a un espacio sabiendo la id /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} \hyperlink{mundo_8h_aa7c32d2f2650f894247881049c58c332}{darIdEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em informa sobre la id de un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_aa7c32d2f2650f894247881049c58c332}{darIdEsp()} devuelve el identificador de un espacio /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a91eb9ce10402238b9a0534b06dfba736}{darDescrexamEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, char $\ast$descripcion, int max\_\-len)
+\begin{DoxyCompactList}\small\item\em devuelve la descripcion al examinar un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_a91eb9ce10402238b9a0534b06dfba736}{darDescrexamEsp()} guarda en una cadena la descripcion de un espacio siempre que no supere el tamaño /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{mundo_8h_a7a53425e214ecb2a64195b8c30b9b998}{darLumEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em informa si cierto espacio es luminoso /$\ast$$\ast$ \hyperlink{mundo_8h_a7a53425e214ecb2a64195b8c30b9b998}{darLumEsp()} accede al campo luminoso de un espacio dado /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} \hyperlink{mundo_8h_a57889e86e1dcf72a9aeb1de5a41a63b1}{darNorteEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em informa sobre la id de la union que esta al norte /$\ast$$\ast$ \hyperlink{mundo_8h_a57889e86e1dcf72a9aeb1de5a41a63b1}{darNorteEsp()} devuelve el identificador de la union que se situa al norte /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} \hyperlink{mundo_8h_aa05e3b4b6daec378e476c8e634b7efc4}{darSurEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em informa sobre la id de la union que esta al sur /$\ast$$\ast$ \hyperlink{mundo_8h_aa05e3b4b6daec378e476c8e634b7efc4}{darSurEsp()} devuelve el identificador de la union que se situa al sur /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} \hyperlink{mundo_8h_ace467aae968d61d1f247134fcfe65ac2}{darEsteEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em informa sobre la id de la union que esta al este /$\ast$$\ast$ \hyperlink{mundo_8h_ace467aae968d61d1f247134fcfe65ac2}{darEsteEsp()} devuelve el identificador de la union que se situa al este /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} \hyperlink{mundo_8h_a2b067845d377d9b5469d34ec0c245c19}{darOesteEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em informa sobre la id de la union que esta al oeste /$\ast$$\ast$ \hyperlink{mundo_8h_a2b067845d377d9b5469d34ec0c245c19}{darOesteEsp()} devuelve el identificador de la union que se situa al oeste /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} \hyperlink{mundo_8h_a68227d6b8e59bf8b0daf31e4a1dfbe6b}{darArribaEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em informa sobre la id de la union que esta arriba /$\ast$$\ast$ \hyperlink{mundo_8h_a68227d6b8e59bf8b0daf31e4a1dfbe6b}{darArribaEsp()} devuelve el identificador de la union que se situa arriba /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} \hyperlink{mundo_8h_ac4aba0c6a9272e6ce6270c4920d260c6}{darAbajoEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em informa sobre la id de la union que esta abajo /$\ast$$\ast$ \hyperlink{mundo_8h_ac4aba0c6a9272e6ce6270c4920d260c6}{darAbajoEsp()} devuelve el identificador de la union que se situa abajo /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{mundo_8h_aea3140c15d829768155447bfeee8aa36}{isObjInEspMun} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em informa si cierto objeto se situa en un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_aea3140c15d829768155447bfeee8aa36}{isObjInEspMun()} devuelve un booleano diciendo si un objeto se situa dentro del inventario de un espacio /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_aa092441fa6602024b3ae0e5fdd862a5f}{sacaObjOfEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$cont, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} obj)
+\begin{DoxyCompactList}\small\item\em extrae un objeto del inventario de un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_aa092441fa6602024b3ae0e5fdd862a5f}{sacaObjOfEsp()} extrae la id de un objeto del conjunto que forma el inventario de un espacio /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_acae4096f2b5f28313b85f150291ba30e}{guardaUni} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, \hyperlink{structUNION}{UNION} $\ast$uni)
+\begin{DoxyCompactList}\small\item\em Guarda una union en el mundo /$\ast$$\ast$ \hyperlink{mundo_8h_acae4096f2b5f28313b85f150291ba30e}{guardaUni()} guarda en la primera posicion libre el elemento recibido /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a37ce9e0eb8973f2d039ae7fa8ce1b4a9}{creaUni} (\hyperlink{structUNION}{UNION} $\ast$$\ast$uni)
+\begin{DoxyCompactList}\small\item\em crea una union /$\ast$$\ast$ \hyperlink{mundo_8h_a37ce9e0eb8973f2d039ae7fa8ce1b4a9}{creaUni()} reserva la memoria /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_aefdbefe335f0f1108f2375d7c5667ee3}{destruyeUni} (\hyperlink{structUNION}{UNION} $\ast$$\ast$uni)
+\begin{DoxyCompactList}\small\item\em Destruye una union /$\ast$$\ast$ \hyperlink{mundo_8h_aefdbefe335f0f1108f2375d7c5667ee3}{destruyeUni()} elimina la reserva de memoria /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a1983133e253c60f50e2f8a1b815900e0}{creaIdUniMundo} (\hyperlink{structUNION}{UNION} $\ast$uni, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Modifica la id de una union /$\ast$$\ast$ \hyperlink{mundo_8h_a1983133e253c60f50e2f8a1b815900e0}{creaIdUniMundo()} modifica la id de cierta union /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a9d3ed4de0f4313f0088dc546bae46dcb}{creaIdSalidaUni} (\hyperlink{structUNION}{UNION} $\ast$uni, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Modifica la id de salida de cierta union /$\ast$$\ast$ \hyperlink{mundo_8h_a9d3ed4de0f4313f0088dc546bae46dcb}{creaIdSalidaUni()} establece la id del espacio de salida /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a8f62cbca715f8295fb5f8b04e7499474}{creaIdLlegadaUni} (\hyperlink{structUNION}{UNION} $\ast$uni, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Modifica la id de llegada de cierta union /$\ast$$\ast$ \hyperlink{mundo_8h_a8f62cbca715f8295fb5f8b04e7499474}{creaIdLlegadaUni()} establece la id del espacio de llegada /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_add226ae81a2153e19b811042a37b7b5f}{creaAbiertaUni} (\hyperlink{structUNION}{UNION} $\ast$uni, \hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} abierta)
+\begin{DoxyCompactList}\small\item\em Establece si una union está abierta o no /$\ast$$\ast$ \hyperlink{mundo_8h_add226ae81a2153e19b811042a37b7b5f}{creaAbiertaUni()} pone en TRUE o FALSE la indicacion abierta /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_aab539cce4f95fd57857782993072a82c}{creaKeyUni} (\hyperlink{structUNION}{UNION} $\ast$uni, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} objeto)
+\begin{DoxyCompactList}\small\item\em Establece el objeto que abre una union /$\ast$$\ast$ \hyperlink{mundo_8h_aab539cce4f95fd57857782993072a82c}{creaKeyUni()} guarda la ID del objeto que abre la union /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{structUNION}{UNION} $\ast$ \hyperlink{mundo_8h_a6c8fb2c49afca117198f670d75bfc923}{dameUnion} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em devuelve la union sabiendo la id /$\ast$$\ast$ \hyperlink{mundo_8h_a6c8fb2c49afca117198f670d75bfc923}{dameUnion()} devuelve un puntero a una union sabiendo la id /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} \hyperlink{mundo_8h_a335835a5e4c7b02773253ef0dd54a7d5}{darIdUni} (\hyperlink{structUNION}{UNION} $\ast$uni)
+\begin{DoxyCompactList}\small\item\em devuelve la id de cierta union /$\ast$$\ast$ \hyperlink{mundo_8h_a335835a5e4c7b02773253ef0dd54a7d5}{darIdUni()} devuelve la id a partir de un puntero a la union /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} \hyperlink{mundo_8h_a71be1c4b50986a3f6e583aafd63a1d4e}{darSalidaUni} (\hyperlink{structUNION}{UNION} $\ast$uni)
+\begin{DoxyCompactList}\small\item\em consigue la id del espacio de salida /$\ast$$\ast$ \hyperlink{mundo_8h_a71be1c4b50986a3f6e583aafd63a1d4e}{darSalidaUni()} accede mediante al puntero al espacio del cual se sale /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} \hyperlink{mundo_8h_a512f46a42f9620be4117208caf05975f}{darLlegadaUni} (\hyperlink{structUNION}{UNION} $\ast$uni)
+\begin{DoxyCompactList}\small\item\em devuelve la id del espacio de llegada /$\ast$$\ast$ \hyperlink{mundo_8h_a512f46a42f9620be4117208caf05975f}{darLlegadaUni()} accede mediante al puntero al espacio al cual se llega /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{mundo_8h_a411c1dfd86ce3fdcc6aff6241043dbc2}{darAbiertaUni} (\hyperlink{structUNION}{UNION} $\ast$uni)
+\begin{DoxyCompactList}\small\item\em informa si una union esta abierta o cerrada /$\ast$$\ast$ \hyperlink{mundo_8h_a411c1dfd86ce3fdcc6aff6241043dbc2}{darAbiertaUni()} indica el valor booleano del campo abierto /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} \hyperlink{mundo_8h_ac09c4a0ec6eed426bcae5467e8bcba6e}{darKeyUni} (\hyperlink{structUNION}{UNION} $\ast$uni)
+\begin{DoxyCompactList}\small\item\em devuelve la id de la llave /$\ast$$\ast$ \hyperlink{mundo_8h_ac09c4a0ec6eed426bcae5467e8bcba6e}{darKeyUni()} devuelve la id del objeto que abre la union /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a20f1123c5c64d0e88e89bb2649bb5e13}{muevePersonajeAux} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} unionMov, \hyperlink{structJUGADOR}{JUGADOR} $\ast$jugador)
+\begin{DoxyCompactList}\small\item\em Funcion auxiliar de mueve personaje /$\ast$$\ast$ \hyperlink{mundo_8h_a20f1123c5c64d0e88e89bb2649bb5e13}{muevePersonajeAux()} realiza varias acciones que se repiten a menudo en \hyperlink{mundo_8h_af82f66a3865bfb090a58c31b0771011c}{muevePersonaje()}, de modo que se reaprovecha el codigo /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_af82f66a3865bfb090a58c31b0771011c}{muevePersonaje} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, \hyperlink{tipos_8h_a3302fb59f2ff889a9611103ef60baeeb}{DIRECCION} dir, \hyperlink{structJUGADOR}{JUGADOR} $\ast$jugador)
+\begin{DoxyCompactList}\small\item\em Mueve al personaje /$\ast$$\ast$ \hyperlink{mundo_8h_af82f66a3865bfb090a58c31b0771011c}{muevePersonaje()} actualiza la localizacion de cierto personaje si es posible /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a6d3d583c9fc99246e143d2ccefafe57b}{cogeObjeto} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, \hyperlink{structOBJETO}{OBJETO} $\ast$objeto, \hyperlink{structJUGADOR}{JUGADOR} $\ast$jugador)
+\begin{DoxyCompactList}\small\item\em El jugador coge un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_a6d3d583c9fc99246e143d2ccefafe57b}{cogeObjeto()} introduce un nuevo objeto en el inventario de un jugador, quitándolo del espacio /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a0593cb85c4612345e95b76b28ccedc18}{dejaObjeto} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, \hyperlink{structOBJETO}{OBJETO} $\ast$objeto, \hyperlink{structJUGADOR}{JUGADOR} $\ast$jugador)
+\begin{DoxyCompactList}\small\item\em El jugador deja un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_a0593cb85c4612345e95b76b28ccedc18}{dejaObjeto()} introduce un nuevo objeto en el inventario de un espacio, quitandolo del jugador /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a556fb3b37761be998ac0d95157ea956f}{enciende} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, \hyperlink{structOBJETO}{OBJETO} $\ast$objeto, \hyperlink{structJUGADOR}{JUGADOR} $\ast$jugador)
+\begin{DoxyCompactList}\small\item\em Enciende un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_a556fb3b37761be998ac0d95157ea956f}{enciende()} convierte en TRUE la propiedad encendido de un objeto /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_aff572a370f2a091a6d30463f0954b961}{apaga} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, \hyperlink{structOBJETO}{OBJETO} $\ast$objeto, \hyperlink{structJUGADOR}{JUGADOR} $\ast$jugador)
+\begin{DoxyCompactList}\small\item\em Apaga un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_aff572a370f2a091a6d30463f0954b961}{apaga()} convierte en FALSE la propiedad encendido de un objeto /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a310a0c5f4e251c0f70929ca6673e25d9}{meterObjObjAc} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, \hyperlink{structOBJETO}{OBJETO} $\ast$objetoContenedor, \hyperlink{structOBJETO}{OBJETO} $\ast$objetoContenido, \hyperlink{structJUGADOR}{JUGADOR} $\ast$jugador)
+\begin{DoxyCompactList}\small\item\em introduce un objeto en otro /$\ast$$\ast$ \hyperlink{mundo_8h_a23ee14b400076980af11867eeec2c853}{meterObjObj()} agrega un objeto en el inventario de otro objeto y lo elimina del inventario del jugador /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_ae26d6d0a784f1c95fb8d7310c6118558}{sacarObjObjAc} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, \hyperlink{structOBJETO}{OBJETO} $\ast$objetoContenedor, \hyperlink{structOBJETO}{OBJETO} $\ast$objetoContenido, \hyperlink{structJUGADOR}{JUGADOR} $\ast$jugador)
+\begin{DoxyCompactList}\small\item\em Saca un objeto de otro /$\ast$$\ast$ \hyperlink{objeto_8h_a227269ebf771eb89ccf4e7713be7559c}{sacarObjObj()} elimina un objeto del inventario de otro objeto y lo agrega al inventario del jugador /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a8a68d34a03f3942beeef4459f682e53e}{dameObjetoExaminar} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, \hyperlink{structOBJETO}{OBJETO} $\ast$objeto, \hyperlink{structJUGADOR}{JUGADOR} $\ast$jugador, char $\ast$examinar)
+\begin{DoxyCompactList}\small\item\em devuelve el examinado de un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_a8a68d34a03f3942beeef4459f682e53e}{dameObjetoExaminar()} guarda en una cadena el examinado de un objeto siempre que no supere el tamaño /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_ab51eebb779498418e5920084d7c94367}{dameEspacioExaminar} (\hyperlink{structMUNDO}{MUNDO} $\ast$m, \hyperlink{structJUGADOR}{JUGADOR} $\ast$jugador, char $\ast$examinar)
+\begin{DoxyCompactList}\small\item\em devuelve el examinado de un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_ab51eebb779498418e5920084d7c94367}{dameEspacioExaminar()} guarda en una cadena el examinado de un espacio siempre que no supere el tamaño /$\ast$$\ast$ \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_af9ed41166a09b3e6ee71c055756c915f}{abreUnion} (\hyperlink{structUNION}{UNION} $\ast$uni, \hyperlink{structJUGADOR}{JUGADOR} $\ast$jugador)
+\begin{DoxyCompactList}\small\item\em Abre una union para pasar de un espacio a otro /$\ast$$\ast$ \hyperlink{mundo_8h_af9ed41166a09b3e6ee71c055756c915f}{abreUnion()} comprueba si la union se puede abrir, y si asi es, lo abre solo si el jugador tiene el objeto necesario /$\ast$$\ast$. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{mundo_8h_a60cd1d044006d5e8397b96b9a7a241e5}{intercambioObj} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$da, \hyperlink{structJUGADOR}{JUGADOR} $\ast$recibe, \hyperlink{structOBJETO}{OBJETO} $\ast$obj)
+\begin{DoxyCompactList}\small\item\em Un personaje le da un objeto a otro /$\ast$$\ast$ \hyperlink{mundo_8h_a60cd1d044006d5e8397b96b9a7a241e5}{intercambioObj()} un objeto se traslada del inventario de da al inventario de recibe /$\ast$$\ast$. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utilidades para crear y modificar el mundo. Este modulo contiene los prototipos de las funciones para todas las acciones posibles respecto al mundo
+
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal, Antonio Jiménez y Miguel Gordo 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+02-\/11-\/2010 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{mundo_8h_af9ed41166a09b3e6ee71c055756c915f}{
+\index{mundo.h@{mundo.h}!abreUnion@{abreUnion}}
+\index{abreUnion@{abreUnion}!mundo.h@{mundo.h}}
+\subsubsection[{abreUnion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} abreUnion ({\bf UNION} $\ast$ {\em uni}, \/  {\bf JUGADOR} $\ast$ {\em jugador})}}
+\label{mundo_8h_af9ed41166a09b3e6ee71c055756c915f}
+
+
+Abre una union para pasar de un espacio a otro /$\ast$$\ast$ \hyperlink{mundo_8h_af9ed41166a09b3e6ee71c055756c915f}{abreUnion()} comprueba si la union se puede abrir, y si asi es, lo abre solo si el jugador tiene el objeto necesario /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em uni}]es un puntero a la union \item[{\em jugador}]es un puntero al jugador que realiza el movimiento /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si todo es correcto, ERR si hubo algun fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_aff572a370f2a091a6d30463f0954b961}{
+\index{mundo.h@{mundo.h}!apaga@{apaga}}
+\index{apaga@{apaga}!mundo.h@{mundo.h}}
+\subsubsection[{apaga}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} apaga ({\bf MUNDO} $\ast$ {\em m}, \/  {\bf OBJETO} $\ast$ {\em objeto}, \/  {\bf JUGADOR} $\ast$ {\em jugador})}}
+\label{mundo_8h_aff572a370f2a091a6d30463f0954b961}
+
+
+Apaga un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_aff572a370f2a091a6d30463f0954b961}{apaga()} convierte en FALSE la propiedad encendido de un objeto /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em objeto}]es un puntero al objeto a apagar \item[{\em jugador}]es un puntero al jugador que realiza el movimiento /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si todo es correcto, ERR si hubo algun fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a6d3d583c9fc99246e143d2ccefafe57b}{
+\index{mundo.h@{mundo.h}!cogeObjeto@{cogeObjeto}}
+\index{cogeObjeto@{cogeObjeto}!mundo.h@{mundo.h}}
+\subsubsection[{cogeObjeto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cogeObjeto ({\bf MUNDO} $\ast$ {\em m}, \/  {\bf OBJETO} $\ast$ {\em objeto}, \/  {\bf JUGADOR} $\ast$ {\em jugador})}}
+\label{mundo_8h_a6d3d583c9fc99246e143d2ccefafe57b}
+
+
+El jugador coge un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_a6d3d583c9fc99246e143d2ccefafe57b}{cogeObjeto()} introduce un nuevo objeto en el inventario de un jugador, quitándolo del espacio /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em objeto}]es un puntero al objeto que se quiere recoger \item[{\em jugador}]es un puntero al jugador que quiere cogerlo /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si todo es correcto, ERR si hubo algun fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_ada413c950a5b4c510885786fd8ed299f}{
+\index{mundo.h@{mundo.h}!consigueJugador@{consigueJugador}}
+\index{consigueJugador@{consigueJugador}!mundo.h@{mundo.h}}
+\subsubsection[{consigueJugador}]{\setlength{\rightskip}{0pt plus 5cm}{\bf JUGADOR}$\ast$ consigueJugador ({\bf MUNDO} $\ast$ {\em m}, \/  char $\ast$ {\em nombre})}}
+\label{mundo_8h_ada413c950a5b4c510885786fd8ed299f}
+
+
+consigues el jugador sabiendo el nombre /$\ast$$\ast$ \hyperlink{mundo_8h_ada413c950a5b4c510885786fd8ed299f}{consigueJugador()} devuelve un puntero a un jugador cuyo nombre coincide con uno dado /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em nombre}]es un puntero a la cadena donde está el nombre buscado /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un puntero al objeto encontrado o NULL si dió error /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a34ac156597e80c71cbe0e7debf7229a9}{
+\index{mundo.h@{mundo.h}!consigueObjeto@{consigueObjeto}}
+\index{consigueObjeto@{consigueObjeto}!mundo.h@{mundo.h}}
+\subsubsection[{consigueObjeto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf OBJETO}$\ast$ consigueObjeto ({\bf MUNDO} $\ast$ {\em m}, \/  char $\ast$ {\em nombre})}}
+\label{mundo_8h_a34ac156597e80c71cbe0e7debf7229a9}
+
+
+consigues el objeto sabiendo el nombre /$\ast$$\ast$ \hyperlink{mundo_8h_a34ac156597e80c71cbe0e7debf7229a9}{consigueObjeto()} devuelve un puntero a un objeto cuyo nombre coincide con uno dado /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em nombre}]es un puntero a la cadena donde está el nombre buscado /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un puntero al objeto encontrado o NULL si dió error /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_aad6283e38e108500fa3e26240b8ff75e}{
+\index{mundo.h@{mundo.h}!creaAbajoEsp@{creaAbajoEsp}}
+\index{creaAbajoEsp@{creaAbajoEsp}!mundo.h@{mundo.h}}
+\subsubsection[{creaAbajoEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaAbajoEsp ({\bf ESPACIO} $\ast$ {\em espacio}, \/  {\bf ID} {\em id})}}
+\label{mundo_8h_aad6283e38e108500fa3e26240b8ff75e}
+
+
+Establece la posible union debajo de un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_aad6283e38e108500fa3e26240b8ff75e}{creaAbajoEsp()} indica la ID de la union abajo si existiera /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em espacio}]es un puntero al espacio \item[{\em id}]es la id de la union si acaso esta existe /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_add226ae81a2153e19b811042a37b7b5f}{
+\index{mundo.h@{mundo.h}!creaAbiertaUni@{creaAbiertaUni}}
+\index{creaAbiertaUni@{creaAbiertaUni}!mundo.h@{mundo.h}}
+\subsubsection[{creaAbiertaUni}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaAbiertaUni ({\bf UNION} $\ast$ {\em uni}, \/  {\bf BOOL} {\em abierta})}}
+\label{mundo_8h_add226ae81a2153e19b811042a37b7b5f}
+
+
+Establece si una union está abierta o no /$\ast$$\ast$ \hyperlink{mundo_8h_add226ae81a2153e19b811042a37b7b5f}{creaAbiertaUni()} pone en TRUE o FALSE la indicacion abierta /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em uni}]es un puntero a una union \item[{\em abierta}]es un booleano que indica si esta abierta o no /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_ab5940437641db0f88d04c9cd99284ce2}{
+\index{mundo.h@{mundo.h}!creaArribaEsp@{creaArribaEsp}}
+\index{creaArribaEsp@{creaArribaEsp}!mundo.h@{mundo.h}}
+\subsubsection[{creaArribaEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaArribaEsp ({\bf ESPACIO} $\ast$ {\em espacio}, \/  {\bf ID} {\em id})}}
+\label{mundo_8h_ab5940437641db0f88d04c9cd99284ce2}
+
+
+Establece la posible union encima de un espacio /$\ast$$\ast$. 
+
+\hyperlink{mundo_8h_ab5940437641db0f88d04c9cd99284ce2}{creaArribaEsp()} indica la ID de la union arriba si existiera /$\ast$$\ast$ 
+\begin{DoxyParams}{Parameters}
+\item[{\em espacio}]es un puntero al espacio \item[{\em id}]es la id de la union si acaso esta existe /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a57469d09fccc7ea9bdf031b752c238b2}{
+\index{mundo.h@{mundo.h}!creaContenedorObj@{creaContenedorObj}}
+\index{creaContenedorObj@{creaContenedorObj}!mundo.h@{mundo.h}}
+\subsubsection[{creaContenedorObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaContenedorObj ({\bf OBJETO} $\ast$ {\em objeto}, \/  {\bf BOOL} {\em contenedor})}}
+\label{mundo_8h_a57469d09fccc7ea9bdf031b752c238b2}
+
+
+Establece si un objeto es contenedor o no /$\ast$$\ast$ \hyperlink{mundo_8h_a57469d09fccc7ea9bdf031b752c238b2}{creaContenedorObj()} pone a TRUE o FALSE la indicacion contenedor /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em objeto}]es un puntero al objeto \item[{\em contenedor}]es un booleano que indica si puede contener o no /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_aceb319ea3b3303700d6d4af17b5bfdea}{
+\index{mundo.h@{mundo.h}!creaDescEsp@{creaDescEsp}}
+\index{creaDescEsp@{creaDescEsp}!mundo.h@{mundo.h}}
+\subsubsection[{creaDescEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaDescEsp ({\bf ESPACIO} $\ast$ {\em espacio}, \/  char $\ast$ {\em descripcion})}}
+\label{mundo_8h_aceb319ea3b3303700d6d4af17b5bfdea}
+
+
+Modifica la descripcion de un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_aceb319ea3b3303700d6d4af17b5bfdea}{creaDescEsp()} guarda como descripcion la cadena descripcion /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em espacio}]es un puntero al espacio \item[{\em descripcion}]es un puntero a la cadena con los datos /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_adc1ca16d0eb187bc11f973a81aa9c3ab}{
+\index{mundo.h@{mundo.h}!creaDescMovidoObj@{creaDescMovidoObj}}
+\index{creaDescMovidoObj@{creaDescMovidoObj}!mundo.h@{mundo.h}}
+\subsubsection[{creaDescMovidoObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaDescMovidoObj ({\bf OBJETO} $\ast$ {\em objeto}, \/  char $\ast$ {\em descMovido})}}
+\label{mundo_8h_adc1ca16d0eb187bc11f973a81aa9c3ab}
+
+
+Modifica la descripcion de un objeto movido /$\ast$$\ast$ \hyperlink{mundo_8h_adc1ca16d0eb187bc11f973a81aa9c3ab}{creaDescMovidoObj()} guarda como descripcion secundaria a la cadena descMovido /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em objeto}]es un puntero al objeto \item[{\em descMovido}]es un puntero a la cadena con los datos /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_ad9c45ffd1f2f388b508c3b0f74e256d2}{
+\index{mundo.h@{mundo.h}!creaDescObj@{creaDescObj}}
+\index{creaDescObj@{creaDescObj}!mundo.h@{mundo.h}}
+\subsubsection[{creaDescObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaDescObj ({\bf OBJETO} $\ast$ {\em objeto}, \/  char $\ast$ {\em descripcion})}}
+\label{mundo_8h_ad9c45ffd1f2f388b508c3b0f74e256d2}
+
+
+Modifica la descripcion de un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_ad9c45ffd1f2f388b508c3b0f74e256d2}{creaDescObj()} guarda como descripcion la cadena descripcion /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em objeto}]es un puntero al objeto \item[{\em descripcion}]es un puntero a la cadena con los datos /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_acef482904118bf4c50abea43ba3c8de6}{
+\index{mundo.h@{mundo.h}!creaDescrGraficaEsp@{creaDescrGraficaEsp}}
+\index{creaDescrGraficaEsp@{creaDescrGraficaEsp}!mundo.h@{mundo.h}}
+\subsubsection[{creaDescrGraficaEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaDescrGraficaEsp ({\bf ESPACIO} $\ast$ {\em espacio}, \/  char $\ast$ {\em dibujo}, \/  int {\em filas}, \/  int {\em columnas})}}
+\label{mundo_8h_acef482904118bf4c50abea43ba3c8de6}
+
+
+creaDescGraficaEsp Esta función permite cambiar la descripción gráfica de un espacio 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em espacio}]es puntero al espacio en el que guardar la desscripción gráfica \item[{\em dibujo}]es puntero de char con la descripción gráfica a guardar \item[{\em filas}]es entero con el número de filas de la descripción gráfica \item[{\em columnas}]es entero con el número de columnas de la descripción gráfica \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{mundo_8h_a248b31aed7694f3ee4128b9c0b78cc0c}{
+\index{mundo.h@{mundo.h}!creaEncendidoObj@{creaEncendidoObj}}
+\index{creaEncendidoObj@{creaEncendidoObj}!mundo.h@{mundo.h}}
+\subsubsection[{creaEncendidoObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaEncendidoObj ({\bf OBJETO} $\ast$ {\em objeto}, \/  {\bf BOOL} {\em encendido})}}
+\label{mundo_8h_a248b31aed7694f3ee4128b9c0b78cc0c}
+
+
+Establece si un objeto esta encendido o no /$\ast$$\ast$ \hyperlink{mundo_8h_a248b31aed7694f3ee4128b9c0b78cc0c}{creaEncendidoObj()} pone a TRUE o FALSE la indicacion encendido /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em objeto}]es un puntero al objeto \item[{\em encendido}]es un booleano que indica si esta encendido o no /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a47fc7036d770720ee2b5558282ac761a}{
+\index{mundo.h@{mundo.h}!creaEsp@{creaEsp}}
+\index{creaEsp@{creaEsp}!mundo.h@{mundo.h}}
+\subsubsection[{creaEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaEsp ({\bf ESPACIO} $\ast$$\ast$ {\em espacio})}}
+\label{mundo_8h_a47fc7036d770720ee2b5558282ac761a}
+
+
+crea un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_a47fc7036d770720ee2b5558282ac761a}{creaEsp()} reserva la memoria necesaria /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em espacio}]es un puntero a un puntero tipo espacio /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a7e9c8225889b13d24981d9dc44425ba6}{
+\index{mundo.h@{mundo.h}!creaEsteEsp@{creaEsteEsp}}
+\index{creaEsteEsp@{creaEsteEsp}!mundo.h@{mundo.h}}
+\subsubsection[{creaEsteEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaEsteEsp ({\bf ESPACIO} $\ast$ {\em espacio}, \/  {\bf ID} {\em id})}}
+\label{mundo_8h_a7e9c8225889b13d24981d9dc44425ba6}
+
+
+Establece la posible union al este de un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_a7e9c8225889b13d24981d9dc44425ba6}{creaEsteEsp()} indica la ID de la union este si existiera /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em espacio}]es un puntero al espacio \item[{\em id}]es la id de la union si acaso esta existe /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a6147f81b4310acfd3823e0a93bd3dea7}{
+\index{mundo.h@{mundo.h}!creaExamEsp@{creaExamEsp}}
+\index{creaExamEsp@{creaExamEsp}!mundo.h@{mundo.h}}
+\subsubsection[{creaExamEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaExamEsp ({\bf ESPACIO} $\ast$ {\em espacio}, \/  char $\ast$ {\em examinar})}}
+\label{mundo_8h_a6147f81b4310acfd3823e0a93bd3dea7}
+
+
+Modifica el examinado de un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_a6147f81b4310acfd3823e0a93bd3dea7}{creaExamEsp()} guarda como examinado a la cadena examinar /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em espacio}]es un puntero al espacio \item[{\em examinar}]un puntero a la cadena con los datos /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a009b29d323d4ab4c0199b9847ba31c4d}{
+\index{mundo.h@{mundo.h}!creaExamObj@{creaExamObj}}
+\index{creaExamObj@{creaExamObj}!mundo.h@{mundo.h}}
+\subsubsection[{creaExamObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaExamObj ({\bf OBJETO} $\ast$ {\em objeto}, \/  char $\ast$ {\em examinar})}}
+\label{mundo_8h_a009b29d323d4ab4c0199b9847ba31c4d}
+
+
+Modifica el examinado de un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_a009b29d323d4ab4c0199b9847ba31c4d}{creaExamObj()} guarda como examinado a la cadena examinar /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em objeto}]es un puntero al objeto \item[{\em examinar}]un puntero a la cadena con los datos /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a883692fbd6bb7756be0e60102ece406f}{
+\index{mundo.h@{mundo.h}!creaIdEspMundo@{creaIdEspMundo}}
+\index{creaIdEspMundo@{creaIdEspMundo}!mundo.h@{mundo.h}}
+\subsubsection[{creaIdEspMundo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaIdEspMundo ({\bf ESPACIO} $\ast$ {\em espacio}, \/  {\bf ID} {\em id})}}
+\label{mundo_8h_a883692fbd6bb7756be0e60102ece406f}
+
+
+Modifica la id de un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_a883692fbd6bb7756be0e60102ece406f}{creaIdEspMundo()} modifica la id de cierto espacio /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em espacio}]es un puntero al espacio \item[{\em id}]es la id a guardar /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_ad153465c1bbc5abc703fd98bbf0fb8fa}{
+\index{mundo.h@{mundo.h}!creaIdJug@{creaIdJug}}
+\index{creaIdJug@{creaIdJug}!mundo.h@{mundo.h}}
+\subsubsection[{creaIdJug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaIdJug ({\bf JUGADOR} $\ast$ {\em jugador}, \/  {\bf ID} {\em id})}}
+\label{mundo_8h_ad153465c1bbc5abc703fd98bbf0fb8fa}
+
+
+Modifica la id de un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_ad153465c1bbc5abc703fd98bbf0fb8fa}{creaIdJug()} modifica la id de un jugador dado /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em jugador}]es un puntero al jugador \item[{\em id}]es la id a guardar /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a8f62cbca715f8295fb5f8b04e7499474}{
+\index{mundo.h@{mundo.h}!creaIdLlegadaUni@{creaIdLlegadaUni}}
+\index{creaIdLlegadaUni@{creaIdLlegadaUni}!mundo.h@{mundo.h}}
+\subsubsection[{creaIdLlegadaUni}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaIdLlegadaUni ({\bf UNION} $\ast$ {\em uni}, \/  {\bf ID} {\em id})}}
+\label{mundo_8h_a8f62cbca715f8295fb5f8b04e7499474}
+
+
+Modifica la id de llegada de cierta union /$\ast$$\ast$ \hyperlink{mundo_8h_a8f62cbca715f8295fb5f8b04e7499474}{creaIdLlegadaUni()} establece la id del espacio de llegada /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em uni}]es un puntero a la union \item[{\em id}]es la id del espacio de llegada /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a8035f38c35c8f55c290f9ed7a55efbf1}{
+\index{mundo.h@{mundo.h}!creaIdObjMundo@{creaIdObjMundo}}
+\index{creaIdObjMundo@{creaIdObjMundo}!mundo.h@{mundo.h}}
+\subsubsection[{creaIdObjMundo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaIdObjMundo ({\bf OBJETO} $\ast$ {\em objeto}, \/  {\bf ID} {\em id})}}
+\label{mundo_8h_a8035f38c35c8f55c290f9ed7a55efbf1}
+
+
+Modifica la id de un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_a8035f38c35c8f55c290f9ed7a55efbf1}{creaIdObjMundo()} modifica la id de cierto objeto /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em objeto}]es un puntero al objeto \item[{\em id}]es la id a guardar /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a9d3ed4de0f4313f0088dc546bae46dcb}{
+\index{mundo.h@{mundo.h}!creaIdSalidaUni@{creaIdSalidaUni}}
+\index{creaIdSalidaUni@{creaIdSalidaUni}!mundo.h@{mundo.h}}
+\subsubsection[{creaIdSalidaUni}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaIdSalidaUni ({\bf UNION} $\ast$ {\em uni}, \/  {\bf ID} {\em id})}}
+\label{mundo_8h_a9d3ed4de0f4313f0088dc546bae46dcb}
+
+
+Modifica la id de salida de cierta union /$\ast$$\ast$ \hyperlink{mundo_8h_a9d3ed4de0f4313f0088dc546bae46dcb}{creaIdSalidaUni()} establece la id del espacio de salida /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em uni}]es un puntero a la union \item[{\em id}]es la id del espacio de salida /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a1983133e253c60f50e2f8a1b815900e0}{
+\index{mundo.h@{mundo.h}!creaIdUniMundo@{creaIdUniMundo}}
+\index{creaIdUniMundo@{creaIdUniMundo}!mundo.h@{mundo.h}}
+\subsubsection[{creaIdUniMundo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaIdUniMundo ({\bf UNION} $\ast$ {\em uni}, \/  {\bf ID} {\em id})}}
+\label{mundo_8h_a1983133e253c60f50e2f8a1b815900e0}
+
+
+Modifica la id de una union /$\ast$$\ast$ \hyperlink{mundo_8h_a1983133e253c60f50e2f8a1b815900e0}{creaIdUniMundo()} modifica la id de cierta union /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em uni}]es un puntero a union \item[{\em id}]es la id a guardar /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a77fb518413f791d686b0b052fc32cdbe}{
+\index{mundo.h@{mundo.h}!creaJug@{creaJug}}
+\index{creaJug@{creaJug}!mundo.h@{mundo.h}}
+\subsubsection[{creaJug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaJug ({\bf JUGADOR} $\ast$$\ast$ {\em jugador})}}
+\label{mundo_8h_a77fb518413f791d686b0b052fc32cdbe}
+
+
+crea un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_a77fb518413f791d686b0b052fc32cdbe}{creaJug()} reserva la memoria /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em jugador}]es un puntero a un puntero tipo jugador /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_aab539cce4f95fd57857782993072a82c}{
+\index{mundo.h@{mundo.h}!creaKeyUni@{creaKeyUni}}
+\index{creaKeyUni@{creaKeyUni}!mundo.h@{mundo.h}}
+\subsubsection[{creaKeyUni}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaKeyUni ({\bf UNION} $\ast$ {\em uni}, \/  {\bf ID} {\em objeto})}}
+\label{mundo_8h_aab539cce4f95fd57857782993072a82c}
+
+
+Establece el objeto que abre una union /$\ast$$\ast$ \hyperlink{mundo_8h_aab539cce4f95fd57857782993072a82c}{creaKeyUni()} guarda la ID del objeto que abre la union /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em uni}]es un puntero a una union \item[{\em objeto}]es la id del objeto susodicho /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a92259dfa42ee84f5fd98ddf30b3bb92e}{
+\index{mundo.h@{mundo.h}!creaLocJug@{creaLocJug}}
+\index{creaLocJug@{creaLocJug}!mundo.h@{mundo.h}}
+\subsubsection[{creaLocJug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaLocJug ({\bf JUGADOR} $\ast$ {\em jugador}, \/  {\bf ID} {\em id})}}
+\label{mundo_8h_a92259dfa42ee84f5fd98ddf30b3bb92e}
+
+
+Modifica la posicion de un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_a92259dfa42ee84f5fd98ddf30b3bb92e}{creaLocJug()} modifica la id de la posicion de un jugador dado /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em jugador}]es un puntero al jugador \item[{\em id}]es la id a guardar /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a27ccb9387c419c4b3a1f5fe1d8d0c088}{
+\index{mundo.h@{mundo.h}!creaLumEsp@{creaLumEsp}}
+\index{creaLumEsp@{creaLumEsp}!mundo.h@{mundo.h}}
+\subsubsection[{creaLumEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaLumEsp ({\bf ESPACIO} $\ast$ {\em espacio}, \/  {\bf BOOL} {\em luminoso})}}
+\label{mundo_8h_a27ccb9387c419c4b3a1f5fe1d8d0c088}
+
+
+Establece si un espacio es luminoso o no /$\ast$$\ast$ \hyperlink{mundo_8h_a27ccb9387c419c4b3a1f5fe1d8d0c088}{creaLumEsp()} pone en TRUE o FALSE la indicacion luminoso /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em espacio}]es un puntero al espacio \item[{\em luminoso}]es un booleano que indica si es luminoso o no /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a1a549644bd459919ce226647839984a1}{
+\index{mundo.h@{mundo.h}!creaLuzObj@{creaLuzObj}}
+\index{creaLuzObj@{creaLuzObj}!mundo.h@{mundo.h}}
+\subsubsection[{creaLuzObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaLuzObj ({\bf OBJETO} $\ast$ {\em objeto}, \/  {\bf BOOL} {\em luz})}}
+\label{mundo_8h_a1a549644bd459919ce226647839984a1}
+
+
+Establece si un objeto se puede encender o no /$\ast$$\ast$ \hyperlink{mundo_8h_a1a549644bd459919ce226647839984a1}{creaLuzObj()} pone a TRUE o FALSE la indicacion luz /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em objeto}]es un puntero al objeto \item[{\em luz}]es un booleano que indica si se puede encender o no /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_abfa42668b9630a61fe81fbbc3cf0f692}{
+\index{mundo.h@{mundo.h}!creaMaxObjJug@{creaMaxObjJug}}
+\index{creaMaxObjJug@{creaMaxObjJug}!mundo.h@{mundo.h}}
+\subsubsection[{creaMaxObjJug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaMaxObjJug ({\bf JUGADOR} $\ast$ {\em jugador}, \/  int {\em max})}}
+\label{mundo_8h_abfa42668b9630a61fe81fbbc3cf0f692}
+
+
+Modifica el tamaño del inventario de un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_abfa42668b9630a61fe81fbbc3cf0f692}{creaMaxObjJug()} cambia el tamaño de un inventario /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em jugador}]es un puntero al jugador \item[{\em max}]es un entero con el tamaño deseado /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a5231ab3e14859bade94f91a8c6aafd78}{
+\index{mundo.h@{mundo.h}!creaMovidoObj@{creaMovidoObj}}
+\index{creaMovidoObj@{creaMovidoObj}!mundo.h@{mundo.h}}
+\subsubsection[{creaMovidoObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaMovidoObj ({\bf OBJETO} $\ast$ {\em objeto}, \/  {\bf BOOL} {\em movido})}}
+\label{mundo_8h_a5231ab3e14859bade94f91a8c6aafd78}
+
+
+Establece si un objeto ha sido movido o no /$\ast$$\ast$ \hyperlink{mundo_8h_a5231ab3e14859bade94f91a8c6aafd78}{creaMovidoObj()} pone a TRUE o FALSE la indicacion movido /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em objeto}]es un puntero al objeto \item[{\em movido}]es un booleano que indica si se movio o no /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_ad4b08aa3bb8ef5ec8f039bab98da64f1}{
+\index{mundo.h@{mundo.h}!creaMovilObj@{creaMovilObj}}
+\index{creaMovilObj@{creaMovilObj}!mundo.h@{mundo.h}}
+\subsubsection[{creaMovilObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaMovilObj ({\bf OBJETO} $\ast$ {\em objeto}, \/  {\bf BOOL} {\em movil})}}
+\label{mundo_8h_ad4b08aa3bb8ef5ec8f039bab98da64f1}
+
+
+Establece si un objeto se puede mover o no /$\ast$$\ast$ \hyperlink{mundo_8h_ad4b08aa3bb8ef5ec8f039bab98da64f1}{creaMovilObj()} pone en TRUE o FALSE la indicacion movil /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em objeto}]es un puntero al objeto \item[{\em movil}]es un booleano que indica si se mueve o no /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a64865827c6164c2b71e50a46c37e931b}{
+\index{mundo.h@{mundo.h}!creaNombreJug@{creaNombreJug}}
+\index{creaNombreJug@{creaNombreJug}!mundo.h@{mundo.h}}
+\subsubsection[{creaNombreJug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaNombreJug ({\bf JUGADOR} $\ast$ {\em jugador}, \/  char $\ast$ {\em nombre})}}
+\label{mundo_8h_a64865827c6164c2b71e50a46c37e931b}
+
+
+Modifica el nombre de un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_a64865827c6164c2b71e50a46c37e931b}{creaNombreJug()} guarda como nombre la cadena nombre /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em jugador}]es un puntero al jugador \item[{\em nombre}]es un puntero a la cadena con la informacion /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_aaed86fa78da7ea0b4b97cc278f3418b4}{
+\index{mundo.h@{mundo.h}!creaNombreObj@{creaNombreObj}}
+\index{creaNombreObj@{creaNombreObj}!mundo.h@{mundo.h}}
+\subsubsection[{creaNombreObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaNombreObj ({\bf OBJETO} $\ast$ {\em objeto}, \/  char $\ast$ {\em nombre})}}
+\label{mundo_8h_aaed86fa78da7ea0b4b97cc278f3418b4}
+
+
+Modifica el nombre de un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_aaed86fa78da7ea0b4b97cc278f3418b4}{creaNombreObj()} guarda como nombre la cadena nombre /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em objeto}]es un puntero al objeto \item[{\em nombre}]es un puntero a la cadena con los datos /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a5ad0917b38c6f3456b2645e9d42bb5ee}{
+\index{mundo.h@{mundo.h}!creaNorteEsp@{creaNorteEsp}}
+\index{creaNorteEsp@{creaNorteEsp}!mundo.h@{mundo.h}}
+\subsubsection[{creaNorteEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaNorteEsp ({\bf ESPACIO} $\ast$ {\em espacio}, \/  {\bf ID} {\em id})}}
+\label{mundo_8h_a5ad0917b38c6f3456b2645e9d42bb5ee}
+
+
+Establece la posible union al norte de un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_a5ad0917b38c6f3456b2645e9d42bb5ee}{creaNorteEsp()} indica la ID de la union norte si existiera /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em espacio}]es un puntero al espacio \item[{\em id}]es la id de la union si acaso esta existe /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a0587f773b6be5cffd930279d0b721c9c}{
+\index{mundo.h@{mundo.h}!creaObj@{creaObj}}
+\index{creaObj@{creaObj}!mundo.h@{mundo.h}}
+\subsubsection[{creaObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaObj ({\bf OBJETO} $\ast$$\ast$ {\em objeto})}}
+\label{mundo_8h_a0587f773b6be5cffd930279d0b721c9c}
+
+
+crea un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_a0587f773b6be5cffd930279d0b721c9c}{creaObj()} reserva la memoria /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em objeto}]es un puntero a un puntero tipo objeto /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a36a97d9f43678080bb8b38e95027b478}{
+\index{mundo.h@{mundo.h}!creaOcultoObj@{creaOcultoObj}}
+\index{creaOcultoObj@{creaOcultoObj}!mundo.h@{mundo.h}}
+\subsubsection[{creaOcultoObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaOcultoObj ({\bf OBJETO} $\ast$ {\em objeto}, \/  {\bf BOOL} {\em oculto})}}
+\label{mundo_8h_a36a97d9f43678080bb8b38e95027b478}
+
+
+Establece si un objeto esta oculto o no /$\ast$$\ast$ \hyperlink{mundo_8h_a36a97d9f43678080bb8b38e95027b478}{creaOcultoObj()} pone a TRUE o FALSE la indicacion oculto /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em objeto}]es un puntero al objeto \item[{\em oculto}]es un booleano que indica si esta oculto o no /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_ad947e6ddc841b5d8884a5550fb330ffc}{
+\index{mundo.h@{mundo.h}!creaOesteEsp@{creaOesteEsp}}
+\index{creaOesteEsp@{creaOesteEsp}!mundo.h@{mundo.h}}
+\subsubsection[{creaOesteEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaOesteEsp ({\bf ESPACIO} $\ast$ {\em espacio}, \/  {\bf ID} {\em id})}}
+\label{mundo_8h_ad947e6ddc841b5d8884a5550fb330ffc}
+
+
+Establece la posible union al oeste de un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_ad947e6ddc841b5d8884a5550fb330ffc}{creaOesteEsp()} indica la ID de la union oeste si existiera /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em espacio}]es un puntero al espacio \item[{\em id}]es la id de la union si acaso esta existe /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a24cd4e4b1ee26b1b71030b57a342d72c}{
+\index{mundo.h@{mundo.h}!creaSurEsp@{creaSurEsp}}
+\index{creaSurEsp@{creaSurEsp}!mundo.h@{mundo.h}}
+\subsubsection[{creaSurEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaSurEsp ({\bf ESPACIO} $\ast$ {\em espacio}, \/  {\bf ID} {\em id})}}
+\label{mundo_8h_a24cd4e4b1ee26b1b71030b57a342d72c}
+
+
+Establece la posible union al sur de un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_a24cd4e4b1ee26b1b71030b57a342d72c}{creaSurEsp()} indica la ID de la union sur si existiera /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em espacio}]es un puntero al espacio \item[{\em id}]es la id de la union si acaso esta existe /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a37ce9e0eb8973f2d039ae7fa8ce1b4a9}{
+\index{mundo.h@{mundo.h}!creaUni@{creaUni}}
+\index{creaUni@{creaUni}!mundo.h@{mundo.h}}
+\subsubsection[{creaUni}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaUni ({\bf UNION} $\ast$$\ast$ {\em uni})}}
+\label{mundo_8h_a37ce9e0eb8973f2d039ae7fa8ce1b4a9}
+
+
+crea una union /$\ast$$\ast$ \hyperlink{mundo_8h_a37ce9e0eb8973f2d039ae7fa8ce1b4a9}{creaUni()} reserva la memoria /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em uni}]es un puntero a un puntero tipo union /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_ab5fdced9744e5e7164dfb9ae22b8af41}{
+\index{mundo.h@{mundo.h}!dameDescrObj@{dameDescrObj}}
+\index{dameDescrObj@{dameDescrObj}!mundo.h@{mundo.h}}
+\subsubsection[{dameDescrObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} dameDescrObj ({\bf OBJETO} $\ast$ {\em objeto}, \/  char $\ast$ {\em descripcion}, \/  int {\em max\_\-len})}}
+\label{mundo_8h_ab5fdced9744e5e7164dfb9ae22b8af41}
+
+
+devuelve la descripcion inicial de un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_ab5fdced9744e5e7164dfb9ae22b8af41}{dameDescrObj()} guarda en una cadena la descripcion de un objeto siempre que no supere el tamaño /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em objeto}]es un puntero al objeto deseado \item[{\em descripcion}]es un puntero a una cadena donde guardar la descripcion pedida \item[{\em max\_\-len}]es el tamaño de descripcion /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si todo es correcto, ERR si hubo algun fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a7878dd643ddcbc2ee6609009ac9b3f01}{
+\index{mundo.h@{mundo.h}!dameEspacio@{dameEspacio}}
+\index{dameEspacio@{dameEspacio}!mundo.h@{mundo.h}}
+\subsubsection[{dameEspacio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ESPACIO}$\ast$ dameEspacio ({\bf MUNDO} $\ast$ {\em m}, \/  {\bf ID} {\em id})}}
+\label{mundo_8h_a7878dd643ddcbc2ee6609009ac9b3f01}
+
+
+devuelve el espacio sabiendo la id /$\ast$$\ast$ \hyperlink{mundo_8h_a7878dd643ddcbc2ee6609009ac9b3f01}{dameEspacio()} devuelve un puntero a un espacio sabiendo la id /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em id}]es el identificador a buscar\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un puntero al espacio o NULL si falló /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_ab51eebb779498418e5920084d7c94367}{
+\index{mundo.h@{mundo.h}!dameEspacioExaminar@{dameEspacioExaminar}}
+\index{dameEspacioExaminar@{dameEspacioExaminar}!mundo.h@{mundo.h}}
+\subsubsection[{dameEspacioExaminar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} dameEspacioExaminar ({\bf MUNDO} $\ast$ {\em m}, \/  {\bf JUGADOR} $\ast$ {\em jugador}, \/  char $\ast$ {\em examinar})}}
+\label{mundo_8h_ab51eebb779498418e5920084d7c94367}
+
+
+devuelve el examinado de un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_ab51eebb779498418e5920084d7c94367}{dameEspacioExaminar()} guarda en una cadena el examinado de un espacio siempre que no supere el tamaño /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em jugador}]es el jugador en juego \item[{\em examinar}]un puntero a una cadena donde guardar la descripcion pedida /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si todo es correcto, ERR si hubo algun fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a8e227770042e0233324dad10fed9529f}{
+\index{mundo.h@{mundo.h}!dameInvExaminar@{dameInvExaminar}}
+\index{dameInvExaminar@{dameInvExaminar}!mundo.h@{mundo.h}}
+\subsubsection[{dameInvExaminar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} dameInvExaminar ({\bf MUNDO} $\ast$ {\em m}, \/  {\bf JUGADOR} $\ast$ {\em jug}, \/  char $\ast$ {\em info})}}
+\label{mundo_8h_a8e227770042e0233324dad10fed9529f}
+
+
+informa sobre el inventario de un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_a8e227770042e0233324dad10fed9529f}{dameInvExaminar()} devuelve dentro de info una cadena con los nombres de los objetos del inventario /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em jug}]es un puntero al jugador deseado \item[{\em info}]es un puntero a la cadena donde guardar los datos /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si se produjo error,OK si se hizo correctamente /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a3bb88af34d7de7b48a99e5498f092a34}{
+\index{mundo.h@{mundo.h}!dameJugador@{dameJugador}}
+\index{dameJugador@{dameJugador}!mundo.h@{mundo.h}}
+\subsubsection[{dameJugador}]{\setlength{\rightskip}{0pt plus 5cm}{\bf JUGADOR}$\ast$ dameJugador ({\bf MUNDO} $\ast$ {\em m}, \/  {\bf ID} {\em id})}}
+\label{mundo_8h_a3bb88af34d7de7b48a99e5498f092a34}
+
+
+devuelve el jugador sabiendo la id /$\ast$$\ast$ \hyperlink{mundo_8h_a3bb88af34d7de7b48a99e5498f092a34}{dameJugador()} devuelve un puntero a un jugador sabiendo la id /$\ast$$\ast$ 
+
+Funciones para jugador 
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em id}]es el identificador a buscar\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un puntero al jugador o NULL si falló /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a9586681bf8010dccb78c6ec64370c6ef}{
+\index{mundo.h@{mundo.h}!dameObjeto@{dameObjeto}}
+\index{dameObjeto@{dameObjeto}!mundo.h@{mundo.h}}
+\subsubsection[{dameObjeto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf OBJETO}$\ast$ dameObjeto ({\bf MUNDO} $\ast$ {\em m}, \/  {\bf ID} {\em id})}}
+\label{mundo_8h_a9586681bf8010dccb78c6ec64370c6ef}
+
+
+devuelve el objeto sabiendo la id /$\ast$$\ast$ \hyperlink{mundo_8h_a9586681bf8010dccb78c6ec64370c6ef}{dameObjeto()} devuelve un puntero a un objeto sabiendo la id /$\ast$$\ast$ 
+
+Funciones para objeto 
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em id}]es el identificador a buscar\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un puntero al objeto o NULL si falló /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a8a68d34a03f3942beeef4459f682e53e}{
+\index{mundo.h@{mundo.h}!dameObjetoExaminar@{dameObjetoExaminar}}
+\index{dameObjetoExaminar@{dameObjetoExaminar}!mundo.h@{mundo.h}}
+\subsubsection[{dameObjetoExaminar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} dameObjetoExaminar ({\bf MUNDO} $\ast$ {\em m}, \/  {\bf OBJETO} $\ast$ {\em objeto}, \/  {\bf JUGADOR} $\ast$ {\em jugador}, \/  char $\ast$ {\em examinar})}}
+\label{mundo_8h_a8a68d34a03f3942beeef4459f682e53e}
+
+
+devuelve el examinado de un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_a8a68d34a03f3942beeef4459f682e53e}{dameObjetoExaminar()} guarda en una cadena el examinado de un objeto siempre que no supere el tamaño /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em objeto}]es un puntero al objeto deseado \item[{\em jugador}]es el jugador en juego \item[{\em examinar}]un puntero a una cadena donde guardar la descripcion pedida /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si todo es correcto, ERR si hubo algun fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a6c8fb2c49afca117198f670d75bfc923}{
+\index{mundo.h@{mundo.h}!dameUnion@{dameUnion}}
+\index{dameUnion@{dameUnion}!mundo.h@{mundo.h}}
+\subsubsection[{dameUnion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf UNION}$\ast$ dameUnion ({\bf MUNDO} $\ast$ {\em m}, \/  {\bf ID} {\em id})}}
+\label{mundo_8h_a6c8fb2c49afca117198f670d75bfc923}
+
+
+devuelve la union sabiendo la id /$\ast$$\ast$ \hyperlink{mundo_8h_a6c8fb2c49afca117198f670d75bfc923}{dameUnion()} devuelve un puntero a una union sabiendo la id /$\ast$$\ast$ 
+
+Funciones para union 
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em id}]es el identificador a buscar /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un puntero al espacio o NULL si falló /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_ac4aba0c6a9272e6ce6270c4920d260c6}{
+\index{mundo.h@{mundo.h}!darAbajoEsp@{darAbajoEsp}}
+\index{darAbajoEsp@{darAbajoEsp}!mundo.h@{mundo.h}}
+\subsubsection[{darAbajoEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ID} darAbajoEsp ({\bf ESPACIO} $\ast$ {\em e})}}
+\label{mundo_8h_ac4aba0c6a9272e6ce6270c4920d260c6}
+
+
+informa sobre la id de la union que esta abajo /$\ast$$\ast$ \hyperlink{mundo_8h_ac4aba0c6a9272e6ce6270c4920d260c6}{darAbajoEsp()} devuelve el identificador de la union que se situa abajo /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al espacio deseado /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+una ID que sera negativa en caso de error /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a411c1dfd86ce3fdcc6aff6241043dbc2}{
+\index{mundo.h@{mundo.h}!darAbiertaUni@{darAbiertaUni}}
+\index{darAbiertaUni@{darAbiertaUni}!mundo.h@{mundo.h}}
+\subsubsection[{darAbiertaUni}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} darAbiertaUni ({\bf UNION} $\ast$ {\em uni})}}
+\label{mundo_8h_a411c1dfd86ce3fdcc6aff6241043dbc2}
+
+
+informa si una union esta abierta o cerrada /$\ast$$\ast$ \hyperlink{mundo_8h_a411c1dfd86ce3fdcc6aff6241043dbc2}{darAbiertaUni()} indica el valor booleano del campo abierto /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em uni}]es un puntero a la union deseada /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+el booleano que indique la posicion /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a68227d6b8e59bf8b0daf31e4a1dfbe6b}{
+\index{mundo.h@{mundo.h}!darArribaEsp@{darArribaEsp}}
+\index{darArribaEsp@{darArribaEsp}!mundo.h@{mundo.h}}
+\subsubsection[{darArribaEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ID} darArribaEsp ({\bf ESPACIO} $\ast$ {\em e})}}
+\label{mundo_8h_a68227d6b8e59bf8b0daf31e4a1dfbe6b}
+
+
+informa sobre la id de la union que esta arriba /$\ast$$\ast$ \hyperlink{mundo_8h_a68227d6b8e59bf8b0daf31e4a1dfbe6b}{darArribaEsp()} devuelve el identificador de la union que se situa arriba /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al espacio deseado /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+una ID que sera negativa en caso de error /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_abeaf731134cbaf970022272c11caa39f}{
+\index{mundo.h@{mundo.h}!darContenedorObj@{darContenedorObj}}
+\index{darContenedorObj@{darContenedorObj}!mundo.h@{mundo.h}}
+\subsubsection[{darContenedorObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} darContenedorObj ({\bf OBJETO} $\ast$ {\em o})}}
+\label{mundo_8h_abeaf731134cbaf970022272c11caa39f}
+
+
+informa si un objeto es contenedor /$\ast$$\ast$ \hyperlink{mundo_8h_abeaf731134cbaf970022272c11caa39f}{darContenedorObj()} accede al campo contenedor de un objeto /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al objeto deseado /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE dependiendo del objeto /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a3d51e5b5874cd20a4f19bcfa639f0486}{
+\index{mundo.h@{mundo.h}!darDescrEsp@{darDescrEsp}}
+\index{darDescrEsp@{darDescrEsp}!mundo.h@{mundo.h}}
+\subsubsection[{darDescrEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} darDescrEsp ({\bf ESPACIO} $\ast$ {\em espacio}, \/  char $\ast$ {\em descripcion}, \/  int {\em max\_\-len})}}
+\label{mundo_8h_a3d51e5b5874cd20a4f19bcfa639f0486}
+
+
+devuelve la descripcionde un espacio /$\ast$$\ast$ dameDescrEsp() guarda en una cadena la descripcion de un espacio siempre que no supere el tamaño /$\ast$$\ast$ 
+
+Funciones para espacio 
+\begin{DoxyParams}{Parameters}
+\item[{\em espacio}]es un puntero al espacio deseado \item[{\em descripcion}]es un puntero a una cadena donde guardar la descripcion pedida \item[{\em max\_\-len}]es el tamaño de descripcion /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si todo es correcto, ERR si hubo algun fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a91eb9ce10402238b9a0534b06dfba736}{
+\index{mundo.h@{mundo.h}!darDescrexamEsp@{darDescrexamEsp}}
+\index{darDescrexamEsp@{darDescrexamEsp}!mundo.h@{mundo.h}}
+\subsubsection[{darDescrexamEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} darDescrexamEsp ({\bf ESPACIO} $\ast$ {\em e}, \/  char $\ast$ {\em descripcion}, \/  int {\em max\_\-len})}}
+\label{mundo_8h_a91eb9ce10402238b9a0534b06dfba736}
+
+
+devuelve la descripcion al examinar un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_a91eb9ce10402238b9a0534b06dfba736}{darDescrexamEsp()} guarda en una cadena la descripcion de un espacio siempre que no supere el tamaño /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al espacio deseado \item[{\em descripcion}]es un puntero a una cadena donde guardar la descripcion pedida \item[{\em max\_\-len}]es el tamaño de descripcion /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si todo es correcto, ERR si hubo algun fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a5d197a4837c3f175361d5afb4d22b9a3}{
+\index{mundo.h@{mundo.h}!darDescrexamObj@{darDescrexamObj}}
+\index{darDescrexamObj@{darDescrexamObj}!mundo.h@{mundo.h}}
+\subsubsection[{darDescrexamObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} darDescrexamObj ({\bf OBJETO} $\ast$ {\em o}, \/  char $\ast$ {\em descripcion}, \/  int {\em max\_\-len})}}
+\label{mundo_8h_a5d197a4837c3f175361d5afb4d22b9a3}
+
+
+devuelve la descripcion al examinar un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_a5d197a4837c3f175361d5afb4d22b9a3}{darDescrexamObj()} guarda en una cadena la descripcion de un objeto siempre que no supere el tamaño /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al objeto deseado \item[{\em descripcion}]es un puntero a una cadena donde guardar la descripcion pedida \item[{\em max\_\-len}]es el tamaño de descripcion /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si todo es correcto, ERR si hubo algun fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_afd50d681e09dca3fe36e357efcf9adf0}{
+\index{mundo.h@{mundo.h}!darDescrGraficaEsp@{darDescrGraficaEsp}}
+\index{darDescrGraficaEsp@{darDescrGraficaEsp}!mundo.h@{mundo.h}}
+\subsubsection[{darDescrGraficaEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} darDescrGraficaEsp ({\bf ESPACIO} $\ast$ {\em e}, \/  char $\ast$$\ast$$\ast$ {\em descripcion}, \/  int $\ast$ {\em filas}, \/  int $\ast$ {\em columnas})}}
+\label{mundo_8h_afd50d681e09dca3fe36e357efcf9adf0}
+
+
+devuelve la descripcion grafica de un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_afd50d681e09dca3fe36e357efcf9adf0}{darDescrGraficaEsp()} guarda en una cadena la descripcion grafica de un espacio y los tamaños /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al espacio deseado \item[{\em descripcion}]es un triple puntero a char donde guardar la descripcion grafica pedida \item[{\em filas}]es donde guardar el tamaño de las filas \item[{\em columnas}]es donde guardar el tamaño de las columnas /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si todo es correcto, ERR si hubo algun fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a89aca5f43f380c0ad48a389a929ddd61}{
+\index{mundo.h@{mundo.h}!darDescrMovidoObj@{darDescrMovidoObj}}
+\index{darDescrMovidoObj@{darDescrMovidoObj}!mundo.h@{mundo.h}}
+\subsubsection[{darDescrMovidoObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} darDescrMovidoObj ({\bf OBJETO} $\ast$ {\em objeto}, \/  char $\ast$ {\em descripcion}, \/  int {\em max\_\-len})}}
+\label{mundo_8h_a89aca5f43f380c0ad48a389a929ddd61}
+
+
+devuelve la descripcion de un objeto movido /$\ast$$\ast$ \hyperlink{mundo_8h_a89aca5f43f380c0ad48a389a929ddd61}{darDescrMovidoObj()} guarda en una cadena la descripcion de un objeto movido siempre que no supere el tamaño /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em objeto}]es un puntero al objeto deseado \item[{\em descripcion}]es un puntero a una cadena donde guardar la descripcion pedida \item[{\em max\_\-len}]es el tamaño de descripcion /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si todo es correcto, ERR si hubo algun fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_ae6e829847a510a322330e96c98316edd}{
+\index{mundo.h@{mundo.h}!darDescrObj@{darDescrObj}}
+\index{darDescrObj@{darDescrObj}!mundo.h@{mundo.h}}
+\subsubsection[{darDescrObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} darDescrObj ({\bf OBJETO} $\ast$ {\em objeto}, \/  char $\ast$ {\em descripcion}, \/  int {\em max\_\-len})}}
+\label{mundo_8h_ae6e829847a510a322330e96c98316edd}
+
+
+devuelve la descripcion inicial de un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_ae6e829847a510a322330e96c98316edd}{darDescrObj()} guarda en una cadena la descripcion de un objeto siempre que no supere el tamaño /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em objeto}]es un puntero al objeto deseado \item[{\em descripcion}]es un puntero a una cadena donde guardar la descripcion pedida \item[{\em max\_\-len}]es el tamaño de descripcion /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si todo es correcto, ERR si hubo algun fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a160fd8a8b6de5bf8af576d3740baad84}{
+\index{mundo.h@{mundo.h}!darEncendidoObj@{darEncendidoObj}}
+\index{darEncendidoObj@{darEncendidoObj}!mundo.h@{mundo.h}}
+\subsubsection[{darEncendidoObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} darEncendidoObj ({\bf OBJETO} $\ast$ {\em o})}}
+\label{mundo_8h_a160fd8a8b6de5bf8af576d3740baad84}
+
+
+informa si un objeto esta encendido /$\ast$$\ast$ \hyperlink{mundo_8h_a160fd8a8b6de5bf8af576d3740baad84}{darEncendidoObj()} accede al campo encendido de un objeto /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al objeto deseado /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE dependiendo del objeto /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_ace467aae968d61d1f247134fcfe65ac2}{
+\index{mundo.h@{mundo.h}!darEsteEsp@{darEsteEsp}}
+\index{darEsteEsp@{darEsteEsp}!mundo.h@{mundo.h}}
+\subsubsection[{darEsteEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ID} darEsteEsp ({\bf ESPACIO} $\ast$ {\em e})}}
+\label{mundo_8h_ace467aae968d61d1f247134fcfe65ac2}
+
+
+informa sobre la id de la union que esta al este /$\ast$$\ast$ \hyperlink{mundo_8h_ace467aae968d61d1f247134fcfe65ac2}{darEsteEsp()} devuelve el identificador de la union que se situa al este /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al espacio deseado /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+una ID que sera negativa en caso de error /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_aa7c32d2f2650f894247881049c58c332}{
+\index{mundo.h@{mundo.h}!darIdEsp@{darIdEsp}}
+\index{darIdEsp@{darIdEsp}!mundo.h@{mundo.h}}
+\subsubsection[{darIdEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ID} darIdEsp ({\bf ESPACIO} $\ast$ {\em e})}}
+\label{mundo_8h_aa7c32d2f2650f894247881049c58c332}
+
+
+informa sobre la id de un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_aa7c32d2f2650f894247881049c58c332}{darIdEsp()} devuelve el identificador de un espacio /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al espacio deseado /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+una ID que sera negativa en caso de error /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_aeda244b86d9368edf6465d7113f34db0}{
+\index{mundo.h@{mundo.h}!darIdJug@{darIdJug}}
+\index{darIdJug@{darIdJug}!mundo.h@{mundo.h}}
+\subsubsection[{darIdJug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ID} darIdJug ({\bf JUGADOR} $\ast$ {\em j})}}
+\label{mundo_8h_aeda244b86d9368edf6465d7113f34db0}
+
+
+informa sobre la id de un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_aeda244b86d9368edf6465d7113f34db0}{darIdJug()} devuelve el identificador de un jugador /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em j}]es un puntero al jugador deseado /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+una ID que sera negativa en caso de error /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_aad687335df8ca8a368a00a61fb23440d}{
+\index{mundo.h@{mundo.h}!darIdObj@{darIdObj}}
+\index{darIdObj@{darIdObj}!mundo.h@{mundo.h}}
+\subsubsection[{darIdObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ID} darIdObj ({\bf OBJETO} $\ast$ {\em o})}}
+\label{mundo_8h_aad687335df8ca8a368a00a61fb23440d}
+
+
+devuelve la id de un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_aad687335df8ca8a368a00a61fb23440d}{darIdObj()} devuelve la id del un objeto teniendo el puntero a este /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al objeto deseado /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+devuelve la id del espacio buscado o menor que cero si es error /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a335835a5e4c7b02773253ef0dd54a7d5}{
+\index{mundo.h@{mundo.h}!darIdUni@{darIdUni}}
+\index{darIdUni@{darIdUni}!mundo.h@{mundo.h}}
+\subsubsection[{darIdUni}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ID} darIdUni ({\bf UNION} $\ast$ {\em uni})}}
+\label{mundo_8h_a335835a5e4c7b02773253ef0dd54a7d5}
+
+
+devuelve la id de cierta union /$\ast$$\ast$ \hyperlink{mundo_8h_a335835a5e4c7b02773253ef0dd54a7d5}{darIdUni()} devuelve la id a partir de un puntero a la union /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em uni}]es un puntero a la union deseada /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la id deseada o negativo si da error /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_ac09c4a0ec6eed426bcae5467e8bcba6e}{
+\index{mundo.h@{mundo.h}!darKeyUni@{darKeyUni}}
+\index{darKeyUni@{darKeyUni}!mundo.h@{mundo.h}}
+\subsubsection[{darKeyUni}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ID} darKeyUni ({\bf UNION} $\ast$ {\em uni})}}
+\label{mundo_8h_ac09c4a0ec6eed426bcae5467e8bcba6e}
+
+
+devuelve la id de la llave /$\ast$$\ast$ \hyperlink{mundo_8h_ac09c4a0ec6eed426bcae5467e8bcba6e}{darKeyUni()} devuelve la id del objeto que abre la union /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em uni}]es un puntero a la union deseada /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la id deseada o negativo si da error /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a512f46a42f9620be4117208caf05975f}{
+\index{mundo.h@{mundo.h}!darLlegadaUni@{darLlegadaUni}}
+\index{darLlegadaUni@{darLlegadaUni}!mundo.h@{mundo.h}}
+\subsubsection[{darLlegadaUni}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ID} darLlegadaUni ({\bf UNION} $\ast$ {\em uni})}}
+\label{mundo_8h_a512f46a42f9620be4117208caf05975f}
+
+
+devuelve la id del espacio de llegada /$\ast$$\ast$ \hyperlink{mundo_8h_a512f46a42f9620be4117208caf05975f}{darLlegadaUni()} accede mediante al puntero al espacio al cual se llega /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em uni}]es un puntero a la union deseada /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la id deseada o negativo si da error /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a479ff14f30357a4a1d6dff54e054ba01}{
+\index{mundo.h@{mundo.h}!darLocJug@{darLocJug}}
+\index{darLocJug@{darLocJug}!mundo.h@{mundo.h}}
+\subsubsection[{darLocJug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ID} darLocJug ({\bf JUGADOR} $\ast$ {\em jugador})}}
+\label{mundo_8h_a479ff14f30357a4a1d6dff54e054ba01}
+
+
+devuelve la localizacion de un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_a479ff14f30357a4a1d6dff54e054ba01}{darLocJug()} devuelve la id del espacio donde se situa /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em jugador}]es un puntero al jugador deseado /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la ID del espacio /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_ac9e002000304d24dd9c5d5d464b3141b}{
+\index{mundo.h@{mundo.h}!darLocObj@{darLocObj}}
+\index{darLocObj@{darLocObj}!mundo.h@{mundo.h}}
+\subsubsection[{darLocObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ID} darLocObj ({\bf MUNDO} $\ast$ {\em m}, \/  {\bf OBJETO} $\ast$ {\em objeto})}}
+\label{mundo_8h_ac9e002000304d24dd9c5d5d464b3141b}
+
+
+devuelve el espacio donde se encuentra un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_ac9e002000304d24dd9c5d5d464b3141b}{darLocObj()} devuelve la id del espacio donde se encuentra un objeto teniendo el puntero de este /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em objeto}]es un puntero al objeto deseado /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+devuelve la id del espacio buscado /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a7a53425e214ecb2a64195b8c30b9b998}{
+\index{mundo.h@{mundo.h}!darLumEsp@{darLumEsp}}
+\index{darLumEsp@{darLumEsp}!mundo.h@{mundo.h}}
+\subsubsection[{darLumEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} darLumEsp ({\bf ESPACIO} $\ast$ {\em e})}}
+\label{mundo_8h_a7a53425e214ecb2a64195b8c30b9b998}
+
+
+informa si cierto espacio es luminoso /$\ast$$\ast$ \hyperlink{mundo_8h_a7a53425e214ecb2a64195b8c30b9b998}{darLumEsp()} accede al campo luminoso de un espacio dado /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al espacio deseado /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un booleano que indique TRUE o FALSE /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_adcac0639fbe13641fa4cdf5cbc3fed21}{
+\index{mundo.h@{mundo.h}!darLuzObj@{darLuzObj}}
+\index{darLuzObj@{darLuzObj}!mundo.h@{mundo.h}}
+\subsubsection[{darLuzObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} darLuzObj ({\bf OBJETO} $\ast$ {\em o})}}
+\label{mundo_8h_adcac0639fbe13641fa4cdf5cbc3fed21}
+
+
+informa si un objeto se puede encender /$\ast$$\ast$ \hyperlink{mundo_8h_adcac0639fbe13641fa4cdf5cbc3fed21}{darLuzObj()} accede al campo luz de un objeto /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al objeto deseado /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE dependiendo del objeto /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a878ab25dc2eed86cfa1935fc9e256b02}{
+\index{mundo.h@{mundo.h}!darMaxJug@{darMaxJug}}
+\index{darMaxJug@{darMaxJug}!mundo.h@{mundo.h}}
+\subsubsection[{darMaxJug}]{\setlength{\rightskip}{0pt plus 5cm}int darMaxJug ({\bf JUGADOR} $\ast$ {\em j})}}
+\label{mundo_8h_a878ab25dc2eed86cfa1935fc9e256b02}
+
+
+informa sobre el inventario de un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_a878ab25dc2eed86cfa1935fc9e256b02}{darMaxJug()} devuelve el tamaño del inventario de un jugador /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em j}]es un puntero al jugador deseado /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entero con el tamaño /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_ab66ea4f565667abf84e99129ba7fb9fc}{
+\index{mundo.h@{mundo.h}!darMovidoObj@{darMovidoObj}}
+\index{darMovidoObj@{darMovidoObj}!mundo.h@{mundo.h}}
+\subsubsection[{darMovidoObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} darMovidoObj ({\bf OBJETO} $\ast$ {\em o})}}
+\label{mundo_8h_ab66ea4f565667abf84e99129ba7fb9fc}
+
+
+informa si un objeto ha sido movido /$\ast$$\ast$ \hyperlink{mundo_8h_ab66ea4f565667abf84e99129ba7fb9fc}{darMovidoObj()} accede al campo movido de un objeto /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al objeto deseado /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE dependiendo del objeto /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_ab94bb255555db1a5b5f80b1100cfe3c7}{
+\index{mundo.h@{mundo.h}!darMovilObj@{darMovilObj}}
+\index{darMovilObj@{darMovilObj}!mundo.h@{mundo.h}}
+\subsubsection[{darMovilObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} darMovilObj ({\bf OBJETO} $\ast$ {\em o})}}
+\label{mundo_8h_ab94bb255555db1a5b5f80b1100cfe3c7}
+
+
+informa si un objeto es movil /$\ast$$\ast$ \hyperlink{mundo_8h_ab94bb255555db1a5b5f80b1100cfe3c7}{darMovilObj()} accede al campo movil de un objeto /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al objeto deseado /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE dependiendo del objeto /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_adfc09104cc82f9ed4cb2a78a35e8bee8}{
+\index{mundo.h@{mundo.h}!darNombreJug@{darNombreJug}}
+\index{darNombreJug@{darNombreJug}!mundo.h@{mundo.h}}
+\subsubsection[{darNombreJug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} darNombreJug ({\bf JUGADOR} $\ast$ {\em jugador}, \/  char $\ast$ {\em nombre}, \/  int {\em max\_\-len})}}
+\label{mundo_8h_adfc09104cc82f9ed4cb2a78a35e8bee8}
+
+
+devuelve el nombre de un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_adfc09104cc82f9ed4cb2a78a35e8bee8}{darNombreJug()} devuelve en una cadena dada el nombre de un jugador teniendo su puntero /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em jugador}]es un puntero al jugador deseado \item[{\em nombre}]es un puntero al array donde guardar dicho nombre \item[{\em max\_\-len}]es el tamaño de nombre /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si se produjo error,OK si se hizo correctamente /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a072a9eb137fd0b279e9207c1ab78ffa0}{
+\index{mundo.h@{mundo.h}!darNombreObj@{darNombreObj}}
+\index{darNombreObj@{darNombreObj}!mundo.h@{mundo.h}}
+\subsubsection[{darNombreObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} darNombreObj ({\bf OBJETO} $\ast$ {\em objeto}, \/  char $\ast$ {\em nombre})}}
+\label{mundo_8h_a072a9eb137fd0b279e9207c1ab78ffa0}
+
+
+devuelve el nombre de un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_a072a9eb137fd0b279e9207c1ab78ffa0}{darNombreObj()} devuelve en una cadena dada el nombre de un objeto teniendo su puntero /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em objeto}]es un puntero al objeto deseado \item[{\em nombre}]es un puntero al array donde guardar dicho nombre /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si se produjo error,OK si se hizo correctamente /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a57889e86e1dcf72a9aeb1de5a41a63b1}{
+\index{mundo.h@{mundo.h}!darNorteEsp@{darNorteEsp}}
+\index{darNorteEsp@{darNorteEsp}!mundo.h@{mundo.h}}
+\subsubsection[{darNorteEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ID} darNorteEsp ({\bf ESPACIO} $\ast$ {\em e})}}
+\label{mundo_8h_a57889e86e1dcf72a9aeb1de5a41a63b1}
+
+
+informa sobre la id de la union que esta al norte /$\ast$$\ast$ \hyperlink{mundo_8h_a57889e86e1dcf72a9aeb1de5a41a63b1}{darNorteEsp()} devuelve el identificador de la union que se situa al norte /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al espacio deseado /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+una ID que sera negativa en caso de error /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a0bc0e28115b2d92bc7bec5f8f68ee204}{
+\index{mundo.h@{mundo.h}!darOcultoObj@{darOcultoObj}}
+\index{darOcultoObj@{darOcultoObj}!mundo.h@{mundo.h}}
+\subsubsection[{darOcultoObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} darOcultoObj ({\bf OBJETO} $\ast$ {\em o})}}
+\label{mundo_8h_a0bc0e28115b2d92bc7bec5f8f68ee204}
+
+
+informa si un objeto es oculto /$\ast$$\ast$ \hyperlink{mundo_8h_a0bc0e28115b2d92bc7bec5f8f68ee204}{darOcultoObj()} accede al campo oculto de un objeto /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al objeto deseado /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE dependiendo del objeto /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a2b067845d377d9b5469d34ec0c245c19}{
+\index{mundo.h@{mundo.h}!darOesteEsp@{darOesteEsp}}
+\index{darOesteEsp@{darOesteEsp}!mundo.h@{mundo.h}}
+\subsubsection[{darOesteEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ID} darOesteEsp ({\bf ESPACIO} $\ast$ {\em e})}}
+\label{mundo_8h_a2b067845d377d9b5469d34ec0c245c19}
+
+
+informa sobre la id de la union que esta al oeste /$\ast$$\ast$ \hyperlink{mundo_8h_a2b067845d377d9b5469d34ec0c245c19}{darOesteEsp()} devuelve el identificador de la union que se situa al oeste /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al espacio deseado /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+una ID que sera negativa en caso de error /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a71be1c4b50986a3f6e583aafd63a1d4e}{
+\index{mundo.h@{mundo.h}!darSalidaUni@{darSalidaUni}}
+\index{darSalidaUni@{darSalidaUni}!mundo.h@{mundo.h}}
+\subsubsection[{darSalidaUni}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ID} darSalidaUni ({\bf UNION} $\ast$ {\em uni})}}
+\label{mundo_8h_a71be1c4b50986a3f6e583aafd63a1d4e}
+
+
+consigue la id del espacio de salida /$\ast$$\ast$ \hyperlink{mundo_8h_a71be1c4b50986a3f6e583aafd63a1d4e}{darSalidaUni()} accede mediante al puntero al espacio del cual se sale /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em uni}]es un puntero a la union deseada /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la id deseada o negativo si da error /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_aa05e3b4b6daec378e476c8e634b7efc4}{
+\index{mundo.h@{mundo.h}!darSurEsp@{darSurEsp}}
+\index{darSurEsp@{darSurEsp}!mundo.h@{mundo.h}}
+\subsubsection[{darSurEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ID} darSurEsp ({\bf ESPACIO} $\ast$ {\em e})}}
+\label{mundo_8h_aa05e3b4b6daec378e476c8e634b7efc4}
+
+
+informa sobre la id de la union que esta al sur /$\ast$$\ast$ \hyperlink{mundo_8h_aa05e3b4b6daec378e476c8e634b7efc4}{darSurEsp()} devuelve el identificador de la union que se situa al sur /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al espacio deseado /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+una ID que sera negativa en caso de error /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a0593cb85c4612345e95b76b28ccedc18}{
+\index{mundo.h@{mundo.h}!dejaObjeto@{dejaObjeto}}
+\index{dejaObjeto@{dejaObjeto}!mundo.h@{mundo.h}}
+\subsubsection[{dejaObjeto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} dejaObjeto ({\bf MUNDO} $\ast$ {\em m}, \/  {\bf OBJETO} $\ast$ {\em objeto}, \/  {\bf JUGADOR} $\ast$ {\em jugador})}}
+\label{mundo_8h_a0593cb85c4612345e95b76b28ccedc18}
+
+
+El jugador deja un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_a0593cb85c4612345e95b76b28ccedc18}{dejaObjeto()} introduce un nuevo objeto en el inventario de un espacio, quitandolo del jugador /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em objeto}]es un puntero al objeto que se quiere dejar \item[{\em jugador}]es un puntero al jugador que quiere dejarlo /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si todo es correcto, ERR si hubo algun fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_ab051fa53562b657235842bef9d375dd4}{
+\index{mundo.h@{mundo.h}!destruyeEsp@{destruyeEsp}}
+\index{destruyeEsp@{destruyeEsp}!mundo.h@{mundo.h}}
+\subsubsection[{destruyeEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} destruyeEsp ({\bf ESPACIO} $\ast$$\ast$ {\em espacio})}}
+\label{mundo_8h_ab051fa53562b657235842bef9d375dd4}
+
+
+Destruye un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_ab051fa53562b657235842bef9d375dd4}{destruyeEsp()} elimina la reserva de memoria /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em espacio}]es un puntero a un puntero tipo espacio /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a64b7480378d73b1104d7fb495fc8220f}{
+\index{mundo.h@{mundo.h}!destruyeJug@{destruyeJug}}
+\index{destruyeJug@{destruyeJug}!mundo.h@{mundo.h}}
+\subsubsection[{destruyeJug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} destruyeJug ({\bf JUGADOR} $\ast$$\ast$ {\em jugador})}}
+\label{mundo_8h_a64b7480378d73b1104d7fb495fc8220f}
+
+
+Destruye un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_a64b7480378d73b1104d7fb495fc8220f}{destruyeJug()} elimina la reserva de memoria /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em jugador}]es un puntero a un puntero tipo jugador /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a20a33862d3d77cd5ca857d5b3a95b604}{
+\index{mundo.h@{mundo.h}!destruyeMundo@{destruyeMundo}}
+\index{destruyeMundo@{destruyeMundo}!mundo.h@{mundo.h}}
+\subsubsection[{destruyeMundo}]{\setlength{\rightskip}{0pt plus 5cm}void destruyeMundo ({\bf MUNDO} $\ast$$\ast$ {\em m})}}
+\label{mundo_8h_a20a33862d3d77cd5ca857d5b3a95b604}
+
+
+Libera un mundo completo. 
+
+\hyperlink{mundo_8h_a20a33862d3d77cd5ca857d5b3a95b604}{destruyeMundo()} recorre toda la estructura liberando todos los objetos, espacios y jugadores
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero de un puntero al mundo\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no tiene devolucion 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a281cf3ee9eb99bace97cffbfa4a3905a}{
+\index{mundo.h@{mundo.h}!destruyeObj@{destruyeObj}}
+\index{destruyeObj@{destruyeObj}!mundo.h@{mundo.h}}
+\subsubsection[{destruyeObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} destruyeObj ({\bf OBJETO} $\ast$$\ast$ {\em objeto})}}
+\label{mundo_8h_a281cf3ee9eb99bace97cffbfa4a3905a}
+
+
+Destruye un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_a281cf3ee9eb99bace97cffbfa4a3905a}{destruyeObj()} elimina la reserva de memoria /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em objeto}]es un puntero a un puntero tipo objeto /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_aefdbefe335f0f1108f2375d7c5667ee3}{
+\index{mundo.h@{mundo.h}!destruyeUni@{destruyeUni}}
+\index{destruyeUni@{destruyeUni}!mundo.h@{mundo.h}}
+\subsubsection[{destruyeUni}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} destruyeUni ({\bf UNION} $\ast$$\ast$ {\em uni})}}
+\label{mundo_8h_aefdbefe335f0f1108f2375d7c5667ee3}
+
+
+Destruye una union /$\ast$$\ast$ \hyperlink{mundo_8h_aefdbefe335f0f1108f2375d7c5667ee3}{destruyeUni()} elimina la reserva de memoria /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em uni}]es un puntero a un puntero tipo union /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a556fb3b37761be998ac0d95157ea956f}{
+\index{mundo.h@{mundo.h}!enciende@{enciende}}
+\index{enciende@{enciende}!mundo.h@{mundo.h}}
+\subsubsection[{enciende}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} enciende ({\bf MUNDO} $\ast$ {\em m}, \/  {\bf OBJETO} $\ast$ {\em objeto}, \/  {\bf JUGADOR} $\ast$ {\em jugador})}}
+\label{mundo_8h_a556fb3b37761be998ac0d95157ea956f}
+
+
+Enciende un objeto /$\ast$$\ast$ \hyperlink{mundo_8h_a556fb3b37761be998ac0d95157ea956f}{enciende()} convierte en TRUE la propiedad encendido de un objeto /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em objeto}]es un puntero al objeto a encender \item[{\em jugador}]es un puntero al jugador que realiza el movimiento /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si todo es correcto, ERR si hubo algun fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_aee15acfa84ab79b68de05a55cb45ac69}{
+\index{mundo.h@{mundo.h}!guardaEsp@{guardaEsp}}
+\index{guardaEsp@{guardaEsp}!mundo.h@{mundo.h}}
+\subsubsection[{guardaEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} guardaEsp ({\bf MUNDO} $\ast$ {\em m}, \/  {\bf ESPACIO} $\ast$ {\em espacio})}}
+\label{mundo_8h_aee15acfa84ab79b68de05a55cb45ac69}
+
+
+Guarda un espacio en el mundo /$\ast$$\ast$ \hyperlink{mundo_8h_aee15acfa84ab79b68de05a55cb45ac69}{guardaEsp()} guarda en la primera posicion libre el elemento recibido /$\ast$$\ast$. 
+
+Funciones básicas para crear espacios 
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em espacio}]es un puntero al espacio a guardar /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_af4e0daa35eed1c2a30dcffbb18e821e5}{
+\index{mundo.h@{mundo.h}!guardaJug@{guardaJug}}
+\index{guardaJug@{guardaJug}!mundo.h@{mundo.h}}
+\subsubsection[{guardaJug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} guardaJug ({\bf MUNDO} $\ast$ {\em m}, \/  {\bf JUGADOR} $\ast$ {\em jugador})}}
+\label{mundo_8h_af4e0daa35eed1c2a30dcffbb18e821e5}
+
+
+Guarda un jugador en el mundo /$\ast$$\ast$ \hyperlink{mundo_8h_af4e0daa35eed1c2a30dcffbb18e821e5}{guardaJug()} guarda en la primera posicion libre el elemento recibido /$\ast$$\ast$. 
+
+Funciones básicas para crear un jugador/ /$\ast$ 
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em jugador}]es un puntero al jugador a guardar /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_ab102b43c679a7fcf53dd5bb8fa30faae}{
+\index{mundo.h@{mundo.h}!guardaObj@{guardaObj}}
+\index{guardaObj@{guardaObj}!mundo.h@{mundo.h}}
+\subsubsection[{guardaObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} guardaObj ({\bf MUNDO} $\ast$ {\em m}, \/  {\bf OBJETO} $\ast$ {\em objeto})}}
+\label{mundo_8h_ab102b43c679a7fcf53dd5bb8fa30faae}
+
+
+Guarda un objeto en el mundo /$\ast$$\ast$ \hyperlink{mundo_8h_ab102b43c679a7fcf53dd5bb8fa30faae}{guardaObj()} guarda en la primera posicion libre el elemento recibido /$\ast$$\ast$. 
+
+Funciones básicas para crear objetos 
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em objeto}]es un puntero al objeto a guardar /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_acae4096f2b5f28313b85f150291ba30e}{
+\index{mundo.h@{mundo.h}!guardaUni@{guardaUni}}
+\index{guardaUni@{guardaUni}!mundo.h@{mundo.h}}
+\subsubsection[{guardaUni}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} guardaUni ({\bf MUNDO} $\ast$ {\em m}, \/  {\bf UNION} $\ast$ {\em uni})}}
+\label{mundo_8h_acae4096f2b5f28313b85f150291ba30e}
+
+
+Guarda una union en el mundo /$\ast$$\ast$ \hyperlink{mundo_8h_acae4096f2b5f28313b85f150291ba30e}{guardaUni()} guarda en la primera posicion libre el elemento recibido /$\ast$$\ast$. 
+
+Funciones basicas para crear uniones 
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em uni}]es un puntero a la union a guardar /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a60cd1d044006d5e8397b96b9a7a241e5}{
+\index{mundo.h@{mundo.h}!intercambioObj@{intercambioObj}}
+\index{intercambioObj@{intercambioObj}!mundo.h@{mundo.h}}
+\subsubsection[{intercambioObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} intercambioObj ({\bf JUGADOR} $\ast$ {\em da}, \/  {\bf JUGADOR} $\ast$ {\em recibe}, \/  {\bf OBJETO} $\ast$ {\em obj})}}
+\label{mundo_8h_a60cd1d044006d5e8397b96b9a7a241e5}
+
+
+Un personaje le da un objeto a otro /$\ast$$\ast$ \hyperlink{mundo_8h_a60cd1d044006d5e8397b96b9a7a241e5}{intercambioObj()} un objeto se traslada del inventario de da al inventario de recibe /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em da}]es un puntero al jugador que se desprende del objeto \item[{\em recibe}]es un puntero al jugador que recpeciona el objeto \item[{\em obj}]es un puntero al objeto en cuestion /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si todo es correcto, ERR si hubo algun fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_aea3140c15d829768155447bfeee8aa36}{
+\index{mundo.h@{mundo.h}!isObjInEspMun@{isObjInEspMun}}
+\index{isObjInEspMun@{isObjInEspMun}!mundo.h@{mundo.h}}
+\subsubsection[{isObjInEspMun}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} isObjInEspMun ({\bf ESPACIO} $\ast$ {\em e}, \/  {\bf ID} {\em id})}}
+\label{mundo_8h_aea3140c15d829768155447bfeee8aa36}
+
+
+informa si cierto objeto se situa en un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_aea3140c15d829768155447bfeee8aa36}{isObjInEspMun()} devuelve un booleano diciendo si un objeto se situa dentro del inventario de un espacio /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al espacio deseado \item[{\em id}]es la id del objeto a buscar /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un booleano que indique TRUE o FALSE /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_af9c1b3df5c399b3fb88f81e4d814502a}{
+\index{mundo.h@{mundo.h}!isObjInInvMun@{isObjInInvMun}}
+\index{isObjInInvMun@{isObjInInvMun}!mundo.h@{mundo.h}}
+\subsubsection[{isObjInInvMun}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} isObjInInvMun ({\bf JUGADOR} $\ast$ {\em j}, \/  {\bf ID} {\em id})}}
+\label{mundo_8h_af9c1b3df5c399b3fb88f81e4d814502a}
+
+
+informa si cierto objeto lo tiene un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_af9c1b3df5c399b3fb88f81e4d814502a}{isObjInInvMun()} devuelve un booleano diciendo si un objeto se situa dentro del inventario de un jugador /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em j}]es un puntero al jugador deseado \item[{\em id}]es la id del objeto a buscar /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un booleano que indiqui TRUE o FALSE /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a48ef5f3b9cfd9137e8051493de7d4648}{
+\index{mundo.h@{mundo.h}!isObjInObjMun@{isObjInObjMun}}
+\index{isObjInObjMun@{isObjInObjMun}!mundo.h@{mundo.h}}
+\subsubsection[{isObjInObjMun}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} isObjInObjMun ({\bf OBJETO} $\ast$ {\em o}, \/  {\bf ID} {\em id})}}
+\label{mundo_8h_a48ef5f3b9cfd9137e8051493de7d4648}
+
+
+informa si un objeto esta en otro objetor /$\ast$$\ast$ \hyperlink{mundo_8h_a48ef5f3b9cfd9137e8051493de7d4648}{isObjInObjMun()} informa si un objeto, dada su id, esta dentro de un objeto del cual tenemos su puntero /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al objeto contenedor \item[{\em id}]es la id del objeto contenido /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE dependiendo del objeto /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_ac6aa8f2f6b4aa93bed4a49a62ee642f6}{
+\index{mundo.h@{mundo.h}!meteObjEsp@{meteObjEsp}}
+\index{meteObjEsp@{meteObjEsp}!mundo.h@{mundo.h}}
+\subsubsection[{meteObjEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} meteObjEsp ({\bf ESPACIO} $\ast$ {\em espacio}, \/  {\bf ID} {\em id})}}
+\label{mundo_8h_ac6aa8f2f6b4aa93bed4a49a62ee642f6}
+
+
+introduce un objeto en un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_ac6aa8f2f6b4aa93bed4a49a62ee642f6}{meteObjEsp()} guarda en el inventario del espacio un objeto /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em espacio}]es un puntero al espacio donde guardar \item[{\em id}]es la id del objeto a guardar /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si falló /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a4aa864fe93917ad7bc3cdf101dc0f62e}{
+\index{mundo.h@{mundo.h}!meteObjJug@{meteObjJug}}
+\index{meteObjJug@{meteObjJug}!mundo.h@{mundo.h}}
+\subsubsection[{meteObjJug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} meteObjJug ({\bf JUGADOR} $\ast$ {\em jugador}, \/  {\bf ID} {\em id})}}
+\label{mundo_8h_a4aa864fe93917ad7bc3cdf101dc0f62e}
+
+
+introduce un objeto en un inventario de un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_a4aa864fe93917ad7bc3cdf101dc0f62e}{meteObjJug()} guarda en el inventario de del jugador un objeto /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em jugador}]es un puntero al jugador donde guardar \item[{\em id}]es la id del objeto a guardar /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si falló /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a23ee14b400076980af11867eeec2c853}{
+\index{mundo.h@{mundo.h}!meterObjObj@{meterObjObj}}
+\index{meterObjObj@{meterObjObj}!mundo.h@{mundo.h}}
+\subsubsection[{meterObjObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} meterObjObj ({\bf OBJETO} $\ast$ {\em objeto}, \/  {\bf ID} {\em id})}}
+\label{mundo_8h_a23ee14b400076980af11867eeec2c853}
+
+
+mete un objeto en otro /$\ast$$\ast$ meteObjObj() almacena en el inventario de un objeto a otro objeto /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em objeto}]es un puntero al objeto que guarda \item[{\em id}]es la id del objeto a guardar /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si todo es correcto, ERR si hubo algun fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a310a0c5f4e251c0f70929ca6673e25d9}{
+\index{mundo.h@{mundo.h}!meterObjObjAc@{meterObjObjAc}}
+\index{meterObjObjAc@{meterObjObjAc}!mundo.h@{mundo.h}}
+\subsubsection[{meterObjObjAc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} meterObjObjAc ({\bf MUNDO} $\ast$ {\em m}, \/  {\bf OBJETO} $\ast$ {\em objetoContenedor}, \/  {\bf OBJETO} $\ast$ {\em objetoContenido}, \/  {\bf JUGADOR} $\ast$ {\em jugador})}}
+\label{mundo_8h_a310a0c5f4e251c0f70929ca6673e25d9}
+
+
+introduce un objeto en otro /$\ast$$\ast$ \hyperlink{mundo_8h_a23ee14b400076980af11867eeec2c853}{meterObjObj()} agrega un objeto en el inventario de otro objeto y lo elimina del inventario del jugador /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em objetoContenedor}]es un puntero al objeto que recibe \item[{\em objetoContenido}]es un puntero al objeto que introduces \item[{\em jugador}]es un puntero al jugador que realiza el movimiento /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si todo es correcto, ERR si hubo algun fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_af82f66a3865bfb090a58c31b0771011c}{
+\index{mundo.h@{mundo.h}!muevePersonaje@{muevePersonaje}}
+\index{muevePersonaje@{muevePersonaje}!mundo.h@{mundo.h}}
+\subsubsection[{muevePersonaje}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} muevePersonaje ({\bf MUNDO} $\ast$ {\em m}, \/  {\bf DIRECCION} {\em dir}, \/  {\bf JUGADOR} $\ast$ {\em jugador})}}
+\label{mundo_8h_af82f66a3865bfb090a58c31b0771011c}
+
+
+Mueve al personaje /$\ast$$\ast$ \hyperlink{mundo_8h_af82f66a3865bfb090a58c31b0771011c}{muevePersonaje()} actualiza la localizacion de cierto personaje si es posible /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em dir}]indica la direccion deseada para el movimiento \item[{\em jugador}]es un puntero al jugador que realiza el movimiento /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si todo es correcto, ERR si hubo algun fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a20f1123c5c64d0e88e89bb2649bb5e13}{
+\index{mundo.h@{mundo.h}!muevePersonajeAux@{muevePersonajeAux}}
+\index{muevePersonajeAux@{muevePersonajeAux}!mundo.h@{mundo.h}}
+\subsubsection[{muevePersonajeAux}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} muevePersonajeAux ({\bf MUNDO} $\ast$ {\em m}, \/  {\bf ID} {\em unionMov}, \/  {\bf JUGADOR} $\ast$ {\em jugador})}}
+\label{mundo_8h_a20f1123c5c64d0e88e89bb2649bb5e13}
+
+
+Funcion auxiliar de mueve personaje /$\ast$$\ast$ \hyperlink{mundo_8h_a20f1123c5c64d0e88e89bb2649bb5e13}{muevePersonajeAux()} realiza varias acciones que se repiten a menudo en \hyperlink{mundo_8h_af82f66a3865bfb090a58c31b0771011c}{muevePersonaje()}, de modo que se reaprovecha el codigo /$\ast$$\ast$. 
+
+Acciones del usuario 
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em unionMov}]es la id de la union que vamos a analizar \item[{\em jugador}]es un puntero al jugador que quiere moverse /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si fallo, OK si es correcto /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_ac11b9e4e0bfd3d8819f531b4210d4848}{
+\index{mundo.h@{mundo.h}!nuevoMundo@{nuevoMundo}}
+\index{nuevoMundo@{nuevoMundo}!mundo.h@{mundo.h}}
+\subsubsection[{nuevoMundo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MUNDO}$\ast$ nuevoMundo (int {\em numesp}, \/  int {\em numobj}, \/  int {\em numjug}, \/  int {\em numuni})}}
+\label{mundo_8h_ac11b9e4e0bfd3d8819f531b4210d4848}
+
+
+crea un mundo 
+
+Funciones básicas del mundo \hyperlink{mundo_8h_ac11b9e4e0bfd3d8819f531b4210d4848}{nuevoMundo()} reserva memoria para un mundo completo
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em numesp}]es el numero de espacios a reservar \item[{\em numobj}]es el numero de objetos a reservar \item[{\em numjug}]es el numero de personajes a reservar \item[{\em numuni}]es el numero de uniones a reservar\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un puntero al nuevo mundo creado, o NULL si dió error 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_aef20e4a2e1ba8ebcf4e88efd1af59867}{
+\index{mundo.h@{mundo.h}!saberNumEsp@{saberNumEsp}}
+\index{saberNumEsp@{saberNumEsp}!mundo.h@{mundo.h}}
+\subsubsection[{saberNumEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberNumEsp ({\bf MUNDO} $\ast$ {\em m}, \/  int $\ast$ {\em num})}}
+\label{mundo_8h_aef20e4a2e1ba8ebcf4e88efd1af59867}
+
+
+informa del numero de espacios /$\ast$$\ast$ \hyperlink{mundo_8h_aef20e4a2e1ba8ebcf4e88efd1af59867}{saberNumEsp()} accede a la estructura y guarda en num lo pedido /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em num}]es un puntero a un entero /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a4643b0cc232239e2c987544a2b18f3f3}{
+\index{mundo.h@{mundo.h}!saberNumJug@{saberNumJug}}
+\index{saberNumJug@{saberNumJug}!mundo.h@{mundo.h}}
+\subsubsection[{saberNumJug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberNumJug ({\bf MUNDO} $\ast$ {\em m}, \/  int $\ast$ {\em num})}}
+\label{mundo_8h_a4643b0cc232239e2c987544a2b18f3f3}
+
+
+informa del numero de jugadores /$\ast$$\ast$ \hyperlink{mundo_8h_a4643b0cc232239e2c987544a2b18f3f3}{saberNumJug()} accede a la estructura y guarda en num lo pedido /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em num}]es un puntero a un entero /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a3d59fcf33db8c711440d7a10f5a95b94}{
+\index{mundo.h@{mundo.h}!saberNumObj@{saberNumObj}}
+\index{saberNumObj@{saberNumObj}!mundo.h@{mundo.h}}
+\subsubsection[{saberNumObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberNumObj ({\bf MUNDO} $\ast$ {\em m}, \/  int $\ast$ {\em num})}}
+\label{mundo_8h_a3d59fcf33db8c711440d7a10f5a95b94}
+
+
+informa del numero de objetos /$\ast$$\ast$ \hyperlink{mundo_8h_a3d59fcf33db8c711440d7a10f5a95b94}{saberNumObj()} accede a la estructura y guarda en num lo pedido /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em num}]es un puntero a un entero /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_af80ce73f1581c3a5a4e7ac52a3319980}{
+\index{mundo.h@{mundo.h}!saberNumUni@{saberNumUni}}
+\index{saberNumUni@{saberNumUni}!mundo.h@{mundo.h}}
+\subsubsection[{saberNumUni}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberNumUni ({\bf MUNDO} $\ast$ {\em m}, \/  int $\ast$ {\em num})}}
+\label{mundo_8h_af80ce73f1581c3a5a4e7ac52a3319980}
+
+
+informa del numero de uniones /$\ast$$\ast$ \hyperlink{mundo_8h_af80ce73f1581c3a5a4e7ac52a3319980}{saberNumUni()} accede a la estructura y guarda en num lo pedido /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em num}]es un puntero a un entero /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_aa092441fa6602024b3ae0e5fdd862a5f}{
+\index{mundo.h@{mundo.h}!sacaObjOfEsp@{sacaObjOfEsp}}
+\index{sacaObjOfEsp@{sacaObjOfEsp}!mundo.h@{mundo.h}}
+\subsubsection[{sacaObjOfEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} sacaObjOfEsp ({\bf ESPACIO} $\ast$ {\em cont}, \/  {\bf ID} {\em obj})}}
+\label{mundo_8h_aa092441fa6602024b3ae0e5fdd862a5f}
+
+
+extrae un objeto del inventario de un espacio /$\ast$$\ast$ \hyperlink{mundo_8h_aa092441fa6602024b3ae0e5fdd862a5f}{sacaObjOfEsp()} extrae la id de un objeto del conjunto que forma el inventario de un espacio /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em cont}]es un puntero al espacio deseado \item[{\em obj}]es la id del objeto a extraer /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si se produjo error,OK si se hizo correctamente /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a1acb9bb8d0b838be2400e4fccfc4e965}{
+\index{mundo.h@{mundo.h}!sacaObjOfInv@{sacaObjOfInv}}
+\index{sacaObjOfInv@{sacaObjOfInv}!mundo.h@{mundo.h}}
+\subsubsection[{sacaObjOfInv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} sacaObjOfInv ({\bf JUGADOR} $\ast$ {\em cont}, \/  {\bf ID} {\em obj})}}
+\label{mundo_8h_a1acb9bb8d0b838be2400e4fccfc4e965}
+
+
+extrae un objeto del inventario de un jugador /$\ast$$\ast$ \hyperlink{mundo_8h_a1acb9bb8d0b838be2400e4fccfc4e965}{sacaObjOfInv()} extrae la id de un objeto del conjunto que forma el inventario de un jugador /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em cont}]es un puntero al jugador deseado \item[{\em obj}]es la id del objeto a extraer /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si se produjo error,OK si se hizo correctamente /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_a4ef7b9d7911ae0d8a34d7f5547c518f7}{
+\index{mundo.h@{mundo.h}!sacaObjOfObj@{sacaObjOfObj}}
+\index{sacaObjOfObj@{sacaObjOfObj}!mundo.h@{mundo.h}}
+\subsubsection[{sacaObjOfObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} sacaObjOfObj ({\bf OBJETO} $\ast$ {\em cont}, \/  {\bf ID} {\em obj})}}
+\label{mundo_8h_a4ef7b9d7911ae0d8a34d7f5547c518f7}
+
+
+sacamos un objeto de otro /$\ast$$\ast$ \hyperlink{mundo_8h_a4ef7b9d7911ae0d8a34d7f5547c518f7}{sacaObjOfObj()} extrae una id del inventario de otro objeto dado /$\ast$$\ast$ 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em cont}]es un puntero al objeto contenedor \item[{\em obj}]es la id del objeto contenido /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si todo fue correcto, ERR en caso contario /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{mundo_8h_ae26d6d0a784f1c95fb8d7310c6118558}{
+\index{mundo.h@{mundo.h}!sacarObjObjAc@{sacarObjObjAc}}
+\index{sacarObjObjAc@{sacarObjObjAc}!mundo.h@{mundo.h}}
+\subsubsection[{sacarObjObjAc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} sacarObjObjAc ({\bf MUNDO} $\ast$ {\em m}, \/  {\bf OBJETO} $\ast$ {\em objetoContenedor}, \/  {\bf OBJETO} $\ast$ {\em objetoContenido}, \/  {\bf JUGADOR} $\ast$ {\em jugador})}}
+\label{mundo_8h_ae26d6d0a784f1c95fb8d7310c6118558}
+
+
+Saca un objeto de otro /$\ast$$\ast$ \hyperlink{objeto_8h_a227269ebf771eb89ccf4e7713be7559c}{sacarObjObj()} elimina un objeto del inventario de otro objeto y lo agrega al inventario del jugador /$\ast$$\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em m}]es un puntero al mundo \item[{\em objetoContenedor}]es un puntero al objeto del que se saca \item[{\em objetoContenido}]es un puntero al objeto que se saca \item[{\em jugador}]es un puntero al jugador que realiza el movimiento /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si todo es correcto, ERR si hubo algun fallo /$\ast$ 
+\end{DoxyReturn}

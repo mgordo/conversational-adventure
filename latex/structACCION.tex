@@ -1,0 +1,83 @@
+\hypertarget{structACCION}{
+\section{ACCION Struct Reference}
+\label{structACCION}\index{ACCION@{ACCION}}
+}
+
+
+Estructura básica para ejecutar una accion.  
+
+
+
+
+{\ttfamily \#include $<$accion.h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{accion_8h_a1bcadc7c73a70eb1531b41514c340fa1}{TIPOACCION} \hyperlink{structACCION_a83fd08e24371136a254e39f21b1dab0c}{id}
+\item 
+char $\ast$ \hyperlink{structACCION_a005d4b004cbd3077d9fc7b609f56d610}{objetoD}
+\item 
+char $\ast$ \hyperlink{structACCION_af3d7bfb7bc517e216a971f7cfcacba60}{objetoI}
+\item 
+char $\ast$ \hyperlink{structACCION_abb82f82304469737a796c093e315d745}{jugadorD}
+\item 
+char $\ast$ \hyperlink{structACCION_a18669d2416cb4908c8af0627c6e15e57}{jugadorI}
+\item 
+\hyperlink{tipos_8h_a3302fb59f2ff889a9611103ef60baeeb}{DIRECCION} \hyperlink{structACCION_a7a770d1aab3daf592f8d72bd550051f6}{dir}
+\item 
+\hyperlink{structREGLAS}{REGLAS} $\ast$ \hyperlink{structACCION_aacd209f2112fc2c1ad16c31e6d96577c}{reglas}
+\item 
+\hyperlink{structMUNDO}{MUNDO} $\ast$ \hyperlink{structACCION_abd5833fc1a9fa46613f31aae0f0848c1}{m}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Estructura básica para ejecutar una accion. Esta estructura contiene toda la información necesaria para poder ejecutar cualquier accion de un personaje 
+
+\subsection{Member Data Documentation}
+\hypertarget{structACCION_a7a770d1aab3daf592f8d72bd550051f6}{
+\index{ACCION@{ACCION}!dir@{dir}}
+\index{dir@{dir}!ACCION@{ACCION}}
+\subsubsection[{dir}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DIRECCION} {\bf ACCION::dir}}}
+\label{structACCION_a7a770d1aab3daf592f8d72bd550051f6}
+Direccion del movimiento (ya sea abrir o moverse) \hypertarget{structACCION_a83fd08e24371136a254e39f21b1dab0c}{
+\index{ACCION@{ACCION}!id@{id}}
+\index{id@{id}!ACCION@{ACCION}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TIPOACCION} {\bf ACCION::id}}}
+\label{structACCION_a83fd08e24371136a254e39f21b1dab0c}
+Tipo de accion a realizar \hypertarget{structACCION_abb82f82304469737a796c093e315d745}{
+\index{ACCION@{ACCION}!jugadorD@{jugadorD}}
+\index{jugadorD@{jugadorD}!ACCION@{ACCION}}
+\subsubsection[{jugadorD}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf ACCION::jugadorD}}}
+\label{structACCION_abb82f82304469737a796c093e315d745}
+Puntero al nombre del jugador que realiza la accion principal \hypertarget{structACCION_a18669d2416cb4908c8af0627c6e15e57}{
+\index{ACCION@{ACCION}!jugadorI@{jugadorI}}
+\index{jugadorI@{jugadorI}!ACCION@{ACCION}}
+\subsubsection[{jugadorI}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf ACCION::jugadorI}}}
+\label{structACCION_a18669d2416cb4908c8af0627c6e15e57}
+Puntero al nombre del jugador que realiza la accion secundaria \hypertarget{structACCION_abd5833fc1a9fa46613f31aae0f0848c1}{
+\index{ACCION@{ACCION}!m@{m}}
+\index{m@{m}!ACCION@{ACCION}}
+\subsubsection[{m}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MUNDO}$\ast$ {\bf ACCION::m}}}
+\label{structACCION_abd5833fc1a9fa46613f31aae0f0848c1}
+Mundo de juego \hypertarget{structACCION_a005d4b004cbd3077d9fc7b609f56d610}{
+\index{ACCION@{ACCION}!objetoD@{objetoD}}
+\index{objetoD@{objetoD}!ACCION@{ACCION}}
+\subsubsection[{objetoD}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf ACCION::objetoD}}}
+\label{structACCION_a005d4b004cbd3077d9fc7b609f56d610}
+Puntero al nombre de un objeto directo \hypertarget{structACCION_af3d7bfb7bc517e216a971f7cfcacba60}{
+\index{ACCION@{ACCION}!objetoI@{objetoI}}
+\index{objetoI@{objetoI}!ACCION@{ACCION}}
+\subsubsection[{objetoI}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf ACCION::objetoI}}}
+\label{structACCION_af3d7bfb7bc517e216a971f7cfcacba60}
+Puntero al nombre de un objeto indirecto \hypertarget{structACCION_aacd209f2112fc2c1ad16c31e6d96577c}{
+\index{ACCION@{ACCION}!reglas@{reglas}}
+\index{reglas@{reglas}!ACCION@{ACCION}}
+\subsubsection[{reglas}]{\setlength{\rightskip}{0pt plus 5cm}{\bf REGLAS}$\ast$ {\bf ACCION::reglas}}}
+\label{structACCION_aacd209f2112fc2c1ad16c31e6d96577c}
+Reglas para el juego 
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{accion_8h}{accion.h}\end{DoxyCompactItemize}

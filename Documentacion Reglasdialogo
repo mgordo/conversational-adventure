@@ -1,0 +1,84 @@
+Tu pocion empieza a burbujear con un tono ocre y un hedor infernal inunda la mazmorra. Snape se acerca por detrás y te observa con una sonrisa maliciosa. Sin que te des cuenta, se produce un revuelo en su túnica y toda la pocion desaparece de tu caldero -50 puntos menos para Gryffindor. Está claro que no ha preparado su...examen- Mientras se aleja con su capa entre la oscuridad, coges tu mochila y tu varita, y sales cabizbajo de la mazmorra.
+
+Este fichero explica las normas para crear un fichero de reglas de diálogo para que pueda ser correctamente leído por el módulo lector_reglasdialogo
+
+Debe existir siempre un tema "TONTO" con el patrón "*" para desencadenar las respuestas del tipo "No entiendo lo que quieres decir"
+
+Debe existir un tema "Fracaso" o "Error" con el patrón "^"
+
+Debe existir un tema "Inicio" con el patrón "/"
+
+Debe existir un tema "SINONIMOS" (case sensitive) con las reglas definidas para los sinonimos de los objetos directos
+
+Debe existir un tema "VERBOS" (case sensitive) con las reglas definidas para los sinónimos de los verbos de las acciones
+
+SINONIMOS Y VERBOS deben estar al final de todos los temas.
+
+Deben existir los temas para las acciones que puede realizar el usuario (IR, SACAR, METER...) con las reglas y plantillas correspondientes. El orden es relevante. 
+Se recomienda que sea como sigue:
+INICIO
+ACC_COGER
+ACC_DEJAR
+ACC_ENCIENDE
+ACC_APAGA
+ACC_METER
+ACC_SACAR
+ACC_ABRIR
+PERDER
+ACC_DAR
+ACC_PEDIR
+ACC_IR
+ERR
+NO_ENTENDER
+
+Tras estos deben encontrarse los temas de los personajes. Es importante que los nombres de los temas de los personajes sean exactamente los nombres de los jugadores (NPC's) a los que se quiere hablar.
+
+Los temas deben numerarse del 1 en adelante, de no hacerlo así el programa no funcionará correctamente
+
+El fichero debe seguir la siguiente estructura:
+X, Y, Z, T son los numeros de temas, plantillas, reglas, relaciones, etc..
+
+
+
+<dialogo temas="X" plantillas="Y" reglas="Z" relaciones="T">
+
+...
+
+</dialogo>
+
+
+Dentro de la etiqueta diálogo debe haber las siguientes estructuras, sin importar el orden: tema, relacion, regla, plantilla
+
+Modelo para tema:
+
+
+<tema id="X" nombre="Mumble"/>
+
+Cada tema en una línea
+
+Modelo para plantillas:
+
+<plantilla>Mumble</plantilla>
+
+Modelo para relaciones:
+X es el número de números en el array de dicha relación
+ATENCION: en último número de cada array debe ser un -1.
+<relacion number="X">
+	<numero>A</numero>
+	<numero>B</numero>
+	.
+	.
+	.
+	X-1 numeros
+	<numero>-1</numero>
+</relacion>
+
+Modelo para regla:
+
+X e Y son los índices incial y final de las plantillas asociadas a dicha regla. 
+<regla ini="X" fin="Y">MUMBLE</regla>
+
+
+Si cualesquiera números a especificar se introducen erroneamente, no se garantiza el correcto funcionamiento del programa
+Si se desea un ejemplo, abra dialogo_draco.xml
+

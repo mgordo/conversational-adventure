@@ -1,0 +1,752 @@
+\hypertarget{objeto_8h}{
+\section{objeto.h File Reference}
+\label{objeto_8h}\index{objeto.h@{objeto.h}}
+}
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include \char`\"{}inventario.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structOBJETO}{OBJETO}
+\begin{DoxyCompactList}\small\item\em Definición de la estructura \hyperlink{structOBJETO}{OBJETO}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_ad034a0e49d823f1b819688455a759f2c}{creaObjeto} (\hyperlink{structOBJETO}{OBJETO} $\ast$$\ast$o)
+\begin{DoxyCompactList}\small\item\em Creación de \hyperlink{structOBJETO}{OBJETO} creaOBJETO() se encarga de reservar la memoria para un nuevo \hyperlink{structOBJETO}{OBJETO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_a2773ced430b29e2cb163ae6aca74d53e}{destruyeObjeto} (\hyperlink{structOBJETO}{OBJETO} $\ast$$\ast$o)
+\begin{DoxyCompactList}\small\item\em Destrucción de \hyperlink{structOBJETO}{OBJETO} destruyeOBJETO() se encarga de liberar toda la memoria que hubiese resrvado un \hyperlink{structOBJETO}{OBJETO} en caso de estar reservada. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_ae3b1c8a408f34fc9af0760458e1558b8}{cambiaIdObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Cambiar ID \hyperlink{objeto_8h_ae3b1c8a408f34fc9af0760458e1558b8}{cambiaIdObj()} permite cambiar la ID con que se etiqueta un \hyperlink{structOBJETO}{OBJETO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_a53d7c612c155b3b6328e1f92c0557987}{cambiaNombreObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, char $\ast$nombre)
+\begin{DoxyCompactList}\small\item\em Cambiar Descripcion \hyperlink{objeto_8h_a53d7c612c155b3b6328e1f92c0557987}{cambiaNombreObj()} permite cambiar el nombre de un \hyperlink{structOBJETO}{OBJETO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_a295682c6ad8c6a7cebb2738a21199691}{cambiaDescripcionObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, char $\ast$descr)
+\begin{DoxyCompactList}\small\item\em Cambiar Descripcion \hyperlink{objeto_8h_a295682c6ad8c6a7cebb2738a21199691}{cambiaDescripcionObj()} permite cambiar la descripcion de un \hyperlink{structOBJETO}{OBJETO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_a31d2a1d88df636d6581f2857c27bc1d4}{cambiaDescrMovido} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, char $\ast$descr)
+\begin{DoxyCompactList}\small\item\em Cambiar Descripcion \hyperlink{objeto_8h_a31d2a1d88df636d6581f2857c27bc1d4}{cambiaDescrMovido()} permite cambiar la descripcion movido de un \hyperlink{structOBJETO}{OBJETO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_ad360b3098a1c94d23c4f578399671af5}{cambiaDescrExamObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, char $\ast$descr)
+\begin{DoxyCompactList}\small\item\em Cambiar Descripcion \hyperlink{objeto_8h_ad360b3098a1c94d23c4f578399671af5}{cambiaDescrExamObj()} permite cambiar la descripcion examinar de un \hyperlink{structOBJETO}{OBJETO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_aba516874b8eef9918cd633ddb0a614e2}{cambiaOculto} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, \hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} oculto)
+\begin{DoxyCompactList}\small\item\em Cambiar Luminoso \hyperlink{objeto_8h_aba516874b8eef9918cd633ddb0a614e2}{cambiaOculto()} permite modificar el estado del \hyperlink{structOBJETO}{OBJETO} entre oculto y no oculto. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_a027e7ac356c6f1849a54b7a6215ca19a}{cambiaMovil} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, \hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} movil)
+\begin{DoxyCompactList}\small\item\em Cambiar Luminoso \hyperlink{objeto_8h_a027e7ac356c6f1849a54b7a6215ca19a}{cambiaMovil()} permite modificar el estado del \hyperlink{structOBJETO}{OBJETO} entre movible y no movible. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_a94b6d0b03fcbe3ac94b334971a0a940b}{cambiaMovido} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, \hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} movido)
+\begin{DoxyCompactList}\small\item\em Cambiar Luminoso \hyperlink{objeto_8h_a94b6d0b03fcbe3ac94b334971a0a940b}{cambiaMovido()} permite modificar el estado del \hyperlink{structOBJETO}{OBJETO} entre movido y no movido. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_a86426d4228f00b138369e598f2e294e4}{cambiaEncendido} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, \hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} encendido)
+\begin{DoxyCompactList}\small\item\em Cambiar Luminoso \hyperlink{objeto_8h_a86426d4228f00b138369e598f2e294e4}{cambiaEncendido()} permite modificar el estado del \hyperlink{structOBJETO}{OBJETO} entre encendido o apagado. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_ad1d8adf33d2e6ca5104b59064a8ff411}{cambiaLuz} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, \hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} luz)
+\begin{DoxyCompactList}\small\item\em Cambiar Luminoso \hyperlink{objeto_8h_ad1d8adf33d2e6ca5104b59064a8ff411}{cambiaLuz()} permite modificar el estado del \hyperlink{structOBJETO}{OBJETO} entre luminoso y no luminoso. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_a77ad9f6281aa6d8fa87eb1344a3eb2f5}{cambiaContenedor} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, \hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} contenedor)
+\begin{DoxyCompactList}\small\item\em Cambiar Luminoso \hyperlink{objeto_8h_a77ad9f6281aa6d8fa87eb1344a3eb2f5}{cambiaContenedor()} permite modificar el estado del \hyperlink{structOBJETO}{OBJETO} entre contenedor y no contenedor. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{objeto_8h_a63f99e73df7fe13c69253be52b826041}{isMovil} (\hyperlink{structOBJETO}{OBJETO} $\ast$o)
+\begin{DoxyCompactList}\small\item\em ¿Es movil? \hyperlink{objeto_8h_a63f99e73df7fe13c69253be52b826041}{isMovil()} permite saber si un \hyperlink{structOBJETO}{OBJETO} se puede mover o no. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{objeto_8h_a923fee3691f31143db8e9de3b1286d60}{isMovido} (\hyperlink{structOBJETO}{OBJETO} $\ast$o)
+\begin{DoxyCompactList}\small\item\em ¿Está movido? \hyperlink{objeto_8h_a923fee3691f31143db8e9de3b1286d60}{isMovido()} permite saber si un \hyperlink{structOBJETO}{OBJETO} se ha movido o no. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{objeto_8h_a516743f8b5c5e1ae15f070b4d75d18a8}{isOculto} (\hyperlink{structOBJETO}{OBJETO} $\ast$o)
+\begin{DoxyCompactList}\small\item\em ¿Está oculto? \hyperlink{objeto_8h_a516743f8b5c5e1ae15f070b4d75d18a8}{isOculto()} permite saber si un \hyperlink{structOBJETO}{OBJETO} está oculto o no. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{objeto_8h_a1f70f215948ae729251649c9aeee4d75}{isEncendido} (\hyperlink{structOBJETO}{OBJETO} $\ast$o)
+\begin{DoxyCompactList}\small\item\em ¿Está iluminado? \hyperlink{objeto_8h_a1f70f215948ae729251649c9aeee4d75}{isEncendido()} permite saber si un \hyperlink{structOBJETO}{OBJETO} está encendido o no. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{objeto_8h_a9ba4fb05d31609330cfd381ec74e2bdc}{isLuz} (\hyperlink{structOBJETO}{OBJETO} $\ast$o)
+\begin{DoxyCompactList}\small\item\em ¿Es luminoso? \hyperlink{objeto_8h_a9ba4fb05d31609330cfd381ec74e2bdc}{isLuz()} permite saber si un \hyperlink{structOBJETO}{OBJETO} tiene luz propia o no. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{objeto_8h_aee741412f894360feaf28237ab920f90}{isContenedor} (\hyperlink{structOBJETO}{OBJETO} $\ast$o)
+\begin{DoxyCompactList}\small\item\em ¿Es contenedor? \hyperlink{objeto_8h_aee741412f894360feaf28237ab920f90}{isContenedor()} permite saber si un \hyperlink{structOBJETO}{OBJETO} puede contener otros objetos o no. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{objeto_8h_aa0a744973a1f1e6c4173ff254677488e}{isObjDestruido} (\hyperlink{structOBJETO}{OBJETO} $\ast$o)
+\begin{DoxyCompactList}\small\item\em ¿Está destruido? \hyperlink{objeto_8h_aa0a744973a1f1e6c4173ff254677488e}{isObjDestruido()} permite saber si un \hyperlink{structOBJETO}{OBJETO} está destruido o no. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{objeto_8h_a0ef206be61c897be9604c70eaa8e2204}{isObjEmpty} (\hyperlink{structOBJETO}{OBJETO} $\ast$o)
+\begin{DoxyCompactList}\small\item\em ¿Está vacio? \hyperlink{objeto_8h_a0ef206be61c897be9604c70eaa8e2204}{isObjEmpty()} permite saber si un \hyperlink{structOBJETO}{OBJETO} está relleno o no. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_add809cf11ad014988fb8b749efc010e0}{saberNombreObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, char $\ast$nombre)
+\begin{DoxyCompactList}\small\item\em Descripción de un \hyperlink{structOBJETO}{OBJETO} \hyperlink{objeto_8h_add809cf11ad014988fb8b749efc010e0}{saberNombreObj()} permite saber el contenido del nombre de un \hyperlink{structOBJETO}{OBJETO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_a26e2c89fda38958a725ae37a64c08b91}{saberTamNombreObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, int $\ast$num)
+\begin{DoxyCompactList}\small\item\em Tamaño de Examinar \hyperlink{objeto_8h_a26e2c89fda38958a725ae37a64c08b91}{saberTamNombreObj()} permite saber el tamaño de la cadena que contiene el nombre del \hyperlink{structOBJETO}{OBJETO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_a7ef28fbd0cfbc2833c370f1b815eaf7f}{saberDescrObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, char $\ast$descr)
+\begin{DoxyCompactList}\small\item\em Descripción de un \hyperlink{structOBJETO}{OBJETO} \hyperlink{objeto_8h_a7ef28fbd0cfbc2833c370f1b815eaf7f}{saberDescrObj()} permite saber el contenido de la descripcion de un \hyperlink{structOBJETO}{OBJETO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_adfdd7df8f29b3887865db3feb5cba6a1}{saberTamDescrObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, int $\ast$num)
+\begin{DoxyCompactList}\small\item\em Tamaño de Examinar \hyperlink{objeto_8h_adfdd7df8f29b3887865db3feb5cba6a1}{saberTamDescrObj()} permite saber el tamaño de la cadena que contiene la descripción del \hyperlink{structOBJETO}{OBJETO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_ac722342707c3cd4ffd5dc6f90393be74}{saberDescrMovido} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, char $\ast$descr)
+\begin{DoxyCompactList}\small\item\em Descripción de un \hyperlink{structOBJETO}{OBJETO} \hyperlink{objeto_8h_ac722342707c3cd4ffd5dc6f90393be74}{saberDescrMovido()} permite saber el contenido de la descripcion movido de un \hyperlink{structOBJETO}{OBJETO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_adc79d01a4a362475134df8b7d00a1a43}{saberTamDescrMovido} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, int $\ast$num)
+\begin{DoxyCompactList}\small\item\em Tamaño de Examinar \hyperlink{objeto_8h_adc79d01a4a362475134df8b7d00a1a43}{saberTamDescrMovido()} permite saber el tamaño de la cadena que contiene la descripción movido del \hyperlink{structOBJETO}{OBJETO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_a12861fac43a4056851306d1c03174550}{saberDescrExamObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, char $\ast$descr)
+\begin{DoxyCompactList}\small\item\em Descripción de un \hyperlink{structOBJETO}{OBJETO} \hyperlink{objeto_8h_a12861fac43a4056851306d1c03174550}{saberDescrExamObj()} permite saber el contenido de la descripcion examinar de un \hyperlink{structOBJETO}{OBJETO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_a1a765ee131f485ec321b36ffe0aa94b6}{saberTamDescrExamObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, int $\ast$num)
+\begin{DoxyCompactList}\small\item\em Tamaño de Examinar saberTamDescExamObj() permite saber el tamaño de la cadena que contiene la descripción examinar del \hyperlink{structOBJETO}{OBJETO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_a9197e48b50d341a029c36c9c8b393421}{saberIdObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$id)
+\begin{DoxyCompactList}\small\item\em Saber Norte \hyperlink{objeto_8h_a9197e48b50d341a029c36c9c8b393421}{saberIdObj()} permite saber la ID del \hyperlink{structOBJETO}{OBJETO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_a227269ebf771eb89ccf4e7713be7559c}{sacarObjObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Sacar objetos \hyperlink{objeto_8h_a227269ebf771eb89ccf4e7713be7559c}{sacarObjObj()} extrae de un inventario de un \hyperlink{structOBJETO}{OBJETO} un objeto. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_ad038f26d77b80821097eec39aaedb1ac}{meterObjObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Introducir objetos \hyperlink{mundo_8h_a23ee14b400076980af11867eeec2c853}{meterObjObj()} introduce un objeto en el inventario de un \hyperlink{structOBJETO}{OBJETO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{objeto_8h_a710f1c1d5d39e10fe66f812e6f6eeca7}{saberObjTamInv} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, int $\ast$num)
+\begin{DoxyCompactList}\small\item\em Tamaño del inventario \hyperlink{objeto_8h_a710f1c1d5d39e10fe66f812e6f6eeca7}{saberObjTamInv()} permite saber cuantos objeto se encuentran en el \hyperlink{structOBJETO}{OBJETO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{objeto_8h_aaa8caee60fb117a89e099f2a8803b93b}{isObjinObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Objeto contenido \hyperlink{objeto_8h_aaa8caee60fb117a89e099f2a8803b93b}{isObjinObj()} permite saber si un objeto se encuentra en el inventario de un \hyperlink{structOBJETO}{OBJETO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} \hyperlink{objeto_8h_a391fd7fddb54f9205de934c63feb49fe}{saberObjIesimoObj} (\hyperlink{structOBJETO}{OBJETO} $\ast$o, int i)
+\begin{DoxyCompactList}\small\item\em Saber un Objeto \hyperlink{objeto_8h_a391fd7fddb54f9205de934c63feb49fe}{saberObjIesimoObj()} permite saber el iésimo objeto del inventario del \hyperlink{structOBJETO}{OBJETO}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fichero que contiene los prototipos y las estructuras de un \hyperlink{structOBJETO}{OBJETO} \begin{DoxyAuthor}{Author}
+Antonio Jimenez 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.0
+\end{DoxyVersion}
+Información útil:
+
+
+\begin{DoxyItemize}
+\item Este módulo depende del módulo INVENTARIO, por lo que se incluirá el .h correspondiente 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\hypertarget{objeto_8h_a77ad9f6281aa6d8fa87eb1344a3eb2f5}{
+\index{objeto.h@{objeto.h}!cambiaContenedor@{cambiaContenedor}}
+\index{cambiaContenedor@{cambiaContenedor}!objeto.h@{objeto.h}}
+\subsubsection[{cambiaContenedor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaContenedor ({\bf OBJETO} $\ast$ {\em o}, \/  {\bf BOOL} {\em contenedor})}}
+\label{objeto_8h_a77ad9f6281aa6d8fa87eb1344a3eb2f5}
+
+
+Cambiar Luminoso \hyperlink{objeto_8h_a77ad9f6281aa6d8fa87eb1344a3eb2f5}{cambiaContenedor()} permite modificar el estado del \hyperlink{structOBJETO}{OBJETO} entre contenedor y no contenedor. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a modificar \item[{\em contenedor}]es un BOOL con el que se desea modificar el \hyperlink{structOBJETO}{OBJETO} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_ad360b3098a1c94d23c4f578399671af5}{
+\index{objeto.h@{objeto.h}!cambiaDescrExamObj@{cambiaDescrExamObj}}
+\index{cambiaDescrExamObj@{cambiaDescrExamObj}!objeto.h@{objeto.h}}
+\subsubsection[{cambiaDescrExamObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaDescrExamObj ({\bf OBJETO} $\ast$ {\em o}, \/  char $\ast$ {\em descr})}}
+\label{objeto_8h_ad360b3098a1c94d23c4f578399671af5}
+
+
+Cambiar Descripcion \hyperlink{objeto_8h_ad360b3098a1c94d23c4f578399671af5}{cambiaDescrExamObj()} permite cambiar la descripcion examinar de un \hyperlink{structOBJETO}{OBJETO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a modificar \item[{\em descr}]es una cadena con la que se desea modificar el \hyperlink{structOBJETO}{OBJETO} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_a295682c6ad8c6a7cebb2738a21199691}{
+\index{objeto.h@{objeto.h}!cambiaDescripcionObj@{cambiaDescripcionObj}}
+\index{cambiaDescripcionObj@{cambiaDescripcionObj}!objeto.h@{objeto.h}}
+\subsubsection[{cambiaDescripcionObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaDescripcionObj ({\bf OBJETO} $\ast$ {\em o}, \/  char $\ast$ {\em descr})}}
+\label{objeto_8h_a295682c6ad8c6a7cebb2738a21199691}
+
+
+Cambiar Descripcion \hyperlink{objeto_8h_a295682c6ad8c6a7cebb2738a21199691}{cambiaDescripcionObj()} permite cambiar la descripcion de un \hyperlink{structOBJETO}{OBJETO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a modificar \item[{\em descr}]es una cadena con la que se desea modificar el \hyperlink{structOBJETO}{OBJETO} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_a31d2a1d88df636d6581f2857c27bc1d4}{
+\index{objeto.h@{objeto.h}!cambiaDescrMovido@{cambiaDescrMovido}}
+\index{cambiaDescrMovido@{cambiaDescrMovido}!objeto.h@{objeto.h}}
+\subsubsection[{cambiaDescrMovido}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaDescrMovido ({\bf OBJETO} $\ast$ {\em o}, \/  char $\ast$ {\em descr})}}
+\label{objeto_8h_a31d2a1d88df636d6581f2857c27bc1d4}
+
+
+Cambiar Descripcion \hyperlink{objeto_8h_a31d2a1d88df636d6581f2857c27bc1d4}{cambiaDescrMovido()} permite cambiar la descripcion movido de un \hyperlink{structOBJETO}{OBJETO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a modificar \item[{\em descr}]es una cadena con la que se desea modificar el \hyperlink{structOBJETO}{OBJETO} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_a86426d4228f00b138369e598f2e294e4}{
+\index{objeto.h@{objeto.h}!cambiaEncendido@{cambiaEncendido}}
+\index{cambiaEncendido@{cambiaEncendido}!objeto.h@{objeto.h}}
+\subsubsection[{cambiaEncendido}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaEncendido ({\bf OBJETO} $\ast$ {\em o}, \/  {\bf BOOL} {\em encendido})}}
+\label{objeto_8h_a86426d4228f00b138369e598f2e294e4}
+
+
+Cambiar Luminoso \hyperlink{objeto_8h_a86426d4228f00b138369e598f2e294e4}{cambiaEncendido()} permite modificar el estado del \hyperlink{structOBJETO}{OBJETO} entre encendido o apagado. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a modificar \item[{\em encendido}]es un BOOL con el que se desea modificar el \hyperlink{structOBJETO}{OBJETO} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_ae3b1c8a408f34fc9af0760458e1558b8}{
+\index{objeto.h@{objeto.h}!cambiaIdObj@{cambiaIdObj}}
+\index{cambiaIdObj@{cambiaIdObj}!objeto.h@{objeto.h}}
+\subsubsection[{cambiaIdObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaIdObj ({\bf OBJETO} $\ast$ {\em o}, \/  {\bf ID} {\em id})}}
+\label{objeto_8h_ae3b1c8a408f34fc9af0760458e1558b8}
+
+
+Cambiar ID \hyperlink{objeto_8h_ae3b1c8a408f34fc9af0760458e1558b8}{cambiaIdObj()} permite cambiar la ID con que se etiqueta un \hyperlink{structOBJETO}{OBJETO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a modificar \item[{\em id}]es una ID con la que se desea modificar el \hyperlink{structOBJETO}{OBJETO} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_ad1d8adf33d2e6ca5104b59064a8ff411}{
+\index{objeto.h@{objeto.h}!cambiaLuz@{cambiaLuz}}
+\index{cambiaLuz@{cambiaLuz}!objeto.h@{objeto.h}}
+\subsubsection[{cambiaLuz}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaLuz ({\bf OBJETO} $\ast$ {\em o}, \/  {\bf BOOL} {\em luz})}}
+\label{objeto_8h_ad1d8adf33d2e6ca5104b59064a8ff411}
+
+
+Cambiar Luminoso \hyperlink{objeto_8h_ad1d8adf33d2e6ca5104b59064a8ff411}{cambiaLuz()} permite modificar el estado del \hyperlink{structOBJETO}{OBJETO} entre luminoso y no luminoso. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a modificar \item[{\em luz}]es un BOOL con el que se desea modificar el \hyperlink{structOBJETO}{OBJETO} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_a94b6d0b03fcbe3ac94b334971a0a940b}{
+\index{objeto.h@{objeto.h}!cambiaMovido@{cambiaMovido}}
+\index{cambiaMovido@{cambiaMovido}!objeto.h@{objeto.h}}
+\subsubsection[{cambiaMovido}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaMovido ({\bf OBJETO} $\ast$ {\em o}, \/  {\bf BOOL} {\em movido})}}
+\label{objeto_8h_a94b6d0b03fcbe3ac94b334971a0a940b}
+
+
+Cambiar Luminoso \hyperlink{objeto_8h_a94b6d0b03fcbe3ac94b334971a0a940b}{cambiaMovido()} permite modificar el estado del \hyperlink{structOBJETO}{OBJETO} entre movido y no movido. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a modificar \item[{\em movido}]es un BOOL con el que se desea modificar el \hyperlink{structOBJETO}{OBJETO} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_a027e7ac356c6f1849a54b7a6215ca19a}{
+\index{objeto.h@{objeto.h}!cambiaMovil@{cambiaMovil}}
+\index{cambiaMovil@{cambiaMovil}!objeto.h@{objeto.h}}
+\subsubsection[{cambiaMovil}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaMovil ({\bf OBJETO} $\ast$ {\em o}, \/  {\bf BOOL} {\em movil})}}
+\label{objeto_8h_a027e7ac356c6f1849a54b7a6215ca19a}
+
+
+Cambiar Luminoso \hyperlink{objeto_8h_a027e7ac356c6f1849a54b7a6215ca19a}{cambiaMovil()} permite modificar el estado del \hyperlink{structOBJETO}{OBJETO} entre movible y no movible. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a modificar \item[{\em movil}]es un BOOL con el que se desea modificar el \hyperlink{structOBJETO}{OBJETO} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_a53d7c612c155b3b6328e1f92c0557987}{
+\index{objeto.h@{objeto.h}!cambiaNombreObj@{cambiaNombreObj}}
+\index{cambiaNombreObj@{cambiaNombreObj}!objeto.h@{objeto.h}}
+\subsubsection[{cambiaNombreObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaNombreObj ({\bf OBJETO} $\ast$ {\em o}, \/  char $\ast$ {\em nombre})}}
+\label{objeto_8h_a53d7c612c155b3b6328e1f92c0557987}
+
+
+Cambiar Descripcion \hyperlink{objeto_8h_a53d7c612c155b3b6328e1f92c0557987}{cambiaNombreObj()} permite cambiar el nombre de un \hyperlink{structOBJETO}{OBJETO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a modificar \item[{\em nombre}]es una cadena con la que se desea modificar el \hyperlink{structOBJETO}{OBJETO} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_aba516874b8eef9918cd633ddb0a614e2}{
+\index{objeto.h@{objeto.h}!cambiaOculto@{cambiaOculto}}
+\index{cambiaOculto@{cambiaOculto}!objeto.h@{objeto.h}}
+\subsubsection[{cambiaOculto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaOculto ({\bf OBJETO} $\ast$ {\em o}, \/  {\bf BOOL} {\em oculto})}}
+\label{objeto_8h_aba516874b8eef9918cd633ddb0a614e2}
+
+
+Cambiar Luminoso \hyperlink{objeto_8h_aba516874b8eef9918cd633ddb0a614e2}{cambiaOculto()} permite modificar el estado del \hyperlink{structOBJETO}{OBJETO} entre oculto y no oculto. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a modificar \item[{\em oculto}]es un BOOL con el que se desea modificar el \hyperlink{structOBJETO}{OBJETO} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_ad034a0e49d823f1b819688455a759f2c}{
+\index{objeto.h@{objeto.h}!creaObjeto@{creaObjeto}}
+\index{creaObjeto@{creaObjeto}!objeto.h@{objeto.h}}
+\subsubsection[{creaObjeto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaObjeto ({\bf OBJETO} $\ast$$\ast$ {\em o})}}
+\label{objeto_8h_ad034a0e49d823f1b819688455a759f2c}
+
+
+Creación de \hyperlink{structOBJETO}{OBJETO} creaOBJETO() se encarga de reservar la memoria para un nuevo \hyperlink{structOBJETO}{OBJETO}. 
+
+Información de la estructura:
+
+
+\begin{DoxyItemize}
+\item id es el identificador del objeto en cuestión
+\item localización es el id que señala en que \hyperlink{structOBJETO}{OBJETO} se encuentra el objeto
+\item nombre es una cadena con el nombre del objeto
+\item descripcion es una cadena que contiene la descripción del objeto a simple vista
+\item descMovido es una cadena que contiene la descripción del objeto una vez movido
+\item descExaminar es una cadena que contiene la descripción del objeto al usar el comando examinar sobre él
+\item movil es un dato de tipo booleano que indica si el objeto se puede mover o no
+\item movido es un dato de tipo booleano que indica si el objeto ha sido movido o no
+\item oculto es un dato de tipo booleano que indica si el objeto se ve o no 
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero a un puntero a \hyperlink{structOBJETO}{OBJETO}, que será donde se guarde la dirección de el \hyperlink{structOBJETO}{OBJETO} que se reserve \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+
+\end{DoxyItemize}\hypertarget{objeto_8h_a2773ced430b29e2cb163ae6aca74d53e}{
+\index{objeto.h@{objeto.h}!destruyeObjeto@{destruyeObjeto}}
+\index{destruyeObjeto@{destruyeObjeto}!objeto.h@{objeto.h}}
+\subsubsection[{destruyeObjeto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} destruyeObjeto ({\bf OBJETO} $\ast$$\ast$ {\em o})}}
+\label{objeto_8h_a2773ced430b29e2cb163ae6aca74d53e}
+
+
+Destrucción de \hyperlink{structOBJETO}{OBJETO} destruyeOBJETO() se encarga de liberar toda la memoria que hubiese resrvado un \hyperlink{structOBJETO}{OBJETO} en caso de estar reservada. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al puntero del \hyperlink{structOBJETO}{OBJETO} que se desea destruir \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Siempre devuelve OK. No hay posibilidad de error 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_aee741412f894360feaf28237ab920f90}{
+\index{objeto.h@{objeto.h}!isContenedor@{isContenedor}}
+\index{isContenedor@{isContenedor}!objeto.h@{objeto.h}}
+\subsubsection[{isContenedor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} isContenedor ({\bf OBJETO} $\ast$ {\em o})}}
+\label{objeto_8h_aee741412f894360feaf28237ab920f90}
+
+
+¿Es contenedor? \hyperlink{objeto_8h_aee741412f894360feaf28237ab920f90}{isContenedor()} permite saber si un \hyperlink{structOBJETO}{OBJETO} puede contener otros objetos o no. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a verificar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE según sea el caso 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_a1f70f215948ae729251649c9aeee4d75}{
+\index{objeto.h@{objeto.h}!isEncendido@{isEncendido}}
+\index{isEncendido@{isEncendido}!objeto.h@{objeto.h}}
+\subsubsection[{isEncendido}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} isEncendido ({\bf OBJETO} $\ast$ {\em o})}}
+\label{objeto_8h_a1f70f215948ae729251649c9aeee4d75}
+
+
+¿Está iluminado? \hyperlink{objeto_8h_a1f70f215948ae729251649c9aeee4d75}{isEncendido()} permite saber si un \hyperlink{structOBJETO}{OBJETO} está encendido o no. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a verificar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE según sea el caso 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_a9ba4fb05d31609330cfd381ec74e2bdc}{
+\index{objeto.h@{objeto.h}!isLuz@{isLuz}}
+\index{isLuz@{isLuz}!objeto.h@{objeto.h}}
+\subsubsection[{isLuz}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} isLuz ({\bf OBJETO} $\ast$ {\em o})}}
+\label{objeto_8h_a9ba4fb05d31609330cfd381ec74e2bdc}
+
+
+¿Es luminoso? \hyperlink{objeto_8h_a9ba4fb05d31609330cfd381ec74e2bdc}{isLuz()} permite saber si un \hyperlink{structOBJETO}{OBJETO} tiene luz propia o no. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a verificar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE según sea el caso 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_a923fee3691f31143db8e9de3b1286d60}{
+\index{objeto.h@{objeto.h}!isMovido@{isMovido}}
+\index{isMovido@{isMovido}!objeto.h@{objeto.h}}
+\subsubsection[{isMovido}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} isMovido ({\bf OBJETO} $\ast$ {\em o})}}
+\label{objeto_8h_a923fee3691f31143db8e9de3b1286d60}
+
+
+¿Está movido? \hyperlink{objeto_8h_a923fee3691f31143db8e9de3b1286d60}{isMovido()} permite saber si un \hyperlink{structOBJETO}{OBJETO} se ha movido o no. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a verificar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE según sea el caso 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_a63f99e73df7fe13c69253be52b826041}{
+\index{objeto.h@{objeto.h}!isMovil@{isMovil}}
+\index{isMovil@{isMovil}!objeto.h@{objeto.h}}
+\subsubsection[{isMovil}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} isMovil ({\bf OBJETO} $\ast$ {\em o})}}
+\label{objeto_8h_a63f99e73df7fe13c69253be52b826041}
+
+
+¿Es movil? \hyperlink{objeto_8h_a63f99e73df7fe13c69253be52b826041}{isMovil()} permite saber si un \hyperlink{structOBJETO}{OBJETO} se puede mover o no. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a verificar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE según sea el caso 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_aa0a744973a1f1e6c4173ff254677488e}{
+\index{objeto.h@{objeto.h}!isObjDestruido@{isObjDestruido}}
+\index{isObjDestruido@{isObjDestruido}!objeto.h@{objeto.h}}
+\subsubsection[{isObjDestruido}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} isObjDestruido ({\bf OBJETO} $\ast$ {\em o})}}
+\label{objeto_8h_aa0a744973a1f1e6c4173ff254677488e}
+
+
+¿Está destruido? \hyperlink{objeto_8h_aa0a744973a1f1e6c4173ff254677488e}{isObjDestruido()} permite saber si un \hyperlink{structOBJETO}{OBJETO} está destruido o no. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a verificar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE según sea el caso 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_a0ef206be61c897be9604c70eaa8e2204}{
+\index{objeto.h@{objeto.h}!isObjEmpty@{isObjEmpty}}
+\index{isObjEmpty@{isObjEmpty}!objeto.h@{objeto.h}}
+\subsubsection[{isObjEmpty}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} isObjEmpty ({\bf OBJETO} $\ast$ {\em o})}}
+\label{objeto_8h_a0ef206be61c897be9604c70eaa8e2204}
+
+
+¿Está vacio? \hyperlink{objeto_8h_a0ef206be61c897be9604c70eaa8e2204}{isObjEmpty()} permite saber si un \hyperlink{structOBJETO}{OBJETO} está relleno o no. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a verificar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE según sea el caso 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_aaa8caee60fb117a89e099f2a8803b93b}{
+\index{objeto.h@{objeto.h}!isObjinObj@{isObjinObj}}
+\index{isObjinObj@{isObjinObj}!objeto.h@{objeto.h}}
+\subsubsection[{isObjinObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} isObjinObj ({\bf OBJETO} $\ast$ {\em o}, \/  {\bf ID} {\em id})}}
+\label{objeto_8h_aaa8caee60fb117a89e099f2a8803b93b}
+
+
+Objeto contenido \hyperlink{objeto_8h_aaa8caee60fb117a89e099f2a8803b93b}{isObjinObj()} permite saber si un objeto se encuentra en el inventario de un \hyperlink{structOBJETO}{OBJETO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a verificar \item[{\em id}]es una ID del objeto que se quiere saber si está o no en el \hyperlink{structOBJETO}{OBJETO} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE según el caso 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_a516743f8b5c5e1ae15f070b4d75d18a8}{
+\index{objeto.h@{objeto.h}!isOculto@{isOculto}}
+\index{isOculto@{isOculto}!objeto.h@{objeto.h}}
+\subsubsection[{isOculto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} isOculto ({\bf OBJETO} $\ast$ {\em o})}}
+\label{objeto_8h_a516743f8b5c5e1ae15f070b4d75d18a8}
+
+
+¿Está oculto? \hyperlink{objeto_8h_a516743f8b5c5e1ae15f070b4d75d18a8}{isOculto()} permite saber si un \hyperlink{structOBJETO}{OBJETO} está oculto o no. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a verificar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE según sea el caso 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_ad038f26d77b80821097eec39aaedb1ac}{
+\index{objeto.h@{objeto.h}!meterObjObj@{meterObjObj}}
+\index{meterObjObj@{meterObjObj}!objeto.h@{objeto.h}}
+\subsubsection[{meterObjObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} meterObjObj ({\bf OBJETO} $\ast$ {\em o}, \/  {\bf ID} {\em id})}}
+\label{objeto_8h_ad038f26d77b80821097eec39aaedb1ac}
+
+
+Introducir objetos \hyperlink{mundo_8h_a23ee14b400076980af11867eeec2c853}{meterObjObj()} introduce un objeto en el inventario de un \hyperlink{structOBJETO}{OBJETO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a modificar \item[{\em id}]es una ID del objeto que se desea guardar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor
+\end{DoxyAuthor}
+Introducir objetos \hyperlink{mundo_8h_a23ee14b400076980af11867eeec2c853}{meterObjObj()} introduce un objeto en el inventario de un \hyperlink{structOBJETO}{OBJETO}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em objeto}]es un puntero al objeto que guarda \item[{\em id}]es la id del objeto a guardar /$\ast$$\ast$ \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si todo es correcto, ERR si hubo algun fallo /$\ast$ 
+\end{DoxyReturn}
+\hypertarget{objeto_8h_a12861fac43a4056851306d1c03174550}{
+\index{objeto.h@{objeto.h}!saberDescrExamObj@{saberDescrExamObj}}
+\index{saberDescrExamObj@{saberDescrExamObj}!objeto.h@{objeto.h}}
+\subsubsection[{saberDescrExamObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberDescrExamObj ({\bf OBJETO} $\ast$ {\em o}, \/  char $\ast$ {\em descr})}}
+\label{objeto_8h_a12861fac43a4056851306d1c03174550}
+
+
+Descripción de un \hyperlink{structOBJETO}{OBJETO} \hyperlink{objeto_8h_a12861fac43a4056851306d1c03174550}{saberDescrExamObj()} permite saber el contenido de la descripcion examinar de un \hyperlink{structOBJETO}{OBJETO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a verificar \item[{\em descr}]es un puntero a una cadena donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_ac722342707c3cd4ffd5dc6f90393be74}{
+\index{objeto.h@{objeto.h}!saberDescrMovido@{saberDescrMovido}}
+\index{saberDescrMovido@{saberDescrMovido}!objeto.h@{objeto.h}}
+\subsubsection[{saberDescrMovido}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberDescrMovido ({\bf OBJETO} $\ast$ {\em o}, \/  char $\ast$ {\em descr})}}
+\label{objeto_8h_ac722342707c3cd4ffd5dc6f90393be74}
+
+
+Descripción de un \hyperlink{structOBJETO}{OBJETO} \hyperlink{objeto_8h_ac722342707c3cd4ffd5dc6f90393be74}{saberDescrMovido()} permite saber el contenido de la descripcion movido de un \hyperlink{structOBJETO}{OBJETO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a verificar \item[{\em descr}]es un puntero a una cadena donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_a7ef28fbd0cfbc2833c370f1b815eaf7f}{
+\index{objeto.h@{objeto.h}!saberDescrObj@{saberDescrObj}}
+\index{saberDescrObj@{saberDescrObj}!objeto.h@{objeto.h}}
+\subsubsection[{saberDescrObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberDescrObj ({\bf OBJETO} $\ast$ {\em o}, \/  char $\ast$ {\em descr})}}
+\label{objeto_8h_a7ef28fbd0cfbc2833c370f1b815eaf7f}
+
+
+Descripción de un \hyperlink{structOBJETO}{OBJETO} \hyperlink{objeto_8h_a7ef28fbd0cfbc2833c370f1b815eaf7f}{saberDescrObj()} permite saber el contenido de la descripcion de un \hyperlink{structOBJETO}{OBJETO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a verificar \item[{\em descr}]es un puntero a una cadena donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_a9197e48b50d341a029c36c9c8b393421}{
+\index{objeto.h@{objeto.h}!saberIdObj@{saberIdObj}}
+\index{saberIdObj@{saberIdObj}!objeto.h@{objeto.h}}
+\subsubsection[{saberIdObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberIdObj ({\bf OBJETO} $\ast$ {\em o}, \/  {\bf ID} $\ast$ {\em id})}}
+\label{objeto_8h_a9197e48b50d341a029c36c9c8b393421}
+
+
+Saber Norte \hyperlink{objeto_8h_a9197e48b50d341a029c36c9c8b393421}{saberIdObj()} permite saber la ID del \hyperlink{structOBJETO}{OBJETO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a verificar \item[{\em id}]es un puntero a una ID donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_add809cf11ad014988fb8b749efc010e0}{
+\index{objeto.h@{objeto.h}!saberNombreObj@{saberNombreObj}}
+\index{saberNombreObj@{saberNombreObj}!objeto.h@{objeto.h}}
+\subsubsection[{saberNombreObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberNombreObj ({\bf OBJETO} $\ast$ {\em o}, \/  char $\ast$ {\em nombre})}}
+\label{objeto_8h_add809cf11ad014988fb8b749efc010e0}
+
+
+Descripción de un \hyperlink{structOBJETO}{OBJETO} \hyperlink{objeto_8h_add809cf11ad014988fb8b749efc010e0}{saberNombreObj()} permite saber el contenido del nombre de un \hyperlink{structOBJETO}{OBJETO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a verificar \item[{\em nombre}]es un puntero a una cadena donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_a391fd7fddb54f9205de934c63feb49fe}{
+\index{objeto.h@{objeto.h}!saberObjIesimoObj@{saberObjIesimoObj}}
+\index{saberObjIesimoObj@{saberObjIesimoObj}!objeto.h@{objeto.h}}
+\subsubsection[{saberObjIesimoObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ID} saberObjIesimoObj ({\bf OBJETO} $\ast$ {\em o}, \/  int {\em i})}}
+\label{objeto_8h_a391fd7fddb54f9205de934c63feb49fe}
+
+
+Saber un Objeto \hyperlink{objeto_8h_a391fd7fddb54f9205de934c63feb49fe}{saberObjIesimoObj()} permite saber el iésimo objeto del inventario del \hyperlink{structOBJETO}{OBJETO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a verificar \item[{\em i}]es la posición que se desea conocer \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+devuelve la ID del objeto que se encuentre en dicha posición 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_a710f1c1d5d39e10fe66f812e6f6eeca7}{
+\index{objeto.h@{objeto.h}!saberObjTamInv@{saberObjTamInv}}
+\index{saberObjTamInv@{saberObjTamInv}!objeto.h@{objeto.h}}
+\subsubsection[{saberObjTamInv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberObjTamInv ({\bf OBJETO} $\ast$ {\em o}, \/  int $\ast$ {\em num})}}
+\label{objeto_8h_a710f1c1d5d39e10fe66f812e6f6eeca7}
+
+
+Tamaño del inventario \hyperlink{objeto_8h_a710f1c1d5d39e10fe66f812e6f6eeca7}{saberObjTamInv()} permite saber cuantos objeto se encuentran en el \hyperlink{structOBJETO}{OBJETO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a verificar \item[{\em num}]es un puntero a un entero donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_a1a765ee131f485ec321b36ffe0aa94b6}{
+\index{objeto.h@{objeto.h}!saberTamDescrExamObj@{saberTamDescrExamObj}}
+\index{saberTamDescrExamObj@{saberTamDescrExamObj}!objeto.h@{objeto.h}}
+\subsubsection[{saberTamDescrExamObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberTamDescrExamObj ({\bf OBJETO} $\ast$ {\em o}, \/  int $\ast$ {\em num})}}
+\label{objeto_8h_a1a765ee131f485ec321b36ffe0aa94b6}
+
+
+Tamaño de Examinar saberTamDescExamObj() permite saber el tamaño de la cadena que contiene la descripción examinar del \hyperlink{structOBJETO}{OBJETO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a verificar \item[{\em num}]es un puntero a un entero donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_adc79d01a4a362475134df8b7d00a1a43}{
+\index{objeto.h@{objeto.h}!saberTamDescrMovido@{saberTamDescrMovido}}
+\index{saberTamDescrMovido@{saberTamDescrMovido}!objeto.h@{objeto.h}}
+\subsubsection[{saberTamDescrMovido}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberTamDescrMovido ({\bf OBJETO} $\ast$ {\em o}, \/  int $\ast$ {\em num})}}
+\label{objeto_8h_adc79d01a4a362475134df8b7d00a1a43}
+
+
+Tamaño de Examinar \hyperlink{objeto_8h_adc79d01a4a362475134df8b7d00a1a43}{saberTamDescrMovido()} permite saber el tamaño de la cadena que contiene la descripción movido del \hyperlink{structOBJETO}{OBJETO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a verificar \item[{\em num}]es un puntero a un entero donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_adfdd7df8f29b3887865db3feb5cba6a1}{
+\index{objeto.h@{objeto.h}!saberTamDescrObj@{saberTamDescrObj}}
+\index{saberTamDescrObj@{saberTamDescrObj}!objeto.h@{objeto.h}}
+\subsubsection[{saberTamDescrObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberTamDescrObj ({\bf OBJETO} $\ast$ {\em o}, \/  int $\ast$ {\em num})}}
+\label{objeto_8h_adfdd7df8f29b3887865db3feb5cba6a1}
+
+
+Tamaño de Examinar \hyperlink{objeto_8h_adfdd7df8f29b3887865db3feb5cba6a1}{saberTamDescrObj()} permite saber el tamaño de la cadena que contiene la descripción del \hyperlink{structOBJETO}{OBJETO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a verificar \item[{\em num}]es un puntero a un entero donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_a26e2c89fda38958a725ae37a64c08b91}{
+\index{objeto.h@{objeto.h}!saberTamNombreObj@{saberTamNombreObj}}
+\index{saberTamNombreObj@{saberTamNombreObj}!objeto.h@{objeto.h}}
+\subsubsection[{saberTamNombreObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberTamNombreObj ({\bf OBJETO} $\ast$ {\em o}, \/  int $\ast$ {\em num})}}
+\label{objeto_8h_a26e2c89fda38958a725ae37a64c08b91}
+
+
+Tamaño de Examinar \hyperlink{objeto_8h_a26e2c89fda38958a725ae37a64c08b91}{saberTamNombreObj()} permite saber el tamaño de la cadena que contiene el nombre del \hyperlink{structOBJETO}{OBJETO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a verificar \item[{\em num}]es un puntero a un entero donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{objeto_8h_a227269ebf771eb89ccf4e7713be7559c}{
+\index{objeto.h@{objeto.h}!sacarObjObj@{sacarObjObj}}
+\index{sacarObjObj@{sacarObjObj}!objeto.h@{objeto.h}}
+\subsubsection[{sacarObjObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} sacarObjObj ({\bf OBJETO} $\ast$ {\em o}, \/  {\bf ID} {\em id})}}
+\label{objeto_8h_a227269ebf771eb89ccf4e7713be7559c}
+
+
+Sacar objetos \hyperlink{objeto_8h_a227269ebf771eb89ccf4e7713be7559c}{sacarObjObj()} extrae de un inventario de un \hyperlink{structOBJETO}{OBJETO} un objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structOBJETO}{OBJETO} a modificar \item[{\em id}]es una ID del objeto que se desea extraer \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}

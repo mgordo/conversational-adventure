@@ -1,0 +1,317 @@
+\hypertarget{union_8h}{
+\section{union.h File Reference}
+\label{union_8h}\index{union.h@{union.h}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structUNION}{UNION}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{union_8h_a4f726495c9f2cd8b32a3ee499fee224b}{creaUnion} (\hyperlink{structUNION}{UNION} $\ast$$\ast$u)
+\begin{DoxyCompactList}\small\item\em Creación de Unión \hyperlink{union_8h_a4f726495c9f2cd8b32a3ee499fee224b}{creaUnion()} se encarga de reservar la memoria para una nueva Unión. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{union_8h_aaf5c1b1719d66f24a787ccfc69f0f4f8}{destruyeUnion} (\hyperlink{structUNION}{UNION} $\ast$$\ast$u)
+\begin{DoxyCompactList}\small\item\em Destrucción de Unión \hyperlink{union_8h_aaf5c1b1719d66f24a787ccfc69f0f4f8}{destruyeUnion()} se encarga de liberar toda la memoria que hubiese resrvado una Unión en caso de estar reservada. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{union_8h_aa85add085d7a09c59a0fb06351117e59}{cambiaUniId} (\hyperlink{structUNION}{UNION} $\ast$u, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Cambio de Id \hyperlink{union_8h_aa85add085d7a09c59a0fb06351117e59}{cambiaUniId()} se encarga de etiquetar una \hyperlink{structUNION}{UNION} con una Id concreta. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{union_8h_af48d3bec9b60dafd478f78d68ce9d7bf}{cambiaUniSalida} (\hyperlink{structUNION}{UNION} $\ast$u, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Cambio de Salida \hyperlink{union_8h_af48d3bec9b60dafd478f78d68ce9d7bf}{cambiaUniSalida()} cambia la ID del espacio del que parte la \hyperlink{structUNION}{UNION}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{union_8h_a0aa71222d7bd53f47fe2f79ed5975a35}{cambiaUniLlegada} (\hyperlink{structUNION}{UNION} $\ast$u, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Cambio de Llegada \hyperlink{union_8h_a0aa71222d7bd53f47fe2f79ed5975a35}{cambiaUniLlegada()} cambia la ID del espacio al que llega la \hyperlink{structUNION}{UNION}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{union_8h_a3bf854b5f549525cc7257ebf2e4100e2}{cambiaUniAbierta} (\hyperlink{structUNION}{UNION} $\ast$u, \hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} abierto)
+\begin{DoxyCompactList}\small\item\em Cambio de Abierta \hyperlink{union_8h_a3bf854b5f549525cc7257ebf2e4100e2}{cambiaUniAbierta()} permite definir si una \hyperlink{structUNION}{UNION} está o no abierta. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{union_8h_a82e73f0e382eef66a56d2519ce28c2ea}{cambiaUniKey} (\hyperlink{structUNION}{UNION} $\ast$u, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} key)
+\begin{DoxyCompactList}\small\item\em Cambio de Llave \hyperlink{union_8h_a82e73f0e382eef66a56d2519ce28c2ea}{cambiaUniKey()} permite determinar la ID del objeto que permita abrir una \hyperlink{structUNION}{UNION}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{union_8h_a33f7324336f66f2a49d0e23c9b78eb88}{isUniDestruida} (\hyperlink{structUNION}{UNION} $\ast$u)
+\begin{DoxyCompactList}\small\item\em ¿Está destruida? \hyperlink{union_8h_a33f7324336f66f2a49d0e23c9b78eb88}{isUniDestruida()} permite saber si una \hyperlink{structUNION}{UNION} está destruida o no. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{union_8h_a5be777cce88e470ceb8e6535016fa856}{isUniEmpty} (\hyperlink{structUNION}{UNION} $\ast$u)
+\begin{DoxyCompactList}\small\item\em ¿Está vacía? \hyperlink{union_8h_a5be777cce88e470ceb8e6535016fa856}{isUniEmpty()} permite saber si una \hyperlink{structUNION}{UNION} ha sido rellenada con datos o no. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{union_8h_a2334ac53ff3fbf4196d06f64a39db6f3}{isUniAbierta} (\hyperlink{structUNION}{UNION} $\ast$u)
+\begin{DoxyCompactList}\small\item\em ¿Está abierta? \hyperlink{union_8h_a2334ac53ff3fbf4196d06f64a39db6f3}{isUniAbierta()} permite saber si una \hyperlink{structUNION}{UNION} está o no abierta. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{union_8h_a9a3dca667e3f535645e7ad8f0afde01c}{saberUniId} (\hyperlink{structUNION}{UNION} $\ast$u, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$id)
+\begin{DoxyCompactList}\small\item\em Id de la \hyperlink{structUNION}{UNION} \hyperlink{union_8h_a9a3dca667e3f535645e7ad8f0afde01c}{saberUniId()} permite saber la ID de la \hyperlink{structUNION}{UNION}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{union_8h_a1ff11c7e5da6af8ad5f5c95b38b0652c}{saberUniSalida} (\hyperlink{structUNION}{UNION} $\ast$u, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$id)
+\begin{DoxyCompactList}\small\item\em Espacio Salida \hyperlink{union_8h_a1ff11c7e5da6af8ad5f5c95b38b0652c}{saberUniSalida()} permite saber la ID del espacio del que parte la \hyperlink{structUNION}{UNION}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{union_8h_a145da3ba0ae2ffc688849daaa924d77d}{saberUniLlegada} (\hyperlink{structUNION}{UNION} $\ast$u, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$id)
+\begin{DoxyCompactList}\small\item\em Espacio Llegada \hyperlink{union_8h_a145da3ba0ae2ffc688849daaa924d77d}{saberUniLlegada()} permite saber la ID del espacio al que llega la \hyperlink{structUNION}{UNION}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{union_8h_ac28fb8e9861c76c4f41dbbef65dcbabf}{saberUniKey} (\hyperlink{structUNION}{UNION} $\ast$u, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$id)
+\begin{DoxyCompactList}\small\item\em Saber Llave \hyperlink{union_8h_ac28fb8e9861c76c4f41dbbef65dcbabf}{saberUniKey()} permite saber la ID del objeto que abre la \hyperlink{structUNION}{UNION}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fichero que contiene los prototipos y las estructuras de una \hyperlink{structUNION}{UNION} \begin{DoxyAuthor}{Author}
+Antonio Jimenez 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.0
+\end{DoxyVersion}
+/$\ast$$\ast$Información útil:
+
+
+\begin{DoxyItemize}
+\item Este módulo depende del módulo \hyperlink{structCONJUNTO}{CONJUNTO}, por lo que se incluirá el .h correspondiente 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\hypertarget{union_8h_a3bf854b5f549525cc7257ebf2e4100e2}{
+\index{union.h@{union.h}!cambiaUniAbierta@{cambiaUniAbierta}}
+\index{cambiaUniAbierta@{cambiaUniAbierta}!union.h@{union.h}}
+\subsubsection[{cambiaUniAbierta}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaUniAbierta ({\bf UNION} $\ast$ {\em u}, \/  {\bf BOOL} {\em abierto})}}
+\label{union_8h_a3bf854b5f549525cc7257ebf2e4100e2}
+
+
+Cambio de Abierta \hyperlink{union_8h_a3bf854b5f549525cc7257ebf2e4100e2}{cambiaUniAbierta()} permite definir si una \hyperlink{structUNION}{UNION} está o no abierta. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]es un puntero a la \hyperlink{structUNION}{UNION} a modificar \item[{\em abierto}]es un BOOL con el dato que se desea introducir \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{union_8h_aa85add085d7a09c59a0fb06351117e59}{
+\index{union.h@{union.h}!cambiaUniId@{cambiaUniId}}
+\index{cambiaUniId@{cambiaUniId}!union.h@{union.h}}
+\subsubsection[{cambiaUniId}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaUniId ({\bf UNION} $\ast$ {\em u}, \/  {\bf ID} {\em id})}}
+\label{union_8h_aa85add085d7a09c59a0fb06351117e59}
+
+
+Cambio de Id \hyperlink{union_8h_aa85add085d7a09c59a0fb06351117e59}{cambiaUniId()} se encarga de etiquetar una \hyperlink{structUNION}{UNION} con una Id concreta. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]es un puntero a la \hyperlink{structUNION}{UNION} a modificar \item[{\em id}]es una ID con la que se desea modificar la \hyperlink{structUNION}{UNION} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{union_8h_a82e73f0e382eef66a56d2519ce28c2ea}{
+\index{union.h@{union.h}!cambiaUniKey@{cambiaUniKey}}
+\index{cambiaUniKey@{cambiaUniKey}!union.h@{union.h}}
+\subsubsection[{cambiaUniKey}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaUniKey ({\bf UNION} $\ast$ {\em u}, \/  {\bf ID} {\em key})}}
+\label{union_8h_a82e73f0e382eef66a56d2519ce28c2ea}
+
+
+Cambio de Llave \hyperlink{union_8h_a82e73f0e382eef66a56d2519ce28c2ea}{cambiaUniKey()} permite determinar la ID del objeto que permita abrir una \hyperlink{structUNION}{UNION}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]es un puntero a la \hyperlink{structUNION}{UNION} a modificar \item[{\em key}]es la ID con la que desea modificar la \hyperlink{structUNION}{UNION} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{union_8h_a0aa71222d7bd53f47fe2f79ed5975a35}{
+\index{union.h@{union.h}!cambiaUniLlegada@{cambiaUniLlegada}}
+\index{cambiaUniLlegada@{cambiaUniLlegada}!union.h@{union.h}}
+\subsubsection[{cambiaUniLlegada}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaUniLlegada ({\bf UNION} $\ast$ {\em u}, \/  {\bf ID} {\em id})}}
+\label{union_8h_a0aa71222d7bd53f47fe2f79ed5975a35}
+
+
+Cambio de Llegada \hyperlink{union_8h_a0aa71222d7bd53f47fe2f79ed5975a35}{cambiaUniLlegada()} cambia la ID del espacio al que llega la \hyperlink{structUNION}{UNION}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]es un puntero a la \hyperlink{structUNION}{UNION} a modificar \item[{\em id}]es una ID con la que se desea modificar la \hyperlink{structUNION}{UNION} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{union_8h_af48d3bec9b60dafd478f78d68ce9d7bf}{
+\index{union.h@{union.h}!cambiaUniSalida@{cambiaUniSalida}}
+\index{cambiaUniSalida@{cambiaUniSalida}!union.h@{union.h}}
+\subsubsection[{cambiaUniSalida}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaUniSalida ({\bf UNION} $\ast$ {\em u}, \/  {\bf ID} {\em id})}}
+\label{union_8h_af48d3bec9b60dafd478f78d68ce9d7bf}
+
+
+Cambio de Salida \hyperlink{union_8h_af48d3bec9b60dafd478f78d68ce9d7bf}{cambiaUniSalida()} cambia la ID del espacio del que parte la \hyperlink{structUNION}{UNION}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]es un puntero a la \hyperlink{structUNION}{UNION} a modificar \item[{\em id}]es una ID con la que se desea modificar la \hyperlink{structUNION}{UNION} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{union_8h_a4f726495c9f2cd8b32a3ee499fee224b}{
+\index{union.h@{union.h}!creaUnion@{creaUnion}}
+\index{creaUnion@{creaUnion}!union.h@{union.h}}
+\subsubsection[{creaUnion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaUnion ({\bf UNION} $\ast$$\ast$ {\em u})}}
+\label{union_8h_a4f726495c9f2cd8b32a3ee499fee224b}
+
+
+Creación de Unión \hyperlink{union_8h_a4f726495c9f2cd8b32a3ee499fee224b}{creaUnion()} se encarga de reservar la memoria para una nueva Unión. 
+
+Información de la estructura:
+
+
+\begin{DoxyItemize}
+\item id es el identificador de la unión
+\item salida es el identificador del espacio de donde sale la unión
+\item llegada es el identificador del espacio al que llega la unión
+\item abierta es un valor BOOL que indica si la unión está abierta o no. Si no estuviese abierta, no se podría atravesar 
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]es un puntero a un puntero a \hyperlink{structUNION}{UNION}, que será donde se guarde la dirección de la \hyperlink{structUNION}{UNION} que se reserve \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+
+\end{DoxyItemize}\hypertarget{union_8h_aaf5c1b1719d66f24a787ccfc69f0f4f8}{
+\index{union.h@{union.h}!destruyeUnion@{destruyeUnion}}
+\index{destruyeUnion@{destruyeUnion}!union.h@{union.h}}
+\subsubsection[{destruyeUnion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} destruyeUnion ({\bf UNION} $\ast$$\ast$ {\em u})}}
+\label{union_8h_aaf5c1b1719d66f24a787ccfc69f0f4f8}
+
+
+Destrucción de Unión \hyperlink{union_8h_aaf5c1b1719d66f24a787ccfc69f0f4f8}{destruyeUnion()} se encarga de liberar toda la memoria que hubiese resrvado una Unión en caso de estar reservada. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]es un puntero al puntero de la Unión que se desea destruir \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Siempre devuelve OK. No hay posibilidad de error 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{union_8h_a2334ac53ff3fbf4196d06f64a39db6f3}{
+\index{union.h@{union.h}!isUniAbierta@{isUniAbierta}}
+\index{isUniAbierta@{isUniAbierta}!union.h@{union.h}}
+\subsubsection[{isUniAbierta}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} isUniAbierta ({\bf UNION} $\ast$ {\em u})}}
+\label{union_8h_a2334ac53ff3fbf4196d06f64a39db6f3}
+
+
+¿Está abierta? \hyperlink{union_8h_a2334ac53ff3fbf4196d06f64a39db6f3}{isUniAbierta()} permite saber si una \hyperlink{structUNION}{UNION} está o no abierta. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]es un puntero a la \hyperlink{structUNION}{UNION} a comprobar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE según sea el caso 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{union_8h_a33f7324336f66f2a49d0e23c9b78eb88}{
+\index{union.h@{union.h}!isUniDestruida@{isUniDestruida}}
+\index{isUniDestruida@{isUniDestruida}!union.h@{union.h}}
+\subsubsection[{isUniDestruida}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} isUniDestruida ({\bf UNION} $\ast$ {\em u})}}
+\label{union_8h_a33f7324336f66f2a49d0e23c9b78eb88}
+
+
+¿Está destruida? \hyperlink{union_8h_a33f7324336f66f2a49d0e23c9b78eb88}{isUniDestruida()} permite saber si una \hyperlink{structUNION}{UNION} está destruida o no. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]es un puntero a la \hyperlink{structUNION}{UNION} a verificar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE según sea el caso 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{union_8h_a5be777cce88e470ceb8e6535016fa856}{
+\index{union.h@{union.h}!isUniEmpty@{isUniEmpty}}
+\index{isUniEmpty@{isUniEmpty}!union.h@{union.h}}
+\subsubsection[{isUniEmpty}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} isUniEmpty ({\bf UNION} $\ast$ {\em u})}}
+\label{union_8h_a5be777cce88e470ceb8e6535016fa856}
+
+
+¿Está vacía? \hyperlink{union_8h_a5be777cce88e470ceb8e6535016fa856}{isUniEmpty()} permite saber si una \hyperlink{structUNION}{UNION} ha sido rellenada con datos o no. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]es un puntero a la \hyperlink{structUNION}{UNION} a comprobar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE según sea el caso 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{union_8h_a9a3dca667e3f535645e7ad8f0afde01c}{
+\index{union.h@{union.h}!saberUniId@{saberUniId}}
+\index{saberUniId@{saberUniId}!union.h@{union.h}}
+\subsubsection[{saberUniId}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberUniId ({\bf UNION} $\ast$ {\em u}, \/  {\bf ID} $\ast$ {\em id})}}
+\label{union_8h_a9a3dca667e3f535645e7ad8f0afde01c}
+
+
+Id de la \hyperlink{structUNION}{UNION} \hyperlink{union_8h_a9a3dca667e3f535645e7ad8f0afde01c}{saberUniId()} permite saber la ID de la \hyperlink{structUNION}{UNION}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]es un puntero a la \hyperlink{structUNION}{UNION} a verificar \item[{\em id}]es un puntero a una ID donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{union_8h_ac28fb8e9861c76c4f41dbbef65dcbabf}{
+\index{union.h@{union.h}!saberUniKey@{saberUniKey}}
+\index{saberUniKey@{saberUniKey}!union.h@{union.h}}
+\subsubsection[{saberUniKey}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberUniKey ({\bf UNION} $\ast$ {\em u}, \/  {\bf ID} $\ast$ {\em id})}}
+\label{union_8h_ac28fb8e9861c76c4f41dbbef65dcbabf}
+
+
+Saber Llave \hyperlink{union_8h_ac28fb8e9861c76c4f41dbbef65dcbabf}{saberUniKey()} permite saber la ID del objeto que abre la \hyperlink{structUNION}{UNION}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]es un puntero a la \hyperlink{structUNION}{UNION} a verificar \item[{\em id}]es un puntero a una ID donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{union_8h_a145da3ba0ae2ffc688849daaa924d77d}{
+\index{union.h@{union.h}!saberUniLlegada@{saberUniLlegada}}
+\index{saberUniLlegada@{saberUniLlegada}!union.h@{union.h}}
+\subsubsection[{saberUniLlegada}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberUniLlegada ({\bf UNION} $\ast$ {\em u}, \/  {\bf ID} $\ast$ {\em id})}}
+\label{union_8h_a145da3ba0ae2ffc688849daaa924d77d}
+
+
+Espacio Llegada \hyperlink{union_8h_a145da3ba0ae2ffc688849daaa924d77d}{saberUniLlegada()} permite saber la ID del espacio al que llega la \hyperlink{structUNION}{UNION}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]es un puntero a la \hyperlink{structUNION}{UNION} a verificar \item[{\em id}]es un puntero a una ID donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{union_8h_a1ff11c7e5da6af8ad5f5c95b38b0652c}{
+\index{union.h@{union.h}!saberUniSalida@{saberUniSalida}}
+\index{saberUniSalida@{saberUniSalida}!union.h@{union.h}}
+\subsubsection[{saberUniSalida}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberUniSalida ({\bf UNION} $\ast$ {\em u}, \/  {\bf ID} $\ast$ {\em id})}}
+\label{union_8h_a1ff11c7e5da6af8ad5f5c95b38b0652c}
+
+
+Espacio Salida \hyperlink{union_8h_a1ff11c7e5da6af8ad5f5c95b38b0652c}{saberUniSalida()} permite saber la ID del espacio del que parte la \hyperlink{structUNION}{UNION}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]es un puntero a la \hyperlink{structUNION}{UNION} a verificar \item[{\em id}]es un puntero a una ID donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}

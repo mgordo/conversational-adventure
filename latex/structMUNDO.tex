@@ -1,0 +1,83 @@
+\hypertarget{structMUNDO}{
+\section{MUNDO Struct Reference}
+\label{structMUNDO}\index{MUNDO@{MUNDO}}
+}
+
+
+Estructura básica de un mundo.  
+
+
+
+
+{\ttfamily \#include $<$mundo.h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structESPACIO}{ESPACIO} $\ast$$\ast$ \hyperlink{structMUNDO_a832b3e2f2e77ad5534d413f2faff8bef}{espacios}
+\item 
+\hyperlink{structOBJETO}{OBJETO} $\ast$$\ast$ \hyperlink{structMUNDO_a10841f6fef34e8d6a103a709570879c6}{objetos}
+\item 
+\hyperlink{structJUGADOR}{JUGADOR} $\ast$$\ast$ \hyperlink{structMUNDO_a43fc6c23a4e3168560d6cb9c7bf6c295}{jugador}
+\item 
+\hyperlink{structUNION}{UNION} $\ast$$\ast$ \hyperlink{structMUNDO_a78e4cb2282b788055fb5b080a92175b3}{uniones}
+\item 
+int \hyperlink{structMUNDO_ae506a93c0ce3f9482546595e9518a87a}{numesp}
+\item 
+int \hyperlink{structMUNDO_ab1fbe30fa6f1b2788e30704146823974}{numobj}
+\item 
+int \hyperlink{structMUNDO_a153d7e7f82980e9d09522eb73b08656e}{numjug}
+\item 
+int \hyperlink{structMUNDO_ac50bf7a2236784e8b769b3db0fa7c5a8}{numuni}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Estructura básica de un mundo. Esta estructura contiene todos los espacios, jugadores y objetos de un mundo 
+
+\subsection{Member Data Documentation}
+\hypertarget{structMUNDO_a832b3e2f2e77ad5534d413f2faff8bef}{
+\index{MUNDO@{MUNDO}!espacios@{espacios}}
+\index{espacios@{espacios}!MUNDO@{MUNDO}}
+\subsubsection[{espacios}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ESPACIO}$\ast$$\ast$ {\bf MUNDO::espacios}}}
+\label{structMUNDO_a832b3e2f2e77ad5534d413f2faff8bef}
+Puntero a un array de punteros a ESPACIO's \hypertarget{structMUNDO_a43fc6c23a4e3168560d6cb9c7bf6c295}{
+\index{MUNDO@{MUNDO}!jugador@{jugador}}
+\index{jugador@{jugador}!MUNDO@{MUNDO}}
+\subsubsection[{jugador}]{\setlength{\rightskip}{0pt plus 5cm}{\bf JUGADOR}$\ast$$\ast$ {\bf MUNDO::jugador}}}
+\label{structMUNDO_a43fc6c23a4e3168560d6cb9c7bf6c295}
+Puntero a un array de punteros a JUGADOR'es \hypertarget{structMUNDO_ae506a93c0ce3f9482546595e9518a87a}{
+\index{MUNDO@{MUNDO}!numesp@{numesp}}
+\index{numesp@{numesp}!MUNDO@{MUNDO}}
+\subsubsection[{numesp}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf MUNDO::numesp}}}
+\label{structMUNDO_ae506a93c0ce3f9482546595e9518a87a}
+Numero que indica la cantidad de ESPACIO's del \hyperlink{structMUNDO}{MUNDO} \hypertarget{structMUNDO_a153d7e7f82980e9d09522eb73b08656e}{
+\index{MUNDO@{MUNDO}!numjug@{numjug}}
+\index{numjug@{numjug}!MUNDO@{MUNDO}}
+\subsubsection[{numjug}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf MUNDO::numjug}}}
+\label{structMUNDO_a153d7e7f82980e9d09522eb73b08656e}
+Numero que indica la cantidad de JUGADOR'es del \hyperlink{structMUNDO}{MUNDO} \hypertarget{structMUNDO_ab1fbe30fa6f1b2788e30704146823974}{
+\index{MUNDO@{MUNDO}!numobj@{numobj}}
+\index{numobj@{numobj}!MUNDO@{MUNDO}}
+\subsubsection[{numobj}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf MUNDO::numobj}}}
+\label{structMUNDO_ab1fbe30fa6f1b2788e30704146823974}
+Numero que indica la cantidad de OBJETO's del \hyperlink{structMUNDO}{MUNDO} \hypertarget{structMUNDO_ac50bf7a2236784e8b769b3db0fa7c5a8}{
+\index{MUNDO@{MUNDO}!numuni@{numuni}}
+\index{numuni@{numuni}!MUNDO@{MUNDO}}
+\subsubsection[{numuni}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf MUNDO::numuni}}}
+\label{structMUNDO_ac50bf7a2236784e8b769b3db0fa7c5a8}
+Numero que indica la cantidad de UNION'es del \hyperlink{structMUNDO}{MUNDO} \hypertarget{structMUNDO_a10841f6fef34e8d6a103a709570879c6}{
+\index{MUNDO@{MUNDO}!objetos@{objetos}}
+\index{objetos@{objetos}!MUNDO@{MUNDO}}
+\subsubsection[{objetos}]{\setlength{\rightskip}{0pt plus 5cm}{\bf OBJETO}$\ast$$\ast$ {\bf MUNDO::objetos}}}
+\label{structMUNDO_a10841f6fef34e8d6a103a709570879c6}
+Puntero a un array de punteros a OBJETO's \hypertarget{structMUNDO_a78e4cb2282b788055fb5b080a92175b3}{
+\index{MUNDO@{MUNDO}!uniones@{uniones}}
+\index{uniones@{uniones}!MUNDO@{MUNDO}}
+\subsubsection[{uniones}]{\setlength{\rightskip}{0pt plus 5cm}{\bf UNION}$\ast$$\ast$ {\bf MUNDO::uniones}}}
+\label{structMUNDO_a78e4cb2282b788055fb5b080a92175b3}
+Puntero a un array de punteros a UNION'es 
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mundo_8h}{mundo.h}\end{DoxyCompactItemize}

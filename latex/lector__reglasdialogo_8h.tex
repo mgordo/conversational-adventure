@@ -1,0 +1,113 @@
+\hypertarget{lector__reglasdialogo_8h}{
+\section{lector\_\-reglasdialogo.h File Reference}
+\label{lector__reglasdialogo_8h}\index{lector\_\-reglasdialogo.h@{lector\_\-reglasdialogo.h}}
+}
+
+
+Primitivas de las funciones lector\_\-reglasdialogo Este modulo contiene los prototipos de las funciones de lector\_\-Reglas dialogo.  
+
+
+{\ttfamily \#include \char`\"{}reglasdialogo.h\char`\"{}}\par
+{\ttfamily \#include $<$libxml/xmlmemory.h$>$}\par
+{\ttfamily \#include $<$libxml/parser.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include $<$ctype.h$>$}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structDIALOGUE}{DIALOGUE} $\ast$ \hyperlink{lector__reglasdialogo_8h_a14e36598bd71cae3620f90432e63e500}{iniDialogo} (char $\ast$nombrefich)
+\begin{DoxyCompactList}\small\item\em iniDiálogo Esta función permite leer de un fichero xml una estructura \hyperlink{structDIALOGUE}{DIALOGUE}. Los temas se procesan sin llamar a subrutinas \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lector__reglasdialogo_8h_a8ad94b3194f52eb8774262711c2db4e3}{procesaRegla} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{struct__regla}{REGLAD} $\ast$rule, int ini, int fin)
+\begin{DoxyCompactList}\small\item\em procesaRegla Esta función permite procesar una estructura REGLAD de un fichero xml \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lector__reglasdialogo_8h_a96058751c35db89587340cd089ec6286}{procesaPlantilla} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structPLANTILLA}{PLANTILLA} $\ast$plant)
+\begin{DoxyCompactList}\small\item\em iniDiálogo Esta función permite leer de un fichero xml una estructura \hyperlink{structDIALOGUE}{DIALOGUE} \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lector__reglasdialogo_8h_a60c7d791a085398ad2f2fe0ef9b6c79e}{procesaRelacion} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structRELATION}{RELATION} $\ast$rel, int tam)
+\begin{DoxyCompactList}\small\item\em iniDiálogo Esta función permite leer de un fichero xml una estructura \hyperlink{structDIALOGUE}{DIALOGUE} \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Primitivas de las funciones lector\_\-reglasdialogo Este modulo contiene los prototipos de las funciones de lector\_\-Reglas dialogo. \begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{lector__reglasdialogo_8h_a14e36598bd71cae3620f90432e63e500}{
+\index{lector\_\-reglasdialogo.h@{lector\_\-reglasdialogo.h}!iniDialogo@{iniDialogo}}
+\index{iniDialogo@{iniDialogo}!lector_reglasdialogo.h@{lector\_\-reglasdialogo.h}}
+\subsubsection[{iniDialogo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DIALOGUE}$\ast$ iniDialogo (char $\ast$ {\em nombrefich})}}
+\label{lector__reglasdialogo_8h_a14e36598bd71cae3620f90432e63e500}
+
+
+iniDiálogo Esta función permite leer de un fichero xml una estructura \hyperlink{structDIALOGUE}{DIALOGUE}. Los temas se procesan sin llamar a subrutinas 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em nombrefich}]es char pointer con el nombre del fichero xml a leer \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puntero a estrucutra \hyperlink{structDIALOGUE}{DIALOGUE} correctamente inicializada, NULL en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{lector__reglasdialogo_8h_a96058751c35db89587340cd089ec6286}{
+\index{lector\_\-reglasdialogo.h@{lector\_\-reglasdialogo.h}!procesaPlantilla@{procesaPlantilla}}
+\index{procesaPlantilla@{procesaPlantilla}!lector_reglasdialogo.h@{lector\_\-reglasdialogo.h}}
+\subsubsection[{procesaPlantilla}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaPlantilla (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf PLANTILLA} $\ast$ {\em plant})}}
+\label{lector__reglasdialogo_8h_a96058751c35db89587340cd089ec6286}
+
+
+iniDiálogo Esta función permite leer de un fichero xml una estructura \hyperlink{structDIALOGUE}{DIALOGUE} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em plant}]es un puntero a la \hyperlink{structPLANTILLA}{PLANTILLA} donde se va a guardar lo leido \item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+valor STATUS: OK o ERR dependiendo del resultado de la operacion 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{lector__reglasdialogo_8h_a8ad94b3194f52eb8774262711c2db4e3}{
+\index{lector\_\-reglasdialogo.h@{lector\_\-reglasdialogo.h}!procesaRegla@{procesaRegla}}
+\index{procesaRegla@{procesaRegla}!lector_reglasdialogo.h@{lector\_\-reglasdialogo.h}}
+\subsubsection[{procesaRegla}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaRegla (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf REGLAD} $\ast$ {\em rule}, \/  int {\em ini}, \/  int {\em fin})}}
+\label{lector__reglasdialogo_8h_a8ad94b3194f52eb8774262711c2db4e3}
+
+
+procesaRegla Esta función permite procesar una estructura REGLAD de un fichero xml 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em rule}]es puntero a estructura REGLAD en la que guardar los datos \item[{\em ini}]es entero con el campo ini de la REGLAD \item[{\em fin}]es entero con el campo fin de la REGLAD \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si se guardó correctamente o ERR si hubo error 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{lector__reglasdialogo_8h_a60c7d791a085398ad2f2fe0ef9b6c79e}{
+\index{lector\_\-reglasdialogo.h@{lector\_\-reglasdialogo.h}!procesaRelacion@{procesaRelacion}}
+\index{procesaRelacion@{procesaRelacion}!lector_reglasdialogo.h@{lector\_\-reglasdialogo.h}}
+\subsubsection[{procesaRelacion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaRelacion (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf RELATION} $\ast$ {\em rel}, \/  int {\em tam})}}
+\label{lector__reglasdialogo_8h_a60c7d791a085398ad2f2fe0ef9b6c79e}
+
+
+iniDiálogo Esta función permite leer de un fichero xml una estructura \hyperlink{structDIALOGUE}{DIALOGUE} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em tam}]es un entero \item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em rel}]es un puntero a la \hyperlink{structRELATION}{RELATION} donde se quiere guardar lo leido \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+valor STATUS: OK o ERR dependiendo del resultado de la operacion 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}

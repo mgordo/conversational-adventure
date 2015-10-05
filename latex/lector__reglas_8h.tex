@@ -1,0 +1,150 @@
+\hypertarget{lector__reglas_8h}{
+\section{lector\_\-reglas.h File Reference}
+\label{lector__reglas_8h}\index{lector\_\-reglas.h@{lector\_\-reglas.h}}
+}
+
+
+Cuerpo de las primitivas de lector de reglas xml.  
+
+
+{\ttfamily \#include \char`\"{}reglas.h\char`\"{}}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$libxml/xmlmemory.h$>$}\par
+{\ttfamily \#include $<$libxml/parser.h$>$}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structREGLAS}{REGLAS} $\ast$ \hyperlink{lector__reglas_8h_a612904814efadf3be5fc94ef2e393c95}{iniReglas} (char $\ast$nombrefich)
+\begin{DoxyCompactList}\small\item\em Inicialización de reglas Esta función permite leer un conjunto de reglas de un fichero xml y almacenarlas. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lector__reglas_8h_ab5d15e24afccd3f5969a0c019e9d92bb}{procesaReglas} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structREGLA}{REGLA} $\ast$regla)
+\begin{DoxyCompactList}\small\item\em Procesa Regla Esta función permite leer todos los campos de una regla de un fichero xml. Al salir estará guardado en la estructura regla. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lector__reglas_8h_a5ca1e749780f9560bcc7797f0d056a93}{procesaCondiciones} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structREGLA}{REGLA} $\ast$regla)
+\begin{DoxyCompactList}\small\item\em Procesa Condiciones Esta función permite leer los campos de una regla correspondientes a las condiciones de ejecución desde un fichero xml. Al salir será guardado en la estructura regla. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lector__reglas_8h_a5ce3ac61337c820e6c33192c2442e466}{procesaConsecuencias} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structREGLA}{REGLA} $\ast$regla)
+\begin{DoxyCompactList}\small\item\em Procesa Consecuencias Esta función permite leer los campos de una regla correspondientes a las consecuencias de ejecución desde un fichero xml. Al salir será guardado en la estructura regla. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lector__reglas_8h_a2e58982d1cabc5929e6b5e0a32fb866a}{procesaFrase} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structREGLA}{REGLA} $\ast$regla)
+\begin{DoxyCompactList}\small\item\em Procesa Frase Esta función permite leer la frase asociada a una regla correspondientes desde un fichero xml. Al salir será guardado en la estructura regla. \item\end{DoxyCompactList}\item 
+\hyperlink{reglas_8h_ac31209120b6a535e5f3435164fed75ca}{CAMPO} \hyperlink{lector__reglas_8h_aec1d3ff83da2c5b06ea9b355e473ff8a}{seleccionaCampo} (char $\ast$medio1)
+\begin{DoxyCompactList}\small\item\em seleccionaCampo Esta funcion convierte un char en su correspondiente campo \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Cuerpo de las primitivas de lector de reglas xml. Este modulo contiene los cuerpos de los prototipos de las funciones de lectura de reglas en xml
+
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+25-\/11-\/2010 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{lector__reglas_8h_a612904814efadf3be5fc94ef2e393c95}{
+\index{lector\_\-reglas.h@{lector\_\-reglas.h}!iniReglas@{iniReglas}}
+\index{iniReglas@{iniReglas}!lector_reglas.h@{lector\_\-reglas.h}}
+\subsubsection[{iniReglas}]{\setlength{\rightskip}{0pt plus 5cm}{\bf REGLAS}$\ast$ iniReglas (char $\ast$ {\em nombrefich})}}
+\label{lector__reglas_8h_a612904814efadf3be5fc94ef2e393c95}
+
+
+Inicialización de reglas Esta función permite leer un conjunto de reglas de un fichero xml y almacenarlas. 
+
+FUNCIONES DE LECTOR 
+\begin{DoxyParams}{Parameters}
+\item[{\em nombrefich}]es puntero a char con el nombre del fichero xml \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Puntero a la estructura regla correctamente inicializada, NULL en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}
+\hypertarget{lector__reglas_8h_a5ca1e749780f9560bcc7797f0d056a93}{
+\index{lector\_\-reglas.h@{lector\_\-reglas.h}!procesaCondiciones@{procesaCondiciones}}
+\index{procesaCondiciones@{procesaCondiciones}!lector_reglas.h@{lector\_\-reglas.h}}
+\subsubsection[{procesaCondiciones}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaCondiciones (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf REGLA} $\ast$ {\em regla})}}
+\label{lector__reglas_8h_a5ca1e749780f9560bcc7797f0d056a93}
+
+
+Procesa Condiciones Esta función permite leer los campos de una regla correspondientes a las condiciones de ejecución desde un fichero xml. Al salir será guardado en la estructura regla. 
+
+FUNCIONES DE LECTURA CONDICIONES 
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em regla}]es puntero a \hyperlink{structREGLA}{REGLA} en el que introducir los datos \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}
+\hypertarget{lector__reglas_8h_a5ce3ac61337c820e6c33192c2442e466}{
+\index{lector\_\-reglas.h@{lector\_\-reglas.h}!procesaConsecuencias@{procesaConsecuencias}}
+\index{procesaConsecuencias@{procesaConsecuencias}!lector_reglas.h@{lector\_\-reglas.h}}
+\subsubsection[{procesaConsecuencias}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaConsecuencias (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf REGLA} $\ast$ {\em regla})}}
+\label{lector__reglas_8h_a5ce3ac61337c820e6c33192c2442e466}
+
+
+Procesa Consecuencias Esta función permite leer los campos de una regla correspondientes a las consecuencias de ejecución desde un fichero xml. Al salir será guardado en la estructura regla. 
+
+FUNCIONES DE LECTURA CONSECUENIAS 
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em regla}]es puntero a \hyperlink{structREGLA}{REGLA} en el que introducir los datos \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}
+\hypertarget{lector__reglas_8h_a2e58982d1cabc5929e6b5e0a32fb866a}{
+\index{lector\_\-reglas.h@{lector\_\-reglas.h}!procesaFrase@{procesaFrase}}
+\index{procesaFrase@{procesaFrase}!lector_reglas.h@{lector\_\-reglas.h}}
+\subsubsection[{procesaFrase}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaFrase (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf REGLA} $\ast$ {\em regla})}}
+\label{lector__reglas_8h_a2e58982d1cabc5929e6b5e0a32fb866a}
+
+
+Procesa Frase Esta función permite leer la frase asociada a una regla correspondientes desde un fichero xml. Al salir será guardado en la estructura regla. 
+
+FUNCIONES DE LECTURA FRASE 
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em regla}]es puntero a \hyperlink{structREGLA}{REGLA} en el que introducir los datos \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}
+\hypertarget{lector__reglas_8h_ab5d15e24afccd3f5969a0c019e9d92bb}{
+\index{lector\_\-reglas.h@{lector\_\-reglas.h}!procesaReglas@{procesaReglas}}
+\index{procesaReglas@{procesaReglas}!lector_reglas.h@{lector\_\-reglas.h}}
+\subsubsection[{procesaReglas}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaReglas (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf REGLA} $\ast$ {\em regla})}}
+\label{lector__reglas_8h_ab5d15e24afccd3f5969a0c019e9d92bb}
+
+
+Procesa Regla Esta función permite leer todos los campos de una regla de un fichero xml. Al salir estará guardado en la estructura regla. 
+
+FUNCIONES DE LECTURA \hyperlink{structREGLA}{REGLA} 
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em regla}]es puntero a \hyperlink{structREGLA}{REGLA} en el que introducir los datos \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}
+\hypertarget{lector__reglas_8h_aec1d3ff83da2c5b06ea9b355e473ff8a}{
+\index{lector\_\-reglas.h@{lector\_\-reglas.h}!seleccionaCampo@{seleccionaCampo}}
+\index{seleccionaCampo@{seleccionaCampo}!lector_reglas.h@{lector\_\-reglas.h}}
+\subsubsection[{seleccionaCampo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CAMPO} seleccionaCampo (char $\ast$ {\em medio1})}}
+\label{lector__reglas_8h_aec1d3ff83da2c5b06ea9b355e473ff8a}
+
+
+seleccionaCampo Esta funcion convierte un char en su correspondiente campo 
+
+FUNCION AUXILIAR 
+\begin{DoxyParams}{Parameters}
+\item[{\em medio1}]es el char a convertir \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+devuelve directamente el tipo campo que corresponda 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}

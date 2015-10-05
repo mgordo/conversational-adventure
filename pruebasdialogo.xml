@@ -1,0 +1,42 @@
+<dialogo temas="4" plantillas="5" reglas="5" relaciones="4">
+	<tema id="1" nombre="Bienvenida"/>
+	<tema id="2" nombre="Despedida"/>
+	<tema id="3" nombre="Mumble"/>
+	<tema id="4" nombre="Negacion"/>
+
+	<plantilla>Saludos</plantilla>
+	<plantilla>Bye</plantilla>
+	<plantilla>Hasta luego</plantilla>
+	<plantilla>OK</plantilla>
+	<plantilla>NO</plantilla>
+
+	<relacion number="2">
+		<numero>0</numero>
+		<numero>-1</numero>
+	</relacion>
+	
+	<relacion number="3">
+		<numero>1</numero>
+		<numero>2</numero>
+		<numero>-1</numero>
+	</relacion>
+	
+	<relacion number="2">
+		<numero>3</numero>
+		<numero>-1</numero>
+	</relacion>
+	
+	<relacion number="2">
+		<numero>4</numero>
+		<numero>-1</numero>
+	</relacion>
+	
+	<regla ini="0" fin="0">HOLA</regla>
+	<regla ini="1" fin="2">ADIOS</regla>
+	<regla ini="1" fin="2">FAREWELL</regla>
+	<regla ini="3" fin="3">HUM</regla>
+	<regla ini="4" fin="4">SI</regla>
+
+</dialogo>
+
+

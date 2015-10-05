@@ -1,0 +1,129 @@
+\hypertarget{UtilCadena_8h}{
+\section{UtilCadena.h File Reference}
+\label{UtilCadena_8h}\index{UtilCadena.h@{UtilCadena.h}}
+}
+
+
+Utilidades de transformacion de cadenas Este modulo contiene los prototipos de las funciones de transformacion de cadenas.  
+
+
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include $<$ctype.h$>$}\par
+{\ttfamily \#include \char`\"{}tipos.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{UtilCadena_8h_adedf6c9a614b727317019681a11b8c65}{eliminaCars} (char $\ast$dst, char $\ast$ori, char $\ast$seps)
+\begin{DoxyCompactList}\small\item\em Eliminacion de caracteres. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{UtilCadena_8h_a2e1dad68e63b7f870833de249a8f6014}{aMayusculas} (char $\ast$dst, char $\ast$ori)
+\begin{DoxyCompactList}\small\item\em Transformacion de cadena a mayusculas. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{UtilCadena_8h_afa8115942a6bb170425f050146ba9eac}{reemplazaAsterisco} (char $\ast$dst, char $\ast$ori, char $\ast$ins)
+\begin{DoxyCompactList}\small\item\em Sustitucion de caracteres. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{UtilCadena_8h_a53a3dd8642f9514661c889429d25ebb2}{limpiaEspacios} (char $\ast$dst, char $\ast$ori)
+\begin{DoxyCompactList}\small\item\em Eliminacion los caracteres de espacio. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{UtilCadena_8h_a91d1ab8f7b9e176b646cf40f522d45e4}{limpiaPalabras} (char $\ast$dst, char $\ast$ori)
+\begin{DoxyCompactList}\small\item\em Eliminacion de palabras comunes. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utilidades de transformacion de cadenas Este modulo contiene los prototipos de las funciones de transformacion de cadenas. \begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+23-\/11-\/2010 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{UtilCadena_8h_a2e1dad68e63b7f870833de249a8f6014}{
+\index{UtilCadena.h@{UtilCadena.h}!aMayusculas@{aMayusculas}}
+\index{aMayusculas@{aMayusculas}!UtilCadena.h@{UtilCadena.h}}
+\subsubsection[{aMayusculas}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} aMayusculas (char $\ast$ {\em dst}, \/  char $\ast$ {\em ori})}}
+\label{UtilCadena_8h_a2e1dad68e63b7f870833de249a8f6014}
+
+
+Transformacion de cadena a mayusculas. 
+
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal \hyperlink{UtilCadena_8h_a2e1dad68e63b7f870833de249a8f6014}{aMayusculas()} copia ori en dst y transforma caracter a caracter a mayuscula 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dst}]cadena de caracteres donde guardar \item[{\em ori}]cadena de caracteres aleatoria \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue bien, ERR si fallo 
+\end{DoxyReturn}
+\hypertarget{UtilCadena_8h_adedf6c9a614b727317019681a11b8c65}{
+\index{UtilCadena.h@{UtilCadena.h}!eliminaCars@{eliminaCars}}
+\index{eliminaCars@{eliminaCars}!UtilCadena.h@{UtilCadena.h}}
+\subsubsection[{eliminaCars}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} eliminaCars (char $\ast$ {\em dst}, \/  char $\ast$ {\em ori}, \/  char $\ast$ {\em seps})}}
+\label{UtilCadena_8h_adedf6c9a614b727317019681a11b8c65}
+
+
+Eliminacion de caracteres. 
+
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal \hyperlink{UtilCadena_8h_adedf6c9a614b727317019681a11b8c65}{eliminaCars()} copia ori en dst y elimina los caracteres presentes en seps 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dst}]cadena de caracteres donde guardar \item[{\em ori}]cadena de caracteres original \item[{\em seps}]cadenas de los caracteres no deseados \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue bien, ERR si fallo 
+\end{DoxyReturn}
+\hypertarget{UtilCadena_8h_a53a3dd8642f9514661c889429d25ebb2}{
+\index{UtilCadena.h@{UtilCadena.h}!limpiaEspacios@{limpiaEspacios}}
+\index{limpiaEspacios@{limpiaEspacios}!UtilCadena.h@{UtilCadena.h}}
+\subsubsection[{limpiaEspacios}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} limpiaEspacios (char $\ast$ {\em dst}, \/  char $\ast$ {\em ori})}}
+\label{UtilCadena_8h_a53a3dd8642f9514661c889429d25ebb2}
+
+
+Eliminacion los caracteres de espacio. 
+
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal \hyperlink{UtilCadena_8h_a53a3dd8642f9514661c889429d25ebb2}{limpiaEspacios()} almacena en dst la cadena ori sin ningun espacio ni al principio ni al final de la cadena, ni con dos espacios seguidos 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dst}]cadena de caracteres donde guardar \item[{\em ori}]cadena de caracteres original \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue bien, ERR si fallo 
+\end{DoxyReturn}
+\hypertarget{UtilCadena_8h_a91d1ab8f7b9e176b646cf40f522d45e4}{
+\index{UtilCadena.h@{UtilCadena.h}!limpiaPalabras@{limpiaPalabras}}
+\index{limpiaPalabras@{limpiaPalabras}!UtilCadena.h@{UtilCadena.h}}
+\subsubsection[{limpiaPalabras}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} limpiaPalabras (char $\ast$ {\em dst}, \/  char $\ast$ {\em ori})}}
+\label{UtilCadena_8h_a91d1ab8f7b9e176b646cf40f522d45e4}
+
+
+Eliminacion de palabras comunes. 
+
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal \hyperlink{UtilCadena_8h_a91d1ab8f7b9e176b646cf40f522d45e4}{limpiaPalabras()} almacena en dst la cadena ori quitando palabras comunes como articulos, determinantes, posesivos, etc. 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dst}]cadena de caracteres donde guardar \item[{\em ori}]cadena de caracteres original \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue bien, ERR si fallo 
+\end{DoxyReturn}
+\hypertarget{UtilCadena_8h_afa8115942a6bb170425f050146ba9eac}{
+\index{UtilCadena.h@{UtilCadena.h}!reemplazaAsterisco@{reemplazaAsterisco}}
+\index{reemplazaAsterisco@{reemplazaAsterisco}!UtilCadena.h@{UtilCadena.h}}
+\subsubsection[{reemplazaAsterisco}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} reemplazaAsterisco (char $\ast$ {\em dst}, \/  char $\ast$ {\em ori}, \/  char $\ast$ {\em ins})}}
+\label{UtilCadena_8h_afa8115942a6bb170425f050146ba9eac}
+
+
+Sustitucion de caracteres. 
+
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal \hyperlink{UtilCadena_8h_afa8115942a6bb170425f050146ba9eac}{reemplazaAsterisco()} sustituye los asteriscos de ori por lo que ponga en ins, y lo almacenará en dst 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dst}]cadena de caracteres donde guardar \item[{\em ori}]cadena de caracteres original \item[{\em ins}]cadena de caracteres que sustituir \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue bien, ERR si fallo 
+\end{DoxyReturn}

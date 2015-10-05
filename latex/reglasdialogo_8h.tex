@@ -1,0 +1,461 @@
+\hypertarget{reglasdialogo_8h}{
+\section{reglasdialogo.h File Reference}
+\label{reglasdialogo_8h}\index{reglasdialogo.h@{reglasdialogo.h}}
+}
+
+
+Primitivas de la Reglas diálogo Este modulo contiene los prototipos de las funciones de Reglas acciones.  
+
+
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include \char`\"{}tipos.h\char`\"{}}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$time.h$>$}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__regla}{\_\-regla}
+\begin{DoxyCompactList}\small\item\em Estructura REGLAD. \item\end{DoxyCompactList}\item 
+struct \hyperlink{structTEMA}{TEMA}
+\begin{DoxyCompactList}\small\item\em Estructura \hyperlink{structTEMA}{TEMA}. \item\end{DoxyCompactList}\item 
+struct \hyperlink{structPLANTILLA}{PLANTILLA}
+\begin{DoxyCompactList}\small\item\em Estructura \hyperlink{structPLANTILLA}{PLANTILLA}. \item\end{DoxyCompactList}\item 
+struct \hyperlink{structRELATION}{RELATION}
+\begin{DoxyCompactList}\small\item\em Estructura \hyperlink{structRELATION}{RELATION}. \item\end{DoxyCompactList}\item 
+struct \hyperlink{structDIALOGUE}{DIALOGUE}
+\begin{DoxyCompactList}\small\item\em Estructura \hyperlink{structDIALOGUE}{DIALOGUE}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{reglasdialogo_8h_a0c952966c586423cbd3161d901fb0852}{
+typedef struct \hyperlink{struct__regla}{\_\-regla} \hyperlink{reglasdialogo_8h_a0c952966c586423cbd3161d901fb0852}{REGLAD}}
+\label{reglasdialogo_8h_a0c952966c586423cbd3161d901fb0852}
+
+\begin{DoxyCompactList}\small\item\em Estructura REGLAD. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structDIALOGUE}{DIALOGUE} $\ast$ \hyperlink{reglasdialogo_8h_a0f4173d9cd1a5ac94716f42dadaa76b6}{creaDialogue} (int tam\_\-rules, int tam\_\-rel, int tam\_\-theme, int tam\_\-plant)
+\begin{DoxyCompactList}\small\item\em creaDialogue Esta función permite crear un diálogo \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglasdialogo_8h_a74e5186eacc00c4a032b2da0bcfe446c}{destruyeDialogue} (\hyperlink{structDIALOGUE}{DIALOGUE} $\ast$$\ast$dial)
+\begin{DoxyCompactList}\small\item\em destruyeDiálogo Esta función permite destruir un diálogo \item\end{DoxyCompactList}\item 
+\hyperlink{struct__regla}{REGLAD} $\ast$ \hyperlink{reglasdialogo_8h_a99f9a84780e5a221d7b80dbd7aa01cd0}{creaReglad} ()
+\begin{DoxyCompactList}\small\item\em creaReglad Esta función permite crear una reglaDialogo \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglasdialogo_8h_a2d5cabb3f1d46d4b3189273e91b7d691}{destruyeReglad} (\hyperlink{struct__regla}{REGLAD} $\ast$$\ast$rule)
+\begin{DoxyCompactList}\small\item\em destruyeReglad Esta función permite destruir una reglaDialogo \item\end{DoxyCompactList}\item 
+\hyperlink{structPLANTILLA}{PLANTILLA} $\ast$ \hyperlink{reglasdialogo_8h_a4a4d5c092c293d303c4cad26ecc926e3}{creaPlantilla} ()
+\begin{DoxyCompactList}\small\item\em creaPlantilla Esta función permite crear una plantilla \item\end{DoxyCompactList}\item 
+\hyperlink{structTEMA}{TEMA} $\ast$ \hyperlink{reglasdialogo_8h_ae73e5bd85391f7f3e4b51f28f68d71d0}{creaTema} ()
+\begin{DoxyCompactList}\small\item\em creaTema Esta función permite crear un Tema \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglasdialogo_8h_aabe3b633e9aa5e25784bf6988d217039}{destruyeTema} (\hyperlink{structTEMA}{TEMA} $\ast$$\ast$theme)
+\begin{DoxyCompactList}\small\item\em destruyeTema Esta función permite destruir un Tema \item\end{DoxyCompactList}\item 
+\hyperlink{structRELATION}{RELATION} $\ast$ \hyperlink{reglasdialogo_8h_acdea2df812a0be112dbc387a182774a4}{creaRelation} ()
+\begin{DoxyCompactList}\small\item\em creaRelation Esta función permite crear una relación \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglasdialogo_8h_ac99976ff2bda45d702807eb608ab65a1}{destruyeRelation} (\hyperlink{structRELATION}{RELATION} $\ast$$\ast$rel)
+\begin{DoxyCompactList}\small\item\em destruyeRelation Esta función permite destruir una relación \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglasdialogo_8h_acbe5b2ef29005f3492d72ce8b3a6e8a2}{destruyePlantilla} (\hyperlink{structPLANTILLA}{PLANTILLA} $\ast$$\ast$plant)
+\begin{DoxyCompactList}\small\item\em destruyePlantilla Esta función permite destruir una plantilla \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglasdialogo_8h_acbf82cfdea8749c3842ca56cdeb5e6e1}{guardaReglad} (\hyperlink{structDIALOGUE}{DIALOGUE} $\ast$dial, \hyperlink{struct__regla}{REGLAD} $\ast$rule)
+\begin{DoxyCompactList}\small\item\em guardaReglaD Esta función guardar una REGLAD en un \hyperlink{structDIALOGUE}{DIALOGUE} \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglasdialogo_8h_a7204d96b421e1f95bd37a47bd5b7fbf4}{guardaTema} (\hyperlink{structDIALOGUE}{DIALOGUE} $\ast$dial, \hyperlink{structTEMA}{TEMA} $\ast$theme)
+\begin{DoxyCompactList}\small\item\em guardaTema Esta función guardar un \hyperlink{structTEMA}{TEMA} en un \hyperlink{structDIALOGUE}{DIALOGUE} \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglasdialogo_8h_a1a07f292c535d9fecb736663567414b3}{guardaPlantilla} (\hyperlink{structDIALOGUE}{DIALOGUE} $\ast$dial, \hyperlink{structPLANTILLA}{PLANTILLA} $\ast$plant)
+\begin{DoxyCompactList}\small\item\em guardaPlantilla Esta función guardar una \hyperlink{structPLANTILLA}{PLANTILLA} en un \hyperlink{structDIALOGUE}{DIALOGUE} \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglasdialogo_8h_a3e3c5c48c670b31c3874d9e7ff7d48b1}{guardaRelation} (\hyperlink{structDIALOGUE}{DIALOGUE} $\ast$dial, \hyperlink{structRELATION}{RELATION} $\ast$rel)
+\begin{DoxyCompactList}\small\item\em guardaRelation Esta función guardar una \hyperlink{structRELATION}{RELATION} en un \hyperlink{structDIALOGUE}{DIALOGUE} \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglasdialogo_8h_ae7e193176ebf44e830000aeeee896c22}{iniRelation} (\hyperlink{structRELATION}{RELATION} $\ast$rel, int $\ast$ent)
+\begin{DoxyCompactList}\small\item\em iniRelation Esta función permite inicializar una relación \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglasdialogo_8h_ade4eb3cfd07e15f88d18c6bd61ee0b1d}{iniRegla} (\hyperlink{struct__regla}{REGLAD} $\ast$rule, int ini, int fin, char $\ast$patron)
+\begin{DoxyCompactList}\small\item\em iniRegla Esta función permite inicializar una regla \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglasdialogo_8h_a4b9779d2bf3cb247886a3524146124bd}{iniTema} (\hyperlink{structTEMA}{TEMA} $\ast$theme, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id, char $\ast$nombre)
+\begin{DoxyCompactList}\small\item\em iniTema Esta función permite inicializar un tema \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglasdialogo_8h_ad1a24f53d49534b3297d3ed671c566c1}{iniPlantilla} (\hyperlink{structPLANTILLA}{PLANTILLA} $\ast$plant, char $\ast$plantilla)
+\begin{DoxyCompactList}\small\item\em iniPlantilla Esta función permite inicializar una plantilla \item\end{DoxyCompactList}\item 
+int \hyperlink{reglasdialogo_8h_a7c780bd056db4470ffcaf355e3900778}{busca\_\-patron} (\hyperlink{structDIALOGUE}{DIALOGUE} $\ast$dial, char $\ast$entrada)
+\begin{DoxyCompactList}\small\item\em busca\_\-patron Esta función permite obtener un patrón para una determinada entrada, buscando entre todos los temas disponibles \item\end{DoxyCompactList}\item 
+int \hyperlink{reglasdialogo_8h_aaeb4bd609152e910b6bac10ca965981e}{tbusca\_\-patron} (\hyperlink{structDIALOGUE}{DIALOGUE} $\ast$dial, char $\ast$entrada, char $\ast$ntema)
+\begin{DoxyCompactList}\small\item\em tbusca\_\-patron Esta función permite obtener un patrón para una determinada entrada, buscando únicamente en el tema especificado por su nombre \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglasdialogo_8h_a80d196ea7526f7b66a55029c0c267033}{selecciona\_\-plantilla} (\hyperlink{structDIALOGUE}{DIALOGUE} $\ast$dial, int ind\_\-patron, char $\ast$dest)
+\begin{DoxyCompactList}\small\item\em selecciona\_\-plantilla Esta función permite seleccionar una plantilla aleatoriamente mediante un patrón \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Primitivas de la Reglas diálogo Este modulo contiene los prototipos de las funciones de Reglas acciones. \begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{reglasdialogo_8h_a7c780bd056db4470ffcaf355e3900778}{
+\index{reglasdialogo.h@{reglasdialogo.h}!busca\_\-patron@{busca\_\-patron}}
+\index{busca\_\-patron@{busca\_\-patron}!reglasdialogo.h@{reglasdialogo.h}}
+\subsubsection[{busca\_\-patron}]{\setlength{\rightskip}{0pt plus 5cm}int busca\_\-patron ({\bf DIALOGUE} $\ast$ {\em dial}, \/  char $\ast$ {\em entrada})}}
+\label{reglasdialogo_8h_a7c780bd056db4470ffcaf355e3900778}
+
+
+busca\_\-patron Esta función permite obtener un patrón para una determinada entrada, buscando entre todos los temas disponibles 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dial}]es puntero a estructura \hyperlink{structDIALOGUE}{DIALOGUE} donde se encuentran los datos \item[{\em entrada}]es cadena de char que contiene la entrada del usuario \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+NO\_\-ENCONTRADO si no se encontró patrón en ningún tema 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{reglasdialogo_8h_a0f4173d9cd1a5ac94716f42dadaa76b6}{
+\index{reglasdialogo.h@{reglasdialogo.h}!creaDialogue@{creaDialogue}}
+\index{creaDialogue@{creaDialogue}!reglasdialogo.h@{reglasdialogo.h}}
+\subsubsection[{creaDialogue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DIALOGUE}$\ast$ creaDialogue (int {\em tam\_\-rules}, \/  int {\em tam\_\-rel}, \/  int {\em tam\_\-theme}, \/  int {\em tam\_\-plant})}}
+\label{reglasdialogo_8h_a0f4173d9cd1a5ac94716f42dadaa76b6}
+
+
+creaDialogue Esta función permite crear un diálogo 
+
+Siempre tantas relaciones como temas! 
+\begin{DoxyParams}{Parameters}
+\item[{\em tam\_\-rules}]es entero con el tamaño del array rules \item[{\em tam\_\-theme}]es entero con el tamaño del array theme \item[{\em tam\_\-rel}]es entero con el tamaño del array rel \item[{\em tam\_\-plant}]es entero con el tamaño del array plant \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puntero al de diálogo correctamente creado o NULL en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{reglasdialogo_8h_a4a4d5c092c293d303c4cad26ecc926e3}{
+\index{reglasdialogo.h@{reglasdialogo.h}!creaPlantilla@{creaPlantilla}}
+\index{creaPlantilla@{creaPlantilla}!reglasdialogo.h@{reglasdialogo.h}}
+\subsubsection[{creaPlantilla}]{\setlength{\rightskip}{0pt plus 5cm}{\bf PLANTILLA}$\ast$ creaPlantilla ()}}
+\label{reglasdialogo_8h_a4a4d5c092c293d303c4cad26ecc926e3}
+
+
+creaPlantilla Esta función permite crear una plantilla 
+
+\begin{DoxyReturn}{Returns}
+puntero a \hyperlink{structPLANTILLA}{PLANTILLA} correctamente inicializada o NULL en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{reglasdialogo_8h_a99f9a84780e5a221d7b80dbd7aa01cd0}{
+\index{reglasdialogo.h@{reglasdialogo.h}!creaReglad@{creaReglad}}
+\index{creaReglad@{creaReglad}!reglasdialogo.h@{reglasdialogo.h}}
+\subsubsection[{creaReglad}]{\setlength{\rightskip}{0pt plus 5cm}{\bf REGLAD}$\ast$ creaReglad ()}}
+\label{reglasdialogo_8h_a99f9a84780e5a221d7b80dbd7aa01cd0}
+
+
+creaReglad Esta función permite crear una reglaDialogo 
+
+\begin{DoxyReturn}{Returns}
+puntero a REGLAD correctamente inicializada o NULL en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{reglasdialogo_8h_acdea2df812a0be112dbc387a182774a4}{
+\index{reglasdialogo.h@{reglasdialogo.h}!creaRelation@{creaRelation}}
+\index{creaRelation@{creaRelation}!reglasdialogo.h@{reglasdialogo.h}}
+\subsubsection[{creaRelation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf RELATION}$\ast$ creaRelation ()}}
+\label{reglasdialogo_8h_acdea2df812a0be112dbc387a182774a4}
+
+
+creaRelation Esta función permite crear una relación 
+
+\begin{DoxyReturn}{Returns}
+puntero a \hyperlink{structRELATION}{RELATION} correctamente inicializada o NULL en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{reglasdialogo_8h_ae73e5bd85391f7f3e4b51f28f68d71d0}{
+\index{reglasdialogo.h@{reglasdialogo.h}!creaTema@{creaTema}}
+\index{creaTema@{creaTema}!reglasdialogo.h@{reglasdialogo.h}}
+\subsubsection[{creaTema}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TEMA}$\ast$ creaTema ()}}
+\label{reglasdialogo_8h_ae73e5bd85391f7f3e4b51f28f68d71d0}
+
+
+creaTema Esta función permite crear un Tema 
+
+\begin{DoxyReturn}{Returns}
+puntero a \hyperlink{structTEMA}{TEMA} correctamente inicializada o NULL en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{reglasdialogo_8h_a74e5186eacc00c4a032b2da0bcfe446c}{
+\index{reglasdialogo.h@{reglasdialogo.h}!destruyeDialogue@{destruyeDialogue}}
+\index{destruyeDialogue@{destruyeDialogue}!reglasdialogo.h@{reglasdialogo.h}}
+\subsubsection[{destruyeDialogue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} destruyeDialogue ({\bf DIALOGUE} $\ast$$\ast$ {\em dial})}}
+\label{reglasdialogo_8h_a74e5186eacc00c4a032b2da0bcfe446c}
+
+
+destruyeDiálogo Esta función permite destruir un diálogo 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dial}]es puntero a puntero a diálogo al que liberar (quedará a NULL) \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si se destruyó correctamente, ERR caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{reglasdialogo_8h_acbe5b2ef29005f3492d72ce8b3a6e8a2}{
+\index{reglasdialogo.h@{reglasdialogo.h}!destruyePlantilla@{destruyePlantilla}}
+\index{destruyePlantilla@{destruyePlantilla}!reglasdialogo.h@{reglasdialogo.h}}
+\subsubsection[{destruyePlantilla}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} destruyePlantilla ({\bf PLANTILLA} $\ast$$\ast$ {\em plant})}}
+\label{reglasdialogo_8h_acbe5b2ef29005f3492d72ce8b3a6e8a2}
+
+
+destruyePlantilla Esta función permite destruir una plantilla 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em plant}]es doble puntero a \hyperlink{structPLANTILLA}{PLANTILLA} a destruir \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si se liberó correctamente, ERR en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{reglasdialogo_8h_a2d5cabb3f1d46d4b3189273e91b7d691}{
+\index{reglasdialogo.h@{reglasdialogo.h}!destruyeReglad@{destruyeReglad}}
+\index{destruyeReglad@{destruyeReglad}!reglasdialogo.h@{reglasdialogo.h}}
+\subsubsection[{destruyeReglad}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} destruyeReglad ({\bf REGLAD} $\ast$$\ast$ {\em rule})}}
+\label{reglasdialogo_8h_a2d5cabb3f1d46d4b3189273e91b7d691}
+
+
+destruyeReglad Esta función permite destruir una reglaDialogo 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em rule}]es doble puntero a REGLAD a destruir \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si se liberó correctamente, ERR en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{reglasdialogo_8h_ac99976ff2bda45d702807eb608ab65a1}{
+\index{reglasdialogo.h@{reglasdialogo.h}!destruyeRelation@{destruyeRelation}}
+\index{destruyeRelation@{destruyeRelation}!reglasdialogo.h@{reglasdialogo.h}}
+\subsubsection[{destruyeRelation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} destruyeRelation ({\bf RELATION} $\ast$$\ast$ {\em rel})}}
+\label{reglasdialogo_8h_ac99976ff2bda45d702807eb608ab65a1}
+
+
+destruyeRelation Esta función permite destruir una relación 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em rel}]es doble puntero a \hyperlink{structRELATION}{RELATION} a destruir \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si se liberó correctamente, ERR en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{reglasdialogo_8h_aabe3b633e9aa5e25784bf6988d217039}{
+\index{reglasdialogo.h@{reglasdialogo.h}!destruyeTema@{destruyeTema}}
+\index{destruyeTema@{destruyeTema}!reglasdialogo.h@{reglasdialogo.h}}
+\subsubsection[{destruyeTema}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} destruyeTema ({\bf TEMA} $\ast$$\ast$ {\em theme})}}
+\label{reglasdialogo_8h_aabe3b633e9aa5e25784bf6988d217039}
+
+
+destruyeTema Esta función permite destruir un Tema 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em theme}]es doble puntero a \hyperlink{structTEMA}{TEMA} a destruir \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si se liberó correctamente, ERR en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{reglasdialogo_8h_a1a07f292c535d9fecb736663567414b3}{
+\index{reglasdialogo.h@{reglasdialogo.h}!guardaPlantilla@{guardaPlantilla}}
+\index{guardaPlantilla@{guardaPlantilla}!reglasdialogo.h@{reglasdialogo.h}}
+\subsubsection[{guardaPlantilla}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} guardaPlantilla ({\bf DIALOGUE} $\ast$ {\em dial}, \/  {\bf PLANTILLA} $\ast$ {\em plant})}}
+\label{reglasdialogo_8h_a1a07f292c535d9fecb736663567414b3}
+
+
+guardaPlantilla Esta función guardar una \hyperlink{structPLANTILLA}{PLANTILLA} en un \hyperlink{structDIALOGUE}{DIALOGUE} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em plant}]es puntero a \hyperlink{structPLANTILLA}{PLANTILLA} a guardar \item[{\em dial}]es puntero al \hyperlink{structDIALOGUE}{DIALOGUE} en el que guardar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si se guardó correctamente, ERR en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{reglasdialogo_8h_acbf82cfdea8749c3842ca56cdeb5e6e1}{
+\index{reglasdialogo.h@{reglasdialogo.h}!guardaReglad@{guardaReglad}}
+\index{guardaReglad@{guardaReglad}!reglasdialogo.h@{reglasdialogo.h}}
+\subsubsection[{guardaReglad}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} guardaReglad ({\bf DIALOGUE} $\ast$ {\em dial}, \/  {\bf REGLAD} $\ast$ {\em rule})}}
+\label{reglasdialogo_8h_acbf82cfdea8749c3842ca56cdeb5e6e1}
+
+
+guardaReglaD Esta función guardar una REGLAD en un \hyperlink{structDIALOGUE}{DIALOGUE} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em rule}]es puntero a REGLAD a guardar \item[{\em dial}]es puntero al \hyperlink{structDIALOGUE}{DIALOGUE} en el que guardar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si se guardó correctamente, ERR en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{reglasdialogo_8h_a3e3c5c48c670b31c3874d9e7ff7d48b1}{
+\index{reglasdialogo.h@{reglasdialogo.h}!guardaRelation@{guardaRelation}}
+\index{guardaRelation@{guardaRelation}!reglasdialogo.h@{reglasdialogo.h}}
+\subsubsection[{guardaRelation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} guardaRelation ({\bf DIALOGUE} $\ast$ {\em dial}, \/  {\bf RELATION} $\ast$ {\em rel})}}
+\label{reglasdialogo_8h_a3e3c5c48c670b31c3874d9e7ff7d48b1}
+
+
+guardaRelation Esta función guardar una \hyperlink{structRELATION}{RELATION} en un \hyperlink{structDIALOGUE}{DIALOGUE} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em rel}]es puntero a \hyperlink{structRELATION}{RELATION} a guardar \item[{\em dial}]es puntero al \hyperlink{structDIALOGUE}{DIALOGUE} en el que guardar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si se guardó correctamente, ERR en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{reglasdialogo_8h_a7204d96b421e1f95bd37a47bd5b7fbf4}{
+\index{reglasdialogo.h@{reglasdialogo.h}!guardaTema@{guardaTema}}
+\index{guardaTema@{guardaTema}!reglasdialogo.h@{reglasdialogo.h}}
+\subsubsection[{guardaTema}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} guardaTema ({\bf DIALOGUE} $\ast$ {\em dial}, \/  {\bf TEMA} $\ast$ {\em theme})}}
+\label{reglasdialogo_8h_a7204d96b421e1f95bd37a47bd5b7fbf4}
+
+
+guardaTema Esta función guardar un \hyperlink{structTEMA}{TEMA} en un \hyperlink{structDIALOGUE}{DIALOGUE} 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em theme}]es puntero a \hyperlink{structTEMA}{TEMA} a guardar \item[{\em dial}]es puntero al \hyperlink{structDIALOGUE}{DIALOGUE} en el que guardar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si se guardó correctamente, ERR en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{reglasdialogo_8h_ad1a24f53d49534b3297d3ed671c566c1}{
+\index{reglasdialogo.h@{reglasdialogo.h}!iniPlantilla@{iniPlantilla}}
+\index{iniPlantilla@{iniPlantilla}!reglasdialogo.h@{reglasdialogo.h}}
+\subsubsection[{iniPlantilla}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} iniPlantilla ({\bf PLANTILLA} $\ast$ {\em plant}, \/  char $\ast$ {\em plantilla})}}
+\label{reglasdialogo_8h_ad1a24f53d49534b3297d3ed671c566c1}
+
+
+iniPlantilla Esta función permite inicializar una plantilla 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em plant}]es puntero a plantilla a inicializar \item[{\em plantilla}]es la plantilla a introducir \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si se inicializó correctamente, ERR caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{reglasdialogo_8h_ade4eb3cfd07e15f88d18c6bd61ee0b1d}{
+\index{reglasdialogo.h@{reglasdialogo.h}!iniRegla@{iniRegla}}
+\index{iniRegla@{iniRegla}!reglasdialogo.h@{reglasdialogo.h}}
+\subsubsection[{iniRegla}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} iniRegla ({\bf REGLAD} $\ast$ {\em rule}, \/  int {\em ini}, \/  int {\em fin}, \/  char $\ast$ {\em patron})}}
+\label{reglasdialogo_8h_ade4eb3cfd07e15f88d18c6bd61ee0b1d}
+
+
+iniRegla Esta función permite inicializar una regla 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em rule}]es puntero reglad que inicializar \item[{\em ini}]es entero a la primera plantilla \item[{\em fin}]es entero a la última plantilla \item[{\em patron}]es cadena con el patrón del tema \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si se inicializó correctamente, ERR caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{reglasdialogo_8h_ae7e193176ebf44e830000aeeee896c22}{
+\index{reglasdialogo.h@{reglasdialogo.h}!iniRelation@{iniRelation}}
+\index{iniRelation@{iniRelation}!reglasdialogo.h@{reglasdialogo.h}}
+\subsubsection[{iniRelation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} iniRelation ({\bf RELATION} $\ast$ {\em rel}, \/  int $\ast$ {\em ent})}}
+\label{reglasdialogo_8h_ae7e193176ebf44e830000aeeee896c22}
+
+
+iniRelation Esta función permite inicializar una relación 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em rel}]es puntero relación que inicializar \item[{\em ent}]es array de ints que contienen la relación tema-\/regla \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si se inicializó correctamente, ERR caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{reglasdialogo_8h_a4b9779d2bf3cb247886a3524146124bd}{
+\index{reglasdialogo.h@{reglasdialogo.h}!iniTema@{iniTema}}
+\index{iniTema@{iniTema}!reglasdialogo.h@{reglasdialogo.h}}
+\subsubsection[{iniTema}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} iniTema ({\bf TEMA} $\ast$ {\em theme}, \/  {\bf ID} {\em id}, \/  char $\ast$ {\em nombre})}}
+\label{reglasdialogo_8h_a4b9779d2bf3cb247886a3524146124bd}
+
+
+iniTema Esta función permite inicializar un tema 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em theme}]es puntero a tema que inicializar \item[{\em id}]es id del tema \item[{\em nombre}]es el nombre del tema (para una mejor interpretación) \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si se inicializó correctamente, ERR caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{reglasdialogo_8h_a80d196ea7526f7b66a55029c0c267033}{
+\index{reglasdialogo.h@{reglasdialogo.h}!selecciona\_\-plantilla@{selecciona\_\-plantilla}}
+\index{selecciona\_\-plantilla@{selecciona\_\-plantilla}!reglasdialogo.h@{reglasdialogo.h}}
+\subsubsection[{selecciona\_\-plantilla}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} selecciona\_\-plantilla ({\bf DIALOGUE} $\ast$ {\em dial}, \/  int {\em ind\_\-patron}, \/  char $\ast$ {\em dest})}}
+\label{reglasdialogo_8h_a80d196ea7526f7b66a55029c0c267033}
+
+
+selecciona\_\-plantilla Esta función permite seleccionar una plantilla aleatoriamente mediante un patrón 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dial}]es puntero a estructura \hyperlink{structDIALOGUE}{DIALOGUE} donde se encuentran los datos \item[{\em ind\_\-patron}]es el índice del patrón del que obtener plantilla aleatoriamente \item[{\em dest}]es cadena en la que guardar la plantilla \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+NULL si hubo error o plantilla para el patrón deseado 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{reglasdialogo_8h_aaeb4bd609152e910b6bac10ca965981e}{
+\index{reglasdialogo.h@{reglasdialogo.h}!tbusca\_\-patron@{tbusca\_\-patron}}
+\index{tbusca\_\-patron@{tbusca\_\-patron}!reglasdialogo.h@{reglasdialogo.h}}
+\subsubsection[{tbusca\_\-patron}]{\setlength{\rightskip}{0pt plus 5cm}int tbusca\_\-patron ({\bf DIALOGUE} $\ast$ {\em dial}, \/  char $\ast$ {\em entrada}, \/  char $\ast$ {\em ntema})}}
+\label{reglasdialogo_8h_aaeb4bd609152e910b6bac10ca965981e}
+
+
+tbusca\_\-patron Esta función permite obtener un patrón para una determinada entrada, buscando únicamente en el tema especificado por su nombre 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dial}]es puntero a estructura \hyperlink{structDIALOGUE}{DIALOGUE} donde se encuentran los datos \item[{\em entrada}]es cadena de char que contiene la entrada del usuario \item[{\em ntema}]es el nombre del tema en el que buscar patrones \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+NO\_\-ENCONTRADO si no se encontró patrón en ningún tema 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}

@@ -1,0 +1,128 @@
+<mundo numero_espacios="3" numero_objetos="2" numero_jugadores="1" numero_uniones="4">
+
+<espacio id="1">
+	<descripcion>Punto de entrada</descripcion>
+	<edescripcion>Al oeste se ve el edificio de la escuela</edescripcion>
+	<norte>10</norte>
+	<sur>20</sur>
+	<luz_inicial>TRUE</luz_inicial>
+	<descripcion_grafica filas="21" columnas="47">                                               
+            itfjjjtiii;,;i;iitjji:                 iffjjtjtt;ii;i;iiiiiiiiiitttitttttitji       LffLffLfjjjjtttttitiiiiiiiittiittttjjtjjjjj   jfffjjjjttitttitiiiiiiiiiiiiiiiittttttttjjtj;  jEWfffffjtttttii;;i;i;ii;iii;ii;ittittjjjfjK     LKEEEDtjfjjjjtttiiiiii,ii;iitttjtjtjLDEE#          WKEEEDDDDGDEWWWWWKKKEEKKEGLGffGGK              WWWWWWWWWW##WWWWWWKKKWW###WWWW#KE               WWWWWWW##W#WWWWWWWWWWWWWWWWWW#W                WWKK#W                 EjWWWW#K                 WWWWW                   KKKKt                  KWKWW                   KKKK.                  KKWWW                   KEKK.                  KKKWW                   EKKK                   KKWWW                   EEKK                   KWKWW                   EEWK                   KWWWW                   EKWW                   KKWWK                   EEKW                   EKEKKft               ,LEKWK                   ;KK#WWKKKWWWGKKWLKEEGGDDEWWK          </descripcion_grafica>
+</espacio>                                               
+                                               
+            itfjjjtiii;,;i;iitjji:             
+    iffjjtjtt;ii;i;iiiiiiiiiitttitttttitji     
+  LffLffLfjjjjtttttitiiiiiiiittiittttjjtjjjjj  
+ jfffjjjjttitttitiiiiiiiiiiiiiiiittttttttjjtj; 
+ jEWfffffjtttttii;;i;i;ii;iii;ii;ittittjjjfjK  
+   LKEEEDtjfjjjjtttiiiiii,ii;iitttjtjtjLDEE#   
+       WKEEEDDDDGDEWWWWWKKKEEKKEGLGffGGK       
+       WWWWWWWWWW##WWWWWWKKKWW###WWWW#KE       
+        WWWWWWW##W#WWWWWWWWWWWWWWWWWW#W        
+        WWKK#W                 EjWWWW#K        
+         WWWWW                   KKKKt         
+         KWKWW                   KKKK.         
+         KKWWW                   KEKK.         
+         KKKWW                   EKKK          
+         KKWWW                   EEKK          
+         KWKWW                   EEWK          
+         KWWWW                   EKWW          
+         KKWWK                   EEKW          
+         EKEKKft               ,LEKWK          
+         ;KK#WWKKKWWWGKKWLKEEGGDDEWWK          
+                 
+                                               
+<espacio id="2">
+	<descripcion>Terraza de la cafeteria</descripcion>
+	<edescripcion>Al oeste se ve el edificio de la escuela</edescripcion>
+	<sur>30</sur>
+	<luz_inicial>TRUE</luz_inicial>
+</espacio>
+
+<espacio id="3">
+	<descripcion>Hall principal de la escuela</descripcion>
+	<edescripcion>Estas en un hall grande con columnas, hay dos pasillos al sur y al norte, la puerta de entrada al este, y al oeste otra puerta mas pequena</edescripcion>
+	<norte>40</norte>
+	<objetos>
+		<objeto id="4"/>
+	</objetos>
+	<luz_inicial>TRUE</luz_inicial>
+</espacio>
+
+
+<union id="10">
+	<abierta>TRUE</abierta>
+	<salida>1</salida>
+	<llegada>2</llegada>
+</union>
+
+<union id="20">
+	<abierta>TRUE</abierta>
+	<salida>1</salida>
+	<llegada>3</llegada>
+</union>
+
+<union id="30">
+	<abierta>TRUE</abierta>
+	<salida>2</salida>
+	<llegada>1</llegada>
+</union>
+
+<union id="40">
+	<abierta>TRUE</abierta>
+	<salida>3</salida>
+	<llegada>1</llegada>
+</union>
+
+
+<objeto id="4">
+	<nombre>Tablon</nombre>
+	<descripcion>Horarios</descripcion>
+	<descexaminar>Estan los horarios de ingenieria informatica</descexaminar>
+	<descmovido>NO PUEDES MOVERME, SI LO LEES KAPUT</descmovido>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>TRUE</contenedor>
+	<inventario>
+		<objeto id="5"/>
+	</inventario>
+</objeto>
+
+<objeto id="5">
+	<nombre>Notas</nombre>
+	<descripcion>Notas de Informática</descripcion>
+	<descexaminar>Has aprobado PPROG!</descexaminar>
+	<descmovido>NO PUEDES MOVERME, SI LO LEES KAPUT</descmovido>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<!-- JUGADOR -->
+−
+	<!--
+ Patron para definir un jugador 
+  <jugador> 
+    <localizacion>ID_ESPACIO</localizacion> 
+     <max_objetos>5</max_objetos> 
+     <objetos> 
+        <objeto id="ID_OBJETO" /> 
+        <objeto id="ID_OBJETO" /> 
+        ... 
+     </objetos>
+  </jugador>
+ 
+-->
+−
+<jugador id="9">
+	<localizacion>1</localizacion>
+	<max_objetos>3</max_objetos>
+</jugador>
+
+</mundo>

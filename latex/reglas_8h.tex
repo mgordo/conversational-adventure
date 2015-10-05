@@ -1,0 +1,841 @@
+\hypertarget{reglas_8h}{
+\section{reglas.h File Reference}
+\label{reglas_8h}\index{reglas.h@{reglas.h}}
+}
+{\ttfamily \#include \char`\"{}mundo.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}tipos.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structREGLA}{REGLA}
+\begin{DoxyCompactList}\small\item\em Estructura \hyperlink{structREGLA}{REGLA}. \item\end{DoxyCompactList}\item 
+struct \hyperlink{structREGLAS}{REGLAS}
+\begin{DoxyCompactList}\small\item\em Estructura básica para almacenar las reglas. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{reglas_8h_ac31209120b6a535e5f3435164fed75ca}{CAMPO} \{ \par
+\hyperlink{reglas_8h_ac31209120b6a535e5f3435164fed75caa6108455a7d7f62a77b87c3b3fed6507c}{P\_\-LOC\_\-OBJ}, 
+{\bfseries P\_\-MOV\_\-OBJ}, 
+{\bfseries P\_\-OCU\_\-OBJ}, 
+{\bfseries P\_\-ENC\_\-OBJ}, 
+\par
+{\bfseries P\_\-CON\_\-OBJ}, 
+{\bfseries P\_\-LUZ\_\-OBJ}, 
+{\bfseries P\_\-LOC\_\-JUG}, 
+{\bfseries P\_\-MAX\_\-JUG}, 
+\par
+{\bfseries P\_\-LUM\_\-ESP}, 
+{\bfseries P\_\-NOR\_\-ESP}, 
+{\bfseries P\_\-SUR\_\-ESP}, 
+{\bfseries P\_\-EST\_\-ESP}, 
+\par
+{\bfseries P\_\-OES\_\-ESP}, 
+{\bfseries P\_\-ARR\_\-ESP}, 
+{\bfseries P\_\-ABA\_\-ESP}, 
+\hyperlink{reglas_8h_ac31209120b6a535e5f3435164fed75caaa77cf69ebe0a413472c98e4567510ed9}{P\_\-ABI\_\-UNI}, 
+\par
+{\bfseries LOC\_\-OBJ}, 
+{\bfseries MOV\_\-OBJ}, 
+{\bfseries MOVI\_\-OBJ}, 
+{\bfseries OCU\_\-OBJ}, 
+\par
+{\bfseries ENC\_\-OBJ}, 
+{\bfseries LOC\_\-JUG}, 
+{\bfseries LUM\_\-ESP}, 
+{\bfseries ABI\_\-UNI}, 
+\par
+{\bfseries KEY\_\-UNI}, 
+{\bfseries OBJ\_\-IN\_\-OBJ}, 
+{\bfseries OBJ\_\-IN\_\-JUG}, 
+\hyperlink{reglas_8h_ac31209120b6a535e5f3435164fed75caa5d1e6020afbd21de38a5b4634dd15fbe}{OBJ\_\-IN\_\-ESP}, 
+\par
+{\bfseries WIN\_\-GAME}, 
+{\bfseries LOSE\_\-GAME}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeración que permitirá saber que función de \hyperlink{structMUNDO}{MUNDO} llamar para comprobar la regla. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_a1dbdb289c69b5764d31690dca8550ae2}{creaRegla} (\hyperlink{structREGLA}{REGLA} $\ast$$\ast$r)
+\begin{DoxyCompactList}\small\item\em Creación de Reglas Esta función crea una regla y la guarda en un puntero que previamente era NULL. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_ab272925851bd6c3df0411c125c0f1f4e}{destruyeRegla} (\hyperlink{structREGLA}{REGLA} $\ast$$\ast$r)
+\begin{DoxyCompactList}\small\item\em Destrucción de Reglas \hyperlink{reglas_8h_ab272925851bd6c3df0411c125c0f1f4e}{destruyeRegla()} se encarga de liberar toda la memoria que hubiese sido reservada para una regla, y pone el puntero de dicha regla a NULL. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_aabc5efad03cbc9577f72b3a5ca9098e7}{cambiaTamanioInfluido} (\hyperlink{structREGLA}{REGLA} $\ast$r, int i)
+\begin{DoxyCompactList}\small\item\em Modificación de Numero de Acciones. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_a53b7df36181fcdb832f940531dd94000}{cambiaTamanioDatosInfluido} (\hyperlink{structREGLA}{REGLA} $\ast$r, int t)
+\begin{DoxyCompactList}\small\item\em Modificación de Tamaño Datos de Acciones. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_a3a0da6f13bd5d511dcb4ae7321ab4cc7}{cambiaInfluido} (\hyperlink{structREGLA}{REGLA} $\ast$r, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$inf, int tam)
+\begin{DoxyCompactList}\small\item\em Modificación de IDs de Acciones. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_a9a78d41bda96384930a2221d983df030}{cambiaCampoInfluido} (\hyperlink{structREGLA}{REGLA} $\ast$r, \hyperlink{reglas_8h_ac31209120b6a535e5f3435164fed75ca}{CAMPO} $\ast$c, int tam)
+\begin{DoxyCompactList}\small\item\em Modificación de Funciones de Acciones. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_add8ede909d4a9a2ac25fad5a9b68f02f}{cambiaValorInfluido} (\hyperlink{structREGLA}{REGLA} $\ast$r, void $\ast$datos, int tam)
+\begin{DoxyCompactList}\small\item\em Modificación de Datos de Acciones. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_a72c5bc269770acb3037a882e17ba9f90}{cambiaTamanioDisparador} (\hyperlink{structREGLA}{REGLA} $\ast$r, int i)
+\begin{DoxyCompactList}\small\item\em Modificación de Número de Condiciones. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_a7339a0b54c49f8a7bcdeb38a5dcf7e53}{cambiaTamanioDatosDisparador} (\hyperlink{structREGLA}{REGLA} $\ast$r, int t)
+\begin{DoxyCompactList}\small\item\em Modificación de Tamaño de los Datos de las Condiciones. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_a708acbc9f008e70b4d3ade964db3ce95}{cambiaDisparador} (\hyperlink{structREGLA}{REGLA} $\ast$r, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$dis, int tam)
+\begin{DoxyCompactList}\small\item\em Modificación de IDs de las Condiciones. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_a743244a8ef670b6a58348ae827264c71}{cambiaCampoDisparador} (\hyperlink{structREGLA}{REGLA} $\ast$r, \hyperlink{reglas_8h_ac31209120b6a535e5f3435164fed75ca}{CAMPO} $\ast$c, int tam)
+\begin{DoxyCompactList}\small\item\em Modificación de las Funciones de Condiciones. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_adc5d79624ec17730c865aebfa437421d}{cambiaValorDisparador} (\hyperlink{structREGLA}{REGLA} $\ast$r, void $\ast$datos, int tam)
+\begin{DoxyCompactList}\small\item\em Modificación de Datos de Condiciones. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_acf1c56d0c409babf87b0fca06a91c525}{cambiaAnterior} (\hyperlink{structREGLA}{REGLA} $\ast$r, \hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} valor)
+\begin{DoxyCompactList}\small\item\em Modificación de Evaluación Anterior. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_a6a23f2e9d843e5a23d13a31af1ec18d0}{cambiaFrase} (\hyperlink{structREGLA}{REGLA} $\ast$r, char $\ast$frase)
+\begin{DoxyCompactList}\small\item\em Modificación de Frase \hyperlink{reglas_8h_a6a23f2e9d843e5a23d13a31af1ec18d0}{cambiaFrase()} copia en el campo frase el contenido de la cadena correspondiente. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_a9c1972d49012a4b3495543ef716f4601}{saberTamanioInfluido} (\hyperlink{structREGLA}{REGLA} $\ast$r, int $\ast$i)
+\begin{DoxyCompactList}\small\item\em Extracción de Numero de Acciones. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_a75030496194ac3c07eef0e8e063af9ee}{saberTamanioDatosInfluido} (\hyperlink{structREGLA}{REGLA} $\ast$r, int $\ast$t)
+\begin{DoxyCompactList}\small\item\em Extracción de Tamaño de Datos Influidos. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_a29c8a31adaefe6e16cb204a416219736}{saberInfluido} (\hyperlink{structREGLA}{REGLA} $\ast$r, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$inf)
+\begin{DoxyCompactList}\small\item\em Extracción de IDs influidas. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_a33cf05ea333f9e4a34c606ab406caf0d}{saberCampoInfluido} (\hyperlink{structREGLA}{REGLA} $\ast$r, \hyperlink{reglas_8h_ac31209120b6a535e5f3435164fed75ca}{CAMPO} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Extracción de Campos Influidos. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_aea861b374f114b4311dc7fdd6a46eb08}{saberValorInfluido} (\hyperlink{structREGLA}{REGLA} $\ast$r, void $\ast$datos)
+\begin{DoxyCompactList}\small\item\em Extracción de Datos con los que Modificar. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_a90fa3fd12e4628d84be2f73f868806bc}{saberTamanioDisparador} (\hyperlink{structREGLA}{REGLA} $\ast$r, int $\ast$i)
+\begin{DoxyCompactList}\small\item\em Extracción de Numero de Disparadores. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_acf5fef90610b356bd2bb1c80350587b6}{saberTamanioDatosDisparador} (\hyperlink{structREGLA}{REGLA} $\ast$r, int $\ast$t)
+\begin{DoxyCompactList}\small\item\em Extracción de Tamaño de los Datos Disparadores. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_a0f0eaac265846e7fddb4785a13950cd7}{saberDisparador} (\hyperlink{structREGLA}{REGLA} $\ast$r, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$dis)
+\begin{DoxyCompactList}\small\item\em Extracción de IDs Disparadores. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_a364fb769c37351c2f23824dbe28a200f}{saberCampoDisparador} (\hyperlink{structREGLA}{REGLA} $\ast$r, \hyperlink{reglas_8h_ac31209120b6a535e5f3435164fed75ca}{CAMPO} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Extracción de Campos Disparadores. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_a5431215272728c86a36d9d4383482e26}{saberValorDisparador} (\hyperlink{structREGLA}{REGLA} $\ast$r, void $\ast$datos)
+\begin{DoxyCompactList}\small\item\em Extracción de Datos \hyperlink{reglas_8h_a5431215272728c86a36d9d4383482e26}{saberValorDisparador()} se encarga de extraer de la regla los datos que se desean como resultado en las funciones de condición. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_a7046ab978e4bdd2c325388614fcfc7d0}{saberAnterior} (\hyperlink{structREGLA}{REGLA} $\ast$r, \hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} $\ast$valor)
+\begin{DoxyCompactList}\small\item\em Ultima verificación \hyperlink{reglas_8h_a7046ab978e4bdd2c325388614fcfc7d0}{saberAnterior()} guarda en valor si la regla r fue evaluada con anterioridad y si fue verdadera o, por el contrario, falsa. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_a2721d3866b150098f5268b3857eedcba}{saberFrase} (\hyperlink{structREGLA}{REGLA} $\ast$r, char $\ast$frase)
+\begin{DoxyCompactList}\small\item\em Extracción de Frase \hyperlink{reglas_8h_a2721d3866b150098f5268b3857eedcba}{saberFrase()} copia en frase el contenido del campo correspondiente de la estructura \hyperlink{structREGLA}{REGLA}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{reglas_8h_a89dee74817c9b9dbc2c7019508e90afd}{isReglaDestruida} (\hyperlink{structREGLA}{REGLA} $\ast$r)
+\begin{DoxyCompactList}\small\item\em ¿Está destruida una regla? \hyperlink{reglas_8h_a89dee74817c9b9dbc2c7019508e90afd}{isReglaDestruida()} averigua si una regla existe o no \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{reglas_8h_a3e7097e657002c0064ce51fb57c8dc62}{isEmptyRegla} (\hyperlink{structREGLA}{REGLA} $\ast$r)
+\begin{DoxyCompactList}\small\item\em ¿Está vacía una regla? \hyperlink{reglas_8h_a3e7097e657002c0064ce51fb57c8dc62}{isEmptyRegla()} averigua si una regla está recién creada, y sin datos en su interior \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{reglas_8h_a118e2e0d68131421a13616d36f7ef287}{evaluaRegla} (\hyperlink{structREGLA}{REGLA} $\ast$r, \hyperlink{structMUNDO}{MUNDO} $\ast$m)
+\begin{DoxyCompactList}\small\item\em Evaluación de la Regla \hyperlink{reglas_8h_a118e2e0d68131421a13616d36f7ef287}{evaluaRegla()} se encarga de ejecutar una serie de funciones de mundo para verificar el estado del mismo. Verifica una a una todas las condiciones y, si todas son ciertas, devolverá TRUE. En otro caso, devolverá FALSE. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_ad6d39224754fca59c5c5bcefd8c14ca8}{GAMES} \hyperlink{reglas_8h_adcdfeee8c6df8ed3b3dc004c644e59fc}{ejecutaAccionRegla} (\hyperlink{structREGLA}{REGLA} $\ast$r, \hyperlink{structMUNDO}{MUNDO} $\ast$m)
+\begin{DoxyCompactList}\small\item\em Ejecución de la consecuencia de una acción \hyperlink{reglas_8h_adcdfeee8c6df8ed3b3dc004c644e59fc}{ejecutaAccionRegla()} ejecuta una serie de funciones de mundo que lo modificarán siguiendo los parámetros de influenciados. Solo se realizarán cambios si la regla es de tipo DISPARAR. Esta función no se asegura que la regla sea TRUE en ese momento. Se deja eso en manos de quien use la función. \item\end{DoxyCompactList}\item 
+\hyperlink{structREGLAS}{REGLAS} $\ast$ \hyperlink{reglas_8h_a8f52e682d2bc9adf08a459b85a35bc77}{creaReglas} (int n)
+\begin{DoxyCompactList}\small\item\em reserva una 'reglas' \hyperlink{reglas_8h_a8f52e682d2bc9adf08a459b85a35bc77}{creaReglas()} reserva memoria para una estructura reglas \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{reglas_8h_a493e3ab79ae408dd145381b24dbedb2b}{destruyeReglas} (\hyperlink{structREGLAS}{REGLAS} $\ast$$\ast$reglas)
+\begin{DoxyCompactList}\small\item\em destruye una reserva de 'reglas' \hyperlink{reglas_8h_a493e3ab79ae408dd145381b24dbedb2b}{destruyeReglas()} libera la memoria reservada anteriormente \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.0 Fichero que contiene las estructuras y declaraciones necesarias para el manejo de la estructura \hyperlink{structREGLA}{REGLA} 
+\end{DoxyVersion}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{reglas_8h_ac31209120b6a535e5f3435164fed75ca}{
+\index{reglas.h@{reglas.h}!CAMPO@{CAMPO}}
+\index{CAMPO@{CAMPO}!reglas.h@{reglas.h}}
+\subsubsection[{CAMPO}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf CAMPO}}}
+\label{reglas_8h_ac31209120b6a535e5f3435164fed75ca}
+
+
+Enumeración que permitirá saber que función de \hyperlink{structMUNDO}{MUNDO} llamar para comprobar la regla. 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{P\_\-LOC\_\-OBJ@{P\_\-LOC\_\-OBJ}!reglas.h@{reglas.h}}\index{reglas.h@{reglas.h}!P\_\-LOC\_\-OBJ@{P\_\-LOC\_\-OBJ}}\item[{\em 
+\hypertarget{reglas_8h_ac31209120b6a535e5f3435164fed75caa6108455a7d7f62a77b87c3b3fed6507c}{
+P\_\-LOC\_\-OBJ}
+\label{reglas_8h_ac31209120b6a535e5f3435164fed75caa6108455a7d7f62a77b87c3b3fed6507c}
+}]Modificar Valores \index{P\_\-ABI\_\-UNI@{P\_\-ABI\_\-UNI}!reglas.h@{reglas.h}}\index{reglas.h@{reglas.h}!P\_\-ABI\_\-UNI@{P\_\-ABI\_\-UNI}}\item[{\em 
+\hypertarget{reglas_8h_ac31209120b6a535e5f3435164fed75caaa77cf69ebe0a413472c98e4567510ed9}{
+P\_\-ABI\_\-UNI}
+\label{reglas_8h_ac31209120b6a535e5f3435164fed75caaa77cf69ebe0a413472c98e4567510ed9}
+}]Comprobar campo \index{OBJ\_\-IN\_\-ESP@{OBJ\_\-IN\_\-ESP}!reglas.h@{reglas.h}}\index{reglas.h@{reglas.h}!OBJ\_\-IN\_\-ESP@{OBJ\_\-IN\_\-ESP}}\item[{\em 
+\hypertarget{reglas_8h_ac31209120b6a535e5f3435164fed75caa5d1e6020afbd21de38a5b4634dd15fbe}{
+OBJ\_\-IN\_\-ESP}
+\label{reglas_8h_ac31209120b6a535e5f3435164fed75caa5d1e6020afbd21de38a5b4634dd15fbe}
+}]Valores de fin de juego \end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{reglas_8h_acf1c56d0c409babf87b0fca06a91c525}{
+\index{reglas.h@{reglas.h}!cambiaAnterior@{cambiaAnterior}}
+\index{cambiaAnterior@{cambiaAnterior}!reglas.h@{reglas.h}}
+\subsubsection[{cambiaAnterior}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaAnterior ({\bf REGLA} $\ast$ {\em r}, \/  {\bf BOOL} {\em valor})}}
+\label{reglas_8h_acf1c56d0c409babf87b0fca06a91c525}
+
+
+Modificación de Evaluación Anterior. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero a la regla que se desea modificar \item[{\em valor}]es un booleano por el que se quiere cambiar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_a743244a8ef670b6a58348ae827264c71}{
+\index{reglas.h@{reglas.h}!cambiaCampoDisparador@{cambiaCampoDisparador}}
+\index{cambiaCampoDisparador@{cambiaCampoDisparador}!reglas.h@{reglas.h}}
+\subsubsection[{cambiaCampoDisparador}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaCampoDisparador ({\bf REGLA} $\ast$ {\em r}, \/  {\bf CAMPO} $\ast$ {\em c}, \/  int {\em tam})}}
+\label{reglas_8h_a743244a8ef670b6a58348ae827264c71}
+
+
+Modificación de las Funciones de Condiciones. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero a la regla que se desea modificar \item[{\em c}]es un array de CAMPO's que se deea guardar \item[{\em tam}]es el numero de CAMPO's que se quiere cambiar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_a9a78d41bda96384930a2221d983df030}{
+\index{reglas.h@{reglas.h}!cambiaCampoInfluido@{cambiaCampoInfluido}}
+\index{cambiaCampoInfluido@{cambiaCampoInfluido}!reglas.h@{reglas.h}}
+\subsubsection[{cambiaCampoInfluido}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaCampoInfluido ({\bf REGLA} $\ast$ {\em r}, \/  {\bf CAMPO} $\ast$ {\em c}, \/  int {\em tam})}}
+\label{reglas_8h_a9a78d41bda96384930a2221d983df030}
+
+
+Modificación de Funciones de Acciones. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero a la regla que se desea modificar \item[{\em c}]es un array de CAMPO's que se desea guardar \item[{\em tam}]es el numero de CAMPO's que se desea guardar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_a708acbc9f008e70b4d3ade964db3ce95}{
+\index{reglas.h@{reglas.h}!cambiaDisparador@{cambiaDisparador}}
+\index{cambiaDisparador@{cambiaDisparador}!reglas.h@{reglas.h}}
+\subsubsection[{cambiaDisparador}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaDisparador ({\bf REGLA} $\ast$ {\em r}, \/  {\bf ID} $\ast$ {\em dis}, \/  int {\em tam})}}
+\label{reglas_8h_a708acbc9f008e70b4d3ade964db3ce95}
+
+
+Modificación de IDs de las Condiciones. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero a la regla que se desea modificar \item[{\em dis}]es un array de ID's que se desea guardar \item[{\em tam}]es el numero de ID's que hay \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_a6a23f2e9d843e5a23d13a31af1ec18d0}{
+\index{reglas.h@{reglas.h}!cambiaFrase@{cambiaFrase}}
+\index{cambiaFrase@{cambiaFrase}!reglas.h@{reglas.h}}
+\subsubsection[{cambiaFrase}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaFrase ({\bf REGLA} $\ast$ {\em r}, \/  char $\ast$ {\em frase})}}
+\label{reglas_8h_a6a23f2e9d843e5a23d13a31af1ec18d0}
+
+
+Modificación de Frase \hyperlink{reglas_8h_a6a23f2e9d843e5a23d13a31af1ec18d0}{cambiaFrase()} copia en el campo frase el contenido de la cadena correspondiente. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero a la regla que se desea modificar \item[{\em frase}]un puntero a la cadena de donde sacar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_a3a0da6f13bd5d511dcb4ae7321ab4cc7}{
+\index{reglas.h@{reglas.h}!cambiaInfluido@{cambiaInfluido}}
+\index{cambiaInfluido@{cambiaInfluido}!reglas.h@{reglas.h}}
+\subsubsection[{cambiaInfluido}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaInfluido ({\bf REGLA} $\ast$ {\em r}, \/  {\bf ID} $\ast$ {\em inf}, \/  int {\em tam})}}
+\label{reglas_8h_a3a0da6f13bd5d511dcb4ae7321ab4cc7}
+
+
+Modificación de IDs de Acciones. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero a la regla que se desea modificar \item[{\em inf}]es un array de ID's a guardar \item[{\em tam}]es el numero de ID's que se desea guardar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_a7339a0b54c49f8a7bcdeb38a5dcf7e53}{
+\index{reglas.h@{reglas.h}!cambiaTamanioDatosDisparador@{cambiaTamanioDatosDisparador}}
+\index{cambiaTamanioDatosDisparador@{cambiaTamanioDatosDisparador}!reglas.h@{reglas.h}}
+\subsubsection[{cambiaTamanioDatosDisparador}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaTamanioDatosDisparador ({\bf REGLA} $\ast$ {\em r}, \/  int {\em t})}}
+\label{reglas_8h_a7339a0b54c49f8a7bcdeb38a5dcf7e53}
+
+
+Modificación de Tamaño de los Datos de las Condiciones. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero a la regla que se desea modificar \item[{\em t}]es el numero que se desea guardar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_a53b7df36181fcdb832f940531dd94000}{
+\index{reglas.h@{reglas.h}!cambiaTamanioDatosInfluido@{cambiaTamanioDatosInfluido}}
+\index{cambiaTamanioDatosInfluido@{cambiaTamanioDatosInfluido}!reglas.h@{reglas.h}}
+\subsubsection[{cambiaTamanioDatosInfluido}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaTamanioDatosInfluido ({\bf REGLA} $\ast$ {\em r}, \/  int {\em t})}}
+\label{reglas_8h_a53b7df36181fcdb832f940531dd94000}
+
+
+Modificación de Tamaño Datos de Acciones. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero a la regla que se desea modificar \item[{\em t}]es el numero que se desea guardar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_a72c5bc269770acb3037a882e17ba9f90}{
+\index{reglas.h@{reglas.h}!cambiaTamanioDisparador@{cambiaTamanioDisparador}}
+\index{cambiaTamanioDisparador@{cambiaTamanioDisparador}!reglas.h@{reglas.h}}
+\subsubsection[{cambiaTamanioDisparador}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaTamanioDisparador ({\bf REGLA} $\ast$ {\em r}, \/  int {\em i})}}
+\label{reglas_8h_a72c5bc269770acb3037a882e17ba9f90}
+
+
+Modificación de Número de Condiciones. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor$\ast$ 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero a la regla que se desea modificar \item[{\em i}]es el numero que se desea guardar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_aabc5efad03cbc9577f72b3a5ca9098e7}{
+\index{reglas.h@{reglas.h}!cambiaTamanioInfluido@{cambiaTamanioInfluido}}
+\index{cambiaTamanioInfluido@{cambiaTamanioInfluido}!reglas.h@{reglas.h}}
+\subsubsection[{cambiaTamanioInfluido}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaTamanioInfluido ({\bf REGLA} $\ast$ {\em r}, \/  int {\em i})}}
+\label{reglas_8h_aabc5efad03cbc9577f72b3a5ca9098e7}
+
+
+Modificación de Numero de Acciones. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero a la regla que se desea modificar \item[{\em i}]es el numero que se desea guardar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_adc5d79624ec17730c865aebfa437421d}{
+\index{reglas.h@{reglas.h}!cambiaValorDisparador@{cambiaValorDisparador}}
+\index{cambiaValorDisparador@{cambiaValorDisparador}!reglas.h@{reglas.h}}
+\subsubsection[{cambiaValorDisparador}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaValorDisparador ({\bf REGLA} $\ast$ {\em r}, \/  void $\ast$ {\em datos}, \/  int {\em tam})}}
+\label{reglas_8h_adc5d79624ec17730c865aebfa437421d}
+
+
+Modificación de Datos de Condiciones. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero a la regla que se desea modificar \item[{\em datos}]es un array de bytes que se desean guardar \item[{\em tam}]es el numero de bytes que se quiere cambiar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_add8ede909d4a9a2ac25fad5a9b68f02f}{
+\index{reglas.h@{reglas.h}!cambiaValorInfluido@{cambiaValorInfluido}}
+\index{cambiaValorInfluido@{cambiaValorInfluido}!reglas.h@{reglas.h}}
+\subsubsection[{cambiaValorInfluido}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaValorInfluido ({\bf REGLA} $\ast$ {\em r}, \/  void $\ast$ {\em datos}, \/  int {\em tam})}}
+\label{reglas_8h_add8ede909d4a9a2ac25fad5a9b68f02f}
+
+
+Modificación de Datos de Acciones. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero a la regla que se desea modificar \item[{\em datos}]es un array sde bytes que se desea guardar \item[{\em tam}]es el numero de bytes que se desea guardar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_a1dbdb289c69b5764d31690dca8550ae2}{
+\index{reglas.h@{reglas.h}!creaRegla@{creaRegla}}
+\index{creaRegla@{creaRegla}!reglas.h@{reglas.h}}
+\subsubsection[{creaRegla}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaRegla ({\bf REGLA} $\ast$$\ast$ {\em r})}}
+\label{reglas_8h_a1dbdb289c69b5764d31690dca8550ae2}
+
+
+Creación de Reglas Esta función crea una regla y la guarda en un puntero que previamente era NULL. 
+
+Descripción de la estructura:
+\begin{DoxyItemize}
+\item t es un TIPOREGLA que permitirá saber cuándo hay que verificar una \hyperlink{structREGLA}{REGLA}
+\item num\_\-influido es el numero de acciones a realizar
+\item tam\_\-datos\_\-i es el numero de bytes de los datos que se pasarán como argumento a las funciones de las acciones
+\item influido es un puntero a un array de ids de las ESTRUCTURAS que hay que cambiar
+\item c es un array de valores de CAMPO que permitirán saber qué funciones usar para cambiar los valores
+\item valor\_\-cam es un puntero a un array de datos que serán los datos que se introducirán en los respectivos campos marcados con anterioridad
+\item num\_\-disparador es el numero de condiciones
+\item tam\_\-datos\_\-d es el numero de bytes que contienen los resultados esperados en las funciones de la evaluación
+\item disp es un array de ids de las ESTRUCTURAS que disparan/validan la regla
+\item key es un array de valores de la enumeración CAMPO que marcará con qué funciones de mundo se validarán los datos
+\item valor es un puntero a un array de datos con los que validar los campos
+\item anterior es un campo que indica el resultado de la última evaluación de la regla
+\end{DoxyItemize}
+
+NOTA: como los datos son de tipo desconocido, se tienen punteros a void que luego se castearán para que coincida con los datos que corresponda \begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero al puntero donde se desea guardar la regla \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+devuelve un STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_a8f52e682d2bc9adf08a459b85a35bc77}{
+\index{reglas.h@{reglas.h}!creaReglas@{creaReglas}}
+\index{creaReglas@{creaReglas}!reglas.h@{reglas.h}}
+\subsubsection[{creaReglas}]{\setlength{\rightskip}{0pt plus 5cm}{\bf REGLAS}$\ast$ creaReglas (int {\em n})}}
+\label{reglas_8h_a8f52e682d2bc9adf08a459b85a35bc77}
+
+
+reserva una 'reglas' \hyperlink{reglas_8h_a8f52e682d2bc9adf08a459b85a35bc77}{creaReglas()} reserva memoria para una estructura reglas 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em n}]es el número de reglas \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un puntero a la reserva, o NULL si falló 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_ab272925851bd6c3df0411c125c0f1f4e}{
+\index{reglas.h@{reglas.h}!destruyeRegla@{destruyeRegla}}
+\index{destruyeRegla@{destruyeRegla}!reglas.h@{reglas.h}}
+\subsubsection[{destruyeRegla}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} destruyeRegla ({\bf REGLA} $\ast$$\ast$ {\em r})}}
+\label{reglas_8h_ab272925851bd6c3df0411c125c0f1f4e}
+
+
+Destrucción de Reglas \hyperlink{reglas_8h_ab272925851bd6c3df0411c125c0f1f4e}{destruyeRegla()} se encarga de liberar toda la memoria que hubiese sido reservada para una regla, y pone el puntero de dicha regla a NULL. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero al puntero de la regla que se desea destruir \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_a493e3ab79ae408dd145381b24dbedb2b}{
+\index{reglas.h@{reglas.h}!destruyeReglas@{destruyeReglas}}
+\index{destruyeReglas@{destruyeReglas}!reglas.h@{reglas.h}}
+\subsubsection[{destruyeReglas}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} destruyeReglas ({\bf REGLAS} $\ast$$\ast$ {\em reglas})}}
+\label{reglas_8h_a493e3ab79ae408dd145381b24dbedb2b}
+
+
+destruye una reserva de 'reglas' \hyperlink{reglas_8h_a493e3ab79ae408dd145381b24dbedb2b}{destruyeReglas()} libera la memoria reservada anteriormente 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em reglas}]es el puntero al puntero de una estructura reglas \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si fue correcto, ERR si falló 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_adcdfeee8c6df8ed3b3dc004c644e59fc}{
+\index{reglas.h@{reglas.h}!ejecutaAccionRegla@{ejecutaAccionRegla}}
+\index{ejecutaAccionRegla@{ejecutaAccionRegla}!reglas.h@{reglas.h}}
+\subsubsection[{ejecutaAccionRegla}]{\setlength{\rightskip}{0pt plus 5cm}{\bf GAMES} ejecutaAccionRegla ({\bf REGLA} $\ast$ {\em r}, \/  {\bf MUNDO} $\ast$ {\em m})}}
+\label{reglas_8h_adcdfeee8c6df8ed3b3dc004c644e59fc}
+
+
+Ejecución de la consecuencia de una acción \hyperlink{reglas_8h_adcdfeee8c6df8ed3b3dc004c644e59fc}{ejecutaAccionRegla()} ejecuta una serie de funciones de mundo que lo modificarán siguiendo los parámetros de influenciados. Solo se realizarán cambios si la regla es de tipo DISPARAR. Esta función no se asegura que la regla sea TRUE en ese momento. Se deja eso en manos de quien use la función. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]regla que se desea ejecutar \item[{\em m}]es un puntero al mundo donde se desea ejecutar la \hyperlink{structREGLA}{REGLA} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_a118e2e0d68131421a13616d36f7ef287}{
+\index{reglas.h@{reglas.h}!evaluaRegla@{evaluaRegla}}
+\index{evaluaRegla@{evaluaRegla}!reglas.h@{reglas.h}}
+\subsubsection[{evaluaRegla}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} evaluaRegla ({\bf REGLA} $\ast$ {\em r}, \/  {\bf MUNDO} $\ast$ {\em m})}}
+\label{reglas_8h_a118e2e0d68131421a13616d36f7ef287}
+
+
+Evaluación de la Regla \hyperlink{reglas_8h_a118e2e0d68131421a13616d36f7ef287}{evaluaRegla()} se encarga de ejecutar una serie de funciones de mundo para verificar el estado del mismo. Verifica una a una todas las condiciones y, si todas son ciertas, devolverá TRUE. En otro caso, devolverá FALSE. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]regla que se desea verificar \item[{\em m}]es un puntero al mundo donde se desea comprobar la \hyperlink{structREGLA}{REGLA} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE si las condiciones se cumplen, y FALSE si no 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_a3e7097e657002c0064ce51fb57c8dc62}{
+\index{reglas.h@{reglas.h}!isEmptyRegla@{isEmptyRegla}}
+\index{isEmptyRegla@{isEmptyRegla}!reglas.h@{reglas.h}}
+\subsubsection[{isEmptyRegla}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} isEmptyRegla ({\bf REGLA} $\ast$ {\em r})}}
+\label{reglas_8h_a3e7097e657002c0064ce51fb57c8dc62}
+
+
+¿Está vacía una regla? \hyperlink{reglas_8h_a3e7097e657002c0064ce51fb57c8dc62}{isEmptyRegla()} averigua si una regla está recién creada, y sin datos en su interior 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]regla que se desea verificar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE si las condiciones se cumplen, y FALSE si no 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_a89dee74817c9b9dbc2c7019508e90afd}{
+\index{reglas.h@{reglas.h}!isReglaDestruida@{isReglaDestruida}}
+\index{isReglaDestruida@{isReglaDestruida}!reglas.h@{reglas.h}}
+\subsubsection[{isReglaDestruida}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} isReglaDestruida ({\bf REGLA} $\ast$ {\em r})}}
+\label{reglas_8h_a89dee74817c9b9dbc2c7019508e90afd}
+
+
+¿Está destruida una regla? \hyperlink{reglas_8h_a89dee74817c9b9dbc2c7019508e90afd}{isReglaDestruida()} averigua si una regla existe o no 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]regla que se desea verificar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE si las condiciones se cumplen, y FALSE si no 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_a7046ab978e4bdd2c325388614fcfc7d0}{
+\index{reglas.h@{reglas.h}!saberAnterior@{saberAnterior}}
+\index{saberAnterior@{saberAnterior}!reglas.h@{reglas.h}}
+\subsubsection[{saberAnterior}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberAnterior ({\bf REGLA} $\ast$ {\em r}, \/  {\bf BOOL} $\ast$ {\em valor})}}
+\label{reglas_8h_a7046ab978e4bdd2c325388614fcfc7d0}
+
+
+Ultima verificación \hyperlink{reglas_8h_a7046ab978e4bdd2c325388614fcfc7d0}{saberAnterior()} guarda en valor si la regla r fue evaluada con anterioridad y si fue verdadera o, por el contrario, falsa. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero a la regla de la que se desea el dato \item[{\em valor}]un puntero a un dato booleano donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_a364fb769c37351c2f23824dbe28a200f}{
+\index{reglas.h@{reglas.h}!saberCampoDisparador@{saberCampoDisparador}}
+\index{saberCampoDisparador@{saberCampoDisparador}!reglas.h@{reglas.h}}
+\subsubsection[{saberCampoDisparador}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberCampoDisparador ({\bf REGLA} $\ast$ {\em r}, \/  {\bf CAMPO} $\ast$ {\em c})}}
+\label{reglas_8h_a364fb769c37351c2f23824dbe28a200f}
+
+
+Extracción de Campos Disparadores. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero a la regla de la que se desea el dato \item[{\em c}]es un array de CAMPO's donde guardar los datos \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_a33cf05ea333f9e4a34c606ab406caf0d}{
+\index{reglas.h@{reglas.h}!saberCampoInfluido@{saberCampoInfluido}}
+\index{saberCampoInfluido@{saberCampoInfluido}!reglas.h@{reglas.h}}
+\subsubsection[{saberCampoInfluido}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberCampoInfluido ({\bf REGLA} $\ast$ {\em r}, \/  {\bf CAMPO} $\ast$ {\em c})}}
+\label{reglas_8h_a33cf05ea333f9e4a34c606ab406caf0d}
+
+
+Extracción de Campos Influidos. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero a la regla de la que se desea el dato \item[{\em c}]es un array de CAMPO's donde guardar los datos \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_a0f0eaac265846e7fddb4785a13950cd7}{
+\index{reglas.h@{reglas.h}!saberDisparador@{saberDisparador}}
+\index{saberDisparador@{saberDisparador}!reglas.h@{reglas.h}}
+\subsubsection[{saberDisparador}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberDisparador ({\bf REGLA} $\ast$ {\em r}, \/  {\bf ID} $\ast$ {\em dis})}}
+\label{reglas_8h_a0f0eaac265846e7fddb4785a13950cd7}
+
+
+Extracción de IDs Disparadores. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero a la regla de la que se desea el dato \item[{\em dis}]es un array de ID's donde guardar los datos \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_a2721d3866b150098f5268b3857eedcba}{
+\index{reglas.h@{reglas.h}!saberFrase@{saberFrase}}
+\index{saberFrase@{saberFrase}!reglas.h@{reglas.h}}
+\subsubsection[{saberFrase}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberFrase ({\bf REGLA} $\ast$ {\em r}, \/  char $\ast$ {\em frase})}}
+\label{reglas_8h_a2721d3866b150098f5268b3857eedcba}
+
+
+Extracción de Frase \hyperlink{reglas_8h_a2721d3866b150098f5268b3857eedcba}{saberFrase()} copia en frase el contenido del campo correspondiente de la estructura \hyperlink{structREGLA}{REGLA}. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero a la regla de la que se desea el dato \item[{\em frase}]un puntero a la cadena donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_a29c8a31adaefe6e16cb204a416219736}{
+\index{reglas.h@{reglas.h}!saberInfluido@{saberInfluido}}
+\index{saberInfluido@{saberInfluido}!reglas.h@{reglas.h}}
+\subsubsection[{saberInfluido}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberInfluido ({\bf REGLA} $\ast$ {\em r}, \/  {\bf ID} $\ast$ {\em inf})}}
+\label{reglas_8h_a29c8a31adaefe6e16cb204a416219736}
+
+
+Extracción de IDs influidas. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero a la regla de la que se desea el dato \item[{\em inf}]es un array de ID's donde guardar los datos \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_acf5fef90610b356bd2bb1c80350587b6}{
+\index{reglas.h@{reglas.h}!saberTamanioDatosDisparador@{saberTamanioDatosDisparador}}
+\index{saberTamanioDatosDisparador@{saberTamanioDatosDisparador}!reglas.h@{reglas.h}}
+\subsubsection[{saberTamanioDatosDisparador}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberTamanioDatosDisparador ({\bf REGLA} $\ast$ {\em r}, \/  int $\ast$ {\em t})}}
+\label{reglas_8h_acf5fef90610b356bd2bb1c80350587b6}
+
+
+Extracción de Tamaño de los Datos Disparadores. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero a la regla de la que se desea el dato \item[{\em t}]es un puntero a un numero donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_a75030496194ac3c07eef0e8e063af9ee}{
+\index{reglas.h@{reglas.h}!saberTamanioDatosInfluido@{saberTamanioDatosInfluido}}
+\index{saberTamanioDatosInfluido@{saberTamanioDatosInfluido}!reglas.h@{reglas.h}}
+\subsubsection[{saberTamanioDatosInfluido}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberTamanioDatosInfluido ({\bf REGLA} $\ast$ {\em r}, \/  int $\ast$ {\em t})}}
+\label{reglas_8h_a75030496194ac3c07eef0e8e063af9ee}
+
+
+Extracción de Tamaño de Datos Influidos. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero a la regla de la que se desea el dato \item[{\em t}]es un puntero a un numero donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_a90fa3fd12e4628d84be2f73f868806bc}{
+\index{reglas.h@{reglas.h}!saberTamanioDisparador@{saberTamanioDisparador}}
+\index{saberTamanioDisparador@{saberTamanioDisparador}!reglas.h@{reglas.h}}
+\subsubsection[{saberTamanioDisparador}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberTamanioDisparador ({\bf REGLA} $\ast$ {\em r}, \/  int $\ast$ {\em i})}}
+\label{reglas_8h_a90fa3fd12e4628d84be2f73f868806bc}
+
+
+Extracción de Numero de Disparadores. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero a la regla de la que se desea el dato \item[{\em i}]es un puntero a un numero donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_a9c1972d49012a4b3495543ef716f4601}{
+\index{reglas.h@{reglas.h}!saberTamanioInfluido@{saberTamanioInfluido}}
+\index{saberTamanioInfluido@{saberTamanioInfluido}!reglas.h@{reglas.h}}
+\subsubsection[{saberTamanioInfluido}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberTamanioInfluido ({\bf REGLA} $\ast$ {\em r}, \/  int $\ast$ {\em i})}}
+\label{reglas_8h_a9c1972d49012a4b3495543ef716f4601}
+
+
+Extracción de Numero de Acciones. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero a la regla de la que se desea el dato \item[{\em i}]es un puntero a un numero donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_a5431215272728c86a36d9d4383482e26}{
+\index{reglas.h@{reglas.h}!saberValorDisparador@{saberValorDisparador}}
+\index{saberValorDisparador@{saberValorDisparador}!reglas.h@{reglas.h}}
+\subsubsection[{saberValorDisparador}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberValorDisparador ({\bf REGLA} $\ast$ {\em r}, \/  void $\ast$ {\em datos})}}
+\label{reglas_8h_a5431215272728c86a36d9d4383482e26}
+
+
+Extracción de Datos \hyperlink{reglas_8h_a5431215272728c86a36d9d4383482e26}{saberValorDisparador()} se encarga de extraer de la regla los datos que se desean como resultado en las funciones de condición. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]es la regla de la que se desean los datos \item[{\em datos}]es un puntero a un array de bytes donde guardar los datos \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valos STATUS con el resultado de la operación 
+\end{DoxyReturn}
+\hypertarget{reglas_8h_aea861b374f114b4311dc7fdd6a46eb08}{
+\index{reglas.h@{reglas.h}!saberValorInfluido@{saberValorInfluido}}
+\index{saberValorInfluido@{saberValorInfluido}!reglas.h@{reglas.h}}
+\subsubsection[{saberValorInfluido}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberValorInfluido ({\bf REGLA} $\ast$ {\em r}, \/  void $\ast$ {\em datos})}}
+\label{reglas_8h_aea861b374f114b4311dc7fdd6a46eb08}
+
+
+Extracción de Datos con los que Modificar. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Jimenez Pastor 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+24-\/11-\/2010 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em r}]puntero a la regla de la que se desea el dato \item[{\em datos}]es un array de bytes donde guardar los datos \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un valor STATUS con el resultado de la operación 
+\end{DoxyReturn}

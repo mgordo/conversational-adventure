@@ -1,0 +1,731 @@
+\hypertarget{lectorxml_8h}{
+\section{lectorxml.h File Reference}
+\label{lectorxml_8h}\index{lectorxml.h@{lectorxml.h}}
+}
+
+
+Primitivas de lector xml Este modulo contiene los prototipos de las funciones de lectura en xml.  
+
+
+{\ttfamily \#include \char`\"{}mundo.h\char`\"{}}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$libxml/xmlmemory.h$>$}\par
+{\ttfamily \#include $<$libxml/parser.h$>$}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structMUNDO}{MUNDO} $\ast$ \hyperlink{lectorxml_8h_adfe07678906eb1ff2c3bccf8426760f8}{iniMundo} (char $\ast$nombrefich)
+\begin{DoxyCompactList}\small\item\em Inicialización de Mundo Esta función permite leer un mundo de fichero xml e inicializar un \hyperlink{structMUNDO}{MUNDO} con esos datos. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_add081123cd06af48668cf842260b8540}{procesaJugador} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structMUNDO}{MUNDO} $\ast$mundo)
+\begin{DoxyCompactList}\small\item\em Procesa Jugador Esta función permite leer todos los campos de un jugador de un fichero xml. Al salir estará guardado en mundo. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_a572f9bf55e01950876a1c19abaaa106c}{procesaNombreJugador} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structJUGADOR}{JUGADOR} $\ast$jug)
+\begin{DoxyCompactList}\small\item\em ProcesaNombreJugador Esta función permite leer el nombre de un jugador. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_a330823d454c3fe95e958f696022352c5}{procesaLocalizacionJugador} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structJUGADOR}{JUGADOR} $\ast$jug)
+\begin{DoxyCompactList}\small\item\em ProcesaLocalizacionJugador Esta función permite leer la posición de un jugador. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_a6c755e0dc2da0453d949187d8dc56e6b}{procesaMaxObjetosJugador} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structJUGADOR}{JUGADOR} $\ast$jug)
+\begin{DoxyCompactList}\small\item\em ProcesaMaxObjetosJugador Esta función permite leer el máximo de objetos de un jugador. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_ab44258c79c3c753b311bb61e934c9e6d}{procesaobjInvJugador} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structJUGADOR}{JUGADOR} $\ast$jug)
+\begin{DoxyCompactList}\small\item\em ProcesInvJugador Esta función permite leer el inventario inicial de un jugador. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_ab620970149db48883da75266cdc0159e}{procesaEspacio} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structMUNDO}{MUNDO} $\ast$mundo)
+\begin{DoxyCompactList}\small\item\em Procesa Espacio Esta función permite leer todos los campos de un espacio de un fichero xml. Al salir estará guardado en mundo. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_ad9f8572d670d1eb12ec9e6b476ceafef}{procesaDescripcionEspacio} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structESPACIO}{ESPACIO} $\ast$espacio)
+\begin{DoxyCompactList}\small\item\em procesaDescripcionEspacio Esta función permite leer la descripción de un espacio \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_a14dd4319aaa08b4f3eb9ef44bbc1eea7}{procesaDescrGraficaEspacio} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structESPACIO}{ESPACIO} $\ast$espacio)
+\begin{DoxyCompactList}\small\item\em Procesa Descripción Gráfica Espacio Esta función permite leer la descripción gráfica de un espacio. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_a60b3f47a36465eeeac4a609cc5021818}{procesaEdescripcionEspacio} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structESPACIO}{ESPACIO} $\ast$espacio)
+\begin{DoxyCompactList}\small\item\em procesaEdescripcionEspacio Esta función permite leer la descripción de un espacio a examinar \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_adda241b3328beb0135e3916dd5ef0094}{procesaNorteEspacio} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structESPACIO}{ESPACIO} $\ast$espacio)
+\begin{DoxyCompactList}\small\item\em procesaNorteEspacio Esta función permite leer el norte de un espacio \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_ad09dfe12934123d4ffb268a897c6ee8f}{procesaSurEspacio} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structESPACIO}{ESPACIO} $\ast$espacio)
+\begin{DoxyCompactList}\small\item\em procesaSurEspacio Esta función permite leer el sur de un espacio \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_a134bd0d8d5d7d3dc74374702e1c5c19d}{procesaEsteEspacio} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structESPACIO}{ESPACIO} $\ast$espacio)
+\begin{DoxyCompactList}\small\item\em procesaEsteEspacio Esta función permite leer el este de un espacio \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_a7f73950c61258ab408fa47834e2d2e1f}{procesaOesteEspacio} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structESPACIO}{ESPACIO} $\ast$espacio)
+\begin{DoxyCompactList}\small\item\em procesaOesteEspacio Esta función permite leer el oeste de un espacio \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_abfbe468670293f0b8e27ca93530855a8}{procesaArribaEspacio} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structESPACIO}{ESPACIO} $\ast$espacio)
+\begin{DoxyCompactList}\small\item\em procesaArribaEspacio Esta función permite leer el arriba de un espacio \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_aee663c92fab96dc6489778cea43c531a}{procesaAbajoEspacio} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structESPACIO}{ESPACIO} $\ast$espacio)
+\begin{DoxyCompactList}\small\item\em procesaAbajoEspacio Esta función permite leer el abajo de un espacio \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_a9d7a81b6401863231ec8574eb0941158}{procesaLuzEspacio} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structESPACIO}{ESPACIO} $\ast$espacio)
+\begin{DoxyCompactList}\small\item\em procesaLuzEspacio Esta función permite leer el campo Luz de un espacio \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_ae1e39982283f63b701f75715ef5d943f}{procesaObjetosEspacio} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structESPACIO}{ESPACIO} $\ast$espacio)
+\begin{DoxyCompactList}\small\item\em procesaObjetosEspacio Esta función permite leer los objetos de un espacio \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_a1914d21defb7a9879ae1d3ace72847c6}{procesaUnion} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structMUNDO}{MUNDO} $\ast$mundo)
+\begin{DoxyCompactList}\small\item\em Procesa Union Esta función permite leer todos los campos de una union de un fichero xml. Al salir estará guardado en mundo. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_a58be7adaea68f1d8c0a5963c8511430a}{procesaIdLlegada} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structUNION}{UNION} $\ast$uni)
+\begin{DoxyCompactList}\small\item\em Procesa la Id de llegada Esta función permite leer la Id del espacio de llegada de una union. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_aea6c2fa463213ce70c7bd35b739803c7}{procesaKeyUnion} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structUNION}{UNION} $\ast$uni)
+\begin{DoxyCompactList}\small\item\em Procesa la llave que lo abre Esta función permite leer la llave que abre una union. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_aabbca5856e8e50b112a501eaf22406a5}{procesaIdSalida} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structUNION}{UNION} $\ast$uni)
+\begin{DoxyCompactList}\small\item\em Procesa la Id de salida Esta función permite leer la Id del espacio de salida de una union. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_a5561fff5406df84e77e49dcd8a129102}{procesaUnionAbierta} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structUNION}{UNION} $\ast$uni)
+\begin{DoxyCompactList}\small\item\em Procesa union abierta Esta funcion permite leer el campo Abierta de una union. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_a7b7f97e3d238f29318e112e1cf01d061}{procesaObjeto} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structMUNDO}{MUNDO} $\ast$mundo)
+\begin{DoxyCompactList}\small\item\em Procesa Objeto Esta función permite leer todos los campos de un objeto de un fichero xml. Al salir estará guardado en mundo. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_a0ea295ab3ccb67b6152e09ecf5c8dc2b}{procesaNombreObjeto} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structOBJETO}{OBJETO} $\ast$objeto)
+\begin{DoxyCompactList}\small\item\em ProcesaNombreObjeto Esta función permite leer el nombre de un objeto. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_a472410de4a4625bf68769ce57e1f200c}{procesaDescripcionObjeto} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structOBJETO}{OBJETO} $\ast$objeto)
+\begin{DoxyCompactList}\small\item\em procesaDescripcionObjeto Esta función permite leer la descripción de un objeto \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_aaf146b2aab938dae261813478a478604}{procesaDescMovido} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structOBJETO}{OBJETO} $\ast$objeto)
+\begin{DoxyCompactList}\small\item\em procesaDescMovido Esta función permite leer la descripcion de un objeto movido \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_abbb65f86b38b5d927bfd3c68ee7bfe62}{procesaLuzObjeto} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structOBJETO}{OBJETO} $\ast$objeto)
+\begin{DoxyCompactList}\small\item\em procesaLuzObjeto Esta función permite leer el campo Luz de un onjeto \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_add4e6c56dece007ccc2c22a47e951d2a}{procesaDescExaminar} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structOBJETO}{OBJETO} $\ast$objeto)
+\begin{DoxyCompactList}\small\item\em procesaDescExaminar Esta función permite leer la descripción de un objeto al ser examinado \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_a2a36b936e0ee38d80d6cbac3a5897df6}{procesaMovilObjeto} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structOBJETO}{OBJETO} $\ast$objeto)
+\begin{DoxyCompactList}\small\item\em procesaMovilObjeto Esta función permite leer el campo Movil de un objeto \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_a6dece919e24d7b81677f08b93e525f86}{procesaMovidoObjeto} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structOBJETO}{OBJETO} $\ast$objeto)
+\begin{DoxyCompactList}\small\item\em procesaMovidoObjeto Esta función permite leer el campo Movido de un objeto \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_af265e161253f737b5f893fa633b52343}{procesaOcultoObjeto} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structOBJETO}{OBJETO} $\ast$objeto)
+\begin{DoxyCompactList}\small\item\em procesaOcultoObjeto Esta función permite leer el campo Oculto de un objeto \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_afc232a6f45c2f6a8e97597f6086c0455}{procesaEncendidoObjeto} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structOBJETO}{OBJETO} $\ast$objeto)
+\begin{DoxyCompactList}\small\item\em procesaEncendidoObjeto Esta función permite leer el campo Encendido de un objeto \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_a822284814d59dabd8ebdacc3efd7a099}{procesaContenedorObjeto} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structOBJETO}{OBJETO} $\ast$objeto)
+\begin{DoxyCompactList}\small\item\em procesaContenedorObjeto Esta función permite leer el campo Contenedor de un objeto \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{lectorxml_8h_ae0b5244fb25d048fb20864b49277f6f9}{procesaInvObjeto} (xmlDocPtr doc, xmlNodePtr cur, \hyperlink{structOBJETO}{OBJETO} $\ast$objeto)
+\begin{DoxyCompactList}\small\item\em ProcesInvObjeto Esta función permite leer el inventario inicial de un objeto. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Primitivas de lector xml Este modulo contiene los prototipos de las funciones de lectura en xml. \begin{DoxyAuthor}{Author}
+Miguel Gordo y Carlos Carrascal 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+29-\/10-\/2010 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{lectorxml_8h_adfe07678906eb1ff2c3bccf8426760f8}{
+\index{lectorxml.h@{lectorxml.h}!iniMundo@{iniMundo}}
+\index{iniMundo@{iniMundo}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{iniMundo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MUNDO}$\ast$ iniMundo (char $\ast$ {\em nombrefich})}}
+\label{lectorxml_8h_adfe07678906eb1ff2c3bccf8426760f8}
+
+
+Inicialización de Mundo Esta función permite leer un mundo de fichero xml e inicializar un \hyperlink{structMUNDO}{MUNDO} con esos datos. 
+
+FUNCIONES DE LECTOR 
+\begin{DoxyParams}{Parameters}
+\item[{\em nombrefich}]es puntero a char con el nombre del fichero xml \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Puntero al mundo correctamente inicializado, NULL en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_aee663c92fab96dc6489778cea43c531a}{
+\index{lectorxml.h@{lectorxml.h}!procesaAbajoEspacio@{procesaAbajoEspacio}}
+\index{procesaAbajoEspacio@{procesaAbajoEspacio}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaAbajoEspacio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaAbajoEspacio (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf ESPACIO} $\ast$ {\em espacio})}}
+\label{lectorxml_8h_aee663c92fab96dc6489778cea43c531a}
+
+
+procesaAbajoEspacio Esta función permite leer el abajo de un espacio 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em espacio}]es puntero al \hyperlink{structESPACIO}{ESPACIO} en el que introducir la conexión abajo \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_abfbe468670293f0b8e27ca93530855a8}{
+\index{lectorxml.h@{lectorxml.h}!procesaArribaEspacio@{procesaArribaEspacio}}
+\index{procesaArribaEspacio@{procesaArribaEspacio}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaArribaEspacio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaArribaEspacio (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf ESPACIO} $\ast$ {\em espacio})}}
+\label{lectorxml_8h_abfbe468670293f0b8e27ca93530855a8}
+
+
+procesaArribaEspacio Esta función permite leer el arriba de un espacio 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em espacio}]es puntero al \hyperlink{structESPACIO}{ESPACIO} en el que introducir la conexión arriba \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_a822284814d59dabd8ebdacc3efd7a099}{
+\index{lectorxml.h@{lectorxml.h}!procesaContenedorObjeto@{procesaContenedorObjeto}}
+\index{procesaContenedorObjeto@{procesaContenedorObjeto}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaContenedorObjeto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaContenedorObjeto (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf OBJETO} $\ast$ {\em objeto})}}
+\label{lectorxml_8h_a822284814d59dabd8ebdacc3efd7a099}
+
+
+procesaContenedorObjeto Esta función permite leer el campo Contenedor de un objeto 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em objeto}]es un puntero al objeto donde introducir Contenedor \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_add4e6c56dece007ccc2c22a47e951d2a}{
+\index{lectorxml.h@{lectorxml.h}!procesaDescExaminar@{procesaDescExaminar}}
+\index{procesaDescExaminar@{procesaDescExaminar}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaDescExaminar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaDescExaminar (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf OBJETO} $\ast$ {\em objeto})}}
+\label{lectorxml_8h_add4e6c56dece007ccc2c22a47e951d2a}
+
+
+procesaDescExaminar Esta función permite leer la descripción de un objeto al ser examinado 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em objeto}]es un puntero al objeto en el que introducir la descripcion a leer \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_aaf146b2aab938dae261813478a478604}{
+\index{lectorxml.h@{lectorxml.h}!procesaDescMovido@{procesaDescMovido}}
+\index{procesaDescMovido@{procesaDescMovido}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaDescMovido}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaDescMovido (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf OBJETO} $\ast$ {\em objeto})}}
+\label{lectorxml_8h_aaf146b2aab938dae261813478a478604}
+
+
+procesaDescMovido Esta función permite leer la descripcion de un objeto movido 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em objeto}]es un puntero al objeto en el que introducir la descripcion a leer \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_a14dd4319aaa08b4f3eb9ef44bbc1eea7}{
+\index{lectorxml.h@{lectorxml.h}!procesaDescrGraficaEspacio@{procesaDescrGraficaEspacio}}
+\index{procesaDescrGraficaEspacio@{procesaDescrGraficaEspacio}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaDescrGraficaEspacio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaDescrGraficaEspacio (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf ESPACIO} $\ast$ {\em espacio})}}
+\label{lectorxml_8h_a14dd4319aaa08b4f3eb9ef44bbc1eea7}
+
+
+Procesa Descripción Gráfica Espacio Esta función permite leer la descripción gráfica de un espacio. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em espacio}]es puntero al \hyperlink{structESPACIO}{ESPACIO} en el que introducir la descripción gráfica \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_ad9f8572d670d1eb12ec9e6b476ceafef}{
+\index{lectorxml.h@{lectorxml.h}!procesaDescripcionEspacio@{procesaDescripcionEspacio}}
+\index{procesaDescripcionEspacio@{procesaDescripcionEspacio}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaDescripcionEspacio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaDescripcionEspacio (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf ESPACIO} $\ast$ {\em espacio})}}
+\label{lectorxml_8h_ad9f8572d670d1eb12ec9e6b476ceafef}
+
+
+procesaDescripcionEspacio Esta función permite leer la descripción de un espacio 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em espacio}]es puntero al \hyperlink{structESPACIO}{ESPACIO} en el que introducir la descripción a leer \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_a472410de4a4625bf68769ce57e1f200c}{
+\index{lectorxml.h@{lectorxml.h}!procesaDescripcionObjeto@{procesaDescripcionObjeto}}
+\index{procesaDescripcionObjeto@{procesaDescripcionObjeto}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaDescripcionObjeto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaDescripcionObjeto (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf OBJETO} $\ast$ {\em objeto})}}
+\label{lectorxml_8h_a472410de4a4625bf68769ce57e1f200c}
+
+
+procesaDescripcionObjeto Esta función permite leer la descripción de un objeto 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em objeto}]es un puntero al objeto en el que introducir la descripción a leer \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_a60b3f47a36465eeeac4a609cc5021818}{
+\index{lectorxml.h@{lectorxml.h}!procesaEdescripcionEspacio@{procesaEdescripcionEspacio}}
+\index{procesaEdescripcionEspacio@{procesaEdescripcionEspacio}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaEdescripcionEspacio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaEdescripcionEspacio (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf ESPACIO} $\ast$ {\em espacio})}}
+\label{lectorxml_8h_a60b3f47a36465eeeac4a609cc5021818}
+
+
+procesaEdescripcionEspacio Esta función permite leer la descripción de un espacio a examinar 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em espacio}]es puntero al \hyperlink{structESPACIO}{ESPACIO} en el que introducir la descripción de examinar a leer \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_afc232a6f45c2f6a8e97597f6086c0455}{
+\index{lectorxml.h@{lectorxml.h}!procesaEncendidoObjeto@{procesaEncendidoObjeto}}
+\index{procesaEncendidoObjeto@{procesaEncendidoObjeto}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaEncendidoObjeto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaEncendidoObjeto (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf OBJETO} $\ast$ {\em objeto})}}
+\label{lectorxml_8h_afc232a6f45c2f6a8e97597f6086c0455}
+
+
+procesaEncendidoObjeto Esta función permite leer el campo Encendido de un objeto 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em objeto}]es un puntero al objeto donde introducir Encendido \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_ab620970149db48883da75266cdc0159e}{
+\index{lectorxml.h@{lectorxml.h}!procesaEspacio@{procesaEspacio}}
+\index{procesaEspacio@{procesaEspacio}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaEspacio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaEspacio (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf MUNDO} $\ast$ {\em mundo})}}
+\label{lectorxml_8h_ab620970149db48883da75266cdc0159e}
+
+
+Procesa Espacio Esta función permite leer todos los campos de un espacio de un fichero xml. Al salir estará guardado en mundo. 
+
+FUNCIONES DE LECTURA \hyperlink{structESPACIO}{ESPACIO} 
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em mundo}]es puntero al \hyperlink{structMUNDO}{MUNDO} en el que introducir el espacio \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_a134bd0d8d5d7d3dc74374702e1c5c19d}{
+\index{lectorxml.h@{lectorxml.h}!procesaEsteEspacio@{procesaEsteEspacio}}
+\index{procesaEsteEspacio@{procesaEsteEspacio}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaEsteEspacio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaEsteEspacio (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf ESPACIO} $\ast$ {\em espacio})}}
+\label{lectorxml_8h_a134bd0d8d5d7d3dc74374702e1c5c19d}
+
+
+procesaEsteEspacio Esta función permite leer el este de un espacio 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em espacio}]es puntero al \hyperlink{structESPACIO}{ESPACIO} en el que introducir la conexión este \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_a58be7adaea68f1d8c0a5963c8511430a}{
+\index{lectorxml.h@{lectorxml.h}!procesaIdLlegada@{procesaIdLlegada}}
+\index{procesaIdLlegada@{procesaIdLlegada}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaIdLlegada}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaIdLlegada (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf UNION} $\ast$ {\em uni})}}
+\label{lectorxml_8h_a58be7adaea68f1d8c0a5963c8511430a}
+
+
+Procesa la Id de llegada Esta función permite leer la Id del espacio de llegada de una union. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em uni}]es puntero a la union en la cual introducir la id de llegada \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_aabbca5856e8e50b112a501eaf22406a5}{
+\index{lectorxml.h@{lectorxml.h}!procesaIdSalida@{procesaIdSalida}}
+\index{procesaIdSalida@{procesaIdSalida}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaIdSalida}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaIdSalida (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf UNION} $\ast$ {\em uni})}}
+\label{lectorxml_8h_aabbca5856e8e50b112a501eaf22406a5}
+
+
+Procesa la Id de salida Esta función permite leer la Id del espacio de salida de una union. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em uni}]es puntero a la union en la cual introducir la id de salida \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_ae0b5244fb25d048fb20864b49277f6f9}{
+\index{lectorxml.h@{lectorxml.h}!procesaInvObjeto@{procesaInvObjeto}}
+\index{procesaInvObjeto@{procesaInvObjeto}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaInvObjeto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaInvObjeto (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf OBJETO} $\ast$ {\em objeto})}}
+\label{lectorxml_8h_ae0b5244fb25d048fb20864b49277f6f9}
+
+
+ProcesInvObjeto Esta función permite leer el inventario inicial de un objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em objeto}]es puntero al objeto en el que introducir el inventario \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_add081123cd06af48668cf842260b8540}{
+\index{lectorxml.h@{lectorxml.h}!procesaJugador@{procesaJugador}}
+\index{procesaJugador@{procesaJugador}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaJugador}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaJugador (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf MUNDO} $\ast$ {\em mundo})}}
+\label{lectorxml_8h_add081123cd06af48668cf842260b8540}
+
+
+Procesa Jugador Esta función permite leer todos los campos de un jugador de un fichero xml. Al salir estará guardado en mundo. 
+
+FUNCIONES DE LECTURA \hyperlink{structJUGADOR}{JUGADOR} 
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em mundo}]es puntero al \hyperlink{structMUNDO}{MUNDO} en el que introducir el jugador \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_aea6c2fa463213ce70c7bd35b739803c7}{
+\index{lectorxml.h@{lectorxml.h}!procesaKeyUnion@{procesaKeyUnion}}
+\index{procesaKeyUnion@{procesaKeyUnion}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaKeyUnion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaKeyUnion (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf UNION} $\ast$ {\em uni})}}
+\label{lectorxml_8h_aea6c2fa463213ce70c7bd35b739803c7}
+
+
+Procesa la llave que lo abre Esta función permite leer la llave que abre una union. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em uni}]es puntero a la union en la cual introducir la llave \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_a330823d454c3fe95e958f696022352c5}{
+\index{lectorxml.h@{lectorxml.h}!procesaLocalizacionJugador@{procesaLocalizacionJugador}}
+\index{procesaLocalizacionJugador@{procesaLocalizacionJugador}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaLocalizacionJugador}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaLocalizacionJugador (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf JUGADOR} $\ast$ {\em jug})}}
+\label{lectorxml_8h_a330823d454c3fe95e958f696022352c5}
+
+
+ProcesaLocalizacionJugador Esta función permite leer la posición de un jugador. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em jug}]es puntero al jugador en el que introducir la localización \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_a9d7a81b6401863231ec8574eb0941158}{
+\index{lectorxml.h@{lectorxml.h}!procesaLuzEspacio@{procesaLuzEspacio}}
+\index{procesaLuzEspacio@{procesaLuzEspacio}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaLuzEspacio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaLuzEspacio (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf ESPACIO} $\ast$ {\em espacio})}}
+\label{lectorxml_8h_a9d7a81b6401863231ec8574eb0941158}
+
+
+procesaLuzEspacio Esta función permite leer el campo Luz de un espacio 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em espacio}]es puntero al \hyperlink{structESPACIO}{ESPACIO} en el que introducir la luz \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_abbb65f86b38b5d927bfd3c68ee7bfe62}{
+\index{lectorxml.h@{lectorxml.h}!procesaLuzObjeto@{procesaLuzObjeto}}
+\index{procesaLuzObjeto@{procesaLuzObjeto}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaLuzObjeto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaLuzObjeto (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf OBJETO} $\ast$ {\em objeto})}}
+\label{lectorxml_8h_abbb65f86b38b5d927bfd3c68ee7bfe62}
+
+
+procesaLuzObjeto Esta función permite leer el campo Luz de un onjeto 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em objeto}]es puntero al \hyperlink{structOBJETO}{OBJETO} en el que introducir la luz \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_a6c755e0dc2da0453d949187d8dc56e6b}{
+\index{lectorxml.h@{lectorxml.h}!procesaMaxObjetosJugador@{procesaMaxObjetosJugador}}
+\index{procesaMaxObjetosJugador@{procesaMaxObjetosJugador}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaMaxObjetosJugador}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaMaxObjetosJugador (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf JUGADOR} $\ast$ {\em jug})}}
+\label{lectorxml_8h_a6c755e0dc2da0453d949187d8dc56e6b}
+
+
+ProcesaMaxObjetosJugador Esta función permite leer el máximo de objetos de un jugador. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em jug}]es puntero al jugador en el que introducir el máximo \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_a6dece919e24d7b81677f08b93e525f86}{
+\index{lectorxml.h@{lectorxml.h}!procesaMovidoObjeto@{procesaMovidoObjeto}}
+\index{procesaMovidoObjeto@{procesaMovidoObjeto}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaMovidoObjeto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaMovidoObjeto (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf OBJETO} $\ast$ {\em objeto})}}
+\label{lectorxml_8h_a6dece919e24d7b81677f08b93e525f86}
+
+
+procesaMovidoObjeto Esta función permite leer el campo Movido de un objeto 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em objeto}]es un puntero al objeto donde introducir movido \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_a2a36b936e0ee38d80d6cbac3a5897df6}{
+\index{lectorxml.h@{lectorxml.h}!procesaMovilObjeto@{procesaMovilObjeto}}
+\index{procesaMovilObjeto@{procesaMovilObjeto}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaMovilObjeto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaMovilObjeto (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf OBJETO} $\ast$ {\em objeto})}}
+\label{lectorxml_8h_a2a36b936e0ee38d80d6cbac3a5897df6}
+
+
+procesaMovilObjeto Esta función permite leer el campo Movil de un objeto 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em objeto}]es un puntero al objeto donde introducir movil \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_a572f9bf55e01950876a1c19abaaa106c}{
+\index{lectorxml.h@{lectorxml.h}!procesaNombreJugador@{procesaNombreJugador}}
+\index{procesaNombreJugador@{procesaNombreJugador}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaNombreJugador}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaNombreJugador (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf JUGADOR} $\ast$ {\em jug})}}
+\label{lectorxml_8h_a572f9bf55e01950876a1c19abaaa106c}
+
+
+ProcesaNombreJugador Esta función permite leer el nombre de un jugador. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em jug}]es puntero al jugador en el que introducir el nombre \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_a0ea295ab3ccb67b6152e09ecf5c8dc2b}{
+\index{lectorxml.h@{lectorxml.h}!procesaNombreObjeto@{procesaNombreObjeto}}
+\index{procesaNombreObjeto@{procesaNombreObjeto}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaNombreObjeto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaNombreObjeto (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf OBJETO} $\ast$ {\em objeto})}}
+\label{lectorxml_8h_a0ea295ab3ccb67b6152e09ecf5c8dc2b}
+
+
+ProcesaNombreObjeto Esta función permite leer el nombre de un objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em objeto}]es puntero al objeto en el que introducir el nombre \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_adda241b3328beb0135e3916dd5ef0094}{
+\index{lectorxml.h@{lectorxml.h}!procesaNorteEspacio@{procesaNorteEspacio}}
+\index{procesaNorteEspacio@{procesaNorteEspacio}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaNorteEspacio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaNorteEspacio (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf ESPACIO} $\ast$ {\em espacio})}}
+\label{lectorxml_8h_adda241b3328beb0135e3916dd5ef0094}
+
+
+procesaNorteEspacio Esta función permite leer el norte de un espacio 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em espacio}]es puntero al \hyperlink{structESPACIO}{ESPACIO} en el que introducir la conexión norte \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_a7b7f97e3d238f29318e112e1cf01d061}{
+\index{lectorxml.h@{lectorxml.h}!procesaObjeto@{procesaObjeto}}
+\index{procesaObjeto@{procesaObjeto}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaObjeto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaObjeto (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf MUNDO} $\ast$ {\em mundo})}}
+\label{lectorxml_8h_a7b7f97e3d238f29318e112e1cf01d061}
+
+
+Procesa Objeto Esta función permite leer todos los campos de un objeto de un fichero xml. Al salir estará guardado en mundo. 
+
+FUNCIONES DE LECTURA \hyperlink{structOBJETO}{OBJETO} 
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em mundo}]es puntero al \hyperlink{structMUNDO}{MUNDO} en el que introducir el objeto \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_ae1e39982283f63b701f75715ef5d943f}{
+\index{lectorxml.h@{lectorxml.h}!procesaObjetosEspacio@{procesaObjetosEspacio}}
+\index{procesaObjetosEspacio@{procesaObjetosEspacio}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaObjetosEspacio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaObjetosEspacio (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf ESPACIO} $\ast$ {\em espacio})}}
+\label{lectorxml_8h_ae1e39982283f63b701f75715ef5d943f}
+
+
+procesaObjetosEspacio Esta función permite leer los objetos de un espacio 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em espacio}]es puntero al \hyperlink{structESPACIO}{ESPACIO} en el que introducir los objetos \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_ab44258c79c3c753b311bb61e934c9e6d}{
+\index{lectorxml.h@{lectorxml.h}!procesaobjInvJugador@{procesaobjInvJugador}}
+\index{procesaobjInvJugador@{procesaobjInvJugador}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaobjInvJugador}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaobjInvJugador (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf JUGADOR} $\ast$ {\em jug})}}
+\label{lectorxml_8h_ab44258c79c3c753b311bb61e934c9e6d}
+
+
+ProcesInvJugador Esta función permite leer el inventario inicial de un jugador. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em jug}]es puntero al jugador en el que introducir el máximo \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_af265e161253f737b5f893fa633b52343}{
+\index{lectorxml.h@{lectorxml.h}!procesaOcultoObjeto@{procesaOcultoObjeto}}
+\index{procesaOcultoObjeto@{procesaOcultoObjeto}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaOcultoObjeto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaOcultoObjeto (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf OBJETO} $\ast$ {\em objeto})}}
+\label{lectorxml_8h_af265e161253f737b5f893fa633b52343}
+
+
+procesaOcultoObjeto Esta función permite leer el campo Oculto de un objeto 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em objeto}]es un puntero al objeto donde introducir Oculto \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_a7f73950c61258ab408fa47834e2d2e1f}{
+\index{lectorxml.h@{lectorxml.h}!procesaOesteEspacio@{procesaOesteEspacio}}
+\index{procesaOesteEspacio@{procesaOesteEspacio}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaOesteEspacio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaOesteEspacio (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf ESPACIO} $\ast$ {\em espacio})}}
+\label{lectorxml_8h_a7f73950c61258ab408fa47834e2d2e1f}
+
+
+procesaOesteEspacio Esta función permite leer el oeste de un espacio 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em espacio}]es puntero al \hyperlink{structESPACIO}{ESPACIO} en el que introducir la conexión oeste \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_ad09dfe12934123d4ffb268a897c6ee8f}{
+\index{lectorxml.h@{lectorxml.h}!procesaSurEspacio@{procesaSurEspacio}}
+\index{procesaSurEspacio@{procesaSurEspacio}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaSurEspacio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaSurEspacio (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf ESPACIO} $\ast$ {\em espacio})}}
+\label{lectorxml_8h_ad09dfe12934123d4ffb268a897c6ee8f}
+
+
+procesaSurEspacio Esta función permite leer el sur de un espacio 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em espacio}]es puntero al \hyperlink{structESPACIO}{ESPACIO} en el que introducir la conexión sur \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_a1914d21defb7a9879ae1d3ace72847c6}{
+\index{lectorxml.h@{lectorxml.h}!procesaUnion@{procesaUnion}}
+\index{procesaUnion@{procesaUnion}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaUnion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaUnion (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf MUNDO} $\ast$ {\em mundo})}}
+\label{lectorxml_8h_a1914d21defb7a9879ae1d3ace72847c6}
+
+
+Procesa Union Esta función permite leer todos los campos de una union de un fichero xml. Al salir estará guardado en mundo. 
+
+FUNCIONES DE LECTURA \hyperlink{structUNION}{UNION} 
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em mundo}]es puntero al \hyperlink{structMUNDO}{MUNDO} en el que introducir la union \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}
+\hypertarget{lectorxml_8h_a5561fff5406df84e77e49dcd8a129102}{
+\index{lectorxml.h@{lectorxml.h}!procesaUnionAbierta@{procesaUnionAbierta}}
+\index{procesaUnionAbierta@{procesaUnionAbierta}!lectorxml.h@{lectorxml.h}}
+\subsubsection[{procesaUnionAbierta}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} procesaUnionAbierta (xmlDocPtr {\em doc}, \/  xmlNodePtr {\em cur}, \/  {\bf UNION} $\ast$ {\em uni})}}
+\label{lectorxml_8h_a5561fff5406df84e77e49dcd8a129102}
+
+
+Procesa union abierta Esta funcion permite leer el campo Abierta de una union. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em doc}]es puntero a la estructura xmlDoc \item[{\em cur}]es puntero a la estructura xmlNode \item[{\em uni}]es puntero a la union en la cual introducir el booleano abierta \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}

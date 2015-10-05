@@ -1,0 +1,1855 @@
+<mundo numero_espacios="44" numero_uniones="136" numero_jugadores="3" numero_objetos="47">
+<espacio id="0">
+	<descripcion>Estas en tu dormitorio de la casa de Gryffindor. Las camas estan sin hacer, y unas escaleras bajan tras la unica puerta de la estancia</descripcion>
+	<edescripcion>Ves baules con tunicas a los pies de las camas</edescripcion>
+	<abajo>100</abajo>
+	<objetos>
+		<objeto id="89"/>
+	</objetos>
+	<luz_inicial>TRUE</luz_inicial>
+	<descripcion_grafica filas="21" columnas="47">      rXSi;i                                        r:     ,                                     :L:       u ,i                                 ii        :. 7                          :i:.  r7r.    .:,.Y:                          i:  :.i   .i .i. ,Ji.  iFEqJ              .,.   :::: ,.  .,.:  v. r;..:.,iBBPZ1rBBBBq  ,   .r..i1i   vX: i: ..   ::GBu: JBBBB7   .BBNuS    r  :7,   7F  Z:.   ,rPBBBBG    BML5Y,kMBBB;rUi.   Pi,   JL,i7J:i:,..   UBii:.MBBBBj    PBLBi,    M.:   17  ..vj: 7;  .BBBB5    ZBFqX,5BBBB.,    M :   kY:  ,r. BBBBi.. 7B77r,uBBBBB   :BB ,    M :   F7.  :...ZGBj    jBBBBM    EBMB7;PB :   .q ,   2i:.:::.    .:::,ir77r.... 8BBB,  M :   LU ,   Ui:r::L.. N : ...     .:::,....,.;k ,.: ;i.:   Sj        B::                 .. rY.i   Y.,    5Y        ..                     i7.    Z,i    Y7                               Lv.    ..     GU.                              kL.           7i                               Mi:                                            8,.         </descripcion_grafica>
+</espacio>
+
+<espacio id="1">
+	<descripcion>El fuego sigue crepitando en la sala comun de Gryffindor. Al este esta la parte de atras de la Señora Gorda. Hay un alumno recostado en un sillon disfrutando del fuego</descripcion>
+	<edescripcion>Ves el tablon de alumnos en una esquina, muchos apuntes en pergamino por el suelo, y algunos animales magicos de los estudiantes</edescripcion>
+	<este>101</este>
+	<arriba>200</arriba>
+	<objetos>
+		<objeto id="71"/>
+	</objetos>
+	<luz_inicial>TRUE</luz_inicial>
+	<descripcion_grafica filas="21" columnas="47">        .                  ,2SX:.  ::,: :  .,i:   .....:......,,..,:::rrr;Yj7r;r::iii:.:,.:::.....,....,,,:::.::,::::ir;;i,.::,::,.,,...,,.  .........,,:ii::::::iii;iii:,...........,i:. ......,,.iiuU:rY12u2151115SkXk5uYYYLLYY:.i:..,........ .i7Y.  :ZNZPkPkSk5255XPkFUYYL777:i,    . ....  7jEB.kBBBZEMG57:....,;uqZquJJ7757YU      .... .rS0u 0BBSGM7            7GE1YjukLii  ...,...  ,rEZu BB1BY       ..       JME7J5j:    ...... .,rP0U:BUBr   ............   YMZ:PZ;.:i:  .     .r5P2,vMu  .:i:...,,...,:::.iu8Y2M7L5:7       ..:1Fu,JM::.:ir::..:.:.iYLi::U1UZEBYjr..       . :U2LiX5i7,::;r:.,::;.iU7:iiGSLZMMYj:,,       . .LYriYJBr.i:::.,UPP7 ,:;;i.MM::JB2Si..    .:r. .;ri.YMF  .... rMBB7.....,.iB17PMFk:..   .r::   :i: rB1::ii.:,rBBBr ,..:::.Ok7NOS1..     .     r7i.7BN,:YL.:ijSFUJii,.U:..MP:2BXu,,.      .7G1 :r..Yi  ,. :i.,i.rrJ:,7.  0PiUNui Yi:    ,BBM7.::   .::ii,ii:;77::iiir,.  .,7:   , Y   . ..  :,. ....,::;irr77;;;ii:;r;i:....,i...::....  ......:77i7jYYu2GBBBBBXvi:i::YUU1550Urr7; </descripcion_grafica>
+</espacio>
+
+
+<espacio id="2">
+	<descripcion>Te encuentras en el Pasillo del Septimo piso. Algo cruje al fondo, al este.</descripcion>
+	<edescripcion>Ves varias puertas a tu alrededor, y a la señora Gorda dormita en su cuadro. En lo alto se ve la trampilla de la clase de Adivinacion</edescripcion>
+	<arriba>102</arriba>
+	<este>103</este>
+	<oeste>201</oeste>
+	<luz_inicial>TRUE</luz_inicial>
+	<descripcion_grafica filas="21" columnas="47">P..                                           ,j ...                                        ,:J ,::i;i:.                 r.             .rY7iu.::::,,::i:.,.   ...,,,,,.::           .;Lrii:J ::::::::,:Fr::,:.       .   .....   :uJ77vii:j ,i:;iiii,rBBBBu,::,.              .r7v7ii7:i:j :ii.,:ii:;BBBBB,i;irYL;:.  .,    7vrr77rr7:i:j :ii     ,:::i7r.,i;i::i:iYiii;riJLir;.  v7:i:j :ii     ::.   .,.:7.  ::,v:::::,7r:v,   vv:i:j :i;     ::,,,,,,,:7,  ,,,Yiiiii:Lr:v:   LL:i:j :i;     ::,:::::,,i,  ,7vLLLLLL72;:7:   LLii:j :i;     ::,::::,,.,. :YYr;rrrrr;rY:r:   Yvii:j :i;     ::,,,,,,..iYLYrrrrrrrrrr;7jL,   Liii:j ,:r     ::,,,..,;YL7rrrrrrrrrrrrr;rk:   Liii:j ,:r     ::...:7YLrrrrrrrrrrrrrrrrrr7j.  viii:j ,:r     :,.iLY7rrrrrrrrrrrrrrrrrrrrr7U, 7iii:j ,:r     :vYY7rrrrrrrrrrrrrrrrrrrrrrrr7jir:ii:j ,:r    :JYrrrrrrrrrrrrrrrrrrrrrrrrrrrrrLUi:i:j ,,: .ruJ7rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrjr::J .:L7uY7rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrjL,u ;7r;iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii:ri</descripcion_grafica>
+</espacio>
+
+<espacio id="3">
+	<descripcion>Clase de Adivinacion. El desorden predomina en la estancia, que ahora mismo se encuentra vacia</descripcion>
+	<edescripcion>Ves una gran cantidad de bolas de cristal desperdigadas por el suelo, asi como tazas de te vacias que aun hay que limpiar. Una de las tazas esta rota y los posos estan desperdigados por el suelo</edescripcion>
+	<abajo>202</abajo>
+	<objetos>
+		<objeto id="70"/>
+	</objetos>
+	<luz_inicial>TRUE</luz_inicial>
+	<descripcion_grafica filas="21" columnas="47">                    .  ...              ...:. .                  .............          ....                 .,.             ,:,..  ..  .  ..           .::.     ,irvLrr:.     :r:,.      :.  .       .:.   rFZOOMOMOMBBMBMY.   :7,.... ..  .     ..,:  .FBBMMO8GZMMOBMMBBBBE;  .7;i....  ....  .,,,  .UB8EEZZZMMOOZZZ8ZZ8MBBE.  L7;:.,ri     ::.,  ,.5M0N00EGB8EEZEMB8EEEGGMM  ,Yrui,::    :P7r7.i: 0ME0ZEEZEEZGZZGOZEEE0EZM2 .BGBBi    ,70Yr027Yi.YBOGGGGGZZGZZZZEZZZZ00EGq7:BBUBOj.  ;M0,,;7..i:,BBM8G888888888G88GGG8MMi :BZLFBB,   Y8..YOv :L,:BBO8OOMMMMMOMMOOO8OMBS. BBEr2B7.  ..:..qvB: :5770BBBBBMBMMMMMMMMBBB5. NBZB.;i:,     ..,,SMiirJJY2EMBBBBBBBBBBBBMX2jJGBN;r:,..       ....7Yi.  .irYjkqqSqEqNPL:  ,7qMu:::....            .....   L17:;iJirX: .,:rrir:.,..,,. ..  ...    .......  :j;LLX7J:.,:i:iii:....,.....::,....:,,..       Y7,LLJ,    ....:,..........  .           .iYY280r:JJj::XFr::,.              .  .      rMBBB88q77J5j2SU5XGqSUL7.           .:......   .i,. ..,iYJ7YrLqjii:,::i           </descripcion_grafica>
+</espacio>
+
+<espacio id="4">
+	<descripcion>Te encuentras frente a las escaleras del septimo piso, de vez en cuando se oye un crujido y ves como la escalera se desplaza</descripcion>
+	<edescripcion>Si miras por el hueco de las escaleras ves grandes bloques de piedras moviendose sin cesar bajo tus pies. A tu espalda ves un largo pasillo</edescripcion>
+	<oeste>203</oeste>
+	<abajo>126</abajo>
+	<luz_inicial>TRUE</luz_inicial>
+	<descripcion_grafica filas="21" columnas="47">S2j1BBX:r77r7rrrrrrrrrrrrrrr777777riiL0OX0XLMOUM8r:rLi:::::::::::,::::::::::::::,:7FPUMiuY7XN7BBi::::iiii:::::::::::::::::::,:ij0kBu:S:SLJNErSS::::ii:::::::::::::::,,,,..:72kjB.jiiS:k7jNNi8j,::::::::::,,,,,,,,,,....:YPL8i.u.1:rU:0iPNF:Bu.,::,,::::,,,,.........iUUku Y.:u.2,u5:8,1S1,BL.,:::,,,,:::...... .:L2rE.ii U.iL,N.1J,U:1XJ.B7.,:::,,,,,,.,.....iYrS7 v 7:.u YY:E 7,:NLZM2,B7.,:,:::,,,....,:ir1U i. Y L::P U7.7:Siv8GBX:,B7.,::::,,,...,:rY5 ri 7..L F,:q 7..;rZ2BBY.  ,B7.::::,...::r7F,:v L; J.iu N.,i FY2ZBBk:    .:B7......,:7LFv 2 i7 L:.S.7U v.77 N5BBv     . ,:Br ik:,rjX5 vi.U r7 1:,N i: ;rGMBBS:      ...::Br YNFuBir7 Yi.U Lv E: r UFYGXBZ7      ......i:B7 LqY.1.7v Yi:F UY Y..r 1MBBU,       .......i:Bv iO:.1,vv.1::E i. 72MBMBXi     ............r:B7.;G:.5,YY.Gi.7 UJiPkBBJ.        ..........:r:BG.rMi,q,21.Y..7 BBBBPi         .....,,,,,,.i7iBB,7Br:B:ii YG8BMBBj.        ..........,::,,r7iBB:LB7:k:jU:PBBB0i      ..........,,,,::::::vLrBE.7Bi.jYBBMBU:               ........,,::::v7i</descripcion_grafica>
+</espacio>
+
+<espacio id="5">
+	<descripcion>Pasillo del sexto piso. Las escaleras crujen al fondo.</descripcion>
+	<edescripcion>Se ven una gran cantidad de puertas, aparentemente todas cerradas. En algunas se oyen voces, pero a ti te parece que en todas esta Snape vaticinando tu suspenso</edescripcion>
+	<este>104</este>
+	<objetos>
+		<objeto id="95"/>
+	</objetos>
+	<luz_inicial>TRUE</luz_inicial>
+	<descripcion_grafica filas="21" columnas="47">P..                                           ,j ...                                        ,:J ,::i;i:.                 r.             .rY7iu.::::,,::i:.,.   ...,,,,,.::           .;Lrii:J ::::::::,:Fr::,:.       .   .....   :uJ77vii:j ,i:;iiii,rBBBBu,::,.              .r7v7ii7:i:j :ii.,:ii:;BBBBB,i;irYL;:.  .,    7vrr77rr7:i:j :ii     ,:::i7r.,i;i::i:iYiii;riJLir;.  v7:i:j :ii     ::.   .,.:7.  ::,v:::::,7r:v,   vv:i:j :i;     ::,,,,,,,:7,  ,,,Yiiiii:Lr:v:   LL:i:j :i;     ::,:::::,,i,  ,7vLLLLLL72;:7:   LLii:j :i;     ::,::::,,.,. :YYr;rrrrr;rY:r:   Yvii:j :i;     ::,,,,,,..iYLYrrrrrrrrrr;7jL,   Liii:j ,:r     ::,,,..,;YL7rrrrrrrrrrrrr;rk:   Liii:j ,:r     ::...:7YLrrrrrrrrrrrrrrrrrr7j.  viii:j ,:r     :,.iLY7rrrrrrrrrrrrrrrrrrrrr7U, 7iii:j ,:r     :vYY7rrrrrrrrrrrrrrrrrrrrrrrr7jir:ii:j ,:r    :JYrrrrrrrrrrrrrrrrrrrrrrrrrrrrrLUi:i:j ,,: .ruJ7rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrjr::J .:L7uY7rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrjL,u ;7r;iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii:ri</descripcion_grafica>
+</espacio>
+
+<espacio id="6">
+	<descripcion>Estas frente al abismo de escaleras, desde el sexto piso. Ves entre el hueco de escaleras varios fantasmas mirandote...</descripcion>
+	<edescripcion>Si miras por el hueco de las escaleras ves grandes bloques de piedras moviendose sin cesar bajo tus pies. A tu espalda ves un largo pasillo</edescripcion>
+	<oeste>204</oeste>
+	<arriba>226</arriba>
+	<abajo>129</abajo>
+	<luz_inicial>TRUE</luz_inicial>
+	<objetos>
+		<objeto id="1071"/>
+		<objeto id="1050"/>
+		<objeto id="1040"/>
+	</objetos>
+	<descripcion_grafica filas="21" columnas="47">S2j1BBX:r77r7rrrrrrrrrrrrrrr777777riiL0OX0XLMOUM8r:rLi:::::::::::,::::::::::::::,:7FPUMiuY7XN7BBi::::iiii:::::::::::::::::::,:ij0kBu:S:SLJNErSS::::ii:::::::::::::::,,,,..:72kjB.jiiS:k7jNNi8j,::::::::::,,,,,,,,,,....:YPL8i.u.1:rU:0iPNF:Bu.,::,,::::,,,,.........iUUku Y.:u.2,u5:8,1S1,BL.,:::,,,,:::...... .:L2rE.ii U.iL,N.1J,U:1XJ.B7.,:::,,,,,,.,.....iYrS7 v 7:.u YY:E 7,:NLZM2,B7.,:,:::,,,....,:ir1U i. Y L::P U7.7:Siv8GBX:,B7.,::::,,,...,:rY5 ri 7..L F,:q 7..;rZ2BBY.  ,B7.::::,...::r7F,:v L; J.iu N.,i FY2ZBBk:    .:B7......,:7LFv 2 i7 L:.S.7U v.77 N5BBv     . ,:Br ik:,rjX5 vi.U r7 1:,N i: ;rGMBBS:      ...::Br YNFuBir7 Yi.U Lv E: r UFYGXBZ7      ......i:B7 LqY.1.7v Yi:F UY Y..r 1MBBU,       .......i:Bv iO:.1,vv.1::E i. 72MBMBXi     ............r:B7.;G:.5,YY.Gi.7 UJiPkBBJ.        ..........:r:BG.rMi,q,21.Y..7 BBBBPi         .....,,,,,,.i7iBB,7Br:B:ii YG8BMBBj.        ..........,::,,r7iBB:LB7:k:jU:PBBB0i      ..........,,,,::::::vLrBE.7Bi.jYBBMBU:               ........,,::::v7i</descripcion_grafica>
+</espacio>
+
+<espacio id="7">
+	<descripcion>Entras a La Gran sala de los Menesteres. La habitacion es enorme: parece una catedral gotica plagada de vidrieras de colores vivos, y para tu asombro, se encuentra saturada a objetos de todo tipo, amontonados en pilas, estanterias...</descripcion>
+	<edescripcion>La sala esta plagada de objetos que los estudiantes han querido esconder durante generaciones</edescripcion>
+	<este>105</este>
+	<objetos>
+		<objeto id="75"/>
+		<objeto id="85"/>
+	</objetos>
+	<luz_inicial>TRUE</luz_inicial>
+	<descripcion_grafica filas="21" columnas="47">         .7r7;:vP .:N17:iJrrr7:YZk,;rir7vuq8FUE         :vv7r7iOi iGBPYu05kSUiuMB:r7irLv0BMuj0        .:rri:r:r7 ,YMUi7qOM0L:LXB,:i::riPB7,,7        .irr::rr.:,,ijr,.rSMM7:vkB,:i::rik5:::i    ..  .rrr::U2:.:i::..:.:XOi:v1B:.i::ri7ri:::    ..  .7rr::PB7,iU:.YBBMirNi:vLBi.i::ii,::.:,    ,   :Lrri:2O5::U:JBBBBBrUir7:F7.i:::r. :,,.    .  .:vriiiUFu:iY:FBBBBBYv:r;.:;,i:::7, ::.     .  .i7rriiLur:7U:5BBMBBUi:i:,.:,:,:,7:,ii.        .r7ririir;irUiXBBBBB5r7:.:,:,:,:.;:,:i..       .Y77ir;..:7r7rPBBBBBkr7:.:::,:::.i:,:i..       .Yrri7i  ,7iirPBBBBBPi7:.:::.,::.ii,,:..       ,Yii:r:  ,;::i2BBBBBk:r:.::,..,,.:i:,i:.    .  ijrii5:  ,:..:v0BBBZv,:i.:,::,,,.:i: ::.   .  .rv:,:Gi  ..,:r5MBBB0L::: ,.:r,,:.,i: .,.   .  .ri..,j7 :v2ZBBBBBBBB8PUr.,..i:::::ir,.::   .. .::.,.rqNMBBBBBBBBBBBBBOquY:.....,:i7:.ii      .,::7L1Z8MBBBBBBBBBBBMM8EP5Jri::...,:,.,:   .,::ir7Yu25FkqPN8MMMBBBBqXXS2UJLr;i::,,.. ...::::ii;7rrvLLLYju2SkSGMMEGFJujYvrrriii:::,....,::::::iiii;rr7vYjjUU5ON0kqXYYLLv;iii::::::::,,</descripcion_grafica>
+</espacio>
+
+<espacio id="8">
+	<descripcion>Pasillo del quinto Piso. Aqui es donde se suelen dar las clases de encantamientos</descripcion>
+	<edescripcion>No se ve nada en especial, solo una gran pared lisa al final del pasillo</edescripcion>
+	<norte>106</norte>
+	<este>107</este>
+	<oeste>205</oeste>
+	<luz_inicial>TRUE</luz_inicial>
+	<descripcion_grafica filas="21" columnas="47">P..                                           ,j ...                                        ,:J ,::i;i:.                 r.             .rY7iu.::::,,::i:.,.   ...,,,,,.::           .;Lrii:J ::::::::,:Fr::,:.       .   .....   :uJ77vii:j ,i:;iiii,rBBBBu,::,.              .r7v7ii7:i:j :ii.,:ii:;BBBBB,i;irYL;:.  .,    7vrr77rr7:i:j :ii     ,:::i7r.,i;i::i:iYiii;riJLir;.  v7:i:j :ii     ::.   .,.:7.  ::,v:::::,7r:v,   vv:i:j :i;     ::,,,,,,,:7,  ,,,Yiiiii:Lr:v:   LL:i:j :i;     ::,:::::,,i,  ,7vLLLLLL72;:7:   LLii:j :i;     ::,::::,,.,. :YYr;rrrrr;rY:r:   Yvii:j :i;     ::,,,,,,..iYLYrrrrrrrrrr;7jL,   Liii:j ,:r     ::,,,..,;YL7rrrrrrrrrrrrr;rk:   Liii:j ,:r     ::...:7YLrrrrrrrrrrrrrrrrrr7j.  viii:j ,:r     :,.iLY7rrrrrrrrrrrrrrrrrrrrr7U, 7iii:j ,:r     :vYY7rrrrrrrrrrrrrrrrrrrrrrrr7jir:ii:j ,:r    :JYrrrrrrrrrrrrrrrrrrrrrrrrrrrrrLUi:i:j ,,: .ruJ7rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrjr::J .:L7uY7rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrjL,u ;7r;iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii:ri</descripcion_grafica>
+</espacio>
+
+<espacio id="9">
+	<descripcion>La clase de Encantamientos. Se ve un pequeño pedestal en el centro del aula para el profesor</descripcion>
+	<edescripcion>Parece los de primero han estado dando clase no hace mucho. Se ven las plumas que se usan para las primeras clases por todas las mesas.</edescripcion>
+	<sur>206</sur>
+	<objetos>
+		<objeto id="79"/>
+	</objetos>
+	<luz_inicial>TRUE</luz_inicial>
+	<descripcion_grafica filas="21" columnas="47">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBMBBBBBBBBBBBBSYjU5X0OBBBBBBBBBBBBBBBBBBBBMMBBMMMMBBBBBBBNL:,..,......,,:iLPMBBBBBBBBBBMBMMMMMBBBBBMFr,...,:::::::,,.i77:   PBBBBBBBBBBMMMMMBGkY:  .:ii::::,,,::::ii:.   7BBBBBBBBBBBBMOZqGi  :      .,:ir7YjL7ri.  ,ruNuBBBBBBBBBMMMOGNXZ7 .BBBB0Yi.    .:ii.  :SE5LrvMBMBBBBBBMM8G88ES25Y:i72OBBBBBMS7:,  :XBBU:,.:.7BMOBBBBBBMOMMZPFjLu57    .rJ0BBBBBiBBZi.... .  iZPBBBBBBBOZ0X1jLvYUP2ir.      :jZ7S. .,.    .iY7FBBBBBBMOZPS5U50MNFYUBBBM17:    .::,.    .v5,,7ZBBBBBBBMM8EGMBE,     .i1MBBBBY  :.  .  rUi,LXGBBBBBBBM8OOMBB  .7i,.      .iSE.  .:..iU7.i0BBBBBBBBBBMMMMMBM  ZBBBM8q1Jr,         iFU:iqBBMMBBBBBBBBMBBBBBBOrMZNPNEGOMMMM8Z0NNq.iqYYEBBMMMMMBBBBBBBBMXUuYriZBMMMMO8GZ0EEN00EGGu,7EBBMOMMMMBBBBBBGirLJ1kN8BM888OGZZZZG8OOOMMMMM5OMMMBBBBBBBBBBBBOPBBBBBBMMMMMMO88OMMOGGGOMMMBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</descripcion_grafica>
+</espacio>
+
+<espacio id="10">
+	<descripcion>Te encuentras en las escaleras del quinto piso. Un grupo de chicas de Ravenclaw te mira desde el sexto piso</descripcion>
+	<edescripcion>Recuerdas que en esta escalera el tercer escalon es el falso. Tienes cuidado de no deslizar el pie</edescripcion>
+	<oeste>207</oeste>
+	<arriba>229</arriba>
+	<abajo>132</abajo>
+	<luz_inicial>TRUE</luz_inicial>
+	<objetos>
+		<objeto id="1061"/>
+		<objeto id="1030"/>
+		<objeto id="1020"/>
+	</objetos>
+	<descripcion_grafica filas="21" columnas="47">S2j1BBX:r77r7rrrrrrrrrrrrrrr777777riiL0OX0XLMOUM8r:rLi:::::::::::,::::::::::::::,:7FPUMiuY7XN7BBi::::iiii:::::::::::::::::::,:ij0kBu:S:SLJNErSS::::ii:::::::::::::::,,,,..:72kjB.jiiS:k7jNNi8j,::::::::::,,,,,,,,,,....:YPL8i.u.1:rU:0iPNF:Bu.,::,,::::,,,,.........iUUku Y.:u.2,u5:8,1S1,BL.,:::,,,,:::...... .:L2rE.ii U.iL,N.1J,U:1XJ.B7.,:::,,,,,,.,.....iYrS7 v 7:.u YY:E 7,:NLZM2,B7.,:,:::,,,....,:ir1U i. Y L::P U7.7:Siv8GBX:,B7.,::::,,,...,:rY5 ri 7..L F,:q 7..;rZ2BBY.  ,B7.::::,...::r7F,:v L; J.iu N.,i FY2ZBBk:    .:B7......,:7LFv 2 i7 L:.S.7U v.77 N5BBv     . ,:Br ik:,rjX5 vi.U r7 1:,N i: ;rGMBBS:      ...::Br YNFuBir7 Yi.U Lv E: r UFYGXBZ7      ......i:B7 LqY.1.7v Yi:F UY Y..r 1MBBU,       .......i:Bv iO:.1,vv.1::E i. 72MBMBXi     ............r:B7.;G:.5,YY.Gi.7 UJiPkBBJ.        ..........:r:BG.rMi,q,21.Y..7 BBBBPi         .....,,,,,,.i7iBB,7Br:B:ii YG8BMBBj.        ..........,::,,r7iBB:LB7:k:jU:PBBB0i      ..........,,,,::::::vLrBE.7Bi.jYBBMBU:               ........,,::::v7i</descripcion_grafica>
+</espacio>
+
+<espacio id="11">
+	<descripcion>Entras a la clase de Transformaciones. Hay algunos animales y muchos objetos amorfos sobre las mesas, pero todo esta pulcramente ordenado</descripcion>
+	<edescripcion>Un pequeño gato te observa desde la mesa de los profesores, y el contorno de sus ojos tiene unas lineas cuadradas muy raras. No tiene cara de buenos amigos</edescripcion>
+	<este>108</este>
+	<objetos>
+		<objeto id="77"/>
+		<objeto id="91"/>
+	</objetos>
+	<luz_inicial>TRUE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">i7:::...r2Y0r7EMMMMMMMBXSXq0EENPPqNNE0ZGOGGZUirvkvYY:,.vq2FY5BBBBBBBBBGGMMMBMMOMMMMMBBBBBBBErj5PYJY,..i257k2MBBME0GMBXXqNGMGqNNNE00EEEZ88M0rYXOuJL.,.;JFYMGMBBBBBBBBMMBBO158Z0EZGGOO88MOM0vuBBFLj:,.rukuJ   .JBBMMM27:   uO0N0ZG8GGGOMMMXrj58L7r,..:5q8,               qBG88OO8GZEZG8OPS;U   .....;USX        ..    :, XBMOOMMMMMOOMZ1XrU5Xrii,,.ruJ.        ;r..  7i JBBMOMMOOMOOONjUrU5krri,,,7r     .  ..  ,:,.,,.:Lriiiiii:ii;ri;i7:;:i:::,7:      ....   ...   .7::iii:::iiiir::7vU;,::.,r7.   ....           L2.  :r7Lrii;r7::rr7:::,.:r77. ..             ,XkPi   .:r:,,,...,iri;i;rrr7Lr     ..........  iUj7.    :2MEPXSSZ.....      .  .       ..     .jL:     .iYqS151q::::,,,,,,,.   ..      ..     Y:         iBG0NM,:,,,,,,,,,.   ...   ....    .,           rBZ0M,:,,,,,,,,,..    .     .    ..           .qB8Z2,,............    .   ..,, ..      .:irL2JL:..,                     ,.  ,..    ...::.    :qMMBUU777rr;i.           ,     ........       .1MGBukY22kU5S15qGMMBBB0r::::::::,,::::::r50OBBBBBBB</descripcion_grafica>
+</espacio>
+
+<espacio id="12">
+	<descripcion>Estas en el pasillo del cuarto piso. Al oeste queda la clase de Transformaciones, y al este las escaleras</descripcion>
+	<edescripcion>El pasillo tiene numerosas armaduras y tapices, y se encuentra sumido en la penumbra</edescripcion>
+	<este>109</este>
+	<oeste>208</oeste>
+	<luz_inicial>TRUE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">P..                                           ,j ...                                        ,:J ,::i;i:.                 r.             .rY7iu.::::,,::i:.,.   ...,,,,,.::           .;Lrii:J ::::::::,:Fr::,:.       .   .....   :uJ77vii:j ,i:;iiii,rBBBBu,::,.              .r7v7ii7:i:j :ii.,:ii:;BBBBB,i;irYL;:.  .,    7vrr77rr7:i:j :ii     ,:::i7r.,i;i::i:iYiii;riJLir;.  v7:i:j :ii     ::.   .,.:7.  ::,v:::::,7r:v,   vv:i:j :i;     ::,,,,,,,:7,  ,,,Yiiiii:Lr:v:   LL:i:j :i;     ::,:::::,,i,  ,7vLLLLLL72;:7:   LLii:j :i;     ::,::::,,.,. :YYr;rrrrr;rY:r:   Yvii:j :i;     ::,,,,,,..iYLYrrrrrrrrrr;7jL,   Liii:j ,:r     ::,,,..,;YL7rrrrrrrrrrrrr;rk:   Liii:j ,:r     ::...:7YLrrrrrrrrrrrrrrrrrr7j.  viii:j ,:r     :,.iLY7rrrrrrrrrrrrrrrrrrrrr7U, 7iii:j ,:r     :vYY7rrrrrrrrrrrrrrrrrrrrrrrr7jir:ii:j ,:r    :JYrrrrrrrrrrrrrrrrrrrrrrrrrrrrrLUi:i:j ,,: .ruJ7rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrjr::J .:L7uY7rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrjL,u ;7r;iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii:ri</descripcion_grafica>
+</espacio>
+
+<espacio id="13">
+	<descripcion>Te encuentras en las escaleras del cuarto piso. El suelo tiemba bajo tus pies mientras las escaleras se deslizan...</descripcion>
+	<edescripcion>Oyes algunos alumnos en escaleras superiores, deben de haber acabado sus clases</edescripcion>
+	<oeste>209</oeste>
+	<arriba>232</arriba>
+	<abajo>136</abajo>
+	<objetos>
+		<objeto id="1051"/>
+		<objeto id="1010"/>
+	</objetos>
+	<luz_inicial>TRUE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">S2j1BBX:r77r7rrrrrrrrrrrrrrr777777riiL0OX0XLMOUM8r:rLi:::::::::::,::::::::::::::,:7FPUMiuY7XN7BBi::::iiii:::::::::::::::::::,:ij0kBu:S:SLJNErSS::::ii:::::::::::::::,,,,..:72kjB.jiiS:k7jNNi8j,::::::::::,,,,,,,,,,....:YPL8i.u.1:rU:0iPNF:Bu.,::,,::::,,,,.........iUUku Y.:u.2,u5:8,1S1,BL.,:::,,,,:::...... .:L2rE.ii U.iL,N.1J,U:1XJ.B7.,:::,,,,,,.,.....iYrS7 v 7:.u YY:E 7,:NLZM2,B7.,:,:::,,,....,:ir1U i. Y L::P U7.7:Siv8GBX:,B7.,::::,,,...,:rY5 ri 7..L F,:q 7..;rZ2BBY.  ,B7.::::,...::r7F,:v L; J.iu N.,i FY2ZBBk:    .:B7......,:7LFv 2 i7 L:.S.7U v.77 N5BBv     . ,:Br ik:,rjX5 vi.U r7 1:,N i: ;rGMBBS:      ...::Br YNFuBir7 Yi.U Lv E: r UFYGXBZ7      ......i:B7 LqY.1.7v Yi:F UY Y..r 1MBBU,       .......i:Bv iO:.1,vv.1::E i. 72MBMBXi     ............r:B7.;G:.5,YY.Gi.7 UJiPkBBJ.        ..........:r:BG.rMi,q,21.Y..7 BBBBPi         .....,,,,,,.i7iBB,7Br:B:ii YG8BMBBj.        ..........,::,,r7iBB:LB7:k:jU:PBBB0i      ..........,,,,::::::vLrBE.7Bi.jYBBMBU:               ........,,::::v7i</descripcion_grafica>
+</espacio>
+
+<espacio id="14">
+	<descripcion>Miras a traves de un pequeño agujero de la pared que hay al otro lado de la puerta. No se ve gran cosa</descripcion>
+	<edescripcion>Si centras la mirada, puedes ver al fondo de la estancia una gran silueta</edescripcion>
+	<abajo>110</abajo>
+	<luz_inicial>TRUE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">                                               
+            itfjjjtiii;,;i;iitjji:                 iffjjtjtt;ii;i;iiiiiiiiiitttitttttitji       LffLffLfjjjjtttttitiiiiiiiittiittttjjtjjjjj   jfffjjjjttitttitiiiiiiiiiiiiiiiittttttttjjtj;  jEWfffffjtttttii;;i;i;ii;iii;ii;ittittjjjfjK     LKEEEDtjfjjjjtttiiiiii,ii;iitttjtjtjLDEE#          WKEEEDDDDGDEWWWWWKKKEEKKEGLGffGGK              WWWWWWWWWW##WWWWWWKKKWW###WWWW#KE               WWWWWWW##W#WWWWWWWWWWWWWWWWWW#W                WWKK#W                 EjWWWW#K                 WWWWW                   KKKKt                  KWKWW                   KKKK.                  KKWWW                   KEKK.                  KKKWW                   EKKK                   KKWWW                   EEKK                   KWKWW                   EEWK                   KWWWW                   EKWW                   KKWWK                   EEKW                   EKEKKft               ,LEKWK                   ;KK#WWKKKWWWGKKWLKEEGGDDEWWK          </descripcion_grafica>
+</espacio>
+
+<espacio id="15">
+	<descripcion>Apesta. Ves a Fluffy, el perro de tres cabezas, durmiendo sobre la trampilla</descripcion>
+	<edescripcion>¡Es la segunda cabeza de perro mas grande que has visto!</edescripcion>
+	<este>111</este>
+	<objetos>
+		<objeto id="76"/>
+	</objetos>
+	<luz_inicial>TRUE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">  ,0U                     .  .                   BMBU:i                FBBBBZUPq2;             iB28BBBBUi:ZBBqBB7: :MBBBBPJL51FBBB7            UX:SBBBBBBBkBBBBBBBMBBBqrr2BBBBNMBB.           :BZ1MBBBBBj7L:OMNBBYNqj7Y8BBEFUvUBBE          iJ7MZMOBBBBqBBkBMMBEjNPFLv0GBMLL5YUBB         :2BBB0kG0MBBF77rjBMMXYMB0LYEMBXi2BP BB.           iMFL5SZOBB15E0G8PUZMSFYGBBB2rBBi BB:             SOiLPMBMG8OGEPPNMNUMMBBB85XBB  BBi             ,BBBBZEGBB1XBMGBEMMM8MMMME8qX  MBr      i,      8q1GE8ZMqJ2BBGMBOEBBBO8O0jB.  2BF       G      0qPEEqGMNMBBBBMMPEGMMBBMBBB,   BB       B     ,07SPPkMB7,PBBM0BBM   BBBBBB7   2BO    .BU        ZB8BB     8BUOB   ZBB: BBq    YBBOqBBN        1BZBB      8BON  GBBB7  ZBB      iuYi          BBB1      :BBB  BBBE:   GBB,                  7BBN       MBB7       .:BBZ                   jBBB.      GBBk       BBBBB:                2BBBBBr     .BBBB        :N7,                  BBM2r      uBBBB7                                        PBOZk                              </descripcion_grafica>
+</espacio>
+
+<espacio id="16">
+	<descripcion>Estas en el oscuro pasillo del tercer piso. Dumbledore os advirtio sobre el el primer dia del curso</descripcion>
+	<edescripcion>Al fondo se escucha una profunda respiracion, justo detras de una puerta. Justo encima se intuye un pequeño agujero</edescripcion>
+	<este>112</este>
+	<oeste>211</oeste>
+	<arriba>210</arriba>
+	<luz_inicial>TRUE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">P..                                           ,j ...                                        ,:J ,::i;i:.                 r.             .rY7iu.::::,,::i:.,.   ...,,,,,.::           .;Lrii:J ::::::::,:Fr::,:.       .   .....   :uJ77vii:j ,i:;iiii,rBBBBu,::,.              .r7v7ii7:i:j :ii.,:ii:;BBBBB,i;irYL;:.  .,    7vrr77rr7:i:j :ii     ,:::i7r.,i;i::i:iYiii;riJLir;.  v7:i:j :ii     ::.   .,.:7.  ::,v:::::,7r:v,   vv:i:j :i;     ::,,,,,,,:7,  ,,,Yiiiii:Lr:v:   LL:i:j :i;     ::,:::::,,i,  ,7vLLLLLL72;:7:   LLii:j :i;     ::,::::,,.,. :YYr;rrrrr;rY:r:   Yvii:j :i;     ::,,,,,,..iYLYrrrrrrrrrr;7jL,   Liii:j ,:r     ::,,,..,;YL7rrrrrrrrrrrrr;rk:   Liii:j ,:r     ::...:7YLrrrrrrrrrrrrrrrrrr7j.  viii:j ,:r     :,.iLY7rrrrrrrrrrrrrrrrrrrrr7U, 7iii:j ,:r     :vYY7rrrrrrrrrrrrrrrrrrrrrrrr7jir:ii:j ,:r    :JYrrrrrrrrrrrrrrrrrrrrrrrrrrrrrLUi:i:j ,,: .ruJ7rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrjr::J .:L7uY7rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrjL,u ;7r;iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii:ri</descripcion_grafica>
+</espacio>
+
+<espacio id="17">
+	<descripcion>La gran clase de Defensa contra las Artes Oscuras. Al fondo puedes ver la puerta cerrada del despacho del profesor</descripcion>
+	<edescripcion>Echando una mirada a tu alrededor ves gran cantidad de armarios alrededor de los pupitres. De vez en cuando suenan extraños ruidos desde el despacho</edescripcion>
+	<sur>113</sur>
+	<objetos>
+		<objeto id="72"/>
+		<objeto id="86"/>
+	</objetos>
+	<luz_inicial>TRUE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBME5u7i728BBBBBBBBBBBBBBBBBBBBBBBBBBBBY;7r:,.       ..     .:rU0BBBBBBBBBBBBBBBBBBBBBM    .:ii;;rr;;;ii:,.       .iLkMBBBBBBBBBBBBBBBr    ..:r7YjJL7rii:::::,...       .ru0BBBBBBBBBS ..,.....,:i7LYvri:::::,.,.....        :rrrBBBM ........,,...:iii::::,,,..,,,,:,,,,,..   rBBBB .L:...   ..,.,...:::::::,,,.,,,:::,,.   7BBBBB. Yi...  .    .....,::::::,,:ii:,... ..  BBBBBBi ,:. .  .       :,.,:,.:::,...........  BBBBBB.   ,.           i::.::,::,.,..,....... LBBBBBBN           .;XBG ,:.,:.i;:....:,.....  BBBBBBBBBBP,   :UMBBBBBk .:v;:.::::...:...... .BBBBBBBBBBBBL;BBBBBBBBBj .:21U::::....,...... FBBBBBBBBBBBBBBBBBBBBBBBJ ,:Uuu,:::....,.....  XBBBBBBBBBBBBBBBBBBBBBBB7 ,,:i7.:,,....,..     BBBBBBBBBBBBBBBBBBBBBBBB. ,.....::.....     7UBBBBBBBBBBBBBBBBBBBBBBBBBu     ..,:,.     ,qBBBBBBBBBBBBBBBBBBBBBBBBBBBBBMk5.   ....  .YBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBv     iZBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBi.:BBBBBBBBBBBBBBBBB</descripcion_grafica>
+</espacio>
+
+<espacio id="18">
+	<descripcion>El pasillo del tercer piso. Ves al norte la Clase de Defensa y una sinietra puerta hacia el oeste. Al sur hay otra puerta</descripcion>
+	<edescripcion>El pasillo esta extrañamente tranquilo. Quiza hoy no haya clase</edescripcion>
+	<norte>213</norte>
+	<sur>114</sur>
+	<este>115</este>
+	<oeste>212</oeste>
+	<luz_inicial>TRUE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">P..                                           ,j ...                                        ,:J ,::i;i:.                 r.             .rY7iu.::::,,::i:.,.   ...,,,,,.::           .;Lrii:J ::::::::,:Fr::,:.       .   .....   :uJ77vii:j ,i:;iiii,rBBBBu,::,.              .r7v7ii7:i:j :ii.,:ii:;BBBBB,i;irYL;:.  .,    7vrr77rr7:i:j :ii     ,:::i7r.,i;i::i:iYiii;riJLir;.  v7:i:j :ii     ::.   .,.:7.  ::,v:::::,7r:v,   vv:i:j :i;     ::,,,,,,,:7,  ,,,Yiiiii:Lr:v:   LL:i:j :i;     ::,:::::,,i,  ,7vLLLLLL72;:7:   LLii:j :i;     ::,::::,,.,. :YYr;rrrrr;rY:r:   Yvii:j :i;     ::,,,,,,..iYLYrrrrrrrrrr;7jL,   Liii:j ,:r     ::,,,..,;YL7rrrrrrrrrrrrr;rk:   Liii:j ,:r     ::...:7YLrrrrrrrrrrrrrrrrrr7j.  viii:j ,:r     :,.iLY7rrrrrrrrrrrrrrrrrrrrr7U, 7iii:j ,:r     :vYY7rrrrrrrrrrrrrrrrrrrrrrrr7jir:ii:j ,:r    :JYrrrrrrrrrrrrrrrrrrrrrrrrrrrrrLUi:i:j ,,: .ruJ7rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrjr::J .:L7uY7rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrjL,u ;7r;iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii:ri</descripcion_grafica>
+</espacio>
+
+<espacio id="19">
+	<descripcion>Parece que este cuarto se usa como trastero. La estancia es muy alta y crees que hay alguien mas</descripcion>
+	<edescripcion>El Espejo de Oesed esta al final de la estancia</edescripcion>
+	<norte>214</norte>
+	<objetos>
+		<objeto id="87"/>
+	</objetos>
+	<luz_inicial>TRUE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">MBOOMMMBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBOBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBMBOMMGkvi7;:;7i:r:.i,.::;i:.:i,:v7::r7;i7XBBBBBMBOM0Yii:::...    .i,:rrY1vi::, .   :..,::YMBBBMBME1UYU7,.  Jj225UXq5S221UkP2kXUUSL  .;LL7FBBBMBBZU21UJv:. 7k11BBBBBBBBBBBBBBMFXX: :iiLuFqBBBMBBqUUJU2uvi  JUZBBBBBBBBBBBBBBBZkr :7LJ1FNqMBBMBMPS22uUY7i  YXMBBBBBBBBq0qBBBBMEL .i7LFqkXZBBMBMXkSPU;ir:  1qMMGMM5PGP1NP000BOqY.:7L77LukMBBMBMNF5XSFSL:  UPM88G0XXZF8MOOMGOONv :rL2UU25BBBMBMZF11jj7i:  2NOMMMSX0N0BBMOOMBGSj .:iukFUFMBBMBM0kFUj7vY,  UqMBMMGZMMBBBBBBBBZk1 .i77U221OBBMBBE1F5uYJ7.  ukMBBBBBBBBBBBBBBBGN5 .:7LY2NPMBBMBBGU1Uj7;:. .1SMBBBBBBNriMBBBBB0Su  .i77LUkMBBMBBEiii,...  .177uu1kE0Yi:1k22U27jk.  ,:ir::FBBMBBOvrriii;:..Jui,,,,.,i7i.,:.,.iUY:;rL777;ikBBMBMBZEMMMMMEZBBBBBBB0r,. .iOBBBBBMZMBBBBM8NEBBBMBMMZkPXXNN0OBMMMBBBBBBEEBBBBBBBBBBBMqXXkkk8BBBMBMMMZSSq8MBBMOOOO8MBBBBBBBBMMMMBBBBB8N52FZBBMBMB8OOM8NEGGE8OMMMMMOOOMMMMBMMMMMMMMMMBBBBMBBMMBOBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</descripcion_grafica>
+</espacio>
+
+<espacio id="20">
+	<descripcion>Te encuentras en las escaleras del tercer piso. Este sigue sin parecer un buen sitio, las escaleras no paran de moverse</descripcion>
+	<edescripcion>Oyes pasos en los pisos de abajo ¿Ira alguien a la clase de pociones?</edescripcion>
+	<oeste>215</oeste>
+	<arriba>236</arriba>
+	<abajo>123</abajo>
+	<luz_inicial>TRUE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">S2j1BBX:r77r7rrrrrrrrrrrrrrr777777riiL0OX0XLMOUM8r:rLi:::::::::::,::::::::::::::,:7FPUMiuY7XN7BBi::::iiii:::::::::::::::::::,:ij0kBu:S:SLJNErSS::::ii:::::::::::::::,,,,..:72kjB.jiiS:k7jNNi8j,::::::::::,,,,,,,,,,....:YPL8i.u.1:rU:0iPNF:Bu.,::,,::::,,,,.........iUUku Y.:u.2,u5:8,1S1,BL.,:::,,,,:::...... .:L2rE.ii U.iL,N.1J,U:1XJ.B7.,:::,,,,,,.,.....iYrS7 v 7:.u YY:E 7,:NLZM2,B7.,:,:::,,,....,:ir1U i. Y L::P U7.7:Siv8GBX:,B7.,::::,,,...,:rY5 ri 7..L F,:q 7..;rZ2BBY.  ,B7.::::,...::r7F,:v L; J.iu N.,i FY2ZBBk:    .:B7......,:7LFv 2 i7 L:.S.7U v.77 N5BBv     . ,:Br ik:,rjX5 vi.U r7 1:,N i: ;rGMBBS:      ...::Br YNFuBir7 Yi.U Lv E: r UFYGXBZ7      ......i:B7 LqY.1.7v Yi:F UY Y..r 1MBBU,       .......i:Bv iO:.1,vv.1::E i. 72MBMBXi     ............r:B7.;G:.5,YY.Gi.7 UJiPkBBJ.        ..........:r:BG.rMi,q,21.Y..7 BBBBPi         .....,,,,,,.i7iBB,7Br:B:ii YG8BMBBj.        ..........,::,,r7iBB:LB7:k:jU:PBBB0i      ..........,,,,::::::vLrBE.7Bi.jYBBMBU:               ........,,::::v7i</descripcion_grafica>
+</espacio>
+
+<espacio id="21">
+	<descripcion>Los banios de las chicos... Te sientes observado</descripcion>
+	<edescripcion>Ves unos banios muy elaborados. Los retretes a los lados y los lavabos en el centro de la sala</edescripcion>
+	<sur>190</sur>
+	<luz_inicial>TRUE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">BBBBBBZ2rrjEBBBBBBBBBBBBBBBBBBBMBBBBBBBBBBBBBBBBBGZF1k0ZMBBBBBBBBBBBBBBBBBBBBBBBMMBBBBBBBBBBBBBS BBMBBBBBBBBMOO8GMMOGGqFUJL77LLUXGBBBBBBBBBBBBB.,iukPEMBBBBBBM0kUY7rrrLu5EMBBBBBBBBBBBBBBBBBBBBEj;::irr.ULrrrrvUPGBBBBBBBBBBBBBEBBBBBBBBBBBBBBrBBBBBB80NOBBBBBBBBBBBBBBBBBBBBNPBBBBBBBBBBBBBB:OBBBBBBBLBBBBBBBBBBBBBBBBBBBBBLNBBBBBBBBBBBBBBi1BBBBBB0.BBBBBBBBBBBBBBBBBBBBB OBBBBBBBBBBBBBB5iBBBBBBM,BBBBBBBBBBBBBBBBBBBG:.BBBBBBBBBBBBBBBB.YBBBBBB:BBBBBBBBBBMN1JYYjLr::P2UuuJj2PMBBBBBBBB  jBBBB8BBBBBGv77vYUXEMBBBBBBBBBBBM0kjriLBBBBBBBX:,:r:uJLYL1OJO55MBBBBBBBBBBBBBBBBBBBBBP0BBBBBBBBBBB7 FNq8BB;YZqJ;:::irLJU5SXXPPXXPXXNBBBBBBBBBBBBBB.LBBBBB;:i;Y251UJv7r777vLYJjU2Uu7 rBBBBBBBBBBBB .BBBBB EBBBZNqqXSSSF1UuuuUUuYLu:iBBBBBBBBBBBBB:  iLSB: BBBBBBBBBBBBBBBBBBBBBBB1BBBBBBBBBBBBBBBBSPMBBBU LMBBBBBBBBBBBBBBBG2BY 8BBBBBBBBBBBBBBBBBBBjXBBBZNMBBBBBBBBBBBBkULi iBBBBBBBBBBBBBBBBBBBBN :iv1GOMMBBBONXF1UUUUUJ7::BBBBBBBBBBBBBBBBBBBBB0uvri:irL20BBBBBBBBBBNUYYrBBBBBBBBBBBBBBBBBBBBBBBBBBBBMq1JYYjkMj1uvYSMBBBBBBB</descripcion_grafica>
+</espacio>
+
+<espacio id="22">
+	<descripcion>Pasillo del segundo piso. No ves gran cosa, tan solo los banios.</descripcion>
+	<edescripcion>Al norte ves los banios de las chicas, y al sur los de los chicos. ¿No quieres descansar un momento?</edescripcion>
+	<norte>290</norte>
+	<sur>118</sur>
+	<este>119</este>
+	<luz_inicial>TRUE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">P..                                           ,j ...                                        ,:J ,::i;i:.                 r.             .rY7iu.::::,,::i:.,.   ...,,,,,.::           .;Lrii:J ::::::::,:Fr::,:.       .   .....   :uJ77vii:j ,i:;iiii,rBBBBu,::,.              .r7v7ii7:i:j :ii.,:ii:;BBBBB,i;irYL;:.  .,    7vrr77rr7:i:j :ii     ,:::i7r.,i;i::i:iYiii;riJLir;.  v7:i:j :ii     ::.   .,.:7.  ::,v:::::,7r:v,   vv:i:j :i;     ::,,,,,,,:7,  ,,,Yiiiii:Lr:v:   LL:i:j :i;     ::,:::::,,i,  ,7vLLLLLL72;:7:   LLii:j :i;     ::,::::,,.,. :YYr;rrrrr;rY:r:   Yvii:j :i;     ::,,,,,,..iYLYrrrrrrrrrr;7jL,   Liii:j ,:r     ::,,,..,;YL7rrrrrrrrrrrrr;rk:   Liii:j ,:r     ::...:7YLrrrrrrrrrrrrrrrrrr7j.  viii:j ,:r     :,.iLY7rrrrrrrrrrrrrrrrrrrrr7U, 7iii:j ,:r     :vYY7rrrrrrrrrrrrrrrrrrrrrrrr7jir:ii:j ,:r    :JYrrrrrrrrrrrrrrrrrrrrrrrrrrrrrLUi:i:j ,,: .ruJ7rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrjr::J .:L7uY7rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrjL,u ;7r;iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii:ri</descripcion_grafica>
+</espacio>
+
+<espacio id="23">
+	<descripcion>Las escaleras del segundo piso. Parece que los escalones no descansan nunca, siguen cambiando sin cesar</descripcion>
+	<edescripcion>Al mirar hacia arriba ves muchas escaleras moviendose. Parece que el castillo no acabe nunca</edescripcion>
+	<oeste>219</oeste>
+	<arriba>223</arriba>
+	<abajo>140</abajo>
+	<luz_inicial>TRUE</luz_inicial>
+	<objetos>
+		<objeto id="1031"/>
+		<objeto id="1041"/>
+	</objetos>
+<descripcion_grafica filas="21" columnas="47">S2j1BBX:r77r7rrrrrrrrrrrrrrr777777riiL0OX0XLMOUM8r:rLi:::::::::::,::::::::::::::,:7FPUMiuY7XN7BBi::::iiii:::::::::::::::::::,:ij0kBu:S:SLJNErSS::::ii:::::::::::::::,,,,..:72kjB.jiiS:k7jNNi8j,::::::::::,,,,,,,,,,....:YPL8i.u.1:rU:0iPNF:Bu.,::,,::::,,,,.........iUUku Y.:u.2,u5:8,1S1,BL.,:::,,,,:::...... .:L2rE.ii U.iL,N.1J,U:1XJ.B7.,:::,,,,,,.,.....iYrS7 v 7:.u YY:E 7,:NLZM2,B7.,:,:::,,,....,:ir1U i. Y L::P U7.7:Siv8GBX:,B7.,::::,,,...,:rY5 ri 7..L F,:q 7..;rZ2BBY.  ,B7.::::,...::r7F,:v L; J.iu N.,i FY2ZBBk:    .:B7......,:7LFv 2 i7 L:.S.7U v.77 N5BBv     . ,:Br ik:,rjX5 vi.U r7 1:,N i: ;rGMBBS:      ...::Br YNFuBir7 Yi.U Lv E: r UFYGXBZ7      ......i:B7 LqY.1.7v Yi:F UY Y..r 1MBBU,       .......i:Bv iO:.1,vv.1::E i. 72MBMBXi     ............r:B7.;G:.5,YY.Gi.7 UJiPkBBJ.        ..........:r:BG.rMi,q,21.Y..7 BBBBPi         .....,,,,,,.i7iBB,7Br:B:ii YG8BMBBj.        ..........,::,,r7iBB:LB7:k:jU:PBBB0i      ..........,,,,::::::vLrBE.7Bi.jYBBMBU:               ........,,::::v7i</descripcion_grafica>
+</espacio>
+
+<espacio id="24">
+  <descripcion>Los banios de las chicas... No ves gran cosa, solo los retretes</descripcion>
+  <edescripcion>Al otro lado de los lavabos, ves un hueco que baja hacia la oscuridad total. Alguien llora en los retretes</edescripcion>
+  <norte>218</norte>
+  <abajo>117</abajo>
+  <luz_inicial>TRUE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">BBBBBBZ2rrjEBBBBBBBBBBBBBBBBBBBMBBBBBBBBBBBBBBBBBGZF1k0ZMBBBBBBBBBBBBBBBBBBBBBBBMMBBBBBBBBBBBBBS BBMBBBBBBBBMOO8GMMOGGqFUJL77LLUXGBBBBBBBBBBBBB.,iukPEMBBBBBBM0kUY7rrrLu5EMBBBBBBBBBBBBBBBBBBBBEj;::irr.ULrrrrvUPGBBBBBBBBBBBBBEBBBBBBBBBBBBBBrBBBBBB80NOBBBBBBBBBBBBBBBBBBBBNPBBBBBBBBBBBBBB:OBBBBBBBLBBBBBBBBBBBBBBBBBBBBBLNBBBBBBBBBBBBBBi1BBBBBB0.BBBBBBBBBBBBBBBBBBBBB OBBBBBBBBBBBBBB5iBBBBBBM,BBBBBBBBBBBBBBBBBBBG:.BBBBBBBBBBBBBBBB.YBBBBBB:BBBBBBBBBBMN1JYYjLr::P2UuuJj2PMBBBBBBBB  jBBBB8BBBBBGv77vYUXEMBBBBBBBBBBBM0kjriLBBBBBBBX:,:r:uJLYL1OJO55MBBBBBBBBBBBBBBBBBBBBBP0BBBBBBBBBBB7 FNq8BB;YZqJ;:::irLJU5SXXPPXXPXXNBBBBBBBBBBBBBB.LBBBBB;:i;Y251UJv7r777vLYJjU2Uu7 rBBBBBBBBBBBB .BBBBB EBBBZNqqXSSSF1UuuuUUuYLu:iBBBBBBBBBBBBB:  iLSB: BBBBBBBBBBBBBBBBBBBBBBB1BBBBBBBBBBBBBBBBSPMBBBU LMBBBBBBBBBBBBBBBG2BY 8BBBBBBBBBBBBBBBBBBBjXBBBZNMBBBBBBBBBBBBkULi iBBBBBBBBBBBBBBBBBBBBN :iv1GOMMBBBONXF1UUUUUJ7::BBBBBBBBBBBBBBBBBBBBB0uvri:irL20BBBBBBBBBBNUYYrBBBBBBBBBBBBBBBBBBBBBBBBBBBBMq1JYYjkMj1uvYSMBBBBBBB</descripcion_grafica>
+</espacio>
+
+  <espacio id="25">
+    <descripcion>Estas en las Escaleras de las Mazmorras. El frio es cortante y te subes la tunica</descripcion>
+    <edescripcion>Peeves ha debido de provocar estas rafagas de aire frio. Empiezas a temblar, y no solo de frio...</edescripcion>
+	<arriba>225</arriba>
+	<abajo>191</abajo>
+	<luz_inicial>TRUE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">S2j1BBX:r77r7rrrrrrrrrrrrrrr777777riiL0OX0XLMOUM8r:rLi:::::::::::,::::::::::::::,:7FPUMiuY7XN7BBi::::iiii:::::::::::::::::::,:ij0kBu:S:SLJNErSS::::ii:::::::::::::::,,,,..:72kjB.jiiS:k7jNNi8j,::::::::::,,,,,,,,,,....:YPL8i.u.1:rU:0iPNF:Bu.,::,,::::,,,,.........iUUku Y.:u.2,u5:8,1S1,BL.,:::,,,,:::...... .:L2rE.ii U.iL,N.1J,U:1XJ.B7.,:::,,,,,,.,.....iYrS7 v 7:.u YY:E 7,:NLZM2,B7.,:,:::,,,....,:ir1U i. Y L::P U7.7:Siv8GBX:,B7.,::::,,,...,:rY5 ri 7..L F,:q 7..;rZ2BBY.  ,B7.::::,...::r7F,:v L; J.iu N.,i FY2ZBBk:    .:B7......,:7LFv 2 i7 L:.S.7U v.77 N5BBv     . ,:Br ik:,rjX5 vi.U r7 1:,N i: ;rGMBBS:      ...::Br YNFuBir7 Yi.U Lv E: r UFYGXBZ7      ......i:B7 LqY.1.7v Yi:F UY Y..r 1MBBU,       .......i:Bv iO:.1,vv.1::E i. 72MBMBXi     ............r:B7.;G:.5,YY.Gi.7 UJiPkBBJ.        ..........:r:BG.rMi,q,21.Y..7 BBBBPi         .....,,,,,,.i7iBB,7Br:B:ii YG8BMBBj.        ..........,::,,r7iBB:LB7:k:jU:PBBB0i      ..........,,,,::::::vLrBE.7Bi.jYBBMBU:               ........,,::::v7i</descripcion_grafica>
+</espacio>
+
+<espacio id="26">
+	<descripcion>Estas en el magnifico Vestibulo del colegio. Es una imagen sobrecogedora. Al oeste esta el Gran Comedor. Ves el armario de las escobas, y las escaleras a las Mazmorras...</descripcion>
+	<edescripcion>No tiene nada que ver con el Hall de tu actual Escuela. Cada vez que ves este lugar te emocionas.</edescripcion>
+	<oeste>122</oeste>
+	<arriba>221</arriba>
+	<abajo>125</abajo>
+	<objetos>
+		<objeto id="93"/>
+	</objetos>
+	<luz_inicial>TRUE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">rFXr,,..,:    :U8Ojr::i:i::ZBB2u:.:;.   .,..rYLrjk,     ,::LGMU:     .::.  ,,,ri7LJJi.     .,.LU1:.,rJBB5S1i. .:7LYJLYuYJY7rri. .YGZM1,   ,..rruruZBEji   ,i77riirY5FuJ7L7rvL1ur. .LMBS7  ,.PU8BF77,  ,rv;:iiLUXPXUSu5YJYL777;LFFr  iBBMFu.EPBj..  ,L7:.;FBXYrYMBBBBBBB8L..:YJiiL1r  FBBBUMUr.. .Lv:,rLr:iUOBBMXjLLLL5MBBEr  rJ:.ij: uOGM0Y5J.:7i.:Li .uBBO27ii;:;i::,ir2BBv .77.,2r vviMuMqri,.ii:..0B5Y7::::,:i:::::..,uBM..7u..j7.LLSjY:,::::...NML::..,::::i:::i:.. :;MB,.iU ,vi:;q2, .:,.  .uN7. ir:ii.:,:,..:i,ir:.rMU  ui .i..Mk5:.i....:OOSLY5SZjkFi,i,,vNjU11UY2BB.,;r.:7YvNUk::ri7YJLPq1iiUF5LUL::i..i1JYSX7:rqOvj5j:LuLLZ5Y .:.:::i7i. .i:,:. ,:Y7,:.:.::,.,i1: .r..::.E5L .:.:i,iLi.,::.:,.,iiUq:i:::,,:ii:2i,iuirr:.JS7 ,:,:i:;7:.,::::;:,::1q:::i:::ii,,u7iYU::rr.:LY ::,.::ri,.:i:.,i:,,.Yrii,::,:,:. L7:7J,,;Y:::i ,:,,:;iiYi,:ju7vr:i,7i:::rrLUr..:2i ,7:.:; ::, .:..:::EMN1U110vk07YBv.r8YUk2Uju0BL ,Y:.,: uFjiU2i.ri.rPYY2GEq111kuBBF752UP021LSN2rrL5LXPuBM2JqEkYjFrrvvYYL7rvr::,iLvii;iirrL7LYUULSMqFZM</descripcion_grafica>
+</espacio>
+
+<espacio id="27">
+	<descripcion>El Gran Comedor, con un techo que refleja el cielo despejado del exterior. Las velas levitan apagadas sobre unas mesas vacias</descripcion>
+	<edescripcion>Al fondo ves la mesa de Profesores y el pulpito sobre el que el Director da sus discursos. Al acercarte ves una escritura sobre el: "make: No se encuentra la orden para discurso_director.o. Consultar a Pablo Haya"</edescripcion>
+	<este>222</este>
+	<objetos>
+		<objeto id="78"/>
+		<objeto id="84"/>
+	</objetos>
+	<luz_inicial>TRUE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47"> .,.,uriE, ..L5:  :.                 .   ..   , .:,:EOrS: ,,uMi  ,:                    . .i. :   ..:uY8: .:rL, :r. :                  , .v  : .  .  .:. ,:5U..ru  :..     :UN5i     ,.i 7  :  ...... . .,1P..rr Ji.:    :BBBBB,..  :ir v  ;i:.    ..,,...:..LY.Y:i:..i:iBBBBB:,:  r7i :iFB. .     ,:iiirrri::.JiLY::2LYBBBBMi:i:.7LL;2BBB         ,: i::LYr7v7:Y1:.7i::::....:,.Y5F2j7::            :    ..ii:Y2.              7j; .  ,     .   .  .         vk     .. . .   .:.:.,. .                      :N     ,: ...    ..   ...      i:  ,. r,,,i :r  ii , :rk,  :Y::ir:    .:      Li..JL.,.::..Mi   :.vFEL.   ,Lk7i:  XE,:i      .. ,:..         ,7JkU..  7Bq. ;EJri.:.   .        ii    .:rrvuYYu::    :BBBi  ;Yvi:..              ,..:.:771Li.      .BBBM.   JFL777Lu7       r:,rr. :r:ri.         UBBBM  .  7v2UYJYY :i:Lriu::riiLSY,       .   ,MBBBM: ..         :;r::irL.vBBU.        .    .7BBBB8. .                .. :i              ...7qBB8P              .                       ,,::2MO8k.            </descripcion_grafica>
+</espacio>
+
+<espacio id="28">
+	<descripcion>Las escaleras de marmol del primer piso. Justo debajo de ti se encuentra el Vestibulo</descripcion>
+	<edescripcion>Oyes las escaleras crujir detras tuya, mientras que esta esta quieta. ¡Que relax!</edescripcion>
+	<arriba>240</arriba>
+  	<abajo>121</abajo>
+	<luz_inicial>TRUE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">S2j1BBX:r77r7rrrrrrrrrrrrrrr777777riiL0OX0XLMOUM8r:rLi:::::::::::,::::::::::::::,:7FPUMiuY7XN7BBi::::iiii:::::::::::::::::::,:ij0kBu:S:SLJNErSS::::ii:::::::::::::::,,,,..:72kjB.jiiS:k7jNNi8j,::::::::::,,,,,,,,,,....:YPL8i.u.1:rU:0iPNF:Bu.,::,,::::,,,,.........iUUku Y.:u.2,u5:8,1S1,BL.,:::,,,,:::...... .:L2rE.ii U.iL,N.1J,U:1XJ.B7.,:::,,,,,,.,.....iYrS7 v 7:.u YY:E 7,:NLZM2,B7.,:,:::,,,....,:ir1U i. Y L::P U7.7:Siv8GBX:,B7.,::::,,,...,:rY5 ri 7..L F,:q 7..;rZ2BBY.  ,B7.::::,...::r7F,:v L; J.iu N.,i FY2ZBBk:    .:B7......,:7LFv 2 i7 L:.S.7U v.77 N5BBv     . ,:Br ik:,rjX5 vi.U r7 1:,N i: ;rGMBBS:      ...::Br YNFuBir7 Yi.U Lv E: r UFYGXBZ7      ......i:B7 LqY.1.7v Yi:F UY Y..r 1MBBU,       .......i:Bv iO:.1,vv.1::E i. 72MBMBXi     ............r:B7.;G:.5,YY.Gi.7 UJiPkBBJ.        ..........:r:BG.rMi,q,21.Y..7 BBBBPi         .....,,,,,,.i7iBB,7Br:B:ii YG8BMBBj.        ..........,::,,r7iBB:LB7:k:jU:PBBB0i      ..........,,,,::::::vLrBE.7Bi.jYBBMBU:               ........,,::::v7i</descripcion_grafica>
+</espacio>
+
+<espacio id="29">
+	<descripcion>Te encuentras en un pasillo de las Mazmorras. Al fondo, al sur, se encuantra la clase de Pociones, desde donde se escucha cierto alboroto</descripcion>
+	<edescripcion>Si aun no has reunido todos los ingredientes, no seria recomendable entrar, ya que una vez entres, deberas hacer el examen</edescripcion>
+	<sur>120</sur>
+	<arriba>291</arriba>
+	<objetos>
+		<objeto id="96"/>
+	</objetos>
+	<luz_inicial>TRUE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">                                                                   ,:....,:                                       :BM8BBBr .                              .;27ir:  LU5u:  i7;U8Y:                      jN: i:,..          ,:FF.i2S.                 :qBBY            .        UOXEi  .            78E1.    ,. :r..r;:i: ..    .YMGi             .        ir:.7L,.rr:7r.:r:    .   i.          7r7J    ..77..L7.:7;,rL.,vr..    Ui1E         vBqF7   .,.77..Yr.iLi.rL.,vr ,    7FSBi         :.    .::.;i..i:.::,,::.,i:.:,.   ,::         UjuU   :r..,::::::::::::ii::..r:   jLrv        BBME   ,:.......:..,..,,..::..:   .MSBB        BBBu .  ::.r7..v7..r;:77 .ri :,  ..BBBq        NBGX   .::.r7..Lr.:Li,rL.,7r.::    BBBU               .::.rr..vr.:r:,r7 ,ri.::      .         8JJP    :: ;r..vr.,7;:r7.,ri ::    2i.i     .  BOUM.   :: r7..Yr.iL:.rY.,v7 ::   .ji7j        GMJU.   :,.::..:i..;:.i: .:,.,,    YSB5               :L.,iii::i::i:::::::,:.ii               NNJY   .,...,,.............:..,.  .NGB8   </descripcion_grafica>
+</espacio>
+
+<espacio id="30">
+	<descripcion>El examen ha empezado. Debes preparar la pocion Oculus. Tu caldero burbujea ante ti y una multitud de olores inunda la mazmorra. Snape esta tras la mesa del profesor</descripcion>
+	<edescripcion>Ves al resto de alumnos sudando por conseguir una pocion decente</edescripcion>
+	<objetos>
+		<objeto id="83"/>
+	</objetos>
+	<luz_inicial>TRUE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBXOBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB5r7PBBBBBBBBBBBBBBBBBBBBBBMBMBMBBBBBBBBBBBBBBBBZ:,.,vBBBBBBBBBBBMBBBMBBBBBMBBBBB5JjGBBBOiiYEBBBS:::XBBBBMBBMMBBBMBBBBBBBMBBBBML;;7vBBB8LLJYJ0Bi:rNS7:1MBO2vL5BBBBBBBBBBBBBMBBMUY7vSBBB1JLJXr,:XBNkkEBBBNvj7UGBMBMBBBBBMBBBBBOONkY7vPPJLJJMri .;SUUMBBNY2F8BBBBBBMBBBBBMBBBM0U:jqFFJUuUYjUZ2.  FXFM7:YSU15qOBBBMBMBBBMBMBBBBB  :77JUqPGBBP,.5BBNqj. .MBMBBBBBBBBBBBBBBBBBBB5J.      ...2:.   :7   .iivXNBBBMBBBMBBBBBBBBBYr,:::...    . .   .:...JS. .rBBBBMBBBBBBBMBBBBNP7:v7jJuuUYYvYYUuUYYYuJLi: iuBBBBBBBBBBBMBBBBBq .i:;7L7YuFU1U5UJ7L7YvYv7i:..i1BBBBBBBBBBBBBB: .ir7;;iiivY52S1Uv77YLY7L77i:.  1BBMBBBBBBBBB; ,;r77Fr7rYLJvL7Lr7ir:  ....,    iN22S2EMO2uNN  :irvJqSr7Y22k5FUUYv77,:irrvri:. 5PUNU71P175qXX, .,rLvU2YY7L7L7v7v7LLjYJYjr;,.,GBMUPPGBBBOF2NBB;,. ,...::i:iiiiriririii:.,..,NNBBBBBBBBBBBBBBGFP:,iYLr::...... ,,..:;L:.:SLqkPBBBBBBBBBBBBBBOPS8MBBBBBBBBBBBBBBB5OZZMBMZXOBBBBBBBBMBMBBBBBBBBBBBBBBBBBBBBBBBBqXMBMSEBBBBBBBBBBBBBBB</descripcion_grafica>
+</espacio>
+
+<espacio id="31">
+	<descripcion>El pasillo del tercer piso. Ves al norte la Clase de Defensa y una sinietra puerta hacia el oeste. Al sur hay otra puerta</descripcion>
+	<edescripcion>Parece que este pasillo esta extrañamente tranquilo. Quiza hoy no haya clase</edescripcion>
+	<norte>213</norte>
+	<sur>114</sur>
+	<este>115</este>
+	<oeste>212</oeste>
+	<luz_inicial>TRUE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">P..                                           ,j ...                                        ,:J ,::i;i:.                 r.             .rY7iu.::::,,::i:.,.   ...,,,,,.::           .;Lrii:J ::::::::,:Fr::,:.       .   .....   :uJ77vii:j ,i:;iiii,rBBBBu,::,.              .r7v7ii7:i:j :ii.,:ii:;BBBBB,i;irYL;:.  .,    7vrr77rr7:i:j :ii     ,:::i7r.,i;i::i:iYiii;riJLir;.  v7:i:j :ii     ::.   .,.:7.  ::,v:::::,7r:v,   vv:i:j :i;     ::,,,,,,,:7,  ,,,Yiiiii:Lr:v:   LL:i:j :i;     ::,:::::,,i,  ,7vLLLLLL72;:7:   LLii:j :i;     ::,::::,,.,. :YYr;rrrrr;rY:r:   Yvii:j :i;     ::,,,,,,..iYLYrrrrrrrrrr;7jL,   Liii:j ,:r     ::,,,..,;YL7rrrrrrrrrrrrr;rk:   Liii:j ,:r     ::...:7YLrrrrrrrrrrrrrrrrrr7j.  viii:j ,:r     :,.iLY7rrrrrrrrrrrrrrrrrrrrr7U, 7iii:j ,:r     :vYY7rrrrrrrrrrrrrrrrrrrrrrrr7jir:ii:j ,:r    :JYrrrrrrrrrrrrrrrrrrrrrrrrrrrrrLUi:i:j ,,: .ruJ7rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrjr::J .:L7uY7rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrjL,u ;7r;iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii:ri</descripcion_grafica>
+</espacio>
+
+<espacio id="1000">
+	<objetos>
+		<objeto id="80"/>
+		<objeto id="1171"/>
+		<objeto id="1161"/>
+		<objeto id="1151"/>
+		<objeto id="1150"/>
+		<objeto id="1141"/>
+		<objeto id="1140"/>
+		<objeto id="1131"/>
+		<objeto id="1130"/>
+		<objeto id="1120"/>
+		<objeto id="1110"/>
+		
+	</objetos>
+</espacio>
+
+
+<union id="100">
+	<abierta>TRUE</abierta>
+	<salida>0</salida>
+	<llegada>1</llegada>
+</union>
+
+<union id="200">
+	<abierta>TRUE</abierta>
+	<salida>1</salida>
+	<llegada>0</llegada>
+</union>
+
+<union id="101">
+	<abierta>TRUE</abierta>
+	<salida>1</salida>
+	<llegada>2</llegada>
+</union>
+
+<union id="201">
+	<abierta>TRUE</abierta>
+	<salida>2</salida>
+	<llegada>1</llegada>
+</union>
+
+<union id="102">
+	<abierta>TRUE</abierta>
+	<salida>2</salida>
+	<llegada>3</llegada>
+</union>
+
+<union id="202">
+	<abierta>TRUE</abierta>
+	<salida>3</salida>
+	<llegada>2</llegada>
+</union>
+
+<union id="191">
+	<abierta>TRUE</abierta>
+	<salida>25</salida>
+	<llegada>29</llegada>
+</union>
+
+<union id="291">
+	<abierta>TRUE</abierta>
+	<salida>29</salida>
+	<llegada>25</llegada>
+</union>
+
+<union id="103">
+	<abierta>TRUE</abierta>
+	<salida>2</salida>
+	<llegada>4</llegada>
+</union>
+
+<union id="203">
+	<abierta>TRUE</abierta>
+	<salida>4</salida>
+	<llegada>2</llegada>
+</union>
+
+<union id="104">
+	<abierta>TRUE</abierta>
+	<salida>5</salida>
+	<llegada>6</llegada>
+</union>
+
+<union id="204">
+	<abierta>TRUE</abierta>
+	<salida>6</salida>
+	<llegada>5</llegada>
+</union>
+
+<union id="105">
+	<abierta>TRUE</abierta>
+	<salida>7</salida>
+	<llegada>8</llegada>
+</union>
+
+<union id="205">
+	<abierta>FALSE</abierta>
+	<salida>8</salida>
+	<llegada>7</llegada>
+</union>
+
+<union id="106">
+	<abierta>TRUE</abierta>
+	<salida>8</salida>
+	<llegada>9</llegada>
+</union>
+
+<union id="206">
+	<abierta>TRUE</abierta>
+	<salida>9</salida>
+	<llegada>8</llegada>
+</union>
+
+<union id="107">
+	<abierta>TRUE</abierta>
+	<salida>8</salida>
+	<llegada>10</llegada>
+</union>
+
+<union id="207">
+	<abierta>TRUE</abierta>
+	<salida>10</salida>
+	<llegada>8</llegada>
+</union>
+
+<union id="108">
+	<abierta>TRUE</abierta>
+	<salida>11</salida>
+	<llegada>12</llegada>
+</union>
+
+<union id="208">
+	<abierta>TRUE</abierta>
+	<salida>12</salida>
+	<llegada>11</llegada>
+</union>
+
+<union id="109">
+	<abierta>TRUE</abierta>
+	<salida>12</salida>
+	<llegada>13</llegada>
+</union>
+
+<union id="209">
+	<abierta>TRUE</abierta>
+	<salida>13</salida>
+	<llegada>12</llegada>
+</union>
+
+<union id="110">
+	<abierta>TRUE</abierta>
+	<salida>14</salida>
+	<llegada>16</llegada>
+</union>
+
+<union id="210">
+	<abierta>TRUE</abierta>
+	<salida>16</salida>
+	<llegada>14</llegada>
+</union>
+
+<union id="111">
+	<abierta>TRUE</abierta>
+	<salida>15</salida>
+	<llegada>16</llegada>
+</union>
+
+<union id="211">
+	<abierta>TRUE</abierta>
+	<salida>16</salida>
+	<llegada>15</llegada>
+</union>
+
+<union id="112">
+	<abierta>TRUE</abierta>
+	<salida>16</salida>
+	<llegada>18</llegada>
+</union>
+
+<union id="212">
+	<abierta>TRUE</abierta>
+	<salida>18</salida>
+	<llegada>16</llegada>
+</union>
+
+<union id="113">
+	<abierta>TRUE</abierta>
+	<salida>17</salida>
+	<llegada>18</llegada>
+</union>
+
+<union id="213">
+	<abierta>TRUE</abierta>
+	<salida>18</salida>
+	<llegada>17</llegada>
+</union>
+
+<union id="114">
+	<abierta>FALSE</abierta>
+	<salida>18</salida>
+	<llegada>19</llegada>
+	<key>82</key>
+</union>
+
+<union id="214">
+	<abierta>TRUE</abierta>
+	<salida>19</salida>
+	<llegada>31</llegada>
+</union>
+
+<union id="115">
+	<abierta>TRUE</abierta>
+	<salida>18</salida>
+	<llegada>20</llegada>
+</union>
+
+<union id="215">
+	<abierta>TRUE</abierta>
+	<salida>20</salida>
+	<llegada>18</llegada>
+</union>
+
+<union id="116">
+	<abierta>TRUE</abierta>
+	<salida>21</salida>
+	<llegada>22</llegada>
+</union>
+
+<union id="216">
+	<abierta>TRUE</abierta>
+	<salida>22</salida>
+	<llegada>21</llegada>
+</union>
+
+<union id="117">
+	<abierta>TRUE</abierta>
+	<salida>24</salida>
+	<llegada>34</llegada>
+</union>
+
+<union id="217">
+	<abierta>TRUE</abierta>
+	<salida>34</salida>
+	<llegada>24</llegada>
+</union>
+
+<union id="118">
+	<abierta>TRUE</abierta>
+	<salida>22</salida>
+	<llegada>24</llegada>
+</union>
+
+<union id="218">
+	<abierta>TRUE</abierta>
+	<salida>24</salida>
+	<llegada>22</llegada>
+</union>
+
+<union id="119">
+	<abierta>TRUE</abierta>
+	<salida>22</salida>
+	<llegada>23</llegada>
+</union>
+
+<union id="219">
+	<abierta>TRUE</abierta>
+	<salida>23</salida>
+	<llegada>22</llegada>
+</union>
+
+<union id="120">
+	<abierta>TRUE</abierta>
+	<salida>29</salida>
+	<llegada>30</llegada>
+</union>
+
+<union id="121">
+	<abierta>TRUE</abierta>
+	<salida>28</salida>
+	<llegada>26</llegada>
+</union>
+
+<union id="221">
+	<abierta>TRUE</abierta>
+	<salida>26</salida>
+	<llegada>28</llegada>
+</union>
+
+<union id="122">
+	<abierta>TRUE</abierta>
+	<salida>26</salida>
+	<llegada>27</llegada>
+</union>
+
+<union id="190">
+	<abierta>TRUE</abierta>
+	<salida>21</salida>
+	<llegada>22</llegada>
+</union>
+
+<union id="290">
+	<abierta>TRUE</abierta>
+	<salida>22</salida>
+	<llegada>21</llegada>
+</union>
+
+<union id="222">
+	<abierta>TRUE</abierta>
+	<salida>27</salida>
+	<llegada>26</llegada>
+</union>
+
+
+<union id="125">
+	<abierta>TRUE</abierta>
+	<salida>26</salida>
+	<llegada>25</llegada>
+</union>
+
+<union id="225">
+	<abierta>TRUE</abierta>
+	<salida>25</salida>
+	<llegada>26</llegada>
+</union>
+
+<!-- Uniones de las escaleras -->
+
+<!-- 7º y 6º -->
+
+<union id="126">
+	<abierta>TRUE</abierta>
+	<salida>4</salida>
+	<llegada>6</llegada>
+</union>
+
+<union id="226">
+	<abierta>TRUE</abierta>
+	<salida>6</salida>
+	<llegada>4</llegada>
+</union>
+
+<!-- 7º y 5º -->
+
+<union id="127">
+	<abierta>TRUE</abierta>
+	<salida>4</salida>
+	<llegada>10</llegada>
+</union>
+
+<union id="227">
+	<abierta>TRUE</abierta>
+	<salida>10</salida>
+	<llegada>4</llegada>
+</union>
+
+<!-- 7º y 4º -->
+
+<union id="128">
+	<abierta>TRUE</abierta>
+	<salida>4</salida>
+	<llegada>13</llegada>
+</union>
+
+<union id="228">
+	<abierta>TRUE</abierta>
+	<salida>13</salida>
+	<llegada>4</llegada>
+</union>
+
+<!-- 6º y 5º -->
+
+<union id="129">
+	<abierta>TRUE</abierta>
+	<salida>6</salida>
+	<llegada>10</llegada>
+</union>
+
+<union id="229">
+	<abierta>TRUE</abierta>
+	<salida>10</salida>
+	<llegada>6</llegada>
+</union>
+
+<!-- 6º y 4º -->
+
+<union id="130">
+	<abierta>TRUE</abierta>
+	<salida>6</salida>
+	<llegada>13</llegada>
+</union>
+
+<union id="230">
+	<abierta>TRUE</abierta>
+	<salida>13</salida>
+	<llegada>6</llegada>
+</union>
+
+<!-- 6º y 3º -->
+
+<union id="131">
+	<abierta>TRUE</abierta>
+	<salida>6</salida>
+	<llegada>20</llegada>
+</union>
+
+<union id="231">
+	<abierta>TRUE</abierta>
+	<salida>20</salida>
+	<llegada>6</llegada>
+</union>
+
+<!-- 5º y 4º -->
+
+<union id="132">
+	<abierta>TRUE</abierta>
+	<salida>10</salida>
+	<llegada>13</llegada>
+</union>
+
+<union id="232">
+	<abierta>TRUE</abierta>
+	<salida>13</salida>
+	<llegada>10</llegada>
+</union>
+
+<!-- 5º y 3º -->
+
+<union id="133">
+	<abierta>TRUE</abierta>
+	<salida>10</salida>
+	<llegada>20</llegada>
+</union>
+
+<union id="233">
+	<abierta>TRUE</abierta>
+	<salida>20</salida>
+	<llegada>10</llegada>
+</union>
+
+<!-- 5º y 2º -->
+
+<union id="135">
+	<abierta>TRUE</abierta>
+	<salida>10</salida>
+	<llegada>23</llegada>
+</union>
+
+<union id="235">
+	<abierta>TRUE</abierta>
+	<salida>23</salida>
+	<llegada>10</llegada>
+</union>
+
+<!-- 4º y 3º -->
+
+<union id="136">
+	<abierta>TRUE</abierta>
+	<salida>13</salida>
+	<llegada>20</llegada>
+</union>
+
+<union id="236">
+	<abierta>TRUE</abierta>
+	<salida>20</salida>
+	<llegada>13</llegada>
+</union>
+
+<!-- 4º y 2º -->
+
+<union id="137">
+	<abierta>TRUE</abierta>
+	<salida>13</salida>
+	<llegada>23</llegada>
+</union>
+
+<union id="237">
+	<abierta>TRUE</abierta>
+	<salida>23</salida>
+	<llegada>13</llegada>
+</union>
+
+<!-- 4º y 1º -->
+
+<union id="138">
+	<abierta>TRUE</abierta>
+	<salida>13</salida>
+	<llegada>28</llegada>
+</union>
+
+<union id="238">
+	<abierta>TRUE</abierta>
+	<salida>28</salida>
+	<llegada>13</llegada>
+</union>
+
+<!-- 3º y 2º -->
+
+<union id="123">
+	<abierta>TRUE</abierta>
+	<salida>20</salida>
+	<llegada>23</llegada>
+</union>
+
+<union id="223">
+	<abierta>TRUE</abierta>
+	<salida>23</salida>
+	<llegada>20</llegada>
+</union>
+
+<!-- 3º y 1º -->
+
+<union id="139">
+	<abierta>TRUE</abierta>
+	<salida>20</salida>
+	<llegada>28</llegada>
+</union>
+
+<union id="239">
+	<abierta>TRUE</abierta>
+	<salida>28</salida>
+	<llegada>20</llegada>
+</union>
+
+<!-- 2º y 1º -->
+
+<union id="140">
+	<abierta>TRUE</abierta>
+	<salida>23</salida>
+	<llegada>28</llegada>
+</union>
+
+<union id="240">
+	<abierta>TRUE</abierta>
+	<salida>28</salida>
+	<llegada>23</llegada>
+</union>
+
+<!-- LA GRAN CAMARA DE LOS SECRETOS-->
+
+<!--Espacios-->
+
+<espacio id="34">
+	<descripcion>Llegas a un rellano de fria piedra. No hay luz en el lugar.</descripcion>
+	<edescripcion>Al fondo, al norte, ves la entrada a un largo pasadizo.</edescripcion>
+	<norte>141</norte>
+	<arriba>217</arriba>
+	<luz_inicial>FALSE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">. .....,..,,..,:ivYjv,.LqBBB01J7rii:ii:::,,,,......:::::::rvLYYr;:..   ..iJSOBBMkjuj7rriii:::,.:,.,:::i7LYvi:..   .:..,.   .:jGBBMXjY77rii::,,:::,:i7U27,. ....:iii::i:i:  . .:uBBOS5J77r:::,::::irY7 .,    ,:i:,.  .,:ir: ...:i5BGS1u7ii::,:::irUi  :.   ..... .,., ...:: :,i7 LBN1j7ir::,:iii7Y .,7.   .     0BBB.:,..i::irE270MSUYrr::::::i7:,.7: ..,.     ,rir.::,.:r:r:iX:5BquJ77ri:::::7:i L  ,.;     ..   ...,, ri:,7MjPB01UY7r:::i::r:LUB. :ir... .....:....:,iuJiYOU2BO02L7ri:::::ri0BBii7J, :..   jB1:,..:; JkrY0G2BZXUYL7i::iiiriZBBir1Br.: . ...i,.:,.:r,LZLUNB5B8XSu7::,::::riXMMv70B7LF,.. .:5i,:ii:riYMuUNBkBM0F7rii.::::iiv,E1vkBiOBMFr.U17UGJJSrYYLBk2MBjOM0XYL7r,::::;7j:O1YYS77U8BMiL .:7OOGLvLrZqUNBjGMPUYL7i:iiiiirL.E2jY17.7rUP7i0MM.FMXiiriPkY2OjqBGUuj7i,::::irL.G2uLU7,LrYF;i::.:uk2::i:kkYXO1SBNJLY7i.:::::i7,8;iiYr 7:r7.,,,..;Lu:,:.7Yi72J7MEUvrri,:::i::i.S  .7r.i.  :i7Lvi::...i,Luv7uY:002Y7ri.::::,,:.PrLU:.   .:,.....    .. ;7irFP;NXYvrii.,.::,., BBPY  .::ii:::::::::,...rr.:JS:2X1JYri</descripcion_grafica>
+</espacio>
+
+<espacio id="35">
+	<descripcion>Dejando atras el oscuro laberinto, llegas a la Camara de los Secretos. El mito parece ser cierto</descripcion>
+	<edescripcion>Hay impresionantes estatuas, todas ellas de serpientes. La mas imponente es la de Salazar Slytherin, que se pierde en la oscuridad...</edescripcion>
+	<sur>142</sur>
+	<objetos>
+		<objeto id="74"/>
+		<objeto id="88"/>
+		<objeto id="94"/>
+	</objetos>
+	<luz_inicial>FALSE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBSr:.         .:UBBBBBBBBBMBBBBBBBBBBBBBBBBBBBj                  7BBBBBMrEBBBBBBBBBBBBBBBBBN      ,  ,LFj. ...   SBBB: OBBBBBBBBBBBBBBBBBY      .7XMBBBBB  ...  EBM   ZBBBBBBBBBBBBBBBBBBBMZPUUOMBBBBBB: ..   7BBB    uBBBBBBBBBBBBBBBBBBBB8BBBBBBBG:       kBBBBB2    NBBBBBBBBBBBBBBBBBBBBBBBBF.       jBBBBBBBBB1   .NBBBBBBBBBBBBBBBBBBBBF       :OBBBOFY7;;rUO1    .BBBBBBBBBBBBBBBBBX       rBB5:           :J .   BBBBBBBBBBBBBBB.      ,B8.     :uqZqUr,.7: .  .BBBBBBBBBBBBB1   ..  1BB      .BBBBBBBY:    :vL  BBBBBBBBBBq  .... FBBBB.               .7v7,   :BBBBBBBBB:  .... 0BBBBBBUi.      .:LOBBi      NBBBBBBBBBE   ...  1BBBBBBBBBBBBBBBBBBZ       EBBBBBBBBBBBE    ..   vMBBBBBBBBBBBBNi       rBBBBBBBBBBBBBBB7          .iLjUjvi,        .JBBBBBBBBBBBBBBBBBBBNi                     :2BBBBBBBBBBBBBBBBBBBBBBBBBBO5vi:... ..,:rYkMBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</descripcion_grafica>
+</espacio>
+
+<!--Uniones-->
+
+<union id="141">
+	<abierta>TRUE</abierta>
+	<salida>34</salida>
+	<llegada>37</llegada>
+</union>
+
+<union id="241">
+	<abierta>TRUE</abierta>
+	<salida>37</salida>
+	<llegada>34</llegada>
+</union>
+
+<union id="142">
+	<abierta>TRUE</abierta>
+	<salida>35</salida>
+	<llegada>43</llegada>
+</union>
+
+<union id="242">
+	<abierta>TRUE</abierta>
+	<salida>43</salida>
+	<llegada>35</llegada>
+</union>
+
+<!--Laberinto-->
+
+<!--Espacios del laberinto-->
+
+<espacio id="36">
+	<descripcion>Estas en una oscura habitacion, a tu alrededor, cuatro pasillos, tambien oscuros</descripcion>
+	<edescripcion>No hay nada especial en este lugar</edescripcion>
+	<norte>148</norte>
+	<sur>144</sur>
+	<este>145</este>
+	<oeste>143</oeste>
+	<luz_inicial>FALSE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">. .....,..,,..,:ivYjv,.LqBBB01J7rii:ii:::,,,,......:::::::rvLYYr;:..   ..iJSOBBMkjuj7rriii:::,.:,.,:::i7LYvi:..   .:..,.   .:jGBBMXjY77rii::,,:::,:i7U27,. ....:iii::i:i:  . .:uBBOS5J77r:::,::::irY7 .,    ,:i:,.  .,:ir: ...:i5BGS1u7ii::,:::irUi  :.   ..... .,., ...:: :,i7 LBN1j7ir::,:iii7Y .,7.   .     0BBB.:,..i::irE270MSUYrr::::::i7:,.7: ..,.     ,rir.::,.:r:r:iX:5BquJ77ri:::::7:i L  ,.;     ..   ...,, ri:,7MjPB01UY7r:::i::r:LUB. :ir... .....:....:,iuJiYOU2BO02L7ri:::::ri0BBii7J, :..   jB1:,..:; JkrY0G2BZXUYL7i::iiiriZBBir1Br.: . ...i,.:,.:r,LZLUNB5B8XSu7::,::::riXMMv70B7LF,.. .:5i,:ii:riYMuUNBkBM0F7rii.::::iiv,E1vkBiOBMFr.U17UGJJSrYYLBk2MBjOM0XYL7r,::::;7j:O1YYS77U8BMiL .:7OOGLvLrZqUNBjGMPUYL7i:iiiiirL.E2jY17.7rUP7i0MM.FMXiiriPkY2OjqBGUuj7i,::::irL.G2uLU7,LrYF;i::.:uk2::i:kkYXO1SBNJLY7i.:::::i7,8;iiYr 7:r7.,,,..;Lu:,:.7Yi72J7MEUvrri,:::i::i.S  .7r.i.  :i7Lvi::...i,Luv7uY:002Y7ri.::::,,:.PrLU:.   .:,.....    .. ;7irFP;NXYvrii.,.::,., BBPY  .::ii:::::::::,...rr.:JS:2X1JYri</descripcion_grafica>
+</espacio>
+
+<espacio id="37">
+	<descripcion>Estas en una oscura habitacion, a tu alrededor, cuatro pasillos, tambien oscuros</descripcion>
+	<edescripcion>No hay nada especial en este lugar</edescripcion>
+	<norte>146</norte>
+	<sur>241</sur>
+	<este>149</este>
+	<oeste>147</oeste>
+	<luz_inicial>FALSE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">. .....,..,,..,:ivYjv,.LqBBB01J7rii:ii:::,,,,......:::::::rvLYYr;:..   ..iJSOBBMkjuj7rriii:::,.:,.,:::i7LYvi:..   .:..,.   .:jGBBMXjY77rii::,,:::,:i7U27,. ....:iii::i:i:  . .:uBBOS5J77r:::,::::irY7 .,    ,:i:,.  .,:ir: ...:i5BGS1u7ii::,:::irUi  :.   ..... .,., ...:: :,i7 LBN1j7ir::,:iii7Y .,7.   .     0BBB.:,..i::irE270MSUYrr::::::i7:,.7: ..,.     ,rir.::,.:r:r:iX:5BquJ77ri:::::7:i L  ,.;     ..   ...,, ri:,7MjPB01UY7r:::i::r:LUB. :ir... .....:....:,iuJiYOU2BO02L7ri:::::ri0BBii7J, :..   jB1:,..:; JkrY0G2BZXUYL7i::iiiriZBBir1Br.: . ...i,.:,.:r,LZLUNB5B8XSu7::,::::riXMMv70B7LF,.. .:5i,:ii:riYMuUNBkBM0F7rii.::::iiv,E1vkBiOBMFr.U17UGJJSrYYLBk2MBjOM0XYL7r,::::;7j:O1YYS77U8BMiL .:7OOGLvLrZqUNBjGMPUYL7i:iiiiirL.E2jY17.7rUP7i0MM.FMXiiriPkY2OjqBGUuj7i,::::irL.G2uLU7,LrYF;i::.:uk2::i:kkYXO1SBNJLY7i.:::::i7,8;iiYr 7:r7.,,,..;Lu:,:.7Yi72J7MEUvrri,:::i::i.S  .7r.i.  :i7Lvi::...i,Luv7uY:002Y7ri.::::,,:.PrLU:.   .:,.....    .. ;7irFP;NXYvrii.,.::,., BBPY  .::ii:::::::::,...rr.:JS:2X1JYri</descripcion_grafica>
+</espacio>
+
+<espacio id="38">
+	<descripcion>Estas en una oscura habitacion, a tu alrededor, cuatro pasillos, tambien oscuros</descripcion>
+	<edescripcion>No hay nada especial en este lugar</edescripcion>
+	<norte>246</norte>
+	<sur>151</sur>
+	<este>243</este>
+	<oeste>249</oeste>
+	<luz_inicial>FALSE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">. .....,..,,..,:ivYjv,.LqBBB01J7rii:ii:::,,,,......:::::::rvLYYr;:..   ..iJSOBBMkjuj7rriii:::,.:,.,:::i7LYvi:..   .:..,.   .:jGBBMXjY77rii::,,:::,:i7U27,. ....:iii::i:i:  . .:uBBOS5J77r:::,::::irY7 .,    ,:i:,.  .,:ir: ...:i5BGS1u7ii::,:::irUi  :.   ..... .,., ...:: :,i7 LBN1j7ir::,:iii7Y .,7.   .     0BBB.:,..i::irE270MSUYrr::::::i7:,.7: ..,.     ,rir.::,.:r:r:iX:5BquJ77ri:::::7:i L  ,.;     ..   ...,, ri:,7MjPB01UY7r:::i::r:LUB. :ir... .....:....:,iuJiYOU2BO02L7ri:::::ri0BBii7J, :..   jB1:,..:; JkrY0G2BZXUYL7i::iiiriZBBir1Br.: . ...i,.:,.:r,LZLUNB5B8XSu7::,::::riXMMv70B7LF,.. .:5i,:ii:riYMuUNBkBM0F7rii.::::iiv,E1vkBiOBMFr.U17UGJJSrYYLBk2MBjOM0XYL7r,::::;7j:O1YYS77U8BMiL .:7OOGLvLrZqUNBjGMPUYL7i:iiiiirL.E2jY17.7rUP7i0MM.FMXiiriPkY2OjqBGUuj7i,::::irL.G2uLU7,LrYF;i::.:uk2::i:kkYXO1SBNJLY7i.:::::i7,8;iiYr 7:r7.,,,..;Lu:,:.7Yi72J7MEUvrri,:::i::i.S  .7r.i.  :i7Lvi::...i,Luv7uY:002Y7ri.::::,,:.PrLU:.   .:,.....    .. ;7irFP;NXYvrii.,.::,., BBPY  .::ii:::::::::,...rr.:JS:2X1JYri</descripcion_grafica>
+</espacio>
+
+<espacio id="39">
+	<descripcion>Estas en una oscura habitacion, a tu alrededor, cuatro pasillos, tambien oscuros</descripcion>
+	<edescripcion>No hay nada especial en este lugar</edescripcion>
+	<norte>153</norte>
+	<sur>155</sur>
+	<este>156</este>
+	<oeste>154</oeste>
+	<luz_inicial>FALSE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">. .....,..,,..,:ivYjv,.LqBBB01J7rii:ii:::,,,,......:::::::rvLYYr;:..   ..iJSOBBMkjuj7rriii:::,.:,.,:::i7LYvi:..   .:..,.   .:jGBBMXjY77rii::,,:::,:i7U27,. ....:iii::i:i:  . .:uBBOS5J77r:::,::::irY7 .,    ,:i:,.  .,:ir: ...:i5BGS1u7ii::,:::irUi  :.   ..... .,., ...:: :,i7 LBN1j7ir::,:iii7Y .,7.   .     0BBB.:,..i::irE270MSUYrr::::::i7:,.7: ..,.     ,rir.::,.:r:r:iX:5BquJ77ri:::::7:i L  ,.;     ..   ...,, ri:,7MjPB01UY7r:::i::r:LUB. :ir... .....:....:,iuJiYOU2BO02L7ri:::::ri0BBii7J, :..   jB1:,..:; JkrY0G2BZXUYL7i::iiiriZBBir1Br.: . ...i,.:,.:r,LZLUNB5B8XSu7::,::::riXMMv70B7LF,.. .:5i,:ii:riYMuUNBkBM0F7rii.::::iiv,E1vkBiOBMFr.U17UGJJSrYYLBk2MBjOM0XYL7r,::::;7j:O1YYS77U8BMiL .:7OOGLvLrZqUNBjGMPUYL7i:iiiiirL.E2jY17.7rUP7i0MM.FMXiiriPkY2OjqBGUuj7i,::::irL.G2uLU7,LrYF;i::.:uk2::i:kkYXO1SBNJLY7i.:::::i7,8;iiYr 7:r7.,,,..;Lu:,:.7Yi72J7MEUvrri,:::i::i.S  .7r.i.  :i7Lvi::...i,Luv7uY:002Y7ri.::::,,:.PrLU:.   .:,.....    .. ;7irFP;NXYvrii.,.::,., BBPY  .::ii:::::::::,...rr.:JS:2X1JYri</descripcion_grafica>
+</espacio>
+
+<espacio id="40">
+	<descripcion>Estas en una oscura habitacion, a tu alrededor, cuatro pasillos, tambien oscuros</descripcion>
+	<edescripcion>No hay nada especial en este lugar</edescripcion>
+	<norte>157</norte>
+	<sur>247</sur>
+	<este>159</este>
+	<oeste>256</oeste>
+	<luz_inicial>FALSE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">. .....,..,,..,:ivYjv,.LqBBB01J7rii:ii:::,,,,......:::::::rvLYYr;:..   ..iJSOBBMkjuj7rriii:::,.:,.,:::i7LYvi:..   .:..,.   .:jGBBMXjY77rii::,,:::,:i7U27,. ....:iii::i:i:  . .:uBBOS5J77r:::,::::irY7 .,    ,:i:,.  .,:ir: ...:i5BGS1u7ii::,:::irUi  :.   ..... .,., ...:: :,i7 LBN1j7ir::,:iii7Y .,7.   .     0BBB.:,..i::irE270MSUYrr::::::i7:,.7: ..,.     ,rir.::,.:r:r:iX:5BquJ77ri:::::7:i L  ,.;     ..   ...,, ri:,7MjPB01UY7r:::i::r:LUB. :ir... .....:....:,iuJiYOU2BO02L7ri:::::ri0BBii7J, :..   jB1:,..:; JkrY0G2BZXUYL7i::iiiriZBBir1Br.: . ...i,.:,.:r,LZLUNB5B8XSu7::,::::riXMMv70B7LF,.. .:5i,:ii:riYMuUNBkBM0F7rii.::::iiv,E1vkBiOBMFr.U17UGJJSrYYLBk2MBjOM0XYL7r,::::;7j:O1YYS77U8BMiL .:7OOGLvLrZqUNBjGMPUYL7i:iiiiirL.E2jY17.7rUP7i0MM.FMXiiriPkY2OjqBGUuj7i,::::irL.G2uLU7,LrYF;i::.:uk2::i:kkYXO1SBNJLY7i.:::::i7,8;iiYr 7:r7.,,,..;Lu:,:.7Yi72J7MEUvrri,:::i::i.S  .7r.i.  :i7Lvi::...i,Luv7uY:002Y7ri.::::,,:.PrLU:.   .:,.....    .. ;7irFP;NXYvrii.,.::,., BBPY  .::ii:::::::::,...rr.:JS:2X1JYri</descripcion_grafica>
+</espacio>
+
+<espacio id="41">
+	<descripcion>Estas en una oscura habitacion, a tu alrededor, cuatro pasillos, tambien oscuros</descripcion>
+	<edescripcion>No hay nada especial en este lugar</edescripcion>
+	<norte>160</norte>
+	<sur>161</sur>
+	<este>251</este>
+	<oeste>259</oeste>
+	<luz_inicial>FALSE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">. .....,..,,..,:ivYjv,.LqBBB01J7rii:ii:::,,,,......:::::::rvLYYr;:..   ..iJSOBBMkjuj7rriii:::,.:,.,:::i7LYvi:..   .:..,.   .:jGBBMXjY77rii::,,:::,:i7U27,. ....:iii::i:i:  . .:uBBOS5J77r:::,::::irY7 .,    ,:i:,.  .,:ir: ...:i5BGS1u7ii::,:::irUi  :.   ..... .,., ...:: :,i7 LBN1j7ir::,:iii7Y .,7.   .     0BBB.:,..i::irE270MSUYrr::::::i7:,.7: ..,.     ,rir.::,.:r:r:iX:5BquJ77ri:::::7:i L  ,.;     ..   ...,, ri:,7MjPB01UY7r:::i::r:LUB. :ir... .....:....:,iuJiYOU2BO02L7ri:::::ri0BBii7J, :..   jB1:,..:; JkrY0G2BZXUYL7i::iiiriZBBir1Br.: . ...i,.:,.:r,LZLUNB5B8XSu7::,::::riXMMv70B7LF,.. .:5i,:ii:riYMuUNBkBM0F7rii.::::iiv,E1vkBiOBMFr.U17UGJJSrYYLBk2MBjOM0XYL7r,::::;7j:O1YYS77U8BMiL .:7OOGLvLrZqUNBjGMPUYL7i:iiiiirL.E2jY17.7rUP7i0MM.FMXiiriPkY2OjqBGUuj7i,::::irL.G2uLU7,LrYF;i::.:uk2::i:kkYXO1SBNJLY7i.:::::i7,8;iiYr 7:r7.,,,..;Lu:,:.7Yi72J7MEUvrri,:::i::i.S  .7r.i.  :i7Lvi::...i,Luv7uY:002Y7ri.::::,,:.PrLU:.   .:,.....    .. ;7irFP;NXYvrii.,.::,., BBPY  .::ii:::::::::,...rr.:JS:2X1JYri</descripcion_grafica>
+</espacio>
+
+<espacio id="42">
+	<descripcion>Estas en una oscura habitacion, a tu alrededor, cuatro pasillos, tambien oscuros</descripcion>
+	<edescripcion>No hay nada especial en este lugar</edescripcion>
+	<norte>162</norte>
+	<sur>253</sur>
+	<este>164</este>
+	<oeste>163</oeste>
+	<luz_inicial>FALSE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">. .....,..,,..,:ivYjv,.LqBBB01J7rii:ii:::,,,,......:::::::rvLYYr;:..   ..iJSOBBMkjuj7rriii:::,.:,.,:::i7LYvi:..   .:..,.   .:jGBBMXjY77rii::,,:::,:i7U27,. ....:iii::i:i:  . .:uBBOS5J77r:::,::::irY7 .,    ,:i:,.  .,:ir: ...:i5BGS1u7ii::,:::irUi  :.   ..... .,., ...:: :,i7 LBN1j7ir::,:iii7Y .,7.   .     0BBB.:,..i::irE270MSUYrr::::::i7:,.7: ..,.     ,rir.::,.:r:r:iX:5BquJ77ri:::::7:i L  ,.;     ..   ...,, ri:,7MjPB01UY7r:::i::r:LUB. :ir... .....:....:,iuJiYOU2BO02L7ri:::::ri0BBii7J, :..   jB1:,..:; JkrY0G2BZXUYL7i::iiiriZBBir1Br.: . ...i,.:,.:r,LZLUNB5B8XSu7::,::::riXMMv70B7LF,.. .:5i,:ii:riYMuUNBkBM0F7rii.::::iiv,E1vkBiOBMFr.U17UGJJSrYYLBk2MBjOM0XYL7r,::::;7j:O1YYS77U8BMiL .:7OOGLvLrZqUNBjGMPUYL7i:iiiiirL.E2jY17.7rUP7i0MM.FMXiiriPkY2OjqBGUuj7i,::::irL.G2uLU7,LrYF;i::.:uk2::i:kkYXO1SBNJLY7i.:::::i7,8;iiYr 7:r7.,,,..;Lu:,:.7Yi72J7MEUvrri,:::i::i.S  .7r.i.  :i7Lvi::...i,Luv7uY:002Y7ri.::::,,:.PrLU:.   .:,.....    .. ;7irFP;NXYvrii.,.::,., BBPY  .::ii:::::::::,...rr.:JS:2X1JYri</descripcion_grafica>
+</espacio>
+
+<espacio id="43">
+	<descripcion>Estas en una oscura habitacion, a tu alrededor, cuatro pasillos, tambien oscuros</descripcion>
+	<edescripcion>No hay nada especial en este lugar</edescripcion>
+	<norte>242</norte>
+	<sur>165</sur>
+	<este>166</este>
+	<oeste>264</oeste>
+	<luz_inicial>FALSE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">. .....,..,,..,:ivYjv,.LqBBB01J7rii:ii:::,,,,......:::::::rvLYYr;:..   ..iJSOBBMkjuj7rriii:::,.:,.,:::i7LYvi:..   .:..,.   .:jGBBMXjY77rii::,,:::,:i7U27,. ....:iii::i:i:  . .:uBBOS5J77r:::,::::irY7 .,    ,:i:,.  .,:ir: ...:i5BGS1u7ii::,:::irUi  :.   ..... .,., ...:: :,i7 LBN1j7ir::,:iii7Y .,7.   .     0BBB.:,..i::irE270MSUYrr::::::i7:,.7: ..,.     ,rir.::,.:r:r:iX:5BquJ77ri:::::7:i L  ,.;     ..   ...,, ri:,7MjPB01UY7r:::i::r:LUB. :ir... .....:....:,iuJiYOU2BO02L7ri:::::ri0BBii7J, :..   jB1:,..:; JkrY0G2BZXUYL7i::iiiriZBBir1Br.: . ...i,.:,.:r,LZLUNB5B8XSu7::,::::riXMMv70B7LF,.. .:5i,:ii:riYMuUNBkBM0F7rii.::::iiv,E1vkBiOBMFr.U17UGJJSrYYLBk2MBjOM0XYL7r,::::;7j:O1YYS77U8BMiL .:7OOGLvLrZqUNBjGMPUYL7i:iiiiirL.E2jY17.7rUP7i0MM.FMXiiriPkY2OjqBGUuj7i,::::irL.G2uLU7,LrYF;i::.:uk2::i:kkYXO1SBNJLY7i.:::::i7,8;iiYr 7:r7.,,,..;Lu:,:.7Yi72J7MEUvrri,:::i::i.S  .7r.i.  :i7Lvi::...i,Luv7uY:002Y7ri.::::,,:.PrLU:.   .:,.....    .. ;7irFP;NXYvrii.,.::,., BBPY  .::ii:::::::::,...rr.:JS:2X1JYri</descripcion_grafica>
+</espacio>
+
+<espacio id="33">
+	<descripcion>Estas en una oscura habitacion, a tu alrededor, cuatro pasillos, tambien oscuros</descripcion>
+	<edescripcion>No hay nada especial en este lugar</edescripcion>
+	<norte>167</norte>
+	<sur>169</sur>
+	<este>263</este>
+	<oeste>168</oeste>
+	<luz_inicial>FALSE</luz_inicial>
+<descripcion_grafica filas="21" columnas="47">. .....,..,,..,:ivYjv,.LqBBB01J7rii:ii:::,,,,......:::::::rvLYYr;:..   ..iJSOBBMkjuj7rriii:::,.:,.,:::i7LYvi:..   .:..,.   .:jGBBMXjY77rii::,,:::,:i7U27,. ....:iii::i:i:  . .:uBBOS5J77r:::,::::irY7 .,    ,:i:,.  .,:ir: ...:i5BGS1u7ii::,:::irUi  :.   ..... .,., ...:: :,i7 LBN1j7ir::,:iii7Y .,7.   .     0BBB.:,..i::irE270MSUYrr::::::i7:,.7: ..,.     ,rir.::,.:r:r:iX:5BquJ77ri:::::7:i L  ,.;     ..   ...,, ri:,7MjPB01UY7r:::i::r:LUB. :ir... .....:....:,iuJiYOU2BO02L7ri:::::ri0BBii7J, :..   jB1:,..:; JkrY0G2BZXUYL7i::iiiriZBBir1Br.: . ...i,.:,.:r,LZLUNB5B8XSu7::,::::riXMMv70B7LF,.. .:5i,:ii:riYMuUNBkBM0F7rii.::::iiv,E1vkBiOBMFr.U17UGJJSrYYLBk2MBjOM0XYL7r,::::;7j:O1YYS77U8BMiL .:7OOGLvLrZqUNBjGMPUYL7i:iiiiirL.E2jY17.7rUP7i0MM.FMXiiriPkY2OjqBGUuj7i,::::irL.G2uLU7,LrYF;i::.:uk2::i:kkYXO1SBNJLY7i.:::::i7,8;iiYr 7:r7.,,,..;Lu:,:.7Yi72J7MEUvrri,:::i::i.S  .7r.i.  :i7Lvi::...i,Luv7uY:002Y7ri.::::,,:.PrLU:.   .:,.....    .. ;7irFP;NXYvrii.,.::,., BBPY  .::ii:::::::::,...rr.:JS:2X1JYri</descripcion_grafica>
+</espacio>
+
+<!--Uniones del laberinto-->
+
+<!--36-->
+
+<union id="148">
+	<abierta>TRUE</abierta>
+	<salida>36</salida>
+	<llegada>36</llegada>
+</union>
+
+<union id="143">
+	<abierta>TRUE</abierta>
+	<salida>36</salida>
+	<llegada>38</llegada>
+</union>
+
+<union id="144">
+	<abierta>TRUE</abierta>
+	<salida>36</salida>
+	<llegada>36</llegada>
+</union>
+
+<union id="145">
+	<abierta>TRUE</abierta>
+	<salida>36</salida>
+	<llegada>36</llegada>
+</union>
+
+<!--37-->
+
+<union id="146">
+	<abierta>TRUE</abierta>
+	<salida>37</salida>
+	<llegada>38</llegada>
+</union>
+
+<union id="147">
+	<abierta>TRUE</abierta>
+	<salida>37</salida>
+	<llegada>40</llegada>
+</union>
+
+<union id="149">
+	<abierta>TRUE</abierta>
+	<salida>37</salida>
+	<llegada>38</llegada>
+</union>
+
+<!--38-->
+
+<union id="246">
+	<abierta>TRUE</abierta>
+	<salida>38</salida>
+	<llegada>47</llegada>
+</union>
+
+<union id="249">
+	<abierta>TRUE</abierta>
+	<salida>38</salida>
+	<llegada>37</llegada>
+</union>
+
+<union id="151">
+	<abierta>TRUE</abierta>
+	<salida>38</salida>
+	<llegada>41</llegada>
+</union>
+
+<union id="243">
+	<abierta>TRUE</abierta>
+	<salida>38</salida>
+	<llegada>36</llegada>
+</union>
+
+<!--39-->
+
+<union id="153">
+	<abierta>TRUE</abierta>
+	<salida>39</salida>
+	<llegada>42</llegada>
+</union>
+
+<union id="154">
+	<abierta>TRUE</abierta>
+	<salida>39</salida>
+	<llegada>39</llegada>
+</union>
+
+<union id="155">
+	<abierta>TRUE</abierta>
+	<salida>39</salida>
+	<llegada>39</llegada>
+</union>
+
+<union id="156">
+	<abierta>TRUE</abierta>
+	<salida>39</salida>
+	<llegada>40</llegada>
+</union>
+
+<!--40-->
+
+<union id="157">
+	<abierta>TRUE</abierta>
+	<salida>40</salida>
+	<llegada>40</llegada>
+</union>
+
+<union id="256">
+	<abierta>TRUE</abierta>
+	<salida>40</salida>
+	<llegada>39</llegada>
+</union>
+
+<union id="247">
+	<abierta>TRUE</abierta>
+	<salida>40</salida>
+	<llegada>37</llegada>
+</union>
+
+<union id="159">
+	<abierta>TRUE</abierta>
+	<salida>40</salida>
+	<llegada>41</llegada>
+</union>
+
+<!--41-->
+
+<union id="160">
+	<abierta>TRUE</abierta>
+	<salida>41</salida>
+	<llegada>41</llegada>
+</union>
+
+<union id="259">
+	<abierta>TRUE</abierta>
+	<salida>41</salida>
+	<llegada>40</llegada>
+</union>
+
+<union id="161">
+	<abierta>TRUE</abierta>
+	<salida>41</salida>
+	<llegada>41</llegada>
+</union>
+
+<union id="251">
+	<abierta>TRUE</abierta>
+	<salida>41</salida>
+	<llegada>38</llegada>
+</union>
+
+<!--42-->
+
+<union id="162">
+	<abierta>TRUE</abierta>
+	<salida>42</salida>
+	<llegada>42</llegada>
+</union>
+
+<union id="163">
+	<abierta>TRUE</abierta>
+	<salida>42</salida>
+	<llegada>33</llegada>
+</union>
+
+<union id="253">
+	<abierta>TRUE</abierta>
+	<salida>42</salida>
+	<llegada>39</llegada>
+</union>
+
+<union id="164">
+	<abierta>TRUE</abierta>
+	<salida>42</salida>
+	<llegada>43</llegada>
+</union>
+
+<!--43-->
+
+<union id="264">
+	<abierta>TRUE</abierta>
+	<salida>43</salida>
+	<llegada>42</llegada>
+</union>
+
+<union id="165">
+	<abierta>TRUE</abierta>
+	<salida>43</salida>
+	<llegada>43</llegada>
+</union>
+
+<union id="166">
+	<abierta>TRUE</abierta>
+	<salida>43</salida>
+	<llegada>43</llegada>
+</union>
+
+<!--33-->
+
+<union id="167">
+	<abierta>TRUE</abierta>
+	<salida>33</salida>
+	<llegada>33</llegada>
+</union>
+
+<union id="168">
+	<abierta>TRUE</abierta>
+	<salida>33</salida>
+	<llegada>33</llegada>
+</union>
+
+<union id="169">
+	<abierta>TRUE</abierta>
+	<salida>33</salida>
+	<llegada>33</llegada>
+</union>
+
+<union id="263">
+	<abierta>TRUE</abierta>
+	<salida>33</salida>
+	<llegada>42</llegada>
+</union>
+
+<!--Copia pega de objetos.xml-->
+<objeto id="70">
+	<nombre>VARITA</nombre>
+	<descripcion>Tu varita</descripcion>
+	<descexaminar>Veintisiete centimetros, ebano y pelo de unicornio.</descexaminar>
+	<descmovido>La varita se ha movido</descmovido>
+	<movil>TRUE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>TRUE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="71">
+	<nombre>TABLON</nombre>
+	<descripcion>Tablon de notas</descripcion>
+	<descexaminar>Transformaciones: 6, Encantamientos: 9, Historia de la Magia: 4, Adivinacion: 5, Pociones: -, PPROG: 10, Herbologia: 8, Aritmancia: 10</descexaminar>
+	<descmovido>NO PUEDES MOVERME, SI LO LEES KAPUT</descmovido>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="72">
+	<nombre>AGUA</nombre>
+	<descripcion>Agua cristalizada</descripcion>
+	<descexaminar>Es agua cristalizada</descexaminar>
+	<descmovido>El agua fluye</descmovido>
+	<movil>TRUE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>TRUE</contenedor>
+</objeto>
+
+<objeto id="73">
+	<nombre>BOTELLA</nombre>
+	<descripcion>Una Botella</descripcion>
+	<descexaminar>Una botella usada para contener liquidos</descexaminar>
+	<descmovido>La botella casi se te escapa de las manos</descmovido>
+	<movil>TRUE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>TRUE</contenedor>
+</objeto>
+
+<objeto id="74">
+	<nombre>COLMILLOS</nombre>
+	<descripcion>Colmillos de Serpiente</descripcion>
+	<descexaminar>Son colmillos de serpiente troceados</descexaminar>
+	<descmovido>Se resbalan algunos dientecillos</descmovido>
+	<movil>TRUE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="75">
+	<nombre>AJENJO</nombre>
+	<descripcion>Ajenjo en bruto</descripcion>
+	<descexaminar>Con esto puedes conseguir esencia de ajenjo</descexaminar>
+	<descmovido>No te gusta como huele al manejarlo</descmovido>
+	<movil>TRUE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="76">
+	<nombre>MANDRAGORA</nombre>
+	<descripcion>Mandragora Cocida</descripcion>
+	<descexaminar>Una pestilente Mandragora Cocida</descexaminar>
+	<descmovido>La Mandragora huele tan mal que podria despertar a un dragon</descmovido>
+	<movil>TRUE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="77">
+	<nombre>CUERNO</nombre>
+	<descripcion>Un Cuerno de Unicornio</descripcion>
+	<descexaminar>Sospechas que se trata de otra cosa transformada en Cuerno, pero no puedes saberlo</descexaminar>
+	<descmovido>Pesa bastante</descmovido>
+	<movil>TRUE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="78">
+	<nombre>ASFODELO</nombre>
+	<descripcion>Esencia de Asfodelo</descripcion>
+	<descexaminar>Es esencia de asfodelo normal y corriente</descexaminar>
+	<descmovido>Huele bien</descmovido>
+	<movil>TRUE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="79">
+	<nombre>SAVIA</nombre>
+	<descripcion>Savia de Almendro</descripcion>
+	<descexaminar>Pegajosa, pero olorosa</descexaminar>
+	<descmovido>Te manchas la tunica al cogerlo</descmovido>
+	<movil>TRUE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="80">
+	<nombre>RECETA</nombre>
+	<descripcion>Receta de la Pocion Oculus</descripcion>
+	<descexaminar>Los ingredientes deben introducirse en este orden: Agua Cristalizada, Ajenjo, Mandragora Cocida, Cuerno de Unicornio, Esencia de Asfodelo, Savia de Almendro y Colmillos de Serpiente troceados. Remover y cocer a fuego lento durante tres minutos en el sentido de las agujas del reloj...</descexaminar>
+	<descmovido>El papel esta arrugado. Parece que la hoja fue arrancada de un libro de pociones...</descmovido>
+	<movil>TRUE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="81">
+	<nombre>LAUD</nombre>
+	<descripcion>Un Laud</descripcion>
+	<descexaminar>Un Laud de nivel 13. Un tanto gastado</descexaminar>
+	<descmovido>Las cuerdas suenan discordantes</descmovido>
+	<movil>TRUE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="82">
+	<nombre>LLAVE</nombre>
+	<descripcion>Una LLave de Bronce</descripcion>
+	<descexaminar>Una Llave magica de Bronce</descexaminar>
+	<descmovido>Pesa mucho</descmovido>
+	<movil>TRUE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="83">
+	<nombre>CALDERO</nombre>
+	<descripcion>Caldero</descripcion>
+	<descexaminar>Un Caldero de peltre de 3/4</descexaminar>
+	<descmovido>NO PUEDES MOVERME, SI LO LEES KAPUT</descmovido>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>TRUE</contenedor>
+</objeto>
+
+<objeto id="84">
+	<nombre>PUDDING</nombre>
+	<descripcion>Pudding</descripcion>
+	<descexaminar>Pudding de Carne, pruebas un bocado y sigue sabroso</descexaminar>
+	<descmovido>Suave y liviano como las Lembas</descmovido>
+	<movil>TRUE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="85">
+	<nombre>DIADEMA</nombre>
+	<descripcion>Una Diadema azul</descripcion>
+	<descexaminar>Una Diadema azul, aunque no en absolto sencilla. Percibes un aura magica poderosa</descexaminar>
+	<descmovido>NO PUEDES MOVERME, SI LO LEES KAPUT</descmovido>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="86">
+	<nombre>PENSADERO</nombre>
+	<descripcion>Un Pensadero</descripcion>
+	<descexaminar>Ves muchas cosas borrosas: Un edificio de ladrillos, un retrato de Carlos V, a mucha gente compilando...</descexaminar>
+	<descmovido>NO PUEDES MOVERME, SI LO LEES KAPUT</descmovido>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="87">
+	<nombre>ESPEJO</nombre>
+	<descripcion>Espejo de Oesed</descripcion>
+	<descexaminar>Al mirar al espejo solo ves tu reflejo. Poco a poco este enseña un pergamino con tus notas: todo son "Supera las expectativas", y lo guarda en su bolsillo...</descexaminar>
+	<descmovido>NO PUEDES MOVERME, SI LO LEES KAPUT</descmovido>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="88">
+	<nombre>MURRAY</nombre>
+	<descripcion>Murray, la calavera parlante</descripcion>
+	<descexaminar>Murray no esta de humor para hablar y sigue mascando su chicle "Espero a Guybrush Threepwood. El me dejo aqui"</descexaminar>
+	<descmovido>Murray trata de morderte</descmovido>
+	<movil>TRUE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="89">
+	<nombre>BAUL</nombre>
+	<descripcion>Tu Baul</descripcion>
+	<descexaminar>Tu Baul de toda la vida, en el guardas tu ropa y los libros. Debido al robo, esta todo revuelto y casi vacio</descexaminar>
+	<descmovido>NO PUEDES MOVERME, SI LO LEES KAPUT</descmovido>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>TRUE</contenedor>
+	<inventario>
+		<objeto id="73"/>
+		<objeto id="90"/>
+	</inventario>
+</objeto>
+
+<objeto id="90">
+	<nombre>ESCARABAJOS</nombre>
+	<descripcion>Escarabajos troceados</descripcion>
+	<descexaminar>Una masa con escarabajos troceados</descexaminar>
+	<descmovido>Hay alguno vivo que se te escapa de las manos</descmovido>
+	<movil>TRUE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="91">
+	<nombre>PELO</nombre>
+	<descripcion>Pelo del Perro que te mordio</descripcion>
+	<descexaminar>Pelo del Perro que te mordio, debio de caersete en isla Blood</descexaminar>
+	<descmovido>Tiene Piojos, ¡Puaj!</descmovido>
+	<movil>TRUE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+
+<objeto id="92">
+	<nombre>DISCO</nombre>
+	<descripcion>Disco Solar</descripcion>
+	<descexaminar>Tiene dibujados distintas posicones del Sol. Crees que es una de las tres llaves para abrir la Atlantida, pero no dispones del Dialogo Perdido de Platon</descexaminar>
+	<descmovido>Piedra Maciza</descmovido>
+	<movil>TRUE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="93">
+	<nombre>ARMARIO</nombre>
+	<descripcion>Armario de las Escobas</descripcion>
+	<descexaminar>Es el armario de las Escobas del vestibulo</descexaminar>
+	<descmovido>NO PUEDES MOVERME, SI LO LEES KAPUT</descmovido>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>TRUE</contenedor>
+	<inventario>
+		<objeto id="82"/>
+		<objeto id="92"/>
+	</inventario>
+</objeto>
+
+<objeto id="94">
+	<nombre>ESCAMAS</nombre>
+	<descripcion>Escamas de Basilisco</descripcion>
+	<descexaminar>Escamas del mitico monstruo de Slytherin</descexaminar>
+	<descmovido>Se rompe con casi tocarlo</descmovido>
+	<movil>TRUE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="95">
+	<nombre>RETRATO</nombre>
+	<descripcion>Un retrato de un hombre calvo y barbudo</descripcion>
+	<descexaminar>No te queda claro si se trata de Juan Ramon Jimenez, Carlos V, o Dorronsoro...</descexaminar>
+	<descmovido>ESTUDIA ALGORITMOS!</descmovido>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="96">
+	<nombre>SELLO</nombre>
+	<descripcion>Un Sello con una marca arcana</descripcion>
+	<descexaminar>Parece que abre una puerta</descexaminar>
+	<descmovido>Pesa mucho</descmovido>
+	<movil>TRUE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+
+<!--Objetos falsos-->
+<objeto id="1071">
+	<nombre>MUMBLE1</nombre>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>TRUE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="1061">
+	<nombre>MUMBLE2</nombre>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>TRUE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="1050">
+	<nombre>MUMBLE3</nombre>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>TRUE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="1051">
+	<nombre>MUMBLE4</nombre>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>TRUE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="1040">
+	<nombre>MUMBLE5</nombre>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>TRUE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="1041">
+	<nombre>MUMBLE6</nombre>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>TRUE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="1030">
+	<nombre>MUMBLE7</nombre>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>TRUE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="1031">
+	<nombre>MUMBLE8</nombre>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>TRUE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="1020">
+	<nombre>MUMBLE9</nombre>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>TRUE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="1010">
+	<nombre>MUMBLE10</nombre>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>TRUE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="1171">
+	<nombre>MUMBLE11</nombre>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>TRUE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="1161">
+	<nombre>MUMBLE12</nombre>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>TRUE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="1150">
+	<nombre>MUMBLE13</nombre>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>TRUE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="1151">
+	<nombre>MUMBLE14</nombre>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>TRUE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="1140">
+	<nombre>MUMBLE15</nombre>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>TRUE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="1141">
+	<nombre>MUMBLE16</nombre>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>TRUE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="1130">
+	<nombre>MUMBLE17</nombre>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>TRUE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="1131">
+	<nombre>MUMBLE18</nombre>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>TRUE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="1120">
+	<nombre>MUMBLE19</nombre>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>TRUE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<objeto id="1110">
+	<nombre>MUMBLE20</nombre>
+	<movil>FALSE</movil>
+	<movido>FALSE</movido>
+	<oculto>TRUE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+
+<jugador id="0"> 
+    <localizacion>0</localizacion> 
+     <max_objetos>11</max_objetos> 
+</jugador>
+
+<jugador id="1"> 
+    <nombre>ALUMNO</nombre>
+    <localizacion>1</localizacion> 
+     <max_objetos>2</max_objetos> 
+     <objetos_iniciales> 
+        <objeto id="81" /> 
+     </objetos_iniciales>
+ </jugador>
+
+<jugador id="2"> 
+    <nombre>SNAPE</nombre>
+    <localizacion>30</localizacion> 
+     <max_objetos>2</max_objetos> 
+ </jugador>
+</mundo>

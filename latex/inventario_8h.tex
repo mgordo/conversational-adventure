@@ -1,0 +1,172 @@
+\hypertarget{inventario_8h}{
+\section{inventario.h File Reference}
+\label{inventario_8h}\index{inventario.h@{inventario.h}}
+}
+
+
+Primitivas de inventario.  
+
+
+{\ttfamily \#include \char`\"{}conjunto.h\char`\"{}}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{inventario_8h_a4e26f8ab293568037c4e1d6527364967}{
+typedef \hyperlink{structCONJUNTO}{CONJUNTO} \hyperlink{inventario_8h_a4e26f8ab293568037c4e1d6527364967}{INVENTARIO}}
+\label{inventario_8h_a4e26f8ab293568037c4e1d6527364967}
+
+\begin{DoxyCompactList}\small\item\em Estructura INVENTARIO. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structCONJUNTO}{INVENTARIO} $\ast$ \hyperlink{inventario_8h_a53c97d8447d8737c271db423f779886c}{creaInventario} ()
+\begin{DoxyCompactList}\small\item\em Crea inventario /$\ast$$\ast$ Crea inventario permite reservar memoria para el inventario de un jugador. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{inventario_8h_a87bfcf1eee0cc22a9f443a91e3cd0b3b}{destruyeInventario} (\hyperlink{structCONJUNTO}{INVENTARIO} $\ast$$\ast$i)
+\begin{DoxyCompactList}\small\item\em Destruye inventario /$\ast$$\ast$ Destruye inventario permite liberar la memoria dedicada al inventario. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{inventario_8h_a882507e626d04b7144c152abe59e4628}{insertaInventario} (\hyperlink{structCONJUNTO}{INVENTARIO} $\ast$i, const \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$e)
+\begin{DoxyCompactList}\small\item\em insertaInventario /$\ast$$\ast$ insertaInventario permite insertar un elemento en un inventario dado \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{inventario_8h_af163e57db71b6c7261f82611ff98ec3b}{extraeInventario} (\hyperlink{structCONJUNTO}{INVENTARIO} $\ast$i, const \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} e)
+\begin{DoxyCompactList}\small\item\em extraerInventario /$\ast$$\ast$ Esta función permite extraer un objeto del inventario, eliminándolo del mismo \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{inventario_8h_a05fd7674f917c0543760497caa0829e5}{estaInventario} (const \hyperlink{structCONJUNTO}{INVENTARIO} $\ast$i, const \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$e)
+\begin{DoxyCompactList}\small\item\em estaInventario /$\ast$$\ast$ estaInventario permite consultar si un determinado objeto se encuentra o no en el inventario \item\end{DoxyCompactList}\item 
+int \hyperlink{inventario_8h_abf6d2710d19a86e234278e4bb2721e86}{tamanioInventario} (const \hyperlink{structCONJUNTO}{INVENTARIO} $\ast$i)
+\begin{DoxyCompactList}\small\item\em tamanioInventario /$\ast$$\ast$ Permite consultar el tamaño actual de un inventario \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{inventario_8h_a8386d41f8fc43fc42d4eea5d07b01790}{vacioInventario} (const \hyperlink{structCONJUNTO}{INVENTARIO} $\ast$i)
+\begin{DoxyCompactList}\small\item\em vacioInventario /$\ast$$\ast$ Esta función permite determinar si un inventario está o no vacio \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} \hyperlink{inventario_8h_aeeb89d21b26290fe0b26cf27511cf4c3}{obtenerIdInventario} (\hyperlink{structCONJUNTO}{INVENTARIO} $\ast$i, int indice)
+\begin{DoxyCompactList}\small\item\em obtenerIdInventario /$\ast$$\ast$ Esta función permite obtener el ID asocociado al índice iésimo de un inventario \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Primitivas de inventario. Este modulo contiene los prototipos de las funciones de manejo de inventario
+
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2-\/XI-\/2010 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{inventario_8h_a53c97d8447d8737c271db423f779886c}{
+\index{inventario.h@{inventario.h}!creaInventario@{creaInventario}}
+\index{creaInventario@{creaInventario}!inventario.h@{inventario.h}}
+\subsubsection[{creaInventario}]{\setlength{\rightskip}{0pt plus 5cm}{\bf INVENTARIO}$\ast$ creaInventario ()}}
+\label{inventario_8h_a53c97d8447d8737c271db423f779886c}
+
+
+Crea inventario /$\ast$$\ast$ Crea inventario permite reservar memoria para el inventario de un jugador. 
+
+\begin{DoxyReturn}{Returns}
+puntero a inventario con la dirección reservada /$\ast$$\ast$ 
+\end{DoxyReturn}
+\hypertarget{inventario_8h_a87bfcf1eee0cc22a9f443a91e3cd0b3b}{
+\index{inventario.h@{inventario.h}!destruyeInventario@{destruyeInventario}}
+\index{destruyeInventario@{destruyeInventario}!inventario.h@{inventario.h}}
+\subsubsection[{destruyeInventario}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} destruyeInventario ({\bf INVENTARIO} $\ast$$\ast$ {\em i})}}
+\label{inventario_8h_a87bfcf1eee0cc22a9f443a91e3cd0b3b}
+
+
+Destruye inventario /$\ast$$\ast$ Destruye inventario permite liberar la memoria dedicada al inventario. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em i}]es un puntero al puntero del inventario, para modificar su contenido después de liberar la memoria \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK o ERR en caso de Error 
+\end{DoxyReturn}
+\hypertarget{inventario_8h_a05fd7674f917c0543760497caa0829e5}{
+\index{inventario.h@{inventario.h}!estaInventario@{estaInventario}}
+\index{estaInventario@{estaInventario}!inventario.h@{inventario.h}}
+\subsubsection[{estaInventario}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} estaInventario (const {\bf INVENTARIO} $\ast$ {\em i}, \/  const {\bf ID} $\ast$ {\em e})}}
+\label{inventario_8h_a05fd7674f917c0543760497caa0829e5}
+
+
+estaInventario /$\ast$$\ast$ estaInventario permite consultar si un determinado objeto se encuentra o no en el inventario 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em i}]es puntero al inventario en el que consultar \item[{\em e}]es puntero al ID que consultar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BOOL que indica TRUE si está y FALSE en el caso contrario /$\ast$$\ast$ 
+\end{DoxyReturn}
+\hypertarget{inventario_8h_af163e57db71b6c7261f82611ff98ec3b}{
+\index{inventario.h@{inventario.h}!extraeInventario@{extraeInventario}}
+\index{extraeInventario@{extraeInventario}!inventario.h@{inventario.h}}
+\subsubsection[{extraeInventario}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} extraeInventario ({\bf INVENTARIO} $\ast$ {\em i}, \/  const {\bf ID} {\em e})}}
+\label{inventario_8h_af163e57db71b6c7261f82611ff98ec3b}
+
+
+extraerInventario /$\ast$$\ast$ Esta función permite extraer un objeto del inventario, eliminándolo del mismo 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em i}]es puntero al inventario del que obtener el objeto \item[{\em e}]es una ID del objeto que se quiere extraer \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si se extrajo y eliminó correctamente o ERR en caso contrario /$\ast$$\ast$ 
+\end{DoxyReturn}
+\hypertarget{inventario_8h_a882507e626d04b7144c152abe59e4628}{
+\index{inventario.h@{inventario.h}!insertaInventario@{insertaInventario}}
+\index{insertaInventario@{insertaInventario}!inventario.h@{inventario.h}}
+\subsubsection[{insertaInventario}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} insertaInventario ({\bf INVENTARIO} $\ast$ {\em i}, \/  const {\bf ID} $\ast$ {\em e})}}
+\label{inventario_8h_a882507e626d04b7144c152abe59e4628}
+
+
+insertaInventario /$\ast$$\ast$ insertaInventario permite insertar un elemento en un inventario dado 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em i}]es puntero al inventario en el que insertar \item[{\em e}]es puntero al ID que se quiere insertar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK o ERR en caso de Error /$\ast$$\ast$ 
+\end{DoxyReturn}
+\hypertarget{inventario_8h_aeeb89d21b26290fe0b26cf27511cf4c3}{
+\index{inventario.h@{inventario.h}!obtenerIdInventario@{obtenerIdInventario}}
+\index{obtenerIdInventario@{obtenerIdInventario}!inventario.h@{inventario.h}}
+\subsubsection[{obtenerIdInventario}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ID} obtenerIdInventario ({\bf INVENTARIO} $\ast$ {\em i}, \/  int {\em indice})}}
+\label{inventario_8h_aeeb89d21b26290fe0b26cf27511cf4c3}
+
+
+obtenerIdInventario /$\ast$$\ast$ Esta función permite obtener el ID asocociado al índice iésimo de un inventario 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em i}]es puntero al inventario a consultar \item[{\em indice}]es el índice iésimo del que obtener su ID \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ID en dicha posición, ID nulo en caso contrario /$\ast$$\ast$ 
+\end{DoxyReturn}
+\hypertarget{inventario_8h_abf6d2710d19a86e234278e4bb2721e86}{
+\index{inventario.h@{inventario.h}!tamanioInventario@{tamanioInventario}}
+\index{tamanioInventario@{tamanioInventario}!inventario.h@{inventario.h}}
+\subsubsection[{tamanioInventario}]{\setlength{\rightskip}{0pt plus 5cm}int tamanioInventario (const {\bf INVENTARIO} $\ast$ {\em i})}}
+\label{inventario_8h_abf6d2710d19a86e234278e4bb2721e86}
+
+
+tamanioInventario /$\ast$$\ast$ Permite consultar el tamaño actual de un inventario 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em i}]es puntero al inventario a consultar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int con el número de objetos en el inventario /$\ast$$\ast$ 
+\end{DoxyReturn}
+\hypertarget{inventario_8h_a8386d41f8fc43fc42d4eea5d07b01790}{
+\index{inventario.h@{inventario.h}!vacioInventario@{vacioInventario}}
+\index{vacioInventario@{vacioInventario}!inventario.h@{inventario.h}}
+\subsubsection[{vacioInventario}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} vacioInventario (const {\bf INVENTARIO} $\ast$ {\em i})}}
+\label{inventario_8h_a8386d41f8fc43fc42d4eea5d07b01790}
+
+
+vacioInventario /$\ast$$\ast$ Esta función permite determinar si un inventario está o no vacio 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em i}]es puntero al inventario a consultar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BOOL que indica TRUE si es vacío y FALSE en el caso contrario /$\ast$$\ast$ 
+\end{DoxyReturn}

@@ -1,0 +1,216 @@
+\hypertarget{conjunto_8h}{
+\section{conjunto.h File Reference}
+\label{conjunto_8h}\index{conjunto.h@{conjunto.h}}
+}
+
+
+Primitivas de Conjunto Este modulo contiene los prototipos de las funciones de manejo de conjuntos.  
+
+
+{\ttfamily \#include \char`\"{}tipos.h\char`\"{}}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structCONJUNTO}{CONJUNTO}
+\begin{DoxyCompactList}\small\item\em Definición de la estructura que albergará un conjunto. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int($\ast$ \hyperlink{conjunto_8h_a57a4c2c549da16aac66b2e950fc5ef24}{pfunc\_\-compar} )(\hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structCONJUNTO}{CONJUNTO} $\ast$ \hyperlink{conjunto_8h_aed3f3382617858ddcb528e6153b32172}{inicializarConjunto} ()
+\begin{DoxyCompactList}\small\item\em Inicialización de Conjunto \hyperlink{conjunto_8h_aed3f3382617858ddcb528e6153b32172}{inicializarConjunto()} construye un conjunto de Id. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{conjunto_8h_a09e8a8a006724e5761564ff168a188d7}{destruyeConjunto} (\hyperlink{structCONJUNTO}{CONJUNTO} $\ast$$\ast$c)
+\begin{DoxyCompactList}\small\item\em destruyeConjunto DestruyeConjunto permite liberar toda la memoria asociada a un conjunto \item\end{DoxyCompactList}\item 
+int \hyperlink{conjunto_8h_a05d7b76731e9936a05ed8deb13455d53}{idcompar} (\hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$a, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$b)
+\begin{DoxyCompactList}\small\item\em Comparación de Id idcompar permite comparar dos ID para ver si son iguales, mayor o menor que el otro. \item\end{DoxyCompactList}\item 
+int \hyperlink{conjunto_8h_a1b61def1acec562671bb508ab3b8d46a}{cardinalidadConjunto} (const \hyperlink{structCONJUNTO}{CONJUNTO} $\ast$c)
+\begin{DoxyCompactList}\small\item\em CardinalidadConjunto. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{conjunto_8h_a13f529c8ae92442740e1eec747070391}{esConjuntoVacio} (const \hyperlink{structCONJUNTO}{CONJUNTO} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Es conjunto Vacío. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{conjunto_8h_a29f40851e1cad9a78cc7c9c0f2048af9}{estaId} (const \hyperlink{structCONJUNTO}{CONJUNTO} $\ast$c, const \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$e)
+\begin{DoxyCompactList}\small\item\em estaid \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{conjunto_8h_a47e19307cb0896f82c80eebe4eba5f65}{insertarIdConjunto} (\hyperlink{structCONJUNTO}{CONJUNTO} $\ast$c, const \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$e)
+\begin{DoxyCompactList}\small\item\em insertarIdConjunto \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{conjunto_8h_a650ceb69498557f68b881e054043d183}{extraerIdConjunto} (\hyperlink{structCONJUNTO}{CONJUNTO} $\ast$c, const \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} e)
+\begin{DoxyCompactList}\small\item\em extraerIdConjunto extraerIdConjunto permite eliminar un Id en un conjunto \item\end{DoxyCompactList}\item 
+int \hyperlink{conjunto_8h_a646789d80bca9c9a1eb0aa2eb2fc9300}{indiceIdConjunto} (\hyperlink{structCONJUNTO}{CONJUNTO} $\ast$c, const \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$e)
+\begin{DoxyCompactList}\small\item\em indiceIdConjunto indiceIdConjunto obtiene el indice del ID buscado \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} \hyperlink{conjunto_8h_a194b924c3d193618366f1566e05ba553}{obtenerIdConjunto} (\hyperlink{structCONJUNTO}{CONJUNTO} $\ast$c, int indice)
+\begin{DoxyCompactList}\small\item\em obtenerIdConjunto Permite consultar el ID de un índice dado \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Primitivas de Conjunto Este modulo contiene los prototipos de las funciones de manejo de conjuntos. \begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+29-\/10-\/2010 
+\end{DoxyDate}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{conjunto_8h_a57a4c2c549da16aac66b2e950fc5ef24}{
+\index{conjunto.h@{conjunto.h}!pfunc\_\-compar@{pfunc\_\-compar}}
+\index{pfunc\_\-compar@{pfunc\_\-compar}!conjunto.h@{conjunto.h}}
+\subsubsection[{pfunc\_\-compar}]{\setlength{\rightskip}{0pt plus 5cm}typedef int($\ast$  {\bf pfunc\_\-compar})({\bf ID} $\ast$, {\bf ID} $\ast$)}}
+\label{conjunto_8h_a57a4c2c549da16aac66b2e950fc5ef24}
+Definición del puntero a función para comparar con búsqueda binaria 
+
+\subsection{Function Documentation}
+\hypertarget{conjunto_8h_a1b61def1acec562671bb508ab3b8d46a}{
+\index{conjunto.h@{conjunto.h}!cardinalidadConjunto@{cardinalidadConjunto}}
+\index{cardinalidadConjunto@{cardinalidadConjunto}!conjunto.h@{conjunto.h}}
+\subsubsection[{cardinalidadConjunto}]{\setlength{\rightskip}{0pt plus 5cm}int cardinalidadConjunto (const {\bf CONJUNTO} $\ast$ {\em c})}}
+\label{conjunto_8h_a1b61def1acec562671bb508ab3b8d46a}
+
+
+CardinalidadConjunto. 
+
+Cardinalidad Conjunto obtiene el cardinal de un conjunto 
+\begin{DoxyParams}{Parameters}
+\item[{\em c}]es puntero al conjunto del que obtener los datos \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entero con la cardinalidad de ese conjunto 
+\end{DoxyReturn}
+\hypertarget{conjunto_8h_a09e8a8a006724e5761564ff168a188d7}{
+\index{conjunto.h@{conjunto.h}!destruyeConjunto@{destruyeConjunto}}
+\index{destruyeConjunto@{destruyeConjunto}!conjunto.h@{conjunto.h}}
+\subsubsection[{destruyeConjunto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} destruyeConjunto ({\bf CONJUNTO} $\ast$$\ast$ {\em c})}}
+\label{conjunto_8h_a09e8a8a006724e5761564ff168a188d7}
+
+
+destruyeConjunto DestruyeConjunto permite liberar toda la memoria asociada a un conjunto 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em c}]es puntero al conjunto a liberar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si se liberó correctamente, ERR en caso contrario. c adquiere el valor NULL para evitar llamadas erroneas a posteriori en caso de OK 
+\end{DoxyReturn}
+\hypertarget{conjunto_8h_a13f529c8ae92442740e1eec747070391}{
+\index{conjunto.h@{conjunto.h}!esConjuntoVacio@{esConjuntoVacio}}
+\index{esConjuntoVacio@{esConjuntoVacio}!conjunto.h@{conjunto.h}}
+\subsubsection[{esConjuntoVacio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} esConjuntoVacio (const {\bf CONJUNTO} $\ast$ {\em c})}}
+\label{conjunto_8h_a13f529c8ae92442740e1eec747070391}
+
+
+Es conjunto Vacío. 
+
+esConjuntoVacío permite determinar si un conjunto es vacío o no 
+\begin{DoxyParams}{Parameters}
+\item[{\em c}]es puntero al conjunto del que obtener los datos \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+BOOL que indica TRUE si es vacío y FALSE en el caso contrario 
+\end{DoxyReturn}
+\hypertarget{conjunto_8h_a29f40851e1cad9a78cc7c9c0f2048af9}{
+\index{conjunto.h@{conjunto.h}!estaId@{estaId}}
+\index{estaId@{estaId}!conjunto.h@{conjunto.h}}
+\subsubsection[{estaId}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} estaId (const {\bf CONJUNTO} $\ast$ {\em c}, \/  const {\bf ID} $\ast$ {\em e})}}
+\label{conjunto_8h_a29f40851e1cad9a78cc7c9c0f2048af9}
+
+
+estaid 
+
+estaid permite saber si un ID determinado se encuentra o no en el conjunto 
+\begin{DoxyParams}{Parameters}
+\item[{\em c}]es puntero a Conjunto en el que buscar \item[{\em e}]es puntero a ID que contiene el ID a buscar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE si está en el conjunto y FALSE en el caso contrario 
+\end{DoxyReturn}
+\hypertarget{conjunto_8h_a650ceb69498557f68b881e054043d183}{
+\index{conjunto.h@{conjunto.h}!extraerIdConjunto@{extraerIdConjunto}}
+\index{extraerIdConjunto@{extraerIdConjunto}!conjunto.h@{conjunto.h}}
+\subsubsection[{extraerIdConjunto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} extraerIdConjunto ({\bf CONJUNTO} $\ast$ {\em c}, \/  const {\bf ID} {\em e})}}
+\label{conjunto_8h_a650ceb69498557f68b881e054043d183}
+
+
+extraerIdConjunto extraerIdConjunto permite eliminar un Id en un conjunto 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em c}]es puntero a Conjunto en el que extraer \item[{\em e}]es puntero a ID que contiene el ID a extraer \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si se extrajo correctamente o ERR si hubo error 
+\end{DoxyReturn}
+\hypertarget{conjunto_8h_a05d7b76731e9936a05ed8deb13455d53}{
+\index{conjunto.h@{conjunto.h}!idcompar@{idcompar}}
+\index{idcompar@{idcompar}!conjunto.h@{conjunto.h}}
+\subsubsection[{idcompar}]{\setlength{\rightskip}{0pt plus 5cm}int idcompar ({\bf ID} $\ast$ {\em a}, \/  {\bf ID} $\ast$ {\em b})}}
+\label{conjunto_8h_a05d7b76731e9936a05ed8deb13455d53}
+
+
+Comparación de Id idcompar permite comparar dos ID para ver si son iguales, mayor o menor que el otro. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em a}]es primer puntero a ID \item[{\em b}]es segundo puntero a ID \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un número negativo, cero o positivo si a$<$b, a=b o a$>$b respectivamente 
+\end{DoxyReturn}
+\hypertarget{conjunto_8h_a646789d80bca9c9a1eb0aa2eb2fc9300}{
+\index{conjunto.h@{conjunto.h}!indiceIdConjunto@{indiceIdConjunto}}
+\index{indiceIdConjunto@{indiceIdConjunto}!conjunto.h@{conjunto.h}}
+\subsubsection[{indiceIdConjunto}]{\setlength{\rightskip}{0pt plus 5cm}int indiceIdConjunto ({\bf CONJUNTO} $\ast$ {\em c}, \/  const {\bf ID} $\ast$ {\em e})}}
+\label{conjunto_8h_a646789d80bca9c9a1eb0aa2eb2fc9300}
+
+
+indiceIdConjunto indiceIdConjunto obtiene el indice del ID buscado 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em c}]es puntero a Conjunto en el que buscar \item[{\em e}]es puntero a ID que contiene el ID a buscar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 si no existe en el conjunto o el índice en el que se encuentra 
+\end{DoxyReturn}
+\hypertarget{conjunto_8h_aed3f3382617858ddcb528e6153b32172}{
+\index{conjunto.h@{conjunto.h}!inicializarConjunto@{inicializarConjunto}}
+\index{inicializarConjunto@{inicializarConjunto}!conjunto.h@{conjunto.h}}
+\subsubsection[{inicializarConjunto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CONJUNTO}$\ast$ inicializarConjunto ()}}
+\label{conjunto_8h_aed3f3382617858ddcb528e6153b32172}
+
+
+Inicialización de Conjunto \hyperlink{conjunto_8h_aed3f3382617858ddcb528e6153b32172}{inicializarConjunto()} construye un conjunto de Id. 
+
+\begin{DoxyReturn}{Returns}
+puntero al Conjunto que ha conseguido inicializar NULL si hubiera error 
+\end{DoxyReturn}
+\hypertarget{conjunto_8h_a47e19307cb0896f82c80eebe4eba5f65}{
+\index{conjunto.h@{conjunto.h}!insertarIdConjunto@{insertarIdConjunto}}
+\index{insertarIdConjunto@{insertarIdConjunto}!conjunto.h@{conjunto.h}}
+\subsubsection[{insertarIdConjunto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} insertarIdConjunto ({\bf CONJUNTO} $\ast$ {\em c}, \/  const {\bf ID} $\ast$ {\em e})}}
+\label{conjunto_8h_a47e19307cb0896f82c80eebe4eba5f65}
+
+
+insertarIdConjunto 
+
+insertarIdConjunto permite insertar un Id en un conjunto 
+\begin{DoxyParams}{Parameters}
+\item[{\em c}]es puntero a Conjunto en el que insertar \item[{\em e}]es puntero a ID que contiene el ID a insertar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si se insertó correctamente o ERR si hubo error 
+\end{DoxyReturn}
+\hypertarget{conjunto_8h_a194b924c3d193618366f1566e05ba553}{
+\index{conjunto.h@{conjunto.h}!obtenerIdConjunto@{obtenerIdConjunto}}
+\index{obtenerIdConjunto@{obtenerIdConjunto}!conjunto.h@{conjunto.h}}
+\subsubsection[{obtenerIdConjunto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ID} obtenerIdConjunto ({\bf CONJUNTO} $\ast$ {\em c}, \/  int {\em indice})}}
+\label{conjunto_8h_a194b924c3d193618366f1566e05ba553}
+
+
+obtenerIdConjunto Permite consultar el ID de un índice dado 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em c}]es puntero a Conjunto en el que buscar \item[{\em indice}]es entero que indica el índice a consultar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ID del elemento o ID nulo si no existiera 
+\end{DoxyReturn}

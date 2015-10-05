@@ -1,0 +1,29 @@
+<reglas numero_reglas="3">
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>LOC_JUG,0,0,TRUE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>P_OCU_OBJ,0,FALSE</consecuencia>
+		</consecuencias>
+		<frase>Hola</frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>CON_OBJ,8,FALSE</condicion>
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>P_ABA_ESP,9,10</consecuencia>
+		</consecuencias>
+		<frase>Hola</frase>
+	</regla>
+	<regla>
+		<condiciones num_cond="1">
+			<condicion>OBJ_IN_JUG,1,0,TRUE</condicion>	
+		</condiciones>
+		<consecuencias num_cons="1">
+			<consecuencia>WIN_GAME</consecuencia>
+		</consecuencias>
+		<frase>Se acabo!</frase>
+	</regla>
+</reglas>

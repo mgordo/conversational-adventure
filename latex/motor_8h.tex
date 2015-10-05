@@ -1,0 +1,117 @@
+\hypertarget{motor_8h}{
+\section{motor.h File Reference}
+\label{motor_8h}\index{motor.h@{motor.h}}
+}
+
+
+Primitivas del motor gráfico Este modulo contiene los prototipos de las funciones del motor gráfico.  
+
+
+{\ttfamily \#include \char`\"{}mundo.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}iografica.h\char`\"{}}\par
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{motor_8h_ac4a5bab703a4d1d1913fe6032cd343a4}{
+typedef \hyperlink{structPANTALLA}{PANTALLA} \hyperlink{motor_8h_ac4a5bab703a4d1d1913fe6032cd343a4}{PV}}
+\label{motor_8h_ac4a5bab703a4d1d1913fe6032cd343a4}
+
+\begin{DoxyCompactList}\small\item\em Estructura Pantalla Virtual. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{motor_8h_ae9f0d607e483267987c8f7525743c293}{leeUsuario} (\hyperlink{structPANTALLA}{PV} $\ast$pant, char $\ast$lectura)
+\begin{DoxyCompactList}\small\item\em Lee usuario Esta función permite leer una frase del usuario a través de una pantallaV. \item\end{DoxyCompactList}\item 
+\hyperlink{structPANTALLA}{PV} $\ast$ \hyperlink{motor_8h_a354493a79a8a4ca709dc9d0b55f422e6}{creaPV} (int filasizq, int columnasizq, char columna, char fila, char esquina)
+\begin{DoxyCompactList}\small\item\em Inicialización de PantallaVirtual Esta función permite crear un pantallaV. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{motor_8h_a5e30c4bb54976a8df1fc99324646633b}{destruyePV} (\hyperlink{structPANTALLA}{PV} $\ast$$\ast$pant)
+\begin{DoxyCompactList}\small\item\em Destrucción pantallaV Esta función permite destruir una pantallaV. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{motor_8h_a66cda1fb51760cd07777f6331105b950}{imprimePV} (\hyperlink{structPANTALLA}{PV} $\ast$pant, \hyperlink{structMUNDO}{MUNDO} $\ast$mundo, char $\ast$resul\_\-accion)
+\begin{DoxyCompactList}\small\item\em Imprime pantallaV Esta función permite imprimir una pantallaV por la salida estándar. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Primitivas del motor gráfico Este modulo contiene los prototipos de las funciones del motor gráfico. \begin{DoxyAuthor}{Author}
+Miguel Gordo y Antonio Jiménez 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+16-\/11-\/2010 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{motor_8h_a354493a79a8a4ca709dc9d0b55f422e6}{
+\index{motor.h@{motor.h}!creaPV@{creaPV}}
+\index{creaPV@{creaPV}!motor.h@{motor.h}}
+\subsubsection[{creaPV}]{\setlength{\rightskip}{0pt plus 5cm}{\bf PV}$\ast$ creaPV (int {\em filasizq}, \/  int {\em columnasizq}, \/  char {\em columna}, \/  char {\em fila}, \/  char {\em esquina})}}
+\label{motor_8h_a354493a79a8a4ca709dc9d0b55f422e6}
+
+
+Inicialización de PantallaVirtual Esta función permite crear un pantallaV. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em filasizq}]son las filas de la sección izquierda \item[{\em columnasizq}]son las columnas de la sección izquierda$\ast$ \item[{\em columna}]es el caracter delimitador de columnas \item[{\em fila}]es el caracter delimitador de filas \item[{\em esquina}]es el caracter delimitador de esquinas \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Puntero a la pantallaV correctamente inicializada, NULL en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{motor_8h_a5e30c4bb54976a8df1fc99324646633b}{
+\index{motor.h@{motor.h}!destruyePV@{destruyePV}}
+\index{destruyePV@{destruyePV}!motor.h@{motor.h}}
+\subsubsection[{destruyePV}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} destruyePV ({\bf PV} $\ast$$\ast$ {\em pant})}}
+\label{motor_8h_a5e30c4bb54976a8df1fc99324646633b}
+
+
+Destrucción pantallaV Esta función permite destruir una pantallaV. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pant}]es doble puntero a pantallaV a destruir \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK en caso correcto, ERR en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{motor_8h_a66cda1fb51760cd07777f6331105b950}{
+\index{motor.h@{motor.h}!imprimePV@{imprimePV}}
+\index{imprimePV@{imprimePV}!motor.h@{motor.h}}
+\subsubsection[{imprimePV}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} imprimePV ({\bf PV} $\ast$ {\em pant}, \/  {\bf MUNDO} $\ast$ {\em mundo}, \/  char $\ast$ {\em resul\_\-accion})}}
+\label{motor_8h_a66cda1fb51760cd07777f6331105b950}
+
+
+Imprime pantallaV Esta función permite imprimir una pantallaV por la salida estándar. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pant}]es puntero a pantallaV a imprimir \item[{\em mundo}]es puntero a mundo en el que se chequeará todo lo referente a impresión \item[{\em resul\_\-accion}]es una cadena que había devuelto una accion tras ejecutarse \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK en caso correcto, ERR en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{motor_8h_ae9f0d607e483267987c8f7525743c293}{
+\index{motor.h@{motor.h}!leeUsuario@{leeUsuario}}
+\index{leeUsuario@{leeUsuario}!motor.h@{motor.h}}
+\subsubsection[{leeUsuario}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} leeUsuario ({\bf PV} $\ast$ {\em pant}, \/  char $\ast$ {\em lectura})}}
+\label{motor_8h_ae9f0d607e483267987c8f7525743c293}
+
+
+Lee usuario Esta función permite leer una frase del usuario a través de una pantallaV. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pant}]es puntero a pantalla a guardar la lectura \item[{\em lectura}]es cadena de char que contendrá la frase del usuario \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK en caso correcto, ERR en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}

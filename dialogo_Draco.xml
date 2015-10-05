@@ -1,0 +1,274 @@
+<dialogo temas="18" plantillas="91" relaciones="18" reglas="51">
+	<tema id="1" nombre="INICIO"/>
+	<tema id="2" nombre="ACC_COGER"/>
+	<tema id="3" nombre="ACC_DEJAR"/>
+	<tema id="4" nombre="ACC_ENCIENDE"/>
+	<tema id="5" nombre="ACC_APAGA"/>
+	<tema id="6" nombre="ACC_METER"/>
+	<tema id="7" nombre="ACC_SACAR"/>
+	<tema id="8" nombre="ACC_ABRIR"/>
+	<tema id="9" nombre="PERDER"/>
+	<tema id="10" nombre="ACC_DAR"/>
+	<tema id="11" nombre="ACC_PEDIR"/>
+	<tema id="12" nombre="ACC_IR"/>
+	<tema id="13" nombre="ERR"/>
+	<tema id="14" nombre="NO_ENTENDER"/>
+	<tema id="17" nombre="SNAPE"/>
+	<tema id="18" nombre="ALUMNO"/>
+	<tema id="15" nombre="SINONIMOS"/>
+	<tema id="16" nombre="VERBOS"/>
+
+	<plantilla>Te despiertas tarde tras una noche loca. Con horror descubres que hoy tienes examen de pociones. No has estudiado, y alguien te ha robado tus ingredientes de pociones! Decides lanzarte la maldicion Furnunculus,y ves que tu varita tampoco esta! Decides desmembrar al autor del robo y, encima, aprobar. Suerte!</plantilla>0
+	<plantilla>Vas al*</plantilla>
+	<plantilla>Te mueves hacia *</plantilla>
+	<plantilla>Avanzas al*</plantilla>
+	<plantilla>Coges*</plantilla>
+	<plantilla>Cogiste*</plantilla>
+	<plantilla>Ahora tienes*</plantilla>
+	<plantilla>Dispones de*</plantilla>
+	<plantilla>Posees*</plantilla>
+	<plantilla>Has dejado correctamente*</plantilla>
+	<plantilla>Dejaste*</plantilla>10
+	<plantilla>Enciendes*</plantilla>
+	<plantilla>Una luz tenue te ilumina</plantilla>
+	<plantilla>Encendiste*</plantilla>
+	<plantilla>Lo has encendido</plantilla>
+	<plantilla>Has apagado*</plantilla>
+	<plantilla>La luz se desvanece</plantilla>
+	<plantilla>Se introdujo correctamente</plantilla>
+	<plantilla>Adentro!</plantilla>
+	<plantilla>Pa' los corrales</plantilla>
+	<plantilla>Sacas*</plantilla>20
+	<plantilla>Ha salido!</plantilla>
+	<plantilla>* se abre con un crujido siniestro</plantilla>
+	<plantilla>Lo has abierto</plantilla>
+	<plantilla>Abierto</plantilla>
+	<plantilla>Gracias por jugar a Draco Dormiens Nunquam Titillandus!</plantilla>
+	<plantilla>Le diste*</plantilla>
+	<plantilla>Das*</plantilla>
+	<plantilla>Te desprendes de*</plantilla>
+	<plantilla>Recibes*</plantilla>
+	<plantilla>Con cierta reticencia, te entrega*</plantilla>30
+	<plantilla>Esta encantado de dartelo</plantilla>
+	<plantilla>No puedes hacer eso!</plantilla>
+	<plantilla>Lo siento, no se puede</plantilla>
+	<plantilla>No es posible realizarlo</plantilla>
+	<plantilla>Puedes intentarlo todas las veces que quieras. No hare nada</plantilla>
+	<plantilla>No, no y no</plantilla>
+	<plantilla>No se puede hacer</plantilla>
+	<plantilla>Tu intuicion te dice que no puedes hacerlo</plantilla>
+	<plantilla>No se puede hacer, entiendes? No se puede</plantilla>
+	<plantilla>Pretendes hacer algo prohibido?</plantilla>40
+	<plantilla>No hagas lo que no debes</plantilla>
+	<plantilla>Cannot comply</plantilla>
+	<plantilla>No entiendo tu ultima frase</plantilla>
+	<plantilla>Podrias escribirlo mejor?</plantilla>
+	<plantilla>Intenta decirlo de otra manera</plantilla>
+	<plantilla>Lo siento, no te entendi</plantilla>
+	<plantilla>Podrias expresarte mejor?</plantilla>
+	<plantilla>EXPRESATE, POTTER!</plantilla>
+	<plantilla>I don't understand.</plantilla>
+	<plantilla>No entiendo, bugger</plantilla>50
+	<plantilla>(Te mira despectivamente y con una sonrisa malevola)</plantilla>
+	<plantilla>No estoy interesado en escuchar sus quejas</plantilla>
+	<plantilla>Yo que usted revisaria su...expediente..</plantilla>
+	<plantilla>(Snape no se inmuta ante tu pregunta)</plantilla>
+	<plantilla>Diez puntos menos para Gryffindor. No quiero volver a oirle</plantilla>
+	<plantilla>Si no los tiene, no es mi problema</plantilla>
+	<plantilla>No me importa</plantilla>
+	<plantilla>Quien se cree usted? No saldra hasta mejorar esa pocion</plantilla>
+	<plantilla>Necesita a su madre para ir a llorar? Que pena</plantilla>
+	<plantilla>Siga haciendo la pocion como hasta ahora y le aseguro que no volvera a esta clase</plantilla>60
+	<plantilla>No me interesa</plantilla>
+	<plantilla>No me moleste con sus lloriqueos</plantilla>
+	<plantilla>(Snape tuerce el gesto y se pasea entre los alumnos de Slytherin)</plantilla>
+	<plantilla>Deberia vigilar su...lengua</plantilla>
+	<plantilla>Esta claro que la fama no lo es todo</plantilla>
+	<plantilla>(Snape palidece y una ira indescriptible asoma en su rostro)</plantilla>
+	<plantilla>Estas en la torre de Gryffindor, en el septimo piso</plantilla>67
+	<plantilla>Hola companiero!</plantilla>
+	<plantilla>Hola, que tal? No tienes examen de Pociones?</plantilla>
+	<plantilla>(El alumno te saluda y se acerca hacia ti)</plantilla>70
+	<plantilla>Te ayudare en todo lo que necesites</plantilla>
+	<plantilla>Tengo un laud, no me importa dejartelo</plantilla>
+	<plantilla>No te acuerdas? Tu examen de Pociones es en las Mazmorras, con el profesor Snape</plantilla>	
+	<plantilla>Yo tengo mi varita, pero no puedo dejartela. No se donde esta la tuya</plantilla>
+	<plantilla>No encontraras al ladron. Tendras que buscar los ingredientes por el castillo</plantilla>
+	<plantilla>A Fluffy solo le calma la musica</plantilla>
+	<plantilla>RETRATO</plantilla>
+	<plantilla>ALUMNO</plantilla>
+	<plantilla>SNAPE</plantilla>
+	<plantilla>BOTELLA</plantilla>80
+	<plantilla>RECETA</plantilla>
+	<plantilla>IR</plantilla>
+	<plantilla>COGER</plantilla>
+	<plantilla>ABRIR</plantilla>
+	<plantilla>ENCIENDE</plantilla>
+	<plantilla>APAGA</plantilla>
+	<plantilla>DEJAR</plantilla>
+	<plantilla>SACAR</plantilla>
+	<plantilla>METER</plantilla>89
+
+	<regla ini="0" fin="0">/</regla>0
+	<regla ini="1" fin="3">IR</regla>
+	<regla ini="4" fin="8">COGER</regla>
+	<regla ini="9" fin="10">DEJAR</regla>
+	<regla ini="11" fin="14">ENCIENDE</regla>
+	<regla ini="15" fin="16">APAGA</regla>
+	<regla ini="17" fin="19">METER</regla>
+	<regla ini="20" fin="21">SACAR</regla>
+	<regla ini="22" fin="24">ABRIR</regla>
+	<regla ini="25" fin="25">ACABAR</regla>
+	<regla ini="26" fin="28">DAR</regla>10
+	<regla ini="29" fin="31">PEDIR</regla>
+	<regla ini="32" fin="42">^</regla>
+	<regla ini="43" fin="50">*</regla>
+	<regla ini="51" fin="55">AYUDA</regla>
+	<regla ini="56" fin="57">INGREDIENTE</regla>
+	<regla ini="58" fin="60">SALIR</regla>
+	<regla ini="61" fin="65">IR</regla>
+	<regla ini="66" fin="66">LYLY EVANS</regla>
+	<regla ini="67" fin="67">DONDE ESTOY</regla>
+	<regla ini="68" fin="70">HOLA</regla>20
+	<regla ini="71" fin="71">AYUDA</regla>
+	<regla ini="72" fin="72">LAUD</regla>
+	<regla ini="72" fin="72">MUSICA</regla>
+	<regla ini="72" fin="72">INSTRUMENTO</regla>
+	<regla ini="73" fin="73">EXAMEN</regla>
+	<regla ini="74" fin="74">VARITA</regla>
+	<regla ini="75" fin="75">INGREDIENTE</regla>
+	<regla ini="75" fin="75">LADRON</regla>
+	<regla ini="76" fin="76">FLUFFY</regla>
+	<regla ini="76" fin="76">PERRO</regla>30
+	<regla ini="73" fin="73">POCIONES</regla>
+	<regla ini="77" fin="77">CUADRO</regla>
+	<regla ini="78" fin="78">CHICO</regla>
+	<regla ini="79" fin="79">PROFESOR</regla>
+	<regla ini="80" fin="80">BOTE</regla>
+	<regla ini="81" fin="81">PAPEL</regla>
+	<regla ini="81" fin="81">PAPIRO</regla>
+	<regla ini="82" fin="82">VE</regla>
+	<regla ini="82" fin="82">MUEVE</regla>
+	<regla ini="82" fin="82">AVANZA</regla>40
+	<regla ini="83" fin="83">COGE</regla>
+	<regla ini="83" fin="83">PILLA</regla>
+	<regla ini="83" fin="83">TOMA</regla>
+	<regla ini="84" fin="84">ABRE</regla>
+	<regla ini="85" fin="85">ENCENDER</regla>
+	<regla ini="86" fin="86">APAGAR</regla>
+	<regla ini="87" fin="87">DEJA</regla>
+	<regla ini="88" fin="88">SACA</regla>
+	<regla ini="89" fin="89">METE</regla>49
+
+	<relacion number="2">0
+		<numero>0</numero>	
+		<numero>-1</numero>
+	</relacion>
+	<relacion number="2">
+		<numero>2</numero>	
+		<numero>-1</numero>
+	</relacion>
+	<relacion number="2">
+		<numero>3</numero>	
+		<numero>-1</numero>
+	</relacion>
+	<relacion number="2">
+		<numero>4</numero>	
+		<numero>-1</numero>
+	</relacion>
+	
+	<relacion number="2">
+		<numero>5</numero>	
+		<numero>-1</numero>
+	</relacion>
+
+	<relacion number="2">
+		<numero>6</numero>	
+		<numero>-1</numero>
+	</relacion>
+	<relacion number="2">
+		<numero>7</numero>	
+		<numero>-1</numero>
+	</relacion>
+	<relacion number="2">
+		<numero>8</numero>	
+		<numero>-1</numero>
+	</relacion>
+	<relacion number="2">
+		<numero>9</numero>	
+		<numero>-1</numero>
+	</relacion>
+	<relacion number="2">
+		<numero>10</numero>	
+		<numero>-1</numero>
+	</relacion>
+
+	<relacion number="2">
+		<numero>11</numero>	
+		<numero>-1</numero>
+	</relacion>
+	<relacion number="2">
+		<numero>1</numero>	
+		<numero>-1</numero>
+	</relacion>
+	
+	<relacion number="2">
+		<numero>12</numero>	
+		<numero>-1</numero>
+	</relacion>
+	<relacion number="2">
+		<numero>13</numero>	
+		<numero>-1</numero>
+	</relacion>
+	<relacion number="6">
+		<numero>14</numero>
+		<numero>15</numero>
+		<numero>16</numero>
+		<numero>17</numero>
+		<numero>18</numero>	
+		<numero>-1</numero>
+	</relacion>
+	<relacion number="14">
+		<numero>19</numero>
+		<numero>20</numero>
+		<numero>21</numero>
+		<numero>22</numero>
+		<numero>23</numero>
+		<numero>24</numero>
+		<numero>25</numero>
+		<numero>26</numero>
+		<numero>27</numero>
+		<numero>28</numero>
+		<numero>29</numero>
+		<numero>30</numero>
+		<numero>31</numero>
+		<numero>-1</numero>
+	</relacion>
+
+	<relacion number="7">
+		<numero>32</numero>
+		<numero>33</numero>
+		<numero>34</numero>
+		<numero>35</numero>
+		<numero>36</numero>
+		<numero>37</numero>	
+		<numero>-1</numero>
+	</relacion>
+
+	
+	<relacion number="13">
+		<numero>38</numero>
+		<numero>39</numero>
+		<numero>40</numero>
+		<numero>41</numero>
+		<numero>42</numero>
+		<numero>43</numero>
+		<numero>44</numero>
+		<numero>45</numero>
+		<numero>46</numero>
+		<numero>47</numero>
+		<numero>48</numero>
+		<numero>49</numero>	
+		<numero>-1</numero>
+	</relacion>
+</dialogo>

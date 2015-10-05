@@ -1,0 +1,43 @@
+<mundo numero_espacios="2" numero_objetos="1" numero_jugadores="2" numero_uniones="1">
+<espacio id="0">
+	<descripcion>A</descripcion>
+	<edescripcion>a</edescripcion>
+	<norte>0</norte>
+	<luz_inicial>TRUE</luz_inicial>
+	<objetos>
+		<objeto id="0"/>
+	</objetos>			
+</espacio>
+<espacio id="1">
+	<descripcion>A</descripcion>
+	<edescripcion>A</edescripcion>
+	<luz_inicial>TRUE</luz_inicial>
+</espacio>
+<union id="0">
+	<abierta>TRUE</abierta>
+	<salida>0</salida>
+	<llegada>1</llegada>
+</union>
+<objeto id="0">
+	<nombre>Mandoble</nombre>
+	<descripcion>A</descripcion>
+	<descexaminar>A</descexaminar>
+	<descmovido>A</descmovido>
+	<movil>TRUE</movil>
+	<movido>FALSE</movido>
+	<oculto>FALSE</oculto>
+	<luz>FALSE</luz>
+	<encendido>FALSE</encendido>
+	<contenedor>FALSE</contenedor>
+</objeto>
+<jugador id="0"> 
+	<nombre>Chuck</nombre>
+    	<localizacion>0</localizacion> 
+     	<max_objetos>5</max_objetos> 
+</jugador>
+<jugador id="1"> 
+	<nombre>Stallone</nombre>
+     	<localizacion>1</localizacion> 
+     	<max_objetos>5</max_objetos> 
+</jugador>
+</mundo>

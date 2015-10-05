@@ -1,0 +1,110 @@
+Esta es la documentación para poder escribir un mundo en xml compatible con Proyecto de Programación del Equipo 06
+Hecho por Miguel Gordo
+
+El fichero xml debe empezar con una etiqueta llamada <mundo> con los siguientes atributos: numero_espacios, numero_objetos, numero_jugadores numero_uniones. En cada atributo debe indicarse el número exacto de espacios, objetos, jugadores y uniones que habrá en el mundo. De no ser así el lector puede no funcionar correctamente. Dentro de esta etiquieta mundo deben de estar el resto de etiquetas
+
+Ejemplo:
+<mundo numero_espacios="3" numero_objetos="2" numero_jugadores="1" numero_uniones="4">
+.
+.
+.
+</mundo>
+
+
+/*********************************/
+
+	   ESPACIOS
+
+/*********************************/
+
+
+
+Dentro de mundo, deben escribirse primero todos los espacios. Cada espacio sigue el siguiente esquema:
+
+<espacio id="X">
+	<descripcion>Aqui la descripcion</descripcion>
+	<edescripcion>Aqui la descripcion examinar</edescripcion>
+	<norte>X</norte> (id de la union)
+	<sur>Y</sur> (id de la union)
+	<oeste>Z</oeste> (id de la union)
+	<este>T</este> (id de la union)
+	<arriba>T</arriba> (id de la union)
+	<abajo>T</abajo> (id de la union)
+	<objetos>
+		<objeto id="R"/>
+		<objeto id="D"/>
+	</objetos>
+	<luz_inicial>TRUE</luz_inicial> (TRUE O FALSE)
+	<descripcion_grafica filas="A" columnas="B">Aqui la descripcion grafica</descripcion_grafica>
+
+
+Las etiquetas pueden ponerse en el orden que se desee. Recordar que en oeste, este, arriba, etc..deben ponerse los ID's de las uniones, no de los espacios a unir. Luz_inicial debe ser TRUE o FALSE. La etiqueta descripcion_grafica debe contener dos atributos: filas y columnas, indicando el número de filas y columnas del dibujo, QUE DEBE SER SIEMPRE EL MISMO PARA TODAS LAS DESCRIPCIONES GRAFICAS. De no ser así no se garantiza el correcto funcionamiento. Debe de estar escrita en una sola línea, sin caracteres especiales como \n o \t. Si el dibujo no tuviera el tamaño ya acordado (siempre un mínimo de 47 columnas, siempre 21 filas) se recomienda rellenar los espacios que faltan con el caracter ' '.
+Pueden faltar etiquetas de norte, sur, arriba, etc... si no hay conexiones. Si no hay objetos en el espacio se recomienda no incluir la etiqueta <objetos> ni sus subetiquetas correspondientes.
+
+
+/*************************************/
+
+	    UNIONES
+
+/*************************************/
+
+
+Las uniones deben seguir el siguiente esquema:
+
+<union id="X">
+	<abierta>TRUE</abierta> (o FALSE)
+	<salida>1</salida>
+	<llegada>2</llegada>
+	<key>-1</key>
+</union>
+
+La etiqueta key es el id del objeto que abre la union. Debe inicializarse a -1 si no dispone de llave, en caso contrario debe tener el id del objeto que le abre. La etiqueta <abierta> debe tener TRUE o FALSE según el estado actual, y salida y llegada los id's de los espacios de salida y de llegada. Recordar que siempre se mueve de salida a llegada. Para volver por donde se vino, debe existir otra union que invierta el orden de salida y llegada.
+
+
+/*************************************/
+
+	    OBJETOS
+
+/*************************************/
+
+Este es el esquema para incluir objetos en el fichero xml:
+
+<objeto id="X">
+	<nombre>NOMBRE DEL OBJETO</nombre>
+	<descripcion>Descripcion del objeto</descripcion>
+	<descexaminar>Descripcion del objeto que examinar</descexaminar>
+	<descmovido>Descripcion de movido</descmovido>
+	<movil>FALSE</movil> (TRUE O FALSE)
+	<movido>FALSE</movido> (TRUE O FALSE)
+	<oculto>FALSE</oculto> (TRUE O FALSE)
+	<luz>FALSE</luz> (TRUE O FALSE)
+	<encendido>FALSE</encendido> (TRUE O FALSE)
+	<contenedor>TRUE</contenedor> (TRUE O FALSE)
+	<inventario>
+		<objeto id="Z"/>
+	</inventario>
+</objeto>
+
+Si la etiqueta contenedor contiene FALSE no se debe incluir la etiqueta inventario. De no hacerse así no se garantiza su correcto funcionamiento. La etiqueta nombre debe contener el nombre del objeto en mayúsculas. De no ser así no se garantiza su correcto funcionamiento. No es relevante el orden de las etiquetas, sin embargo se ruega no omitir ninguna
+
+/***********************************/
+
+	    JUGADORES
+
+/***********************************/
+
+Esta es la estructura para incluir jugadores en el fichero xml:
+
+<jugador id="X">
+	<nombre>NOMBRE_JUGADOR</nombre>
+	<localizacion>ID_ESPACIO</localizacion>
+	<max_objetos>Y</max_objetos>
+	<objetos_iniciales>
+		<objeto id="ID_OBJETO"/>
+		.
+		.
+		.
+	</objetos_iniciales>
+</jugador>
+
+En este caso solo puede omitirse la etiqueta <objetos_iniciales> si no dispone de ellos. Si hay más objetos iniciales que el máximo permitido, no se garantiza el correcto funcionamiento. El nombre del jugador es una etiqueta opcional para el primer jugador, que siempre será el jugador a controlar por el usuario. IMPORTANTE: el primer jugador es el jugador a controlar por el usuario y debe tener el ID 0. El resto son los PNJ's

@@ -1,0 +1,85 @@
+\hypertarget{accion_8h}{
+\section{accion.h File Reference}
+\label{accion_8h}\index{accion.h@{accion.h}}
+}
+
+
+Utilidades para las acciones de un personaje.  
+
+
+{\ttfamily \#include \char`\"{}mundo.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}reglas.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}tipos.h\char`\"{}}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$libxml/xmlmemory.h$>$}\par
+{\ttfamily \#include $<$libxml/parser.h$>$}\par
+{\ttfamily \#include \char`\"{}reglas.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structACCION}{ACCION}
+\begin{DoxyCompactList}\small\item\em Estructura básica para ejecutar una accion. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{accion_8h_a1bcadc7c73a70eb1531b41514c340fa1}{TIPOACCION} \{ \par
+{\bfseries IR}, 
+{\bfseries COGER}, 
+{\bfseries DEJAR}, 
+{\bfseries ENCIENDE}, 
+\par
+{\bfseries APAGA}, 
+{\bfseries METER}, 
+{\bfseries SACAR}, 
+{\bfseries EXAMINAR\_\-OBJ}, 
+\par
+{\bfseries EXAMINAR\_\-ESP}, 
+{\bfseries EXAMINAR\_\-INV}, 
+{\bfseries ABRIR}, 
+{\bfseries FIN}, 
+\par
+{\bfseries DAR}, 
+{\bfseries PEDIR}, 
+{\bfseries DECIR}, 
+{\bfseries NADA} = -\/1
+ \}
+\begin{DoxyCompactList}\small\item\em Lista de acciones disponibles /$\ast$. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structACCION}{ACCION} $\ast$ \hyperlink{accion_8h_ab7057ebffc89531697ab1c690033b9be}{creaAccion} (char $\ast$fichMundo, char $\ast$fichReglas)
+\begin{DoxyCompactList}\small\item\em reserva una accion \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utilidades para las acciones de un personaje. Este modulo contiene los prototipos de las funciones para ejecutar las acciones de un personaje
+
+\begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+01-\/11-\/2010 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{accion_8h_ab7057ebffc89531697ab1c690033b9be}{
+\index{accion.h@{accion.h}!creaAccion@{creaAccion}}
+\index{creaAccion@{creaAccion}!accion.h@{accion.h}}
+\subsubsection[{creaAccion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ACCION}$\ast$ creaAccion (char $\ast$ {\em fichMundo}, \/  char $\ast$ {\em fichReglas})}}
+\label{accion_8h_ab7057ebffc89531697ab1c690033b9be}
+
+
+reserva una accion 
+
+\hyperlink{accion_8h_ab7057ebffc89531697ab1c690033b9be}{creaAccion()} reserva memoria para una estructura accion
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fichMundo}]es el nombre del fichero del cual leer mundo \item[{\em fichReglas}]es el nombre del fichero del cual leer las reglas\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un puntero a la reserva, o NULL si falló 
+\end{DoxyReturn}

@@ -1,0 +1,65 @@
+\hypertarget{dialogo_8h}{
+\section{dialogo.h File Reference}
+\label{dialogo_8h}\index{dialogo.h@{dialogo.h}}
+}
+
+
+Utilidades para el dialogo Este modulo contiene los prototipos de las funciones que interactuan con el juego.  
+
+
+{\ttfamily \#include \char`\"{}motor.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}accion.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}UtilCadena.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}lector\_\-reglasdialogo.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{dialogo_8h_a2c279a893f9e786364cb15596b76f856}{dialogo} (char $\ast$fmundo, char $\ast$freglas, char $\ast$fdialogo)
+\begin{DoxyCompactList}\small\item\em el usuario interactuca con el juego \hyperlink{dialogo_8h_a2c279a893f9e786364cb15596b76f856}{dialogo()} reserva una accion y la ejecuta siguiendo sus reglas \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{dialogo_8h_a9271b97a47ece7b4fe574bf7a12b9407}{interpretaFrase} (\hyperlink{structDIALOGUE}{DIALOGUE} $\ast$dialogo, \hyperlink{structACCION}{ACCION} $\ast$accion, char $\ast$cadena)
+\begin{DoxyCompactList}\small\item\em dada una frase se interpreta y se crea una accion \hyperlink{dialogo_8h_a9271b97a47ece7b4fe574bf7a12b9407}{interpretaFrase()} modifica una accion con las cadenas necesarias \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utilidades para el dialogo Este modulo contiene los prototipos de las funciones que interactuan con el juego. \begin{DoxyAuthor}{Author}
+Carlos Carrascal 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+01-\/12-\/2010 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\hypertarget{dialogo_8h_a2c279a893f9e786364cb15596b76f856}{
+\index{dialogo.h@{dialogo.h}!dialogo@{dialogo}}
+\index{dialogo@{dialogo}!dialogo.h@{dialogo.h}}
+\subsubsection[{dialogo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} dialogo (char $\ast$ {\em fmundo}, \/  char $\ast$ {\em freglas}, \/  char $\ast$ {\em fdialogo})}}
+\label{dialogo_8h_a2c279a893f9e786364cb15596b76f856}
+
+
+el usuario interactuca con el juego \hyperlink{dialogo_8h_a2c279a893f9e786364cb15596b76f856}{dialogo()} reserva una accion y la ejecuta siguiendo sus reglas 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fmundo}]es el fichero del cual leer el mundo \item[{\em freglas}]es el fichero del cual leer las reglas \item[{\em fdialogo}]es el fichero del cual leer las reglas del dialogo \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si todo fue bien, ERR en caso contrario 
+\end{DoxyReturn}
+\hypertarget{dialogo_8h_a9271b97a47ece7b4fe574bf7a12b9407}{
+\index{dialogo.h@{dialogo.h}!interpretaFrase@{interpretaFrase}}
+\index{interpretaFrase@{interpretaFrase}!dialogo.h@{dialogo.h}}
+\subsubsection[{interpretaFrase}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} interpretaFrase ({\bf DIALOGUE} $\ast$ {\em dialogo}, \/  {\bf ACCION} $\ast$ {\em accion}, \/  char $\ast$ {\em cadena})}}
+\label{dialogo_8h_a9271b97a47ece7b4fe574bf7a12b9407}
+
+
+dada una frase se interpreta y se crea una accion \hyperlink{dialogo_8h_a9271b97a47ece7b4fe574bf7a12b9407}{interpretaFrase()} modifica una accion con las cadenas necesarias 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dialogo}]es un puntero al dialogo \item[{\em accion}]es un puntero a la estructura accion \item[{\em cadena}]es la entrada del usuario \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK si todo fue bien, ERR en caso contrario 
+\end{DoxyReturn}

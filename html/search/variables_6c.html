@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><title></title>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="search.css"/>
+<script type="text/javascript" src="search.js"></script>
+</head>
+<body class="SRPage">
+<div id="SRIndex">
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRResult" id="SR_llegada">
+ <div class="SREntry">
+  <a id="Item0" onkeydown="return searchResults.Nav(event,0)" onkeypress="return searchResults.Nav(event,0)" onkeyup="return searchResults.Nav(event,0)" class="SRSymbol" href="../structUNION.html#af5469a62faabf95b2ca099dc5a8f8597" target="_parent">llegada</a>
+  <span class="SRScope">UNION</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_localizacion">
+ <div class="SREntry">
+  <a id="Item1" onkeydown="return searchResults.Nav(event,1)" onkeypress="return searchResults.Nav(event,1)" onkeyup="return searchResults.Nav(event,1)" class="SRSymbol" href="../structJUGADOR.html#a0a3ab001bd9bf61600483dae4268e9cd" target="_parent">localizacion</a>
+  <span class="SRScope">JUGADOR</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_luminoso">
+ <div class="SREntry">
+  <a id="Item2" onkeydown="return searchResults.Nav(event,2)" onkeypress="return searchResults.Nav(event,2)" onkeyup="return searchResults.Nav(event,2)" class="SRSymbol" href="../structESPACIO.html#abaf13c95e9bd0b2dd30c3e99122c0077" target="_parent">luminoso</a>
+  <span class="SRScope">ESPACIO</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_luz">
+ <div class="SREntry">
+  <a id="Item3" onkeydown="return searchResults.Nav(event,3)" onkeypress="return searchResults.Nav(event,3)" onkeyup="return searchResults.Nav(event,3)" class="SRSymbol" href="../structOBJETO.html#a3c8e42fab0378205bbcc451c5712c2d5" target="_parent">luz</a>
+  <span class="SRScope">OBJETO</span>
+ </div>
+</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+<script type="text/javascript"><!--
+document.getElementById("Loading").style.display="none";
+document.getElementById("NoMatches").style.display="none";
+var searchResults = new SearchResults("searchResults");
+searchResults.Search();
+--></script>
+</div>
+</body>
+</html>

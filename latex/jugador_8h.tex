@@ -1,0 +1,400 @@
+\hypertarget{jugador_8h}{
+\section{jugador.h File Reference}
+\label{jugador_8h}\index{jugador.h@{jugador.h}}
+}
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include \char`\"{}inventario.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structJUGADOR}{JUGADOR}
+\begin{DoxyCompactList}\small\item\em Definición de la estructura \hyperlink{structJUGADOR}{JUGADOR}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{jugador_8h_affbcceb020c5cb064c2bf08694cdda39}{creaJugador} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$$\ast$j)
+\begin{DoxyCompactList}\small\item\em Creación de \hyperlink{structJUGADOR}{JUGADOR} creaJUGADOR() se encarga de reservar la memoria para un nuevo \hyperlink{structJUGADOR}{JUGADOR}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{jugador_8h_a5f3fd9b24816f886e3fb32fb30d8b338}{destruyeJugador} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$$\ast$j)
+\begin{DoxyCompactList}\small\item\em Destrucción de \hyperlink{structJUGADOR}{JUGADOR} destruyeJUGADOR() se encarga de liberar toda la memoria que hubiese resrvado un \hyperlink{structJUGADOR}{JUGADOR} en caso de estar reservada. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{jugador_8h_ab1f66ab1c498ce37c3965d741d8b94ce}{cambiaIdJug} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$j, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Cambiar ID \hyperlink{jugador_8h_ab1f66ab1c498ce37c3965d741d8b94ce}{cambiaIdJug()} permite cambiar la ID con que se etiqueta un \hyperlink{structJUGADOR}{JUGADOR}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{jugador_8h_aba7869bc420d924f139bff2d0f51c190}{cambiaNombreJug} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$j, char $\ast$nombre)
+\begin{DoxyCompactList}\small\item\em Cambiar Descripcion \hyperlink{jugador_8h_aba7869bc420d924f139bff2d0f51c190}{cambiaNombreJug()} permite cambiar el nombre de un \hyperlink{structJUGADOR}{JUGADOR}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{jugador_8h_a5ae8cf2a48f3e75a653b5964a7d32f1c}{cambiaLocalizacionJug} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$j, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Cambiar ID \hyperlink{jugador_8h_a5ae8cf2a48f3e75a653b5964a7d32f1c}{cambiaLocalizacionJug()} permite cambiar la ID del espacio en la que se encuentra un \hyperlink{structJUGADOR}{JUGADOR}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{jugador_8h_a6354aadeac40bfbd55c50530f93874e2}{cambiaMaxObjetos} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$j, int num)
+\begin{DoxyCompactList}\small\item\em Cambiar ID \hyperlink{jugador_8h_a6354aadeac40bfbd55c50530f93874e2}{cambiaMaxObjetos()} permite cambiar el máximo de objetos que puede tener un \hyperlink{structJUGADOR}{JUGADOR}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{jugador_8h_aa6602835cd2913d62ad3584c6acf75f5}{isJugDestruido} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$o)
+\begin{DoxyCompactList}\small\item\em ¿Está destruido? \hyperlink{jugador_8h_aa6602835cd2913d62ad3584c6acf75f5}{isJugDestruido()} permite saber si un \hyperlink{structJUGADOR}{JUGADOR} está destruido o no \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{jugador_8h_acd2390f1b7100bd2fd06a97ee17ecdac}{isJugEmpty} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$o)
+\begin{DoxyCompactList}\small\item\em ¿Está vacio? \hyperlink{jugador_8h_acd2390f1b7100bd2fd06a97ee17ecdac}{isJugEmpty()} permite saber si un \hyperlink{structJUGADOR}{JUGADOR} está rellenado o no \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{jugador_8h_a7fd16490e3a1a667eaf84f9abc218242}{saberIdJug} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$j, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$id)
+\begin{DoxyCompactList}\small\item\em Saber ID \hyperlink{jugador_8h_a7fd16490e3a1a667eaf84f9abc218242}{saberIdJug()} permite saber la ID de un \hyperlink{structJUGADOR}{JUGADOR}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{jugador_8h_a4df6db4ea4b269a1aa9e3eb08722e077}{saberNombreJug} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$j, char $\ast$nombre)
+\begin{DoxyCompactList}\small\item\em Descripción de un \hyperlink{structJUGADOR}{JUGADOR} \hyperlink{jugador_8h_a4df6db4ea4b269a1aa9e3eb08722e077}{saberNombreJug()} permite saber el contenido del nombre de un \hyperlink{structJUGADOR}{JUGADOR}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{jugador_8h_adc547b8381203802080ad05e917b21df}{saberLugarJug} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$j, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$id)
+\begin{DoxyCompactList}\small\item\em Saber ID \hyperlink{jugador_8h_adc547b8381203802080ad05e917b21df}{saberLugarJug()} permite saber la ID del espacio donde se encuentra el \hyperlink{structJUGADOR}{JUGADOR}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{jugador_8h_ae92621524d1923028e065572ea341eb4}{saberMaxObjetos} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$j, int $\ast$num)
+\begin{DoxyCompactList}\small\item\em Tamaño de Descripcion \hyperlink{jugador_8h_ae92621524d1923028e065572ea341eb4}{saberMaxObjetos()} permite saber el numero máximo de objetos de un \hyperlink{structJUGADOR}{JUGADOR}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{jugador_8h_acd8424882022604a1ed15e9df50d8145}{saberTamJugNombre} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$j, int $\ast$num)
+\begin{DoxyCompactList}\small\item\em Tamaño de Descripcion \hyperlink{jugador_8h_acd8424882022604a1ed15e9df50d8145}{saberTamJugNombre()} permite saber el tamaño de la cadena que contiene el nombre de un \hyperlink{structJUGADOR}{JUGADOR}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{jugador_8h_ae35c500bddbda797c06d8c2bc0becccc}{tamInventario} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$j, int $\ast$num)
+\begin{DoxyCompactList}\small\item\em Tamaño del inventario \hyperlink{jugador_8h_ae35c500bddbda797c06d8c2bc0becccc}{tamInventario()} permite saber cuantos objeto se encuentran en el \hyperlink{structJUGADOR}{JUGADOR}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{jugador_8h_a4431a82363c255a9e322ec4d077919bc}{isObjInInv} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$j, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Objeto contenido \hyperlink{jugador_8h_a4431a82363c255a9e322ec4d077919bc}{isObjInInv()} permite saber si un objeto se encuentra en el inventario de un \hyperlink{structJUGADOR}{JUGADOR}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} \hyperlink{jugador_8h_adab007aee0262f9d711754853d1568bf}{objetoIesimoInv} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$j, int i)
+\begin{DoxyCompactList}\small\item\em Saber un Objeto \hyperlink{jugador_8h_adab007aee0262f9d711754853d1568bf}{objetoIesimoInv()} permite saber el iésimo objeto del inventario del \hyperlink{structJUGADOR}{JUGADOR}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{jugador_8h_add06fbbd270e25ffc94a812a268e2dad}{meterObjInInv} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$j, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Introducir objetos \hyperlink{jugador_8h_add06fbbd270e25ffc94a812a268e2dad}{meterObjInInv()} introduce un objeto en el inventario de un \hyperlink{structJUGADOR}{JUGADOR}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{jugador_8h_a2d93d09073d6d16ae506182fcb078fd5}{sacarObjInInv} (\hyperlink{structJUGADOR}{JUGADOR} $\ast$j, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Sacar objetos \hyperlink{jugador_8h_a2d93d09073d6d16ae506182fcb078fd5}{sacarObjInInv()} extrae de un inventario de un \hyperlink{structJUGADOR}{JUGADOR} un objeto. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fichero que contiene los prototipos y las estructuras de un \hyperlink{structJUGADOR}{JUGADOR} \begin{DoxyAuthor}{Author}
+Antonio Jimenez 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.0
+\end{DoxyVersion}
+Información útil:
+
+
+\begin{DoxyItemize}
+\item Este módulo depende del módulo \hyperlink{structCONJUNTO}{CONJUNTO}, por lo que se incluirá el .h correspondiente 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\hypertarget{jugador_8h_ab1f66ab1c498ce37c3965d741d8b94ce}{
+\index{jugador.h@{jugador.h}!cambiaIdJug@{cambiaIdJug}}
+\index{cambiaIdJug@{cambiaIdJug}!jugador.h@{jugador.h}}
+\subsubsection[{cambiaIdJug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaIdJug ({\bf JUGADOR} $\ast$ {\em j}, \/  {\bf ID} {\em id})}}
+\label{jugador_8h_ab1f66ab1c498ce37c3965d741d8b94ce}
+
+
+Cambiar ID \hyperlink{jugador_8h_ab1f66ab1c498ce37c3965d741d8b94ce}{cambiaIdJug()} permite cambiar la ID con que se etiqueta un \hyperlink{structJUGADOR}{JUGADOR}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em j}]es un puntero al \hyperlink{structJUGADOR}{JUGADOR} a modificar \item[{\em id}]es una ID con la que se desea modificar el \hyperlink{structJUGADOR}{JUGADOR} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{jugador_8h_a5ae8cf2a48f3e75a653b5964a7d32f1c}{
+\index{jugador.h@{jugador.h}!cambiaLocalizacionJug@{cambiaLocalizacionJug}}
+\index{cambiaLocalizacionJug@{cambiaLocalizacionJug}!jugador.h@{jugador.h}}
+\subsubsection[{cambiaLocalizacionJug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaLocalizacionJug ({\bf JUGADOR} $\ast$ {\em j}, \/  {\bf ID} {\em id})}}
+\label{jugador_8h_a5ae8cf2a48f3e75a653b5964a7d32f1c}
+
+
+Cambiar ID \hyperlink{jugador_8h_a5ae8cf2a48f3e75a653b5964a7d32f1c}{cambiaLocalizacionJug()} permite cambiar la ID del espacio en la que se encuentra un \hyperlink{structJUGADOR}{JUGADOR}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em j}]es un puntero al \hyperlink{structJUGADOR}{JUGADOR} a modificar \item[{\em id}]es una ID con la que se desea modificar el \hyperlink{structJUGADOR}{JUGADOR} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{jugador_8h_a6354aadeac40bfbd55c50530f93874e2}{
+\index{jugador.h@{jugador.h}!cambiaMaxObjetos@{cambiaMaxObjetos}}
+\index{cambiaMaxObjetos@{cambiaMaxObjetos}!jugador.h@{jugador.h}}
+\subsubsection[{cambiaMaxObjetos}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaMaxObjetos ({\bf JUGADOR} $\ast$ {\em j}, \/  int {\em num})}}
+\label{jugador_8h_a6354aadeac40bfbd55c50530f93874e2}
+
+
+Cambiar ID \hyperlink{jugador_8h_a6354aadeac40bfbd55c50530f93874e2}{cambiaMaxObjetos()} permite cambiar el máximo de objetos que puede tener un \hyperlink{structJUGADOR}{JUGADOR}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em j}]es un puntero al \hyperlink{structJUGADOR}{JUGADOR} a modificar \item[{\em num}]es un numero con el que se desea modificar el \hyperlink{structJUGADOR}{JUGADOR} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{jugador_8h_aba7869bc420d924f139bff2d0f51c190}{
+\index{jugador.h@{jugador.h}!cambiaNombreJug@{cambiaNombreJug}}
+\index{cambiaNombreJug@{cambiaNombreJug}!jugador.h@{jugador.h}}
+\subsubsection[{cambiaNombreJug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaNombreJug ({\bf JUGADOR} $\ast$ {\em j}, \/  char $\ast$ {\em nombre})}}
+\label{jugador_8h_aba7869bc420d924f139bff2d0f51c190}
+
+
+Cambiar Descripcion \hyperlink{jugador_8h_aba7869bc420d924f139bff2d0f51c190}{cambiaNombreJug()} permite cambiar el nombre de un \hyperlink{structJUGADOR}{JUGADOR}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em j}]es un puntero al \hyperlink{structJUGADOR}{JUGADOR} a modificar \item[{\em nombre}]es una cadena con la que se desea modificar el \hyperlink{structJUGADOR}{JUGADOR} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{jugador_8h_affbcceb020c5cb064c2bf08694cdda39}{
+\index{jugador.h@{jugador.h}!creaJugador@{creaJugador}}
+\index{creaJugador@{creaJugador}!jugador.h@{jugador.h}}
+\subsubsection[{creaJugador}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaJugador ({\bf JUGADOR} $\ast$$\ast$ {\em j})}}
+\label{jugador_8h_affbcceb020c5cb064c2bf08694cdda39}
+
+
+Creación de \hyperlink{structJUGADOR}{JUGADOR} creaJUGADOR() se encarga de reservar la memoria para un nuevo \hyperlink{structJUGADOR}{JUGADOR}. 
+
+Información de la estructura:
+
+
+\begin{DoxyItemize}
+\item id es el identificador del \hyperlink{structJUGADOR}{JUGADOR}
+\item nombre es una cadena que contiene el nombre de un personaje
+\item localización es un id que permite saber en que \hyperlink{structJUGADOR}{JUGADOR} se encuantra el personaje
+\item maxJugadors es el límite de jugadors que puede llevar el personaje en cuestión
+\item inv es el INVENTARIO que lleva encima el personaje 
+\begin{DoxyParams}{Parameters}
+\item[{\em j}]es un puntero a un puntero a \hyperlink{structJUGADOR}{JUGADOR}, que será donde se guarde la dirección de el \hyperlink{structJUGADOR}{JUGADOR} que se reserve \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+
+\end{DoxyItemize}\hypertarget{jugador_8h_a5f3fd9b24816f886e3fb32fb30d8b338}{
+\index{jugador.h@{jugador.h}!destruyeJugador@{destruyeJugador}}
+\index{destruyeJugador@{destruyeJugador}!jugador.h@{jugador.h}}
+\subsubsection[{destruyeJugador}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} destruyeJugador ({\bf JUGADOR} $\ast$$\ast$ {\em j})}}
+\label{jugador_8h_a5f3fd9b24816f886e3fb32fb30d8b338}
+
+
+Destrucción de \hyperlink{structJUGADOR}{JUGADOR} destruyeJUGADOR() se encarga de liberar toda la memoria que hubiese resrvado un \hyperlink{structJUGADOR}{JUGADOR} en caso de estar reservada. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em j}]es un puntero al puntero del \hyperlink{structJUGADOR}{JUGADOR} que se desea destruir \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Siempre devuelve OK. No hay posibilidad de error 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{jugador_8h_aa6602835cd2913d62ad3584c6acf75f5}{
+\index{jugador.h@{jugador.h}!isJugDestruido@{isJugDestruido}}
+\index{isJugDestruido@{isJugDestruido}!jugador.h@{jugador.h}}
+\subsubsection[{isJugDestruido}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} isJugDestruido ({\bf JUGADOR} $\ast$ {\em o})}}
+\label{jugador_8h_aa6602835cd2913d62ad3584c6acf75f5}
+
+
+¿Está destruido? \hyperlink{jugador_8h_aa6602835cd2913d62ad3584c6acf75f5}{isJugDestruido()} permite saber si un \hyperlink{structJUGADOR}{JUGADOR} está destruido o no 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structJUGADOR}{JUGADOR} a verificar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE según sea el caso 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{jugador_8h_acd2390f1b7100bd2fd06a97ee17ecdac}{
+\index{jugador.h@{jugador.h}!isJugEmpty@{isJugEmpty}}
+\index{isJugEmpty@{isJugEmpty}!jugador.h@{jugador.h}}
+\subsubsection[{isJugEmpty}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} isJugEmpty ({\bf JUGADOR} $\ast$ {\em o})}}
+\label{jugador_8h_acd2390f1b7100bd2fd06a97ee17ecdac}
+
+
+¿Está vacio? \hyperlink{jugador_8h_acd2390f1b7100bd2fd06a97ee17ecdac}{isJugEmpty()} permite saber si un \hyperlink{structJUGADOR}{JUGADOR} está rellenado o no 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em o}]es un puntero al \hyperlink{structJUGADOR}{JUGADOR} a verificar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE según sea el caso 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{jugador_8h_a4431a82363c255a9e322ec4d077919bc}{
+\index{jugador.h@{jugador.h}!isObjInInv@{isObjInInv}}
+\index{isObjInInv@{isObjInInv}!jugador.h@{jugador.h}}
+\subsubsection[{isObjInInv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} isObjInInv ({\bf JUGADOR} $\ast$ {\em j}, \/  {\bf ID} {\em id})}}
+\label{jugador_8h_a4431a82363c255a9e322ec4d077919bc}
+
+
+Objeto contenido \hyperlink{jugador_8h_a4431a82363c255a9e322ec4d077919bc}{isObjInInv()} permite saber si un objeto se encuentra en el inventario de un \hyperlink{structJUGADOR}{JUGADOR}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em j}]es un puntero al \hyperlink{structJUGADOR}{JUGADOR} a verificar \item[{\em id}]es una ID del objeto que se quiere saber si está o no en el \hyperlink{structJUGADOR}{JUGADOR} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE según el caso 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{jugador_8h_add06fbbd270e25ffc94a812a268e2dad}{
+\index{jugador.h@{jugador.h}!meterObjInInv@{meterObjInInv}}
+\index{meterObjInInv@{meterObjInInv}!jugador.h@{jugador.h}}
+\subsubsection[{meterObjInInv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} meterObjInInv ({\bf JUGADOR} $\ast$ {\em j}, \/  {\bf ID} {\em id})}}
+\label{jugador_8h_add06fbbd270e25ffc94a812a268e2dad}
+
+
+Introducir objetos \hyperlink{jugador_8h_add06fbbd270e25ffc94a812a268e2dad}{meterObjInInv()} introduce un objeto en el inventario de un \hyperlink{structJUGADOR}{JUGADOR}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em j}]es un puntero al \hyperlink{structJUGADOR}{JUGADOR} a modificar \item[{\em id}]es una ID del objeto que se desea guardar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{jugador_8h_adab007aee0262f9d711754853d1568bf}{
+\index{jugador.h@{jugador.h}!objetoIesimoInv@{objetoIesimoInv}}
+\index{objetoIesimoInv@{objetoIesimoInv}!jugador.h@{jugador.h}}
+\subsubsection[{objetoIesimoInv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ID} objetoIesimoInv ({\bf JUGADOR} $\ast$ {\em j}, \/  int {\em i})}}
+\label{jugador_8h_adab007aee0262f9d711754853d1568bf}
+
+
+Saber un Objeto \hyperlink{jugador_8h_adab007aee0262f9d711754853d1568bf}{objetoIesimoInv()} permite saber el iésimo objeto del inventario del \hyperlink{structJUGADOR}{JUGADOR}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em j}]es un puntero al \hyperlink{structJUGADOR}{JUGADOR} a verificar \item[{\em i}]es la posición que se desea conocer \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+devuelve la ID del objeto que se encuentre en dicha posición 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{jugador_8h_a7fd16490e3a1a667eaf84f9abc218242}{
+\index{jugador.h@{jugador.h}!saberIdJug@{saberIdJug}}
+\index{saberIdJug@{saberIdJug}!jugador.h@{jugador.h}}
+\subsubsection[{saberIdJug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberIdJug ({\bf JUGADOR} $\ast$ {\em j}, \/  {\bf ID} $\ast$ {\em id})}}
+\label{jugador_8h_a7fd16490e3a1a667eaf84f9abc218242}
+
+
+Saber ID \hyperlink{jugador_8h_a7fd16490e3a1a667eaf84f9abc218242}{saberIdJug()} permite saber la ID de un \hyperlink{structJUGADOR}{JUGADOR}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em j}]es un puntero al \hyperlink{structJUGADOR}{JUGADOR} a verificar \item[{\em id}]es un puntero a una ID donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{jugador_8h_adc547b8381203802080ad05e917b21df}{
+\index{jugador.h@{jugador.h}!saberLugarJug@{saberLugarJug}}
+\index{saberLugarJug@{saberLugarJug}!jugador.h@{jugador.h}}
+\subsubsection[{saberLugarJug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberLugarJug ({\bf JUGADOR} $\ast$ {\em j}, \/  {\bf ID} $\ast$ {\em id})}}
+\label{jugador_8h_adc547b8381203802080ad05e917b21df}
+
+
+Saber ID \hyperlink{jugador_8h_adc547b8381203802080ad05e917b21df}{saberLugarJug()} permite saber la ID del espacio donde se encuentra el \hyperlink{structJUGADOR}{JUGADOR}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em j}]es un puntero al \hyperlink{structJUGADOR}{JUGADOR} a verificar \item[{\em id}]es un puntero a una ID donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{jugador_8h_ae92621524d1923028e065572ea341eb4}{
+\index{jugador.h@{jugador.h}!saberMaxObjetos@{saberMaxObjetos}}
+\index{saberMaxObjetos@{saberMaxObjetos}!jugador.h@{jugador.h}}
+\subsubsection[{saberMaxObjetos}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberMaxObjetos ({\bf JUGADOR} $\ast$ {\em j}, \/  int $\ast$ {\em num})}}
+\label{jugador_8h_ae92621524d1923028e065572ea341eb4}
+
+
+Tamaño de Descripcion \hyperlink{jugador_8h_ae92621524d1923028e065572ea341eb4}{saberMaxObjetos()} permite saber el numero máximo de objetos de un \hyperlink{structJUGADOR}{JUGADOR}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em j}]es un puntero al \hyperlink{structJUGADOR}{JUGADOR} a verificar \item[{\em num}]es un puntero a un entero donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{jugador_8h_a4df6db4ea4b269a1aa9e3eb08722e077}{
+\index{jugador.h@{jugador.h}!saberNombreJug@{saberNombreJug}}
+\index{saberNombreJug@{saberNombreJug}!jugador.h@{jugador.h}}
+\subsubsection[{saberNombreJug}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberNombreJug ({\bf JUGADOR} $\ast$ {\em j}, \/  char $\ast$ {\em nombre})}}
+\label{jugador_8h_a4df6db4ea4b269a1aa9e3eb08722e077}
+
+
+Descripción de un \hyperlink{structJUGADOR}{JUGADOR} \hyperlink{jugador_8h_a4df6db4ea4b269a1aa9e3eb08722e077}{saberNombreJug()} permite saber el contenido del nombre de un \hyperlink{structJUGADOR}{JUGADOR}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em j}]es un puntero al \hyperlink{structJUGADOR}{JUGADOR} a verificar \item[{\em nombre}]es un puntero a una cadena donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{jugador_8h_acd8424882022604a1ed15e9df50d8145}{
+\index{jugador.h@{jugador.h}!saberTamJugNombre@{saberTamJugNombre}}
+\index{saberTamJugNombre@{saberTamJugNombre}!jugador.h@{jugador.h}}
+\subsubsection[{saberTamJugNombre}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberTamJugNombre ({\bf JUGADOR} $\ast$ {\em j}, \/  int $\ast$ {\em num})}}
+\label{jugador_8h_acd8424882022604a1ed15e9df50d8145}
+
+
+Tamaño de Descripcion \hyperlink{jugador_8h_acd8424882022604a1ed15e9df50d8145}{saberTamJugNombre()} permite saber el tamaño de la cadena que contiene el nombre de un \hyperlink{structJUGADOR}{JUGADOR}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em j}]es un puntero al \hyperlink{structJUGADOR}{JUGADOR} a verificar \item[{\em num}]es un puntero a un entero donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{jugador_8h_a2d93d09073d6d16ae506182fcb078fd5}{
+\index{jugador.h@{jugador.h}!sacarObjInInv@{sacarObjInInv}}
+\index{sacarObjInInv@{sacarObjInInv}!jugador.h@{jugador.h}}
+\subsubsection[{sacarObjInInv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} sacarObjInInv ({\bf JUGADOR} $\ast$ {\em j}, \/  {\bf ID} {\em id})}}
+\label{jugador_8h_a2d93d09073d6d16ae506182fcb078fd5}
+
+
+Sacar objetos \hyperlink{jugador_8h_a2d93d09073d6d16ae506182fcb078fd5}{sacarObjInInv()} extrae de un inventario de un \hyperlink{structJUGADOR}{JUGADOR} un objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em j}]es un puntero al \hyperlink{structJUGADOR}{JUGADOR} a modificar \item[{\em id}]es una ID del objeto que se desea extraer \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{jugador_8h_ae35c500bddbda797c06d8c2bc0becccc}{
+\index{jugador.h@{jugador.h}!tamInventario@{tamInventario}}
+\index{tamInventario@{tamInventario}!jugador.h@{jugador.h}}
+\subsubsection[{tamInventario}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} tamInventario ({\bf JUGADOR} $\ast$ {\em j}, \/  int $\ast$ {\em num})}}
+\label{jugador_8h_ae35c500bddbda797c06d8c2bc0becccc}
+
+
+Tamaño del inventario \hyperlink{jugador_8h_ae35c500bddbda797c06d8c2bc0becccc}{tamInventario()} permite saber cuantos objeto se encuentran en el \hyperlink{structJUGADOR}{JUGADOR}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em j}]es un puntero al \hyperlink{structJUGADOR}{JUGADOR} a verificar \item[{\em num}]es un puntero a un entero donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}

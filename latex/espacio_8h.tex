@@ -1,0 +1,701 @@
+\hypertarget{espacio_8h}{
+\section{espacio.h File Reference}
+\label{espacio_8h}\index{espacio.h@{espacio.h}}
+}
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include \char`\"{}inventario.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structESPACIO}{ESPACIO}
+\begin{DoxyCompactList}\small\item\em Definición de la estructura \hyperlink{structESPACIO}{ESPACIO}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_a6620c90aae58896d40454da9f2bf985c}{creaEspacio} (\hyperlink{structESPACIO}{ESPACIO} $\ast$$\ast$e)
+\begin{DoxyCompactList}\small\item\em Creación de Espacio \hyperlink{espacio_8h_a6620c90aae58896d40454da9f2bf985c}{creaEspacio()} se encarga de reservar la memoria para un nuevo Espacio. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_ae93fd5ca1c3078fab35a9e512091fe69}{destruyeEspacio} (\hyperlink{structESPACIO}{ESPACIO} $\ast$$\ast$e)
+\begin{DoxyCompactList}\small\item\em Destrucción de Espacio \hyperlink{espacio_8h_ae93fd5ca1c3078fab35a9e512091fe69}{destruyeEspacio()} se encarga de liberar toda la memoria que hubiese resrvado un Espacio en caso de estar reservada. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_a52a6189df3de0b53f0f57e15fab54cf2}{cambiaEspId} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Cambiar ID \hyperlink{espacio_8h_a52a6189df3de0b53f0f57e15fab54cf2}{cambiaEspId()} permite cambiar la ID con que se etiqueta un \hyperlink{structESPACIO}{ESPACIO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_a271054944c119f0ffc8e9ac034c2d8e4}{cambiaEspDescGrafica} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, char $\ast$dibujo, int filas, int columnas)
+\begin{DoxyCompactList}\small\item\em Cambiar Grafica \hyperlink{espacio_8h_a271054944c119f0ffc8e9ac034c2d8e4}{cambiaEspDescGrafica()} permite cambiar la descripción gráfica de un espacio. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_ae2d524827a6ed2f83c3342427e0e6101}{cambiaEspDescripcion} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, char $\ast$desc)
+\begin{DoxyCompactList}\small\item\em Cambiar Descripcion \hyperlink{espacio_8h_ae2d524827a6ed2f83c3342427e0e6101}{cambiaEspDescripcion()} permite cambiar la descripcion de un \hyperlink{structESPACIO}{ESPACIO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_a377f3bc4e849310dc6c485f200d7ca8a}{cambiaEspDescExaminar} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, char $\ast$desc)
+\begin{DoxyCompactList}\small\item\em Cambiar Examinar \hyperlink{espacio_8h_a377f3bc4e849310dc6c485f200d7ca8a}{cambiaEspDescExaminar()} permite modificar la descripcion examinar de un ESPACIo. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_a33a81ce0dd6a4a3265efd4d52eb51a86}{cambiaEspLuminoso} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, \hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} luz)
+\begin{DoxyCompactList}\small\item\em Cambiar Luminoso \hyperlink{espacio_8h_a33a81ce0dd6a4a3265efd4d52eb51a86}{cambiaEspLuminoso()} permite modificar el estado del espacio entre luminoso y no luminoso. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_ac31ed53ab2c88a42ad80dcd4a19925da}{cambiaEspNorte} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} n)
+\begin{DoxyCompactList}\small\item\em Cambiar Norte \hyperlink{espacio_8h_ac31ed53ab2c88a42ad80dcd4a19925da}{cambiaEspNorte()} permite cambiar la ID de la \hyperlink{structUNION}{UNION} que se encuentra al norte del \hyperlink{structESPACIO}{ESPACIO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_ae2bf58dacc36483e0c4b4ba20e6e5494}{cambiaEspSur} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} n)
+\begin{DoxyCompactList}\small\item\em Cambiar Sur \hyperlink{espacio_8h_ae2bf58dacc36483e0c4b4ba20e6e5494}{cambiaEspSur()} permite cambiar la ID de la \hyperlink{structUNION}{UNION} que se encuentra al sur del \hyperlink{structESPACIO}{ESPACIO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_ac30aa5efc3c1018fba54fda2db31570d}{cambiaEspEste} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} n)
+\begin{DoxyCompactList}\small\item\em Cambiar Este \hyperlink{espacio_8h_ac30aa5efc3c1018fba54fda2db31570d}{cambiaEspEste()} permite cambiar la ID de la \hyperlink{structUNION}{UNION} que se encuentra al este del \hyperlink{structESPACIO}{ESPACIO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_ad0d52503c6d7fffdd3d7473ca5c9876a}{cambiaEspOeste} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} n)
+\begin{DoxyCompactList}\small\item\em Cambiar Oeste \hyperlink{espacio_8h_ad0d52503c6d7fffdd3d7473ca5c9876a}{cambiaEspOeste()} permite cambiar la ID de la \hyperlink{structUNION}{UNION} que se encuentra al oeste del \hyperlink{structESPACIO}{ESPACIO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_a7eb3b1966a724d814e06ba6a7e78765f}{cambiaEspArriba} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} n)
+\begin{DoxyCompactList}\small\item\em Cambiar Arriba \hyperlink{espacio_8h_a7eb3b1966a724d814e06ba6a7e78765f}{cambiaEspArriba()} permite cambiar la ID de la \hyperlink{structUNION}{UNION} que se encuentra arriba del \hyperlink{structESPACIO}{ESPACIO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_a3a72f5f1d1c3144c608e7b768645c4af}{cambiaEspAbajo} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} n)
+\begin{DoxyCompactList}\small\item\em Cambiar Abajo \hyperlink{espacio_8h_a3a72f5f1d1c3144c608e7b768645c4af}{cambiaEspAbajo()} permite cambiar la ID de la \hyperlink{structUNION}{UNION} que se encuentra abajo del \hyperlink{structESPACIO}{ESPACIO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{espacio_8h_ab82e72a7fa7c65b4510a94335a8968a6}{isEspDestruido} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em ¿Está destruida? \hyperlink{espacio_8h_ab82e72a7fa7c65b4510a94335a8968a6}{isEspDestruido()} permite saber si un \hyperlink{structESPACIO}{ESPACIO} está destruido o no \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{espacio_8h_a9a5ccd2d4b393bef3179185dc8441d1a}{isEspEmpty} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em ¿Está vacio? \hyperlink{espacio_8h_a9a5ccd2d4b393bef3179185dc8441d1a}{isEspEmpty()} permite saber si un \hyperlink{structESPACIO}{ESPACIO} ha sido rellenado o no \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{espacio_8h_a803ac35302d365f1bff5120a5ae96ed1}{isEspLuminoso} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e)
+\begin{DoxyCompactList}\small\item\em ¿Está iluminado? \hyperlink{espacio_8h_a803ac35302d365f1bff5120a5ae96ed1}{isEspLuminoso()} permite saber si un \hyperlink{structESPACIO}{ESPACIO} tiene luz propia o no \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_ae85d56064840f4b81e0802c1f03050a8}{saberEspId} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$id)
+\begin{DoxyCompactList}\small\item\em Saber ID saberEspid() permite saber la ID de un \hyperlink{structESPACIO}{ESPACIO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_a6c8dba799a02def26ae055052ee73b2d}{saberEspDescripcion} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, char $\ast$desc)
+\begin{DoxyCompactList}\small\item\em Descripción de un \hyperlink{structESPACIO}{ESPACIO} \hyperlink{espacio_8h_a6c8dba799a02def26ae055052ee73b2d}{saberEspDescripcion()} permite saber el contenido de la descripcion de un \hyperlink{structESPACIO}{ESPACIO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_a5b658790347a24a8aa770a87af6d3d15}{saberEspDescrGrafica} (\hyperlink{structESPACIO}{ESPACIO} $\ast$esp, char $\ast$$\ast$$\ast$dibujo, int $\ast$filas, int $\ast$columnas)
+\begin{DoxyCompactList}\small\item\em saberEspDescrGrafica Esta función permite saber la descripción Gráfica de un espacio a examinar \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_a5c7fca3a0af684cc93e28d2a5b2291a8}{saberEspDescExaminar} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, char $\ast$desc)
+\begin{DoxyCompactList}\small\item\em Examinar un espacio \hyperlink{espacio_8h_a5c7fca3a0af684cc93e28d2a5b2291a8}{saberEspDescExaminar()} permite saber el contenido de la descripcion examinar de un \hyperlink{structESPACIO}{ESPACIO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_af24c9b67e84d821d8a2287265aedc4f5}{saberEspTamDesc} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, int $\ast$num)
+\begin{DoxyCompactList}\small\item\em Tamaño de Descripcion \hyperlink{espacio_8h_af24c9b67e84d821d8a2287265aedc4f5}{saberEspTamDesc()} permite saber el tamaño de la cadena que contiene la descripcion de un \hyperlink{structESPACIO}{ESPACIO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_ab2a03f7366c743a5a5a77f90e9897544}{saberEspTamDescExam} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, int $\ast$num)
+\begin{DoxyCompactList}\small\item\em Tamaño de Examinar \hyperlink{espacio_8h_ab2a03f7366c743a5a5a77f90e9897544}{saberEspTamDescExam()} permite saber el tamaño de la cadena que contiene la descripción examinar del \hyperlink{structESPACIO}{ESPACIO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_a0f5dcdebbb9097e4435bb8567687fb43}{saberEspNorte} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$id)
+\begin{DoxyCompactList}\small\item\em Saber Norte \hyperlink{espacio_8h_a0f5dcdebbb9097e4435bb8567687fb43}{saberEspNorte()} permite saber la ID de el \hyperlink{structESPACIO}{ESPACIO} que se encuentra al norte del \hyperlink{structESPACIO}{ESPACIO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_aed47be77f2cf86b73cb6197b47924e80}{saberEspSur} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$id)
+\begin{DoxyCompactList}\small\item\em Saber Sur \hyperlink{espacio_8h_aed47be77f2cf86b73cb6197b47924e80}{saberEspSur()} permite saber la ID de el \hyperlink{structESPACIO}{ESPACIO} que se encuentra al sur del \hyperlink{structESPACIO}{ESPACIO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_a9777fe096179f3567e23af5108833867}{saberEspEste} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$id)
+\begin{DoxyCompactList}\small\item\em Saber Este \hyperlink{espacio_8h_a9777fe096179f3567e23af5108833867}{saberEspEste()} permite saber la ID de el \hyperlink{structESPACIO}{ESPACIO} que se encuentra al este del \hyperlink{structESPACIO}{ESPACIO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_a4b4eba2384c4c101932e34f77c74deea}{saberEspOeste} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$id)
+\begin{DoxyCompactList}\small\item\em Saber Oeste \hyperlink{espacio_8h_a4b4eba2384c4c101932e34f77c74deea}{saberEspOeste()} permite saber la ID de el \hyperlink{structESPACIO}{ESPACIO} que se encuentra al oeste del \hyperlink{structESPACIO}{ESPACIO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_a5368df3dffe248b7b56faa13c4cbd104}{saberEspArriba} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$id)
+\begin{DoxyCompactList}\small\item\em Saber Arriba \hyperlink{espacio_8h_a5368df3dffe248b7b56faa13c4cbd104}{saberEspArriba()} permite saber la ID de el \hyperlink{structESPACIO}{ESPACIO} que se encuentra arriba del \hyperlink{structESPACIO}{ESPACIO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_a097909facc167aac025776f45391886f}{saberEspAbajo} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} $\ast$id)
+\begin{DoxyCompactList}\small\item\em Saber Abajo \hyperlink{espacio_8h_a097909facc167aac025776f45391886f}{saberEspAbajo()} permite saber la ID de el \hyperlink{structESPACIO}{ESPACIO} que se encuentra abajo del \hyperlink{structESPACIO}{ESPACIO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_a27f9b798219fe3bcaff16e5e9d308fb5}{sacarEspObj} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Sacar objetos \hyperlink{espacio_8h_a27f9b798219fe3bcaff16e5e9d308fb5}{sacarEspObj()} extrae de un inventario de un \hyperlink{structESPACIO}{ESPACIO} un objeto. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_a229afc9136eaa00e5b329c7c931a9cb2}{meterEspObj} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Introducir objetos \hyperlink{espacio_8h_a229afc9136eaa00e5b329c7c931a9cb2}{meterEspObj()} introduce un objeto en el inventario de un \hyperlink{structESPACIO}{ESPACIO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a32c27cc471df37f4fc818d65de0a56c4}{STATUS} \hyperlink{espacio_8h_a005f4a108b5b2ded2b03f2ff879f48a2}{saberEspTamInv} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, int $\ast$num)
+\begin{DoxyCompactList}\small\item\em Tamaño del inventario \hyperlink{espacio_8h_a005f4a108b5b2ded2b03f2ff879f48a2}{saberEspTamInv()} permite saber cuantos objeto se encuentran en el \hyperlink{structESPACIO}{ESPACIO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{BOOL} \hyperlink{espacio_8h_ac0a1cbda99962030adb31a1a735e7c65}{isObjinEsp} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, \hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} id)
+\begin{DoxyCompactList}\small\item\em Objeto contenido \hyperlink{espacio_8h_ac0a1cbda99962030adb31a1a735e7c65}{isObjinEsp()} permite saber si un objeto se encuentra en el inventario de un \hyperlink{structESPACIO}{ESPACIO}. \item\end{DoxyCompactList}\item 
+\hyperlink{tipos_8h_a483fb3895d39b2ee95d50073243d077e}{ID} \hyperlink{espacio_8h_aa2985ea2aee33114b679fb46ffbbd1a6}{saberEspIesimoObj} (\hyperlink{structESPACIO}{ESPACIO} $\ast$e, int i)
+\begin{DoxyCompactList}\small\item\em Saber un Objeto \hyperlink{espacio_8h_aa2985ea2aee33114b679fb46ffbbd1a6}{saberEspIesimoObj()} permite saber el iésimo objeto del inventario del \hyperlink{structESPACIO}{ESPACIO}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fichero que contiene los prototipos y las estructuras de un \hyperlink{structESPACIO}{ESPACIO} \begin{DoxyAuthor}{Author}
+Antonio Jimenez y Miguel Gordo 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.0
+\end{DoxyVersion}
+Información útil:
+
+
+\begin{DoxyItemize}
+\item Este módulo depende del módulo \hyperlink{structCONJUNTO}{CONJUNTO}, por lo que se incluirá el .h correspondiente 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\hypertarget{espacio_8h_a3a72f5f1d1c3144c608e7b768645c4af}{
+\index{espacio.h@{espacio.h}!cambiaEspAbajo@{cambiaEspAbajo}}
+\index{cambiaEspAbajo@{cambiaEspAbajo}!espacio.h@{espacio.h}}
+\subsubsection[{cambiaEspAbajo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaEspAbajo ({\bf ESPACIO} $\ast$ {\em e}, \/  {\bf ID} {\em n})}}
+\label{espacio_8h_a3a72f5f1d1c3144c608e7b768645c4af}
+
+
+Cambiar Abajo \hyperlink{espacio_8h_a3a72f5f1d1c3144c608e7b768645c4af}{cambiaEspAbajo()} permite cambiar la ID de la \hyperlink{structUNION}{UNION} que se encuentra abajo del \hyperlink{structESPACIO}{ESPACIO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a modificar \item[{\em n}]es una ID con la que se desea modificar el \hyperlink{structESPACIO}{ESPACIO} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_a7eb3b1966a724d814e06ba6a7e78765f}{
+\index{espacio.h@{espacio.h}!cambiaEspArriba@{cambiaEspArriba}}
+\index{cambiaEspArriba@{cambiaEspArriba}!espacio.h@{espacio.h}}
+\subsubsection[{cambiaEspArriba}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaEspArriba ({\bf ESPACIO} $\ast$ {\em e}, \/  {\bf ID} {\em n})}}
+\label{espacio_8h_a7eb3b1966a724d814e06ba6a7e78765f}
+
+
+Cambiar Arriba \hyperlink{espacio_8h_a7eb3b1966a724d814e06ba6a7e78765f}{cambiaEspArriba()} permite cambiar la ID de la \hyperlink{structUNION}{UNION} que se encuentra arriba del \hyperlink{structESPACIO}{ESPACIO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a modificar \item[{\em n}]es una ID con la que se desea modificar el \hyperlink{structESPACIO}{ESPACIO} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_a377f3bc4e849310dc6c485f200d7ca8a}{
+\index{espacio.h@{espacio.h}!cambiaEspDescExaminar@{cambiaEspDescExaminar}}
+\index{cambiaEspDescExaminar@{cambiaEspDescExaminar}!espacio.h@{espacio.h}}
+\subsubsection[{cambiaEspDescExaminar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaEspDescExaminar ({\bf ESPACIO} $\ast$ {\em e}, \/  char $\ast$ {\em desc})}}
+\label{espacio_8h_a377f3bc4e849310dc6c485f200d7ca8a}
+
+
+Cambiar Examinar \hyperlink{espacio_8h_a377f3bc4e849310dc6c485f200d7ca8a}{cambiaEspDescExaminar()} permite modificar la descripcion examinar de un ESPACIo. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a modificar \item[{\em desc}]es una cadena con la que se desea modificar el \hyperlink{structESPACIO}{ESPACIO} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_a271054944c119f0ffc8e9ac034c2d8e4}{
+\index{espacio.h@{espacio.h}!cambiaEspDescGrafica@{cambiaEspDescGrafica}}
+\index{cambiaEspDescGrafica@{cambiaEspDescGrafica}!espacio.h@{espacio.h}}
+\subsubsection[{cambiaEspDescGrafica}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaEspDescGrafica ({\bf ESPACIO} $\ast$ {\em e}, \/  char $\ast$ {\em dibujo}, \/  int {\em filas}, \/  int {\em columnas})}}
+\label{espacio_8h_a271054944c119f0ffc8e9ac034c2d8e4}
+
+
+Cambiar Grafica \hyperlink{espacio_8h_a271054944c119f0ffc8e9ac034c2d8e4}{cambiaEspDescGrafica()} permite cambiar la descripción gráfica de un espacio. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es puntero al espacio en el que guardar la desscripción gráfica \item[{\em dibujo}]es puntero de char con la descripción gráfica a guardar \item[{\em filas}]es entero con el número de filas de la descripción gráfica \item[{\em columnas}]es entero con el número de columnas de la descripción gráfica \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se introdujo correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_ae2d524827a6ed2f83c3342427e0e6101}{
+\index{espacio.h@{espacio.h}!cambiaEspDescripcion@{cambiaEspDescripcion}}
+\index{cambiaEspDescripcion@{cambiaEspDescripcion}!espacio.h@{espacio.h}}
+\subsubsection[{cambiaEspDescripcion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaEspDescripcion ({\bf ESPACIO} $\ast$ {\em e}, \/  char $\ast$ {\em desc})}}
+\label{espacio_8h_ae2d524827a6ed2f83c3342427e0e6101}
+
+
+Cambiar Descripcion \hyperlink{espacio_8h_ae2d524827a6ed2f83c3342427e0e6101}{cambiaEspDescripcion()} permite cambiar la descripcion de un \hyperlink{structESPACIO}{ESPACIO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a modificar \item[{\em desc}]es una cadena con la que se desea modificar el \hyperlink{structESPACIO}{ESPACIO} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_ac30aa5efc3c1018fba54fda2db31570d}{
+\index{espacio.h@{espacio.h}!cambiaEspEste@{cambiaEspEste}}
+\index{cambiaEspEste@{cambiaEspEste}!espacio.h@{espacio.h}}
+\subsubsection[{cambiaEspEste}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaEspEste ({\bf ESPACIO} $\ast$ {\em e}, \/  {\bf ID} {\em n})}}
+\label{espacio_8h_ac30aa5efc3c1018fba54fda2db31570d}
+
+
+Cambiar Este \hyperlink{espacio_8h_ac30aa5efc3c1018fba54fda2db31570d}{cambiaEspEste()} permite cambiar la ID de la \hyperlink{structUNION}{UNION} que se encuentra al este del \hyperlink{structESPACIO}{ESPACIO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a modificar \item[{\em n}]es una ID con la que se desea modificar el \hyperlink{structESPACIO}{ESPACIO} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_a52a6189df3de0b53f0f57e15fab54cf2}{
+\index{espacio.h@{espacio.h}!cambiaEspId@{cambiaEspId}}
+\index{cambiaEspId@{cambiaEspId}!espacio.h@{espacio.h}}
+\subsubsection[{cambiaEspId}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaEspId ({\bf ESPACIO} $\ast$ {\em e}, \/  {\bf ID} {\em id})}}
+\label{espacio_8h_a52a6189df3de0b53f0f57e15fab54cf2}
+
+
+Cambiar ID \hyperlink{espacio_8h_a52a6189df3de0b53f0f57e15fab54cf2}{cambiaEspId()} permite cambiar la ID con que se etiqueta un \hyperlink{structESPACIO}{ESPACIO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a modificar \item[{\em id}]es una ID con la que se desea modificar el \hyperlink{structESPACIO}{ESPACIO} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_a33a81ce0dd6a4a3265efd4d52eb51a86}{
+\index{espacio.h@{espacio.h}!cambiaEspLuminoso@{cambiaEspLuminoso}}
+\index{cambiaEspLuminoso@{cambiaEspLuminoso}!espacio.h@{espacio.h}}
+\subsubsection[{cambiaEspLuminoso}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaEspLuminoso ({\bf ESPACIO} $\ast$ {\em e}, \/  {\bf BOOL} {\em luz})}}
+\label{espacio_8h_a33a81ce0dd6a4a3265efd4d52eb51a86}
+
+
+Cambiar Luminoso \hyperlink{espacio_8h_a33a81ce0dd6a4a3265efd4d52eb51a86}{cambiaEspLuminoso()} permite modificar el estado del espacio entre luminoso y no luminoso. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a modificar \item[{\em luz}]es un BOOL con el que se desea modificar el \hyperlink{structESPACIO}{ESPACIO} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_ac31ed53ab2c88a42ad80dcd4a19925da}{
+\index{espacio.h@{espacio.h}!cambiaEspNorte@{cambiaEspNorte}}
+\index{cambiaEspNorte@{cambiaEspNorte}!espacio.h@{espacio.h}}
+\subsubsection[{cambiaEspNorte}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaEspNorte ({\bf ESPACIO} $\ast$ {\em e}, \/  {\bf ID} {\em n})}}
+\label{espacio_8h_ac31ed53ab2c88a42ad80dcd4a19925da}
+
+
+Cambiar Norte \hyperlink{espacio_8h_ac31ed53ab2c88a42ad80dcd4a19925da}{cambiaEspNorte()} permite cambiar la ID de la \hyperlink{structUNION}{UNION} que se encuentra al norte del \hyperlink{structESPACIO}{ESPACIO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a modificar \item[{\em n}]es una ID con la que se desea modificar el \hyperlink{structESPACIO}{ESPACIO} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_ad0d52503c6d7fffdd3d7473ca5c9876a}{
+\index{espacio.h@{espacio.h}!cambiaEspOeste@{cambiaEspOeste}}
+\index{cambiaEspOeste@{cambiaEspOeste}!espacio.h@{espacio.h}}
+\subsubsection[{cambiaEspOeste}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaEspOeste ({\bf ESPACIO} $\ast$ {\em e}, \/  {\bf ID} {\em n})}}
+\label{espacio_8h_ad0d52503c6d7fffdd3d7473ca5c9876a}
+
+
+Cambiar Oeste \hyperlink{espacio_8h_ad0d52503c6d7fffdd3d7473ca5c9876a}{cambiaEspOeste()} permite cambiar la ID de la \hyperlink{structUNION}{UNION} que se encuentra al oeste del \hyperlink{structESPACIO}{ESPACIO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a modificar \item[{\em n}]es una ID con la que se desea modificar el \hyperlink{structESPACIO}{ESPACIO} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_ae2bf58dacc36483e0c4b4ba20e6e5494}{
+\index{espacio.h@{espacio.h}!cambiaEspSur@{cambiaEspSur}}
+\index{cambiaEspSur@{cambiaEspSur}!espacio.h@{espacio.h}}
+\subsubsection[{cambiaEspSur}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} cambiaEspSur ({\bf ESPACIO} $\ast$ {\em e}, \/  {\bf ID} {\em n})}}
+\label{espacio_8h_ae2bf58dacc36483e0c4b4ba20e6e5494}
+
+
+Cambiar Sur \hyperlink{espacio_8h_ae2bf58dacc36483e0c4b4ba20e6e5494}{cambiaEspSur()} permite cambiar la ID de la \hyperlink{structUNION}{UNION} que se encuentra al sur del \hyperlink{structESPACIO}{ESPACIO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a modificar \item[{\em n}]es una ID con la que se desea modificar el \hyperlink{structESPACIO}{ESPACIO} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_a6620c90aae58896d40454da9f2bf985c}{
+\index{espacio.h@{espacio.h}!creaEspacio@{creaEspacio}}
+\index{creaEspacio@{creaEspacio}!espacio.h@{espacio.h}}
+\subsubsection[{creaEspacio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} creaEspacio ({\bf ESPACIO} $\ast$$\ast$ {\em e})}}
+\label{espacio_8h_a6620c90aae58896d40454da9f2bf985c}
+
+
+Creación de Espacio \hyperlink{espacio_8h_a6620c90aae58896d40454da9f2bf985c}{creaEspacio()} se encarga de reservar la memoria para un nuevo Espacio. 
+
+Información de la estructura:
+
+
+\begin{DoxyItemize}
+\item id es el identificador del espacio
+\item descripcion es un puntero a una cadena que almacenará la descripción básica del espacio
+\item descExaminar es un puntero a una cadena que almacenará una descripción exaustiva del objeto
+\item inv será el inventario del espacio, que almacenará los objeto que haya en dicho espacio
+\item luminoso es un atributo que indica si un espacio está iluminado o no
+\item norte, sur, este, oeste, arriba, abajao son los id de las uniones que haya en esa dirección 
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero a un puntero a \hyperlink{structESPACIO}{ESPACIO}, que será donde se guarde la dirección de el \hyperlink{structESPACIO}{ESPACIO} que se reserve \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+
+\end{DoxyItemize}\hypertarget{espacio_8h_ae93fd5ca1c3078fab35a9e512091fe69}{
+\index{espacio.h@{espacio.h}!destruyeEspacio@{destruyeEspacio}}
+\index{destruyeEspacio@{destruyeEspacio}!espacio.h@{espacio.h}}
+\subsubsection[{destruyeEspacio}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} destruyeEspacio ({\bf ESPACIO} $\ast$$\ast$ {\em e})}}
+\label{espacio_8h_ae93fd5ca1c3078fab35a9e512091fe69}
+
+
+Destrucción de Espacio \hyperlink{espacio_8h_ae93fd5ca1c3078fab35a9e512091fe69}{destruyeEspacio()} se encarga de liberar toda la memoria que hubiese resrvado un Espacio en caso de estar reservada. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al puntero del Espacio que se desea destruir \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Siempre devuelve OK. No hay posibilidad de error 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_ab82e72a7fa7c65b4510a94335a8968a6}{
+\index{espacio.h@{espacio.h}!isEspDestruido@{isEspDestruido}}
+\index{isEspDestruido@{isEspDestruido}!espacio.h@{espacio.h}}
+\subsubsection[{isEspDestruido}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} isEspDestruido ({\bf ESPACIO} $\ast$ {\em e})}}
+\label{espacio_8h_ab82e72a7fa7c65b4510a94335a8968a6}
+
+
+¿Está destruida? \hyperlink{espacio_8h_ab82e72a7fa7c65b4510a94335a8968a6}{isEspDestruido()} permite saber si un \hyperlink{structESPACIO}{ESPACIO} está destruido o no 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a verificar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE según sea el caso 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_a9a5ccd2d4b393bef3179185dc8441d1a}{
+\index{espacio.h@{espacio.h}!isEspEmpty@{isEspEmpty}}
+\index{isEspEmpty@{isEspEmpty}!espacio.h@{espacio.h}}
+\subsubsection[{isEspEmpty}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} isEspEmpty ({\bf ESPACIO} $\ast$ {\em e})}}
+\label{espacio_8h_a9a5ccd2d4b393bef3179185dc8441d1a}
+
+
+¿Está vacio? \hyperlink{espacio_8h_a9a5ccd2d4b393bef3179185dc8441d1a}{isEspEmpty()} permite saber si un \hyperlink{structESPACIO}{ESPACIO} ha sido rellenado o no 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a verificar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE según sea el caso 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_a803ac35302d365f1bff5120a5ae96ed1}{
+\index{espacio.h@{espacio.h}!isEspLuminoso@{isEspLuminoso}}
+\index{isEspLuminoso@{isEspLuminoso}!espacio.h@{espacio.h}}
+\subsubsection[{isEspLuminoso}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} isEspLuminoso ({\bf ESPACIO} $\ast$ {\em e})}}
+\label{espacio_8h_a803ac35302d365f1bff5120a5ae96ed1}
+
+
+¿Está iluminado? \hyperlink{espacio_8h_a803ac35302d365f1bff5120a5ae96ed1}{isEspLuminoso()} permite saber si un \hyperlink{structESPACIO}{ESPACIO} tiene luz propia o no 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a verificar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE según sea el caso 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_ac0a1cbda99962030adb31a1a735e7c65}{
+\index{espacio.h@{espacio.h}!isObjinEsp@{isObjinEsp}}
+\index{isObjinEsp@{isObjinEsp}!espacio.h@{espacio.h}}
+\subsubsection[{isObjinEsp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf BOOL} isObjinEsp ({\bf ESPACIO} $\ast$ {\em e}, \/  {\bf ID} {\em id})}}
+\label{espacio_8h_ac0a1cbda99962030adb31a1a735e7c65}
+
+
+Objeto contenido \hyperlink{espacio_8h_ac0a1cbda99962030adb31a1a735e7c65}{isObjinEsp()} permite saber si un objeto se encuentra en el inventario de un \hyperlink{structESPACIO}{ESPACIO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a verificar \item[{\em id}]es una ID del objeto que se quiere saber si está o no en el \hyperlink{structESPACIO}{ESPACIO} \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE o FALSE según el caso 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_a229afc9136eaa00e5b329c7c931a9cb2}{
+\index{espacio.h@{espacio.h}!meterEspObj@{meterEspObj}}
+\index{meterEspObj@{meterEspObj}!espacio.h@{espacio.h}}
+\subsubsection[{meterEspObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} meterEspObj ({\bf ESPACIO} $\ast$ {\em e}, \/  {\bf ID} {\em id})}}
+\label{espacio_8h_a229afc9136eaa00e5b329c7c931a9cb2}
+
+
+Introducir objetos \hyperlink{espacio_8h_a229afc9136eaa00e5b329c7c931a9cb2}{meterEspObj()} introduce un objeto en el inventario de un \hyperlink{structESPACIO}{ESPACIO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a modificar \item[{\em id}]es una ID del objeto que se desea guardar \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_a097909facc167aac025776f45391886f}{
+\index{espacio.h@{espacio.h}!saberEspAbajo@{saberEspAbajo}}
+\index{saberEspAbajo@{saberEspAbajo}!espacio.h@{espacio.h}}
+\subsubsection[{saberEspAbajo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberEspAbajo ({\bf ESPACIO} $\ast$ {\em e}, \/  {\bf ID} $\ast$ {\em id})}}
+\label{espacio_8h_a097909facc167aac025776f45391886f}
+
+
+Saber Abajo \hyperlink{espacio_8h_a097909facc167aac025776f45391886f}{saberEspAbajo()} permite saber la ID de el \hyperlink{structESPACIO}{ESPACIO} que se encuentra abajo del \hyperlink{structESPACIO}{ESPACIO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a verificar \item[{\em id}]es un puntero a una ID donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_a5368df3dffe248b7b56faa13c4cbd104}{
+\index{espacio.h@{espacio.h}!saberEspArriba@{saberEspArriba}}
+\index{saberEspArriba@{saberEspArriba}!espacio.h@{espacio.h}}
+\subsubsection[{saberEspArriba}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberEspArriba ({\bf ESPACIO} $\ast$ {\em e}, \/  {\bf ID} $\ast$ {\em id})}}
+\label{espacio_8h_a5368df3dffe248b7b56faa13c4cbd104}
+
+
+Saber Arriba \hyperlink{espacio_8h_a5368df3dffe248b7b56faa13c4cbd104}{saberEspArriba()} permite saber la ID de el \hyperlink{structESPACIO}{ESPACIO} que se encuentra arriba del \hyperlink{structESPACIO}{ESPACIO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a verificar \item[{\em id}]es un puntero a una ID donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_a5c7fca3a0af684cc93e28d2a5b2291a8}{
+\index{espacio.h@{espacio.h}!saberEspDescExaminar@{saberEspDescExaminar}}
+\index{saberEspDescExaminar@{saberEspDescExaminar}!espacio.h@{espacio.h}}
+\subsubsection[{saberEspDescExaminar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberEspDescExaminar ({\bf ESPACIO} $\ast$ {\em e}, \/  char $\ast$ {\em desc})}}
+\label{espacio_8h_a5c7fca3a0af684cc93e28d2a5b2291a8}
+
+
+Examinar un espacio \hyperlink{espacio_8h_a5c7fca3a0af684cc93e28d2a5b2291a8}{saberEspDescExaminar()} permite saber el contenido de la descripcion examinar de un \hyperlink{structESPACIO}{ESPACIO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a verificar \item[{\em desc}]es un puntero a una cadena donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_a5b658790347a24a8aa770a87af6d3d15}{
+\index{espacio.h@{espacio.h}!saberEspDescrGrafica@{saberEspDescrGrafica}}
+\index{saberEspDescrGrafica@{saberEspDescrGrafica}!espacio.h@{espacio.h}}
+\subsubsection[{saberEspDescrGrafica}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberEspDescrGrafica ({\bf ESPACIO} $\ast$ {\em esp}, \/  char $\ast$$\ast$$\ast$ {\em dibujo}, \/  int $\ast$ {\em filas}, \/  int $\ast$ {\em columnas})}}
+\label{espacio_8h_a5b658790347a24a8aa770a87af6d3d15}
+
+
+saberEspDescrGrafica Esta función permite saber la descripción Gráfica de un espacio a examinar 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dibujo}]es puntero a matriz que contendrá el espacio \item[{\em filas}]es puntero a int que contendrá el número de filas de la descripción gráfica \item[{\em esp}]es puntero al \hyperlink{structESPACIO}{ESPACIO} del que conocer la descripción gráfica \item[{\em columnas}]es puntero a int que contendrá el número de columnas de la descripción gráfica \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ERR si no se idevolvió correctamente o OK en caso contrario 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Miguel Gordo 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_a6c8dba799a02def26ae055052ee73b2d}{
+\index{espacio.h@{espacio.h}!saberEspDescripcion@{saberEspDescripcion}}
+\index{saberEspDescripcion@{saberEspDescripcion}!espacio.h@{espacio.h}}
+\subsubsection[{saberEspDescripcion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberEspDescripcion ({\bf ESPACIO} $\ast$ {\em e}, \/  char $\ast$ {\em desc})}}
+\label{espacio_8h_a6c8dba799a02def26ae055052ee73b2d}
+
+
+Descripción de un \hyperlink{structESPACIO}{ESPACIO} \hyperlink{espacio_8h_a6c8dba799a02def26ae055052ee73b2d}{saberEspDescripcion()} permite saber el contenido de la descripcion de un \hyperlink{structESPACIO}{ESPACIO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a verificar \item[{\em desc}]es un puntero a una cadena donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_a9777fe096179f3567e23af5108833867}{
+\index{espacio.h@{espacio.h}!saberEspEste@{saberEspEste}}
+\index{saberEspEste@{saberEspEste}!espacio.h@{espacio.h}}
+\subsubsection[{saberEspEste}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberEspEste ({\bf ESPACIO} $\ast$ {\em e}, \/  {\bf ID} $\ast$ {\em id})}}
+\label{espacio_8h_a9777fe096179f3567e23af5108833867}
+
+
+Saber Este \hyperlink{espacio_8h_a9777fe096179f3567e23af5108833867}{saberEspEste()} permite saber la ID de el \hyperlink{structESPACIO}{ESPACIO} que se encuentra al este del \hyperlink{structESPACIO}{ESPACIO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a verificar \item[{\em id}]es un puntero a una ID donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_ae85d56064840f4b81e0802c1f03050a8}{
+\index{espacio.h@{espacio.h}!saberEspId@{saberEspId}}
+\index{saberEspId@{saberEspId}!espacio.h@{espacio.h}}
+\subsubsection[{saberEspId}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberEspId ({\bf ESPACIO} $\ast$ {\em e}, \/  {\bf ID} $\ast$ {\em id})}}
+\label{espacio_8h_ae85d56064840f4b81e0802c1f03050a8}
+
+
+Saber ID saberEspid() permite saber la ID de un \hyperlink{structESPACIO}{ESPACIO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a verificar \item[{\em id}]es un puntero a una ID donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_aa2985ea2aee33114b679fb46ffbbd1a6}{
+\index{espacio.h@{espacio.h}!saberEspIesimoObj@{saberEspIesimoObj}}
+\index{saberEspIesimoObj@{saberEspIesimoObj}!espacio.h@{espacio.h}}
+\subsubsection[{saberEspIesimoObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ID} saberEspIesimoObj ({\bf ESPACIO} $\ast$ {\em e}, \/  int {\em i})}}
+\label{espacio_8h_aa2985ea2aee33114b679fb46ffbbd1a6}
+
+
+Saber un Objeto \hyperlink{espacio_8h_aa2985ea2aee33114b679fb46ffbbd1a6}{saberEspIesimoObj()} permite saber el iésimo objeto del inventario del \hyperlink{structESPACIO}{ESPACIO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a verificar \item[{\em i}]es la posición que se desea conocer \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+devuelve la ID del objeto que se encuentre en dicha posición 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_a0f5dcdebbb9097e4435bb8567687fb43}{
+\index{espacio.h@{espacio.h}!saberEspNorte@{saberEspNorte}}
+\index{saberEspNorte@{saberEspNorte}!espacio.h@{espacio.h}}
+\subsubsection[{saberEspNorte}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberEspNorte ({\bf ESPACIO} $\ast$ {\em e}, \/  {\bf ID} $\ast$ {\em id})}}
+\label{espacio_8h_a0f5dcdebbb9097e4435bb8567687fb43}
+
+
+Saber Norte \hyperlink{espacio_8h_a0f5dcdebbb9097e4435bb8567687fb43}{saberEspNorte()} permite saber la ID de el \hyperlink{structESPACIO}{ESPACIO} que se encuentra al norte del \hyperlink{structESPACIO}{ESPACIO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a verificar \item[{\em id}]es un puntero a una ID donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_a4b4eba2384c4c101932e34f77c74deea}{
+\index{espacio.h@{espacio.h}!saberEspOeste@{saberEspOeste}}
+\index{saberEspOeste@{saberEspOeste}!espacio.h@{espacio.h}}
+\subsubsection[{saberEspOeste}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberEspOeste ({\bf ESPACIO} $\ast$ {\em e}, \/  {\bf ID} $\ast$ {\em id})}}
+\label{espacio_8h_a4b4eba2384c4c101932e34f77c74deea}
+
+
+Saber Oeste \hyperlink{espacio_8h_a4b4eba2384c4c101932e34f77c74deea}{saberEspOeste()} permite saber la ID de el \hyperlink{structESPACIO}{ESPACIO} que se encuentra al oeste del \hyperlink{structESPACIO}{ESPACIO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a verificar \item[{\em id}]es un puntero a una ID donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_aed47be77f2cf86b73cb6197b47924e80}{
+\index{espacio.h@{espacio.h}!saberEspSur@{saberEspSur}}
+\index{saberEspSur@{saberEspSur}!espacio.h@{espacio.h}}
+\subsubsection[{saberEspSur}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberEspSur ({\bf ESPACIO} $\ast$ {\em e}, \/  {\bf ID} $\ast$ {\em id})}}
+\label{espacio_8h_aed47be77f2cf86b73cb6197b47924e80}
+
+
+Saber Sur \hyperlink{espacio_8h_aed47be77f2cf86b73cb6197b47924e80}{saberEspSur()} permite saber la ID de el \hyperlink{structESPACIO}{ESPACIO} que se encuentra al sur del \hyperlink{structESPACIO}{ESPACIO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a verificar \item[{\em id}]es un puntero a una ID donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_af24c9b67e84d821d8a2287265aedc4f5}{
+\index{espacio.h@{espacio.h}!saberEspTamDesc@{saberEspTamDesc}}
+\index{saberEspTamDesc@{saberEspTamDesc}!espacio.h@{espacio.h}}
+\subsubsection[{saberEspTamDesc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberEspTamDesc ({\bf ESPACIO} $\ast$ {\em e}, \/  int $\ast$ {\em num})}}
+\label{espacio_8h_af24c9b67e84d821d8a2287265aedc4f5}
+
+
+Tamaño de Descripcion \hyperlink{espacio_8h_af24c9b67e84d821d8a2287265aedc4f5}{saberEspTamDesc()} permite saber el tamaño de la cadena que contiene la descripcion de un \hyperlink{structESPACIO}{ESPACIO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a verificar \item[{\em num}]es un puntero a un entero donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_ab2a03f7366c743a5a5a77f90e9897544}{
+\index{espacio.h@{espacio.h}!saberEspTamDescExam@{saberEspTamDescExam}}
+\index{saberEspTamDescExam@{saberEspTamDescExam}!espacio.h@{espacio.h}}
+\subsubsection[{saberEspTamDescExam}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberEspTamDescExam ({\bf ESPACIO} $\ast$ {\em e}, \/  int $\ast$ {\em num})}}
+\label{espacio_8h_ab2a03f7366c743a5a5a77f90e9897544}
+
+
+Tamaño de Examinar \hyperlink{espacio_8h_ab2a03f7366c743a5a5a77f90e9897544}{saberEspTamDescExam()} permite saber el tamaño de la cadena que contiene la descripción examinar del \hyperlink{structESPACIO}{ESPACIO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a verificar \item[{\em num}]es un puntero a un entero donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_a005f4a108b5b2ded2b03f2ff879f48a2}{
+\index{espacio.h@{espacio.h}!saberEspTamInv@{saberEspTamInv}}
+\index{saberEspTamInv@{saberEspTamInv}!espacio.h@{espacio.h}}
+\subsubsection[{saberEspTamInv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} saberEspTamInv ({\bf ESPACIO} $\ast$ {\em e}, \/  int $\ast$ {\em num})}}
+\label{espacio_8h_a005f4a108b5b2ded2b03f2ff879f48a2}
+
+
+Tamaño del inventario \hyperlink{espacio_8h_a005f4a108b5b2ded2b03f2ff879f48a2}{saberEspTamInv()} permite saber cuantos objeto se encuentran en el \hyperlink{structESPACIO}{ESPACIO}. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a verificar \item[{\em num}]es un puntero a un entero donde guardar el dato \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}
+\hypertarget{espacio_8h_a27f9b798219fe3bcaff16e5e9d308fb5}{
+\index{espacio.h@{espacio.h}!sacarEspObj@{sacarEspObj}}
+\index{sacarEspObj@{sacarEspObj}!espacio.h@{espacio.h}}
+\subsubsection[{sacarEspObj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf STATUS} sacarEspObj ({\bf ESPACIO} $\ast$ {\em e}, \/  {\bf ID} {\em id})}}
+\label{espacio_8h_a27f9b798219fe3bcaff16e5e9d308fb5}
+
+
+Sacar objetos \hyperlink{espacio_8h_a27f9b798219fe3bcaff16e5e9d308fb5}{sacarEspObj()} extrae de un inventario de un \hyperlink{structESPACIO}{ESPACIO} un objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]es un puntero al \hyperlink{structESPACIO}{ESPACIO} a modificar \item[{\em id}]es una ID del objeto que se desea extraer \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+puede devolver ERR u OK según se realice la operación mal o bien respectivamente 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Antonio Jiménez Pastor 
+\end{DoxyAuthor}

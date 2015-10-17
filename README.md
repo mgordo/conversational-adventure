@@ -1,9 +1,11 @@
 # conversational-adventure
-A C based engine for conversational adventures, with one sample adventure. A. Jimenez and C. Carrascal are co-authors of this project.
+A C based engine for conversational adventures, with one sample adventure. 
+Authors: C. Carrascal, M. Gordo and A. Jimenez.
 
-All you need to do to get it running is run 'make all' in the directory you download it. Unzip your adventure in the same directory, run './game' and you're good to go.
+All you need to do to get it running is run 'make all' in the directory you download it. Unzip your adventure in the same directory, run './game' and you're good to go. A list of games will appear, select the one you want to play.
 
-A game consists of 3 xml documents: one for the dialogue, one for the rules, and one for the world and objects. The documentation on how to create new xml files for new games can be found in the .doc files within this folder.
+
+A game consists of 3 xml documents: one for the dialogue, one for the rules, and one for the world and objects. The documentation on how to create new xml files for new games can be found in the other documentation files within this folder.
 
 The technical documentation was generated with doxygen and can be accesed with the index.html file within the html folder. 
 

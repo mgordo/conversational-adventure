@@ -14,4 +14,43 @@ As a sample, this project comes with its own adventure, 'Draco Dormiend Nunquam 
 
 You will need to find all your ingredients and your book in order to have a shot a the exam...
 
-Hope you enjoy playing it as much as we did developing it!
+The commands that you can use are:
+IR (direction): Moves the player in the specified direction: north, south, east, west, up, down (norte, sur, este, oeste, arriba y abajo)
+
+
+COGER (object): Put in the player's inventory the specified object
+
+
+DEJAR (object) : Drop to the current location the specified object
+
+
+ENCIENDE (object): In object can be turned on, turn on said object
+
+
+APAGA (object): If an object is turned on, turn it off
+
+
+METER (object1) en (object2): Puts object1 into object2
+
+
+SACAR (object1) de (object2): takes out object1 from object2
+
+
+EXAMINAR (something): Gives a detailed description of something you wish to examine. It could be an object, your current location (lugar) or your inventory (inventario)
+
+
+ABRIR (direction): opens a door in the specified direction, if there is a door to be opened
+
+
+PEDIR (object) a (npc): If an npc has a specific object, ask said npc to give it to yous.
+
+
+DAR (object) a (npc):  give an object in your inventory to an npc. Warning: keep track of an object if you give it away! There is no way to examine a npc's inventory
+
+
+DECIR (sentence) a (npc): speak a sentence to a certain npc. The sentence must be surrounded by the character (')
+
+
+FIN: Ends the game and closes the program
+
+Hope you enjoy playing it as much as I did developing it!
